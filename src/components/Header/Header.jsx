@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="bg-gray-400">
-      <div>Header</div>
+      <div className="">Header</div>
     </div>
   );
 };
