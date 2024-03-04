@@ -2,6 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
+<<<<<<< HEAD
     <div className="bg-white font-sans flex h-[66px] border-b-[1px] border-solid border-slate-rgb(232 235 237) items-center text-[1.4rem] pt-0 pb-0 pl-7 pr-7 sticky inset-x-0 top-0 z-20 ">
       <div className="flex">
         <div className="flex items-center">
@@ -57,6 +58,10 @@ const Header = () => {
 
       </div>
 
+=======
+    <div className="bg-gray-400">
+      <div className="">Header</div>
+>>>>>>> ea76f906ba0aa60e55c65d4a9570ca7e0e22a619
     </div>
   );
 };
