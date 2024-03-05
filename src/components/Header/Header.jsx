@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
 
-    <div className="bg-toastify-color-light font-sans flex h-[66px] border-b-[1px] border-solid border-slate-rgb(232 235 237) items-center text-[1.4rem] pt-0 pb-0 pl-[28px] pr-[28px] sticky top-0 inset-x-0 z-20 ">
+    <div className="bg-toastify-color-light font-sans flex h-[66px] border-b-[1px] border-solid border-[#e8ebed] items-center text-[1.4rem] pt-0 pb-0 pl-[28px] pr-[28px] sticky top-0 inset-x-0 z-20 ">
       
         <div className="flex items-center ">
           <a href="#">
@@ -17,14 +17,14 @@ const Header = () => {
 
           </div>
 
-        <div className="flex-1 items-center flex justify-center  "> 
+        <div className="flex-1 items-center flex justify-center group "> 
           <div >
-            <div className="flex items-center justify-center text-[14px] rounded-[20px] border-solid border-2 w-[420px] h-[40px] pt-0 pr-4 pb-0 pl-3.5 ml-[-34px] ">
+            <div className="flex items-center justify-center focus-within:border-[#333] text-[14px] rounded-[20px] border-solid  border-2 border-[#eee] w-[420px] h-[40px]  pr-4 pl-3.5 ml-[-34px] ">
             
               <div className="">
-              <i class="fa-solid fa-magnifying-glass bg-[#fff] ho "></i>
+              <i className="fa-solid fa-magnifying-glass bg-[#fff] opacity-70 hover:opacity-100 "></i>
               </div>
-                <input className=" outline-none border-none  flex-1 pt-0 pr-1 pb-0 pl-1 h-full"
+                <input className=" outline-none border-none focus:text-red-300 flex-1 pt-0 pr-1 pb-0 pl-1 h-full"
                type="" spellCheck="false" placeholder="Tìm kiếm khóa học, bài viết, video, ..."  />
 
             </div>
@@ -34,10 +34,10 @@ const Header = () => {
       {/* Login */}
         <div className="items-center flex justify-end  "> 
           <div></div>
-          <button className="cursor-pointer  mr-[30px] font-medium text-[14px] leading-4 pt-0 pb-0 pl-0 pr-0 outline-none">
+          <button className="cursor-pointer  mr-[30px] font-medium text-[14px] leading-4  outline-none">
             Đăng nhập
           </button>
-          <button className="bg-gradient-to-br from-toastify-icon-color-error to-primary-color  cursor-pointer text-toastify-color-light rounded-[99px] font-medium text-[14px] leading-4 w-[92px] h-[34px]   ">
+          <button className="bg-gradient-to-br from-toastify-icon-color-error to-primary-color opacity-95 hover:opacity-90 cursor-pointer text-toastify-color-light rounded-[99px] font-medium text-[14px] leading-4 w-[92px] h-[34px]   ">
             Đăng ký
           </button >
         </div>
