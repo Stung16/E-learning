@@ -16,7 +16,7 @@ const Content = () => {
 
             {/* Khoa hoc */}
             <div className=" h-full  p-0 pr-11 pl-11 pb-[74px]">
-            <div className=" ">
+            <div className="relative min-[740px]:pt-[3px] max-[1023px]:pb-4 max-[1023px]:w-[1500px]  max-[1023px]:pt-[3px]">
                 <section className="ml-[-12px] mr-[-12px] flex">
                     <section className="w-[25%] pr-[12px] pl-[12px]">
                         <div className="relative ">
