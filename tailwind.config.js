@@ -29,6 +29,9 @@ export default {
       "button-color": "#1dbfaf",
     },
     extend: {},
+    height: {
+      "header-hight": "66px",
+    },
   },
   plugins: [],
 };

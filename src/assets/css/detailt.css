@@ -1,0 +1,131 @@
+.avatar_border {
+  align-items: center;
+  background: linear-gradient(180deg, #ffd900, #b45264 93.68%);
+  display: flex;
+  justify-content: center;
+  padding: 0.7em;
+  position: relative;
+  border-radius: 50%;
+  font-size: 3.2px;
+}
+.icon_avatar {
+  height: 3.2em !important;
+  position: absolute;
+  right: -2em;
+  top: -0.2em;
+  width: 3.2em !important;
+}
+
+.slick-prev:before {
+  color: #333;
+  font-size: 32px;
+}
+
+.slick-next:before {
+  color: #333;
+
+  font-size: 32px;
+}
+.slick-prev,
+.slick-next {
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+}
+.slick-prev {
+  left: -17px;
+}
+.slick-next {
+  right: -17px;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+body .slick-dots li {
+  transition: width 0.3s linear, background-color 0.3s linear;
+  width: 32px;
+}
+.slick-dots li.slick-active button:before {
+  transition: width 0.3s linear, background-color 0.3s linear;
+  width: 50px;
+  background-color: #9aa6af;
+}
+.slick-dots li.slick-active {
+  transition: width 0.3s linear, background-color 0.3s linear;
+
+  width: 50px;
+}
+.slick-dots li button:before {
+  background-color: #dce0e3;
+  border-radius: 4px;
+  content: "";
+  height: 8px;
+  margin-right: 10px;
+  opacity: 1;
+  transition: width 0.3s linear, background-color 0.3s linear;
+  width: 32px;
+}
+.slick-dots {
+  bottom: -34px;
+  right: 37%;
+}
+.slick-list {
+  border-radius: 16px;
+  height: 270px;
+  width: 100%;
+}
+.ant-dropdown-trigger {
+  margin: 8px 0 2px;
+  height: 44px;
+  width: 44px;
+}
+.rotate {
+  transition: rotate ease-in 0.15s;
+  transition-duration: 0.3s;
+  rotate: 45deg;
+}
+.fa-plus {
+  transition: rotate ease-in 0.15s;
+}
+.ant-dropdown-menu-item {
+  max-width: 200px;
+}
+.ant-select-dropdown {
+  min-width: 350px;
+}
+.ant-select-selection-item {
+  /* font-weight: 600; */
+  font-size: 14px;
+}
+.ant-cascader {
+  width: 100px;
+}
+.ant-select-selector {
+  border: none !important;
+  border-color: rgba(22, 24, 35, 0.06) !important;
+  outline: rgba(22, 24, 35, 0.06) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.ant-select-selector:focus {
+  outline: none !important;
+}
+.ant-select-clear {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+.DefaultLayout_desc {
+  max-width: 840px;
+  word-wrap: break-word;
+  color: #292929;
+  font-size: var(15px, 1.8rem);
+  line-height: var(1.6, 2);
+}
+/* transition: all .3s ease-in-out; */

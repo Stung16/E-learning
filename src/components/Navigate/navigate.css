@@ -1,0 +1,26 @@
+.btn-naviagte {
+  /* background-color: #e8ebed; */
+  color: #1a1a1a;
+  align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  justify-content: center;
+  margin-top: 4px;
+  width: 72px;
+}
+.navigate-sticky {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    left: 0;
+    padding: 0 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 74px;
+    width: 96px;
+    z-index: 8;
+}

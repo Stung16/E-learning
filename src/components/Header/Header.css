@@ -1,0 +1,238 @@
+.btn-login {
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 30px;
+}
+.btn-register {
+  background: linear-gradient(to right bottom, #ff8f26, #ff5117);
+  border-radius: 99px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 20px;
+  transition: opacity 0.25s;
+}
+.authModel {
+  z-index: 9999;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authModel-overlay {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  position: absolute;
+}
+
+.authModel-content {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-name: authModel;
+  animation-name: authModel;
+  background: #fff;
+  border-radius: 16px;
+  height: min(660px, 100% - 32px);
+  position: relative;
+  width: min(540px, 100% - 32px);
+  z-index: 1;
+}
+.AuthModal_back {
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  height: 40px;
+  justify-content: center;
+  line-height: 0;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 40px;
+}
+.AuthModal_back:hover {
+  cursor: pointer;
+  color: #292929;
+}
+.AuthModal_close {
+  align-items: center;
+  background: rgba(22, 24, 35, 0.03);
+  border-radius: 50%;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  font-size: 28px;
+  height: 40px;
+  justify-content: center;
+  line-height: 0;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 40px;
+}
+.Login_title {
+  color: rgb(41, 41, 41);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 12px 0px;
+}
+.Login_desc {
+  text-align: center;
+  color: #f33a58;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0px auto;
+  width: min(400px, 90%);
+}
+.Button_login-wapper {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(220, 224, 227);
+  border-radius: 44px;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 16px;
+  position: relative;
+  text-align: center;
+  width: 320px;
+}
+.SigninButton_icon {
+  left: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.SigninButton_title {
+  color: rgb(53, 65, 76);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+  outline: 0px;
+  text-align: center;
+}
+.Login_dontHaveAcc {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 0px;
+  padding: 24px 16px 0px;
+}
+.Login_acceptTerm {
+  width: 100%;
+  color: #666;
+  font-size: 11px;
+  
+  line-height: 1.6;
+  margin-top: 3px;
+}
+.underline {
+  color: currentColor;
+  text-decoration: underline;
+}
+.FormInput_invalid {
+  background: rgba(22, 24, 35, 0.06);
+  border: 1.5px solid rgba(22, 24, 35, 0.06);
+  border-radius: 44px;
+  display: flex;
+  height: 44px;
+  overflow: hidden;
+  /* border-color: #f33a58; */
+}
+.FormInput_invalid input {
+  background-color: transparent;
+  border: none;
+  display: block;
+  flex: 1 1;
+  font-size: 14px;
+  outline: none;
+  padding: 12px 20px;
+}
+.FormInput_message {
+  color: #f33a58;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 8px 0 8px 8px;
+}
+.btn-sendCOde {
+  align-items: center;
+  border-radius: 44px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  margin: 1px;
+  min-width: 140px;
+  white-space: nowrap;
+}
+.FormInput_invalid .btn-sendCOde {
+  background-color: #ccc;
+  color: #757575;
+  cursor: not-allowed;
+}
+.btn-submit-resgiter {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  user-select: none;
+  font-size: 16px;
+  background-position: 0 0;
+  background-size: 100% 200%;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  transition: background-position 0.15s cubic-bezier(0.2, 0.2, 0.2, 1);
+  background-color: #1dbfaf;
+  background-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+  position: relative;
+  border-radius: 44px !important;
+  height: 44px;
+  margin-top: 20px;
+  width: 100%;
+}
+input::placeholder {
+  font-size: 16px;
+}
+
+@media (min-width: 0px) and (max-width: 739px) {
+  .btn-sendCOde {
+    font-size: 13px;
+    min-width: 0;
+    width: 140px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 739px) {
+  .FormInput_invalid input {
+    font-size: 16px;
+    padding-right: 5px;
+    width: 160px;
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .Login_acceptTerm {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    width: min(400px, 100%);
+  }
+}
+@keyframes authModel {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}

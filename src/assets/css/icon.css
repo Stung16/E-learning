@@ -1,0 +1,16 @@
+.search_icon{
+    background-color: #fff;
+    background-image: url('/icon/search.9bd3926522ea0937310c.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    border-radius: 50%;
+    height: 32px;
+    opacity: .7;
+    transition: opacity .2s ease-in-out;
+    width: 30px;
+}
+.search_icon:hover{
+    opacity: 1;
+
+}

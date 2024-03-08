@@ -1,9 +1,15 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Routes } from "react-router-dom";
 import { publicRoutes } from "../routes/publicRoutes";
+import { privateRoutes } from "../routes/privateRoutes";
 
 const Layout = () => {
-  return <Routes>{publicRoutes}</Routes>;
+  return (
+    <Routes>
+      {publicRoutes}
+      {privateRoutes}
+    </Routes>
+  );
 };
 
 export default Layout;
