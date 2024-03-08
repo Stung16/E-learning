@@ -53,7 +53,7 @@ const Footer = () => {
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
-                      href="#"
+                      href="/about-us"
                       className="cursor-pointer relative duration-100 ease-linear"
                     >
                       Giới thiệu
