@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import DefaultLayout from "../layouts/DefaultLayout/DefaultLayout";
 import Home from "../pages/Home/Home";
 import Learning_paths from "../pages/Learning_paths/Learning_paths";
+import AboutUs from "../pages/AboutUs/AboutUs";
 // import ErrorPage from "../pages/ErrorPage.js/ErrorPage";
 // import AuthMiddleware from "../middlewares/AuthMiddleware";
 export const publicRoutes = (
@@ -9,6 +10,7 @@ export const publicRoutes = (
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       <Route path="/learning-paths" element={<Learning_paths />} />
+      <Route path="/about-us" element={<AboutUs />} />
       {/* <Route path="/contact" element={<Contact />} />
       <Route path="/price" element={<Price />} />
     </Route>
