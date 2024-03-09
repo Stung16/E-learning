@@ -61,7 +61,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
-                      href="#"
+                      href="contact-us"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Liên hệ
@@ -69,7 +69,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
-                      href="#"
+                      href="/terms"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Điều khoản
@@ -77,7 +77,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
-                      href="#"
+                      href="/privacy"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Bảo mật
@@ -85,7 +85,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
-                      href="#"
+                      href="/careers"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Cơ hội việc làm

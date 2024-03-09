@@ -4,6 +4,9 @@ import Home from "../pages/Home/Home";
 import Learning_paths from "../pages/Learning_paths/Learning_paths";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import Terms from "../pages/Terms/Terms";
+import Privacy from "../pages/Privacy/Privacy";
+import Careers from "../pages/Careers/Careers";
 // import ErrorPage from "../pages/ErrorPage.js/ErrorPage";
 // import AuthMiddleware from "../middlewares/AuthMiddleware";
 export const publicRoutes = (
@@ -12,6 +15,9 @@ export const publicRoutes = (
       <Route path="/" element={<Home />} />
       <Route path="/learning-paths" element={<Learning_paths />} />
       <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/careers" element={<Careers />} />
       {/* <Route path="/contact" element={<Contact />} />
       <Route path="/price" element={<Price />} />
       </Route>
