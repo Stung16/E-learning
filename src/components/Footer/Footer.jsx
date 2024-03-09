@@ -20,11 +20,11 @@ const Footer = () => {
                     Học Lập Trình Để Đi Làm
                   </h2>
                 </div>
-                <p className="relative text-[#a9b3bb] text-[14px] leading-[22px]">
-                  Điện thoại: <a href="tel:0246.329.1102">0246.329.1102</a>
+                <p className="relative text-[#a9b3bb] text-[14px] leading-[22px] ">
+                  Điện thoại: <a className="hover:text-[#C0C0C0]" href="tel:0246.329.1102">0246.329.1102</a>
                   <br />
                   Email:{" "}
-                  <a href="mailto:contact@fullstack.edu.vn">
+                  <a className="hover:text-[#C0C0C0]" href="mailto:contact@fullstack.edu.vn">
                     contact@fullstack.edu.vn
                   </a>
                   <br />
@@ -54,7 +54,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="/about-us"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Giới thiệu
                     </a>
@@ -62,7 +62,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Liên hệ
                     </a>
@@ -70,7 +70,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Điều khoản
                     </a>
@@ -78,7 +78,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Bảo mật
                     </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Cơ hội việc làm
                     </a>
@@ -105,7 +105,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Nester
                     </a>
@@ -113,7 +113,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game CSS Diner
                     </a>
@@ -121,7 +121,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game CSS Selectors
                     </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Froggy
                     </a>
@@ -137,7 +137,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Froggy Pro
                     </a>
@@ -145,7 +145,7 @@ const Footer = () => {
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Scoops
                     </a>
@@ -164,7 +164,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Tạo CV xin việc
                     </a>
@@ -172,7 +172,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Rút gọn liên kết
                     </a>
@@ -180,7 +180,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Clip-path maker
                     </a>
@@ -188,7 +188,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Snippet generator
                     </a>
@@ -196,7 +196,7 @@ const Footer = () => {
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       CSS Grid generator
                     </a>
@@ -204,7 +204,7 @@ const Footer = () => {
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <a
                       href="#"
-                      className="cursor-pointer relative duration-100 ease-linear"
+                      className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Cảnh báo sờ tay lên mặt
                     </a>
