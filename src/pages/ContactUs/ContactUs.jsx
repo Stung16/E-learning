@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./Contact.css";
 const ContactUs = () => {
 //   function Validator(options){
 //       var formElement = document.querySelector(options.form);
@@ -81,8 +81,8 @@ const ContactUs = () => {
                     <form className='max-w-[600px] ' action="" id='form-1'>
                       <div className='mb-4 relative'>
                         <label className='text-[#333333] block text-[14px] font-bold leading-[18px] pb-[6px]' htmlFor="fullname">Họ và tên</label>
-                        <div className='text-[14px] relative '>
-                          <input className='border-2 border-solid  border-[#e8e8e8] rounded-md h-[36px] py-1 px-3 w-[100%] appearance-none hover:border-[#1dbfaf] focus-within:border-[#1dbfaf]' type="text" id='fullname' placeholder='Nhập tên đầy đủ...' />
+                        <div className=' text-[14px] relative '>
+                          <input className='name border-2 border-solid  border-[#e8e8e8] rounded-md h-[36px] py-1 px-3 w-[100%] appearance-none hover:border-[#1dbfaf]' type="text" id='fullname' placeholder='Nhập tên đầy đủ...' />
                           <span className='form-message'></span>
                         </div>
                       </div>

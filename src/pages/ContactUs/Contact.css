@@ -1,0 +1,7 @@
+::placeholder{
+    font-size: 12px;
+}
+
+.name:focus{
+        border-color:#1dbfaf; 
+}
