@@ -1,0 +1,19 @@
+.video{
+    background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/7.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 56.25%;
+    width: 100%;
+}
+.video::after{
+    background-image: linear-gradient(180deg, rgba(30, 30, 28, 0), rgba(30, 30, 28, .9));
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s linear;
+}

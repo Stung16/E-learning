@@ -9,6 +9,7 @@ import Privacy from "../pages/Privacy/Privacy";
 import Careers from "../pages/Careers/Careers";
 import PostDetail from "../pages/PostDetail/PostDetail";
 import Blog from "../pages/Blog/Blog";
+import CourseForNewbie from "../components/CourseForNewbie/CourseForNewbie";
 import NoNavigate from "../layouts/DefaultLayout/NoNavigate";
 // import ErrorPage from "../pages/ErrorPage.js/ErrorPage";
 // import AuthMiddleware from "../middlewares/AuthMiddleware";
@@ -22,6 +23,7 @@ export const publicRoutes = (
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/lessons-for-newbie" element={<CourseForNewbie />} />
       {/* <Route path="/contact" element={<Contact />} />
       <Route path="/price" element={<Price />} />
       </Route>
