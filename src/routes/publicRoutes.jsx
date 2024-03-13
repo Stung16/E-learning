@@ -7,6 +7,9 @@ import ContactUs from "../pages/ContactUs/ContactUs";
 import Terms from "../pages/Terms/Terms";
 import Privacy from "../pages/Privacy/Privacy";
 import Careers from "../pages/Careers/Careers";
+import PostDetail from "../pages/PostDetail/PostDetail";
+import Blog from "../pages/Blog/Blog";
+import NoNavigate from "../layouts/DefaultLayout/NoNavigate";
 // import ErrorPage from "../pages/ErrorPage.js/ErrorPage";
 // import AuthMiddleware from "../middlewares/AuthMiddleware";
 export const publicRoutes = (
@@ -18,6 +21,7 @@ export const publicRoutes = (
       <Route path="/terms" element={<Terms />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path="/blog" element={<Blog />} />
       {/* <Route path="/contact" element={<Contact />} />
       <Route path="/price" element={<Price />} />
       </Route>
@@ -32,6 +36,11 @@ export const publicRoutes = (
       <Route path="/*" element={<NotFound />} />
     </Route> */}
     </Route>
-<Route path="/about-us" element={<AboutUs />} />
+    <Route path="/about-us" element={<AboutUs />} />
+    
+    <Route element={<NoNavigate />}>
+    <Route path="/postdetail" element={<PostDetail />} />
+
+</Route>
   </>
 );

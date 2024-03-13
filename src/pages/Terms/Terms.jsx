@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Terms.css";
 const Terms = () => {
   return (
     <div className='pt-0 pl-5 pr-10 flex-1 '>
@@ -379,8 +378,8 @@ const Terms = () => {
                   </p>
               </div>
             </section>
-            <section className='ads min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 '>
-              <div className=' flex justify-end'></div>
+            <section className=' min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 '>
+              <div className='sticky top-[80px] flex justify-end'>
               <div className='flex flex-col max-w-[300px] '>
                 <a className='mt-[32px]' href="">
                   <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="https://files.fullstack.edu.vn/f8-prod/banners/29/63dc625b29cdc.png" alt="" />
@@ -388,6 +387,7 @@ const Terms = () => {
                 <a className='mt-[32px]' href="">
                   <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="https://files.fullstack.edu.vn/f8-prod/banners/35/642114a8ab417.png" alt="" />
                 </a>
+              </div>
               </div>
             </section>
           </div>

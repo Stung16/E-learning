@@ -1,0 +1,11 @@
+.user{
+    position:fixed;
+    top:118px;
+}
+.avatar{
+    background: linear-gradient(to right bottom, #ffd900, #b45264);
+    
+}
+.img-mask{
+    mask-image: linear-gradient(#fff, #fff, hsla(0, 0%, 100%, 0));
+}
