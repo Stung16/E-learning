@@ -26,7 +26,7 @@ const Privacy = () => {
                 <p className='my-[6px] mx-0 leading-[36px]'>Trong phạm vi điều khoản, F8 cam kết sẽ không bán, cho thuê hay trao đổi dữ liệu thông tin Khách hàng đã thu thập cho các đối tượng nào khác ngoài đối tượng được liệt kê trong Quy chế này.</p> 
                 <hr/>
                 <h2 className='font-semibold group group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   2. Sử dụng thông tin cá nhân
                 </h2>
                 
@@ -40,7 +40,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   3. Thời gian lưu trữ thông tin
                 </h2>
                 <ol className='my-7 mx-0 pl-6 leading-[36px] list-decimal'>
@@ -53,7 +53,7 @@ const Privacy = () => {
                 </ol>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   4. Thay đổi hoặc loại bỏ thông tin cá nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Khách hàng có thể tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình bằng các cách sau đây:</p>
@@ -65,7 +65,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   5. Chính sách bảo vệ thông tin cá nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Ban quản trị F8 cam kết bảo mật thông tin cá nhân của Khách hàng theo những nội dung sau:</p>
@@ -81,7 +81,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   6. Chính sách bảo vệ thông tin thanh toán
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>F8 cam kết đảm bảo thực hiện nghiêm túc các biện pháp bảo mật cần thiết cho mọi hoạt động thanh toán thực hiện trên website/ứng dụng của F8</p>
@@ -109,7 +109,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   7. Đối tượng chia sẻ thông tin cá nhân
                 </h2>
                 <ol className='my-7 mx-0 pl-6 leading-[36px] list-decimal'>
@@ -123,7 +123,7 @@ const Privacy = () => {
                 </ol>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   8. Yêu Cầu Xóa Dữ Liệu Cá Nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Chúng tôi tôn trọng và chấp hành quyền riêng tư của người dùng, bao gồm quyền yêu cầu xóa dữ liệu cá nhân. Dưới đây là hướng dẫn chi tiết về cách người dùng có thể yêu cầu xóa dữ liệu của họ:</p>
@@ -147,7 +147,7 @@ const Privacy = () => {
                 <p className='my-[6px] mx-0 leading-[36px]'>Các dịch vụ hỗ trợ cụ thể như sau:</p>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i class="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
                   9. Địa chỉ lưu trữ thông tin
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Mọi thông tin của Khách hàng được lưu trữ tại địa chỉ:</p>

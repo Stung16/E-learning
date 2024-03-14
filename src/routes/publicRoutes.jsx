@@ -12,6 +12,7 @@ import Blog from "../pages/Blog/Blog";
 import Front_end_Development from "../pages/Front_end_Development/Front_end_Development";
 import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
 import NoNavigate from "../layouts/DefaultLayout/NoNavigate";
+import Landing from "../pages/Landing/Landing";
 // import ErrorPage from "../pages/ErrorPage.js/ErrorPage";
 // import AuthMiddleware from "../middlewares/AuthMiddleware";
 export const publicRoutes = (
@@ -44,7 +45,9 @@ export const publicRoutes = (
     
     <Route element={<NoNavigate />}>
     <Route path="/postdetail" element={<PostDetail />} />
+    
 
 </Route>
+    <Route path="/landing" element={<Landing />} />
   </>
 );

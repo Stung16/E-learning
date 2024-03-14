@@ -28,10 +28,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -70,10 +70,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,10 +112,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -154,10 +154,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,10 +196,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -238,10 +238,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,10 +280,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -322,10 +322,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -364,10 +364,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -406,10 +406,10 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>

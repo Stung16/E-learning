@@ -46,10 +46,10 @@ function PostDetail() {
                         </div>
                         <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                             <div className='text-[#757575] cursor-pointer py-1 px-2'>
-                            <i class="fa-regular fa-bookmark"></i>
+                            <i className="fa-regular fa-bookmark"></i>
                             </div>
                             <div className='text-[#757575] cursor-pointer py-1 px-2'>
-                            <i class="fa-solid fa-ellipsis"></i>
+                            <i className="fa-solid fa-ellipsis"></i>
                             </div>
                         </div>
                     </div>
