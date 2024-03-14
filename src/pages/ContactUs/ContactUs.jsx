@@ -108,7 +108,6 @@ const ContactUs = () => {
                 </section>
                 {/* map */}
                 <section className='min-w-[1113px]:w-[50%] min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3'>
-                  
                 </section>
               </section>
             </div>

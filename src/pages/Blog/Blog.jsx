@@ -28,19 +28,19 @@ function Blog() {
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
+                                                    <a href="/postdetail">
                                                         <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
                                                     Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
@@ -51,7 +51,7 @@ function Blog() {
                                                     </div>
                                                 </div>
                                                 <div className='shrink-0'>
-                                                    <a href="">
+                                                    <a href="/postdetail">
                                                         <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
@@ -66,35 +66,35 @@ function Blog() {
                                                         <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
                                                     </div>
                                                 </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Sơn Đặng</span></a>
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Hướng dẫn chi tiết cách sử dụng Dev Mode trong khóa Pro</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Chào bạn! Nếu bạn đã là học viên khóa Pro của F8, chắc hẳn bạn đã biết tới "Dev Mode" - giúp thực hành code song song khi xem...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
-                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
+                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">Front-end</a>
                                                             <span>5 tháng trước</span>
                                                             <span className='my-0 mx-2'>·</span>
                                                             9 phút đọc
                                                     </div>
                                                 </div>
                                                 <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8334/64f01064b0724.png" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -108,35 +108,119 @@ function Blog() {
                                                         <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
                                                     </div>
                                                 </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Thánh Wibu</span></a>
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Cách chỉnh theme Oh-my-posh cho Powershell</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Hello ae mọi người nhé, mọi người (đặc biệt là lập trình viên Software) chắc hẳn đã nghe tới Powershell, nhưng bù lại cái màn hình...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
-                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
-                                                            <span>5 tháng trước</span>
+                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">Terminal</a>
+                                                            <span>7 tháng trước</span>
                                                             <span className='my-0 mx-2'>·</span>
                                                             9 phút đọc
                                                     </div>
                                                 </div>
-                                                <div className='shrink-0'>
-                                                    <a href="">
+                                                {/* <div className='shrink-0'>
+                                                    <a href="/postdetail">
                                                         <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className='mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6'>
+                                        <div className='items-center flex justify-between'>
+                                                <div className='items-center flex'>
+                                                <a href="">
+                                                    <div className='avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]'>
+                                                        <img className='rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0' src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png" alt="" />
+                                                        <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
+                                                    </div>
+                                                </a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>TTnguyen</span></a>
+                                                </div>
+                                                <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
+                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    </div>
+                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='items-center flex'>
+                                                <div className='text-[14px] flex-1 pr-[1rem]'>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Sự khác biệt giữa var, let và const trong JavaScript</h2>
+                                                    </a>
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Tôi muốn thảo luận chi tiết về các từ khóa var,...
+                                                    </p>
+                                                    <div className='text-[14px] pr-8'>
+                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">Javascript</a>
+                                                            <span>8 tháng trước</span>
+                                                            <span className='my-0 mx-2'>·</span>
+                                                            3 phút đọc
+                                                    </div>
+                                                </div>
+                                                {/* <div className='shrink-0'>
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className='mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6'>
+                                        <div className='items-center flex justify-between'>
+                                                <div className='items-center flex'>
+                                                <a href="">
+                                                    <div className='avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]'>
+                                                        <img className='rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0' src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png" alt="" />
+                                                        <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
+                                                    </div>
+                                                </a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Dev Quèn</span></a>
+                                                </div>
+                                                <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
+                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    </div>
+                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='items-center flex'>
+                                                <div className='text-[14px] flex-1 pr-[1rem]'>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>`Tất tần tật` về cải thiện Performance của 1 trang web🚀</h2>
+                                                    </a>
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Ở bài viết này, chúng ta cùng nhau tìm hiểu về các vấn đề liên quan đến Performance ở phía FE. Không dài dòng nữa,...
+                                                    </p>
+                                                    <div className='text-[14px] pr-8'>
+                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">Javascript</a>
+                                                            <span>8 tháng trước</span>
+                                                            <span className='my-0 mx-2'>·</span>
+                                                            8 phút đọc
+                                                    </div>
+                                                </div>
+                                                <div className='shrink-0'>
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7940/64a645ea70312.png" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -150,24 +234,24 @@ function Blog() {
                                                         <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
                                                     </div>
                                                 </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Dev Quèn</span></a>
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Một số "cẩm nang" hay khi làm việc với HTML/CSS</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Bài viết này đơn giản là nơi để mình lưu lại những kinh nghiệm mình đã làm việc với HTML/CSS cũng như chia sẻ phần nào cho bạn...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
                                                         <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
@@ -177,8 +261,8 @@ function Blog() {
                                                     </div>
                                                 </div>
                                                 <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7924/64a2487459fe5.jpg" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -192,35 +276,35 @@ function Blog() {
                                                         <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
                                                     </div>
                                                 </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Dev Quèn</span></a>
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>"Kết nối trước" với preconnect, prefetch để làm gì?</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Ở đây chắc hẳn ai cũng từng dùng google fonts để nhúng fonts vào...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
-                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
+                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">Front-end</a>
                                                             <span>5 tháng trước</span>
                                                             <span className='my-0 mx-2'>·</span>
                                                             9 phút đọc
                                                     </div>
                                                 </div>
                                                 <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7922/64a23b234c52e.png" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -234,24 +318,66 @@ function Blog() {
                                                         <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
                                                     </div>
                                                 </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alan King</span></a>
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Cảm thấy khó khăn khi chuyển sang học một ngôn ngữ mới</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Tôi làm chuyên môn về phân tích dữ liệu, chủ yếu là dùng phần mềm chuyên môn sâu và dùng rất nhiều SQL db, python. Hai món đó cũng...
+                                                    </p>
+                                                    <div className='text-[14px] pr-8'>
+                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
+                                                            <span>5 tháng trước</span>
+                                                            <span className='my-0 mx-2'>·</span>
+                                                            9 phút đọc
+                                                    </div>
+                                                </div>
+                                                {/* <div className='shrink-0'>
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className='mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6'>
+                                        <div className='items-center flex justify-between'>
+                                                <div className='items-center flex'>
+                                                <a href="">
+                                                    <div className='avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]'>
+                                                        <img className='rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0' src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png" alt="" />
+                                                        <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
+                                                    </div>
+                                                </a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Vũ Chi</span></a>
+                                                </div>
+                                                <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
+                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
+                                                    </div>
+                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='items-center flex'>
+                                                <div className='text-[14px] flex-1 pr-[1rem]'>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Học viên Funix lạc đường tới F8</h2>
+                                                    </a>
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Mình đã tham gia khóa học lập trình 6 tháng ở funix và cũng có nhiều lý do khác dẫn đến quá hạn quá học và cũng đã hoàn thành 4...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
                                                         <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
@@ -261,8 +387,8 @@ function Blog() {
                                                     </div>
                                                 </div>
                                                 <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7256/64448752c63c4.jpg" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -276,24 +402,24 @@ function Blog() {
                                                         <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
                                                     </div>
                                                 </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
+                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>GzW</span></a>
                                                 </div>
                                                 <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-regular fa-bookmark hover:text-[#333]"></i>
                                                     </div>
                                                     <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                    <i class="fa-solid fa-ellipsis hover:text-[#333]"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='items-center flex'>
                                                 <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
+                                                    <a href="/postdetail">
+                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Đánh giá ÉP TÁM với một số trường</h2>
                                                     </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
+                                                    <p className='text-[#505050] mt-1 text-[15px] leading-[24px]'>
+                                                    Hí anh em! Vào vấn đề luôn, trong thời gian mình có quá nhiều thời gian rỗi nên mình đã bỏ 1 ít thời gian và tiền đi kiểm chứng và...
                                                     </p>
                                                     <div className='text-[14px] pr-8'>
                                                         <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
@@ -303,134 +429,8 @@ function Blog() {
                                                     </div>
                                                 </div>
                                                 <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6'>
-                                        <div className='items-center flex justify-between'>
-                                                <div className='items-center flex'>
-                                                <a href="">
-                                                    <div className='avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]'>
-                                                        <img className='rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0' src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png" alt="" />
-                                                        <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
-                                                    </div>
-                                                </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
-                                                </div>
-                                                <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
-                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
-                                                    </div>
-                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className='items-center flex'>
-                                                <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
-                                                    </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
-                                                    </p>
-                                                    <div className='text-[14px] pr-8'>
-                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
-                                                            <span>5 tháng trước</span>
-                                                            <span className='my-0 mx-2'>·</span>
-                                                            9 phút đọc
-                                                    </div>
-                                                </div>
-                                                <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6'>
-                                        <div className='items-center flex justify-between'>
-                                                <div className='items-center flex'>
-                                                <a href="">
-                                                    <div className='avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]'>
-                                                        <img className='rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0' src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png" alt="" />
-                                                        <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
-                                                    </div>
-                                                </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
-                                                </div>
-                                                <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
-                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
-                                                    </div>
-                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className='items-center flex'>
-                                                <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
-                                                    </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
-                                                    </p>
-                                                    <div className='text-[14px] pr-8'>
-                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
-                                                            <span>5 tháng trước</span>
-                                                            <span className='my-0 mx-2'>·</span>
-                                                            9 phút đọc
-                                                    </div>
-                                                </div>
-                                                <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6'>
-                                        <div className='items-center flex justify-between'>
-                                                <div className='items-center flex'>
-                                                <a href="">
-                                                    <div className='avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]'>
-                                                        <img className='rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0' src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png" alt="" />
-                                                        <img className='h-[3.2em] absolute right-[-1.7em] top-[-0.2em] ' src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg" alt="" />
-                                                    </div>
-                                                </a>
-                                                <a href=""><span className='text-[#292929] text-[12px] font-semibold ml-2'>Alex</span></a>
-                                                </div>
-                                                <div className='text-[#757575] flex text-[16px] mr-[-8px] select-none'>
-                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-regular fa-bookmark"></i>
-                                                    </div>
-                                                    <div className='cursor-pointer py-1 pr-2 text-[#757575]'>
-                                                    <i class="fa-solid fa-ellipsis"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className='items-center flex'>
-                                                <div className='text-[14px] flex-1 pr-[1rem]'>
-                                                    <a href="">
-                                                        <h2 className='text-[#292929]  font-bold mb-0 mt-2'>Authentication & Authorization trong ReactJS</h2>
-                                                    </a>
-                                                    <p className='text-[#505050] mt-1'>
-                                                    Authentication và Authorization là một phần quan trọng trong việc phát triển phần mềm, giúp chúng ta xác thực và phân quyền...
-                                                    </p>
-                                                    <div className='text-[14px] pr-8'>
-                                                        <a className='bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]' href="">ReactJS</a>
-                                                            <span>5 tháng trước</span>
-                                                            <span className='my-0 mx-2'>·</span>
-                                                            9 phút đọc
-                                                    </div>
-                                                </div>
-                                                <div className='shrink-0'>
-                                                    <a href="">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
+                                                    <a href="/postdetail">
+                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7242/64424fe6e225f.jpg" alt="Authentication & Authorization trong ReactJS" />
                                                     </a>
                                                 </div>
                                             </div>

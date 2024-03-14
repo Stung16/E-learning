@@ -14,7 +14,7 @@ const CourseFree = () => {
         <div className="group">
           <a
             className="text-mail-color cursor-pointer text-[15px] font-semibold mr-1 pt-2 pr-0 pb-2 pl-2 select-none group-hover:underline "
-            href=""
+            href="/learning-paths"
           >
             Xem lộ trình
           </a>
@@ -29,7 +29,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -62,7 +62,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -72,7 +72,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png"
                   alt=""
                 />
                 
@@ -97,7 +97,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -107,7 +107,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/2.png"
                   alt=""
                 />
                 
@@ -132,7 +132,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -142,7 +142,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/3.png"
                   alt=""
                 />
                 
@@ -167,7 +167,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -177,7 +177,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/1.png"
                   alt=""
                 />
                 
@@ -202,17 +202,16 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
                   </button>
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
 
-
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/12.png"
                   alt=""
                 />
                 
@@ -237,7 +236,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -247,7 +246,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/14/624faac11d109.png"
                   alt=""
                 />
                 
@@ -272,7 +271,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -282,7 +281,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png"
                   alt=""
                 />
                 
@@ -307,7 +306,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -317,7 +316,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/6.png"
                   alt=""
                 />
                 
@@ -342,7 +341,7 @@ const CourseFree = () => {
             <div className="relative ">
               <a
                 className="block group  rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                href="#"
+                href="/lessons-for-newbie"
               >
                 <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem khóa học
@@ -352,7 +351,7 @@ const CourseFree = () => {
 
                 <img
                   className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                  src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                  src="https://files.fullstack.edu.vn/f8-prod/courses/4/61a9e9e701506.png"
                   alt=""
                 />
                 

@@ -1,6 +1,6 @@
 import React from 'react'
-import "./CourseForNewbie.css";
-const CourseForNewbie = () => {
+import "./LessonsForNewbie.css";
+const LessonsForNewbie = () => {
   return (
     <section className='max-w-[1920px] w-[100%] p-0 my-0 mx-auto'>
         <section className='mt-6 px-11 pb-[68px] min-[1113px]:mx-[-12px] min-[740px]:mx-[-8px] flex flex-wrap'>
@@ -196,4 +196,4 @@ const CourseForNewbie = () => {
   ); 
   }
 
-export default CourseForNewbie;
+export default LessonsForNewbie;

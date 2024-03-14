@@ -45,7 +45,7 @@ const Learning_paths = () => {
               </div>
               {/* see intern */}
               <div>
-                <a href="#" className="see-detail">
+                <a href="/front_end_development" className="see-detail">
                   Xem chi tiết
                 </a>
               </div>
@@ -72,7 +72,7 @@ const Learning_paths = () => {
                 </div>
               </div>
               <div>
-                <a href="#" className="see-detail">
+              <a href="/front_end_development" className="see-detail">
                   Xem chi tiết
                 </a>
               </div>

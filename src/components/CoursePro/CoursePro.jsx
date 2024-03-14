@@ -71,7 +71,7 @@ const CoursePro = () => {
                     >
                       <img
                         className="h-[100%] absolute object-cover left-[0] top-[0] w-[100%]"
-                        src="https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png"
+                        src="https://files.fullstack.edu.vn/f8-prod/courses/27/64e184ee5d7a2.png"
                         alt=""
                       />
                       <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">

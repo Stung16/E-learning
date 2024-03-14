@@ -10,7 +10,7 @@ const PostHot = () => {
         <div className="group">
           <a
             className="text-mail-color cursor-pointer text-[15px] font-semibold mr-1 pt-2 pr-0 pb-2 pl-2 select-none group-hover:underline "
-            href=""
+            href="/blog"
           >
             Xem tất cả
           </a>
@@ -33,7 +33,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/65/6139fe28a9844.png"
                     alt=""
                   />
                 </a>
@@ -48,7 +48,7 @@ const PostHot = () => {
                 <div className="flex">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
-                    src="https://files.fullstack.edu.vn/f8-prod/user_avatars/18159/6466353972973.jpg "
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/279/6153f692d366e.jpg "
                     alt=""
                   />
                   <span className="ml-2 text-[#757575]">2 phút đọc</span>
@@ -69,7 +69,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/279/6153f692d366e.jpg"
                     alt=""
                   />
                 </a>
@@ -84,7 +84,7 @@ const PostHot = () => {
                 <div className="flex">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
-                    src="https://files.fullstack.edu.vn/f8-prod/user_avatars/18159/6466353972973.jpg "
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/677/615436b218d0a.png "
                     alt=""
                   />
                   <span className="ml-2 text-[#757575]">2 phút đọc</span>
@@ -105,7 +105,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/677/615436b218d0a.png"
                     alt=""
                   />
                 </a>
@@ -120,7 +120,7 @@ const PostHot = () => {
                 <div className="flex">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
-                    src="https://files.fullstack.edu.vn/f8-prod/user_avatars/18159/6466353972973.jpg "
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/1671/61b6368983c16.jpg"
                     alt=""
                   />
                   <span className="ml-2 text-[#757575]">2 phút đọc</span>
@@ -141,7 +141,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/51/6139c6453456e.png"
                     alt=""
                   />
                 </a>
@@ -177,7 +177,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/107/613a1f3685814.png"
                     alt=""
                   />
                 </a>
@@ -213,7 +213,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/1671/61b6368983c16.jpg"
                     alt=""
                   />
                 </a>
@@ -249,7 +249,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/273/614043e523ad9.png"
                     alt=""
                   />
                 </a>
@@ -264,7 +264,7 @@ const PostHot = () => {
                 <div className="flex">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
-                    src="https://files.fullstack.edu.vn/f8-prod/user_avatars/18159/6466353972973.jpg "
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/791/615de64de7e8f.jpg "
                     alt=""
                   />
                   <span className="ml-2 text-[#757575]">2 phút đọc</span>
@@ -285,7 +285,7 @@ const PostHot = () => {
                   <div className="overlay-course group-hover:visible group-hover:opacity-100"></div>
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://files.fullstack.edu.vn/f8-prod/blog_posts/791/615de64de7e8f.jpg"
                     alt=""
                   />
                 </a>

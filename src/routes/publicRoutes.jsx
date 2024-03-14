@@ -9,7 +9,8 @@ import Privacy from "../pages/Privacy/Privacy";
 import Careers from "../pages/Careers/Careers";
 import PostDetail from "../pages/PostDetail/PostDetail";
 import Blog from "../pages/Blog/Blog";
-import CourseForNewbie from "../components/CourseForNewbie/CourseForNewbie";
+import Front_end_Development from "../pages/Front_end_Development/Front_end_Development";
+import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
 import NoNavigate from "../layouts/DefaultLayout/NoNavigate";
 // import ErrorPage from "../pages/ErrorPage.js/ErrorPage";
 // import AuthMiddleware from "../middlewares/AuthMiddleware";
@@ -23,7 +24,8 @@ export const publicRoutes = (
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/lessons-for-newbie" element={<CourseForNewbie />} />
+      <Route path="/lessons-for-newbie" element={<LessonsForNewbie />} />
+      <Route path="/front_end_development" element={<Front_end_Development />} />
       {/* <Route path="/contact" element={<Contact />} />
       <Route path="/price" element={<Price />} />
       </Route>

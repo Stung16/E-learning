@@ -35,10 +35,11 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/YH-E4Y3EaT4/maxresdefault.jpg"
                     alt=""
                     
                   />
+                
                 </a>
                 <h3 className="font-semibold mt-[12px] mb-[5px]">
                   <a
@@ -79,7 +80,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/DpvYHLUiZpc/maxresdefault.jpg"
                     alt=""
                     
                   />
@@ -123,7 +124,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/sgq7BH6WxL8/maxresdefault.jpg"
                     alt=""
                     
                   />
@@ -167,7 +168,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/R6plN3FvzFY/maxresdefault.jpg"
                     alt=""
                     
                   />
@@ -211,7 +212,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/0SJE9dYdpps/maxresdefault.jpg"
                     alt=""
                     
                   />
@@ -255,7 +256,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/oF7isq9IjZM/maxresdefault.jpg"
                     alt=""
                     
                   />
@@ -299,7 +300,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg"
                     alt=""
                     
                   />
@@ -343,7 +344,7 @@ const VideoHot = () => {
 
                   <img
                     className="h-[100%] absolute group-hover:-z-10 object-cover left-[0] top-[0] w-[100%]"
-                    src="https://files.fullstack.edu.vn/f8-prod/courses/7.png"
+                    src="https://i.ytimg.com/vi/AzmdwZ6e_aM/maxresdefault.jpg "
                     alt=""
                     
                   />
