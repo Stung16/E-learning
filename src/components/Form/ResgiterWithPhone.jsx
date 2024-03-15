@@ -1,5 +1,5 @@
 import React from "react";
-import ChooseCodePN from "../ChooseCodePN/ChooseCodePN";
+import ChooseCodePN from "../Btn/ChooseCodePN/ChooseCodePN";
 
 const ResgiterWithPhone = () => {
 

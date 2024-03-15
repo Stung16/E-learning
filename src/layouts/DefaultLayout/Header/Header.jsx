@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Header.css";
-import ChooseCodePN from "../ChooseCodePN/ChooseCodePN";
 import { Link, useLocation } from "react-router-dom";
-import LoginWithPhone from "../Form/LoginWithPhone";
-import LoginWithEmail from "../Form/LoginWithEmail";
-import ResgiterWithPhone from "../Form/ResgiterWithPhone";
-import ResgiterWithEmail from "../Form/ResgiterWithEmail";
+import LoginWithPhone from "../../../components/Form/LoginWithPhone";
+import LoginWithEmail from "../../../components/Form/LoginWithEmail";
+import ResgiterWithPhone from "../../../components/Form/ResgiterWithPhone";
+import ResgiterWithEmail from "../../../components/Form/ResgiterWithEmail";
+import LoginSocial from "../../../components/Form/LoginSocial/LoginSocial";
 
 const Header = () => {
   const location = useLocation();
@@ -29,6 +29,9 @@ const Header = () => {
     setLogin(null);
     setState("resgiter");
   };
+  const handleGoBack = () => {
+    window.history.back(); // Điều hướng trở lại trang trước đó
+  };
   return (
     <header className="bg-[#fff] flex h-header-hight text-[14px] border-b-[1px] border-solid border-[#e8ebed] px-7 py-0 sticky inset-x-0 top-0 z-20 ">
       <div className="flex items-center flex-1 group">
@@ -42,12 +45,12 @@ const Header = () => {
 
         <h4 className="text-black text-[14px] font-bold m-4 leading-4">
           {pathname !== "/" ? (
-            <Link to={"/"} className="flex justify-center items-center gap-1">
+            <span  className="flex justify-center items-center gap-1">
               <i className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"></i>
-              <span className="text-[#808990] cursor-pointer text-[12px] font-semibold">
+              <span className="text-[#808990] cursor-pointer text-[12px] font-semibold" onClick={handleGoBack}>
                 QUAY LẠI
               </span>
-            </Link>
+            </span>
           ) : (
             "Học Lập Trình Để Đi Làm"
           )}
@@ -135,36 +138,7 @@ const Header = () => {
                                   Sử dụng email / số điện thoại
                                 </span>
                               </div>
-                              <div className="Button_login-wapper mt-[14px]">
-                                <img
-                                  className="SigninButton_icon"
-                                  src="https://accounts.fullstack.edu.vn/assets/images/signin/google-18px.svg"
-                                  alt=""
-                                />
-                                <span className="SigninButton_title">
-                                  Đăng nhập với Google
-                                </span>
-                              </div>
-                              <div className="Button_login-wapper mt-[14px]">
-                                <img
-                                  className="SigninButton_icon"
-                                  src="https://accounts.fullstack.edu.vn/assets/images/signin/facebook-18px.svg"
-                                  alt=""
-                                />
-                                <span className="SigninButton_title">
-                                  Đăng nhập với Facebook
-                                </span>
-                              </div>
-                              <div className="Button_login-wapper mt-[14px]">
-                                <img
-                                  className="SigninButton_icon"
-                                  src="https://accounts.fullstack.edu.vn/assets/images/signin/github-18px.svg"
-                                  alt=""
-                                />
-                                <span className="SigninButton_title">
-                                  Đăng nhập với Github
-                                </span>
-                              </div>
+                              <LoginSocial />
                             </div>
                           </>
                         )}

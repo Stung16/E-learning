@@ -1,11 +1,14 @@
 import React from "react";
-import BtnCreatBlog from "../BtnCreatBlog/BtnCreatBlog";
+import BtnCreatBlog from "../../../components/Btn/BtnCreatBlog/BtnCreatBlog";
 import "./navigate.css";
-import { Link, useLocation } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+
 
 const Navigate = () => {
-  const location = useLocation();
-  const pathname = location.pathname;
+  const activeMenu = ({ isActive }) => {
+    return isActive ? "nav-link current" : "nav-link";
+  };
+
 
   return (
     <div className="flex-shrink-0">
@@ -13,40 +16,31 @@ const Navigate = () => {
         <BtnCreatBlog />
         <ul className="pl-0">
           <li>
-            <Link
-              to={"/"}
-              className={`${pathname === "/" && "bg-[#e8ebed]"} btn-naviagte`}
-            >
+            <NavLink to={"/"} className={activeMenu}>
               <i className="fa-solid fa-house"></i>
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Trang chủ
               </span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to={"/learning-paths"}
-              className={`${pathname === "/learning-paths" && "bg-[#e8ebed]"} btn-naviagte`}
-            >
+            <NavLink to={"/learning-paths"} className={activeMenu}>
               <i className="fa-solid fa-road"></i>
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Lộ trình
               </span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
-              to={"/blog"}
-              className={`${pathname === "/blog" && "bg-[#e8ebed]"} btn-naviagte`}
-            >
+            <NavLink to={"/blog"} className={activeMenu}>
               <i className="fa-solid fa-newspaper"></i>
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Bài viết
               </span>
-            </Link>
+            </NavLink>
           </li>
           {/* <li>
-            <Link
+            <NavLink
               to={"/"}
               className={`${pathname === "/" && "bg-[#e8ebed]"} btn-naviagte`}
             >
@@ -54,7 +48,7 @@ const Navigate = () => {
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Hỏi đáp
               </span>
-            </Link>
+            </NavLink>
           </li> */}
         </ul>
       </div>

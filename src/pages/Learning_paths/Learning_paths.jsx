@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./learning_paths.css";
 
 const Learning_paths = () => {
@@ -26,7 +27,7 @@ const Learning_paths = () => {
               <div className="flex mb-5">
                 <div className="flex-1">
                   <h2 className="font-semibold m-0">
-                    <a href="#">Lộ trình học Front-end</a>
+                    <Link to="#">Lộ trình học Front-end</Link>
                   </h2>
                   <p className="text-[14px] m-0 leading-[1.6]">
                     Lập trình viên Front-end là người xây dựng ra giao diện
@@ -35,26 +36,26 @@ const Learning_paths = () => {
                   </p>
                 </div>
                 <div className="flex items-center pl-6">
-                  <a href="#" className="LearningPathItem_thumb-round">
+                  <Link to="#" className="LearningPathItem_thumb-round">
                     <img
                       src="https://files.fullstack.edu.vn/f8-prod/learning-paths/2/63b4642136f3e.png"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* see intern */}
               <div>
-                <a href="/front_end_development" className="see-detail">
+                <Link to="/learning-paths/front_end_development" className="see-detail">
                   Xem chi tiết
-                </a>
+                </Link>
               </div>
             </div>
             <div className="learning_pathsItem ml-6">
               <div className="flex mb-5">
                 <div className="flex-1">
                   <h2 className="font-semibold m-0">
-                    <a href="#">Lộ trình học Backend-end</a>
+                    <Link to="#">Lộ trình học Backend-end</Link>
                   </h2>
                   <p className="text-[14px] m-0 leading-[1.6]">
                     Trái với Front-end thì lập trình viên Back-end là người làm
@@ -63,18 +64,18 @@ const Learning_paths = () => {
                   </p>
                 </div>
                 <div className="flex items-center pl-6">
-                  <a href="#" className="LearningPathItem_thumb-round">
+                  <Link to="#" className="LearningPathItem_thumb-round">
                     <img
                       src="https://files.fullstack.edu.vn/f8-prod/learning-paths/3/63b4641535b16.png"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div>
-              <a href="/front_end_development" className="see-detail">
+              <Link to="/learning-paths/back_end_development" className="see-detail">
                   Xem chi tiết
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -87,7 +88,7 @@ const Learning_paths = () => {
                 Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham
                 gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
               </p>
-              <a href="#" className="join-group-btn">Tham gia nhóm</a>
+              <Link to="#" className="join-group-btn">Tham gia nhóm</Link>
             </div>
             <div>
               <img className="relative right-[-44px] w-[420px]" src="https://fullstack.edu.vn/static/media/fb-group-cards.4bd525b1b8baf7b1e5a2.png" alt="" />

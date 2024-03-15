@@ -1,4 +1,4 @@
-.btn-naviagte {
+.nav-link {
   /* background-color: #e8ebed; */
   color: #1a1a1a;
   align-items: center;
@@ -10,6 +10,9 @@
   justify-content: center;
   margin-top: 4px;
   width: 72px;
+}
+.nav-link.current{
+  background-color:#e8ebed ;
 }
 .navigate-sticky {
     align-items: center;

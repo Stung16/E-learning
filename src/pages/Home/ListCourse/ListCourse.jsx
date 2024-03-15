@@ -1,9 +1,9 @@
 import React from "react";
 import "./ListCourse.css";
-import CoursePro from "../CoursePro/CoursePro";
-import CourseFree from "../CourseFree/CourseFree";
-import PostHot from "../PostHot/PostHot";
-import VideoHot from "../VideoHot/VideoHot";
+import CoursePro from "../../../components/ListSection/CoursePro/CoursePro";
+import CourseFree from "../../../components/ListSection/CourseFree/CourseFree";
+import PostHot from "../../../components/ListSection/PostHot/PostHot";
+import VideoHot from "../../../components/ListSection/VideoHot/VideoHot";
 
 const ListCourse = () => {
   return (
