@@ -31,7 +31,7 @@ const LoginWithEmail = () => {
       <div className="FormInput_invalid mt-[10px]">
         <input type="password" onChange={handleChange} name="password" placeholder="Mật khẩu" />
       </div>
-      <button className="btn-submit-resgiter">Đăng nhập</button>
+      <button className="">Đăng nhập</button>
     </form>
   );
 };

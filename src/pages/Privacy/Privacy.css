@@ -1,0 +1,12 @@
+@media (min-width: 0) and (max-width: 1023px){
+    .Banners_content {
+        max-width: 100% !important;
+        width: 100%;
+}
+}
+@media (min-width: 0px) and (max-width: 739px){
+    .Banners_content{
+        align-items: center;
+        margin-right: 10px;
+    }
+}

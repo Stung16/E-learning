@@ -1,228 +1,230 @@
 import React from "react";
+import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#181821] text-[#a9b3bb] overflow-hidden pt-[68px] pb-10">
+    <div className="Footer_wrapper bg-[#181821] text-[#a9b3bb] overflow-hidden pt-[68px] pb-10">
       <section className="max-w-[1100px] w-full mx-auto p-0">
-        <section className="flex flex-wrap -mx-1 min-[1113px]:-mx-3  min-[740px]:-mx-2">
-          <section className="min-[1113px]:w-1/4 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-1/3 min-[740px]:block min-[740px]:px-2 px-1">
-            <div className="flex justify-center">
+        <section className="Footer_content flex flex-wrap -mx-1 min-[1113px]:-mx-3  min-[740px]:-mx-2">
+          <section className="index-module-Footer min-[1113px]:w-1/4 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-[100%] min-[740px]:block min-[740px]:px-2 px-1">
+            <div className="Footer_column flex justify-center">
               <div>
                 <div className="flex items-center">
-                  <a href="/" className=" cursor-pointer">
+                  <Link to="/" className=" cursor-pointer">
                     <img
                       className="rounded-lg h-[38px] mr-[10px] w-[38px] ]"
-                      src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
+                      src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
                       alt=""
                     />
-                  </a>
+                  </Link>
                   <h2 className="text-white-color text-[16px] leading-[18px] font-bold">
                     Học Lập Trình Để Đi Làm
                   </h2>
                 </div>
                 <p className="relative text-[#a9b3bb] text-[14px] leading-[22px] ">
-                  Điện thoại: <a className="hover:text-[#C0C0C0]" href="tel:0246.329.1102">0246.329.1102</a>
+                  Điện thoại: <Link className="hover:text-[#C0C0C0]" to="tel:0246.329.1102">0246.329.1102</Link>
                   <br />
                   Email:{" "}
-                  <a className="hover:text-[#C0C0C0]" href="mailto:contact@fullstack.edu.vn">
+                  <Link className="hover:text-[#C0C0C0]" to="mailto:contact@fullstack.edu.vn">
                     contact@fullstack.edu.vn
-                  </a>
+                  </Link>
                   <br />
                   Số 11D, lô A10, khu đô thị Nam Trung Yên, Phường Yên Hòa, Quận
                   Cầu Giấy, TP. Hà Nội
                 </p>
                 <div>
-                  <a href="#">
+                  <Link to="#">
                     <img
                       className="mt-[35px]"
-                      src="https://fullstack.edu.vn/static/media/dmca.2593d9ecf1c982e3c3a2.png"
+                      src="/icon/dmca.2593d9ecf1c982e3c3a2.png"
                       alt="DMCA Protected"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="min-[1113px]:w-1/6 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-1/3 min-[740px]:block min-[740px]:px-2 px-1">
-            <div className="flex justify-center">
+          <section className="index-module-Footer min-[1113px]:w-1/6 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-1/3 min-[740px]:block min-[740px]:px-2 px-1">
+            <div className="Footer_column flex justify-center">
               <div>
                 <h2 className="mt-[10px] text-[18px] leading-[29px] text-white-color">
                   VỀ F8
                 </h2>
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="/about-us"
+                    <Link
+                      to="/about-us"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Giới thiệu
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="contact-us"
+                    <Link
+                      to="contact-us"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Liên hệ
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="/terms"
+                    <Link
+                      to="/terms"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Điều khoản
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="/privacy"
+                    <Link
+                      to="/privacy"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Bảo mật
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="/careers"
+                    <Link
+                      to="/careers"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Cơ hội việc làm
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <section className="min-[1113px]:w-1/6 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-1/3 min-[740px]:block min-[740px]:px-2 px-1">
-            <div className="flex justify-center">
+            <div className="Footer_column flex justify-center">
               <div>
                 <h2 className="mt-[10px] text-[18px] leading-[29px] text-white-color">
                   SẢN PHẨM
                 </h2>
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Nester
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game CSS Diner
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game CSS Selectors
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Froggy
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Froggy Pro
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Scoops
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
           <section className="min-[1113px]:w-1/6 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-1/3 min-[740px]:block min-[740px]:px-2 px-1">
-            <div className="flex justify-center">
+            <div className="Footer_column flex justify-center">
               <div>
                 <h2 className="mt-[10px] text-[18px] leading-[29px] text-white-color">
                   CÔNG CỤ
                 </h2>
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Tạo CV xin việc
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Rút gọn liên kết
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Clip-path maker
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Snippet generator
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       CSS Grid generator
-                    </a>
+                    </Link>
                   </li>
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Cảnh báo sờ tay lên mặt
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
-          <section className="min-[1113px]:w-1/4 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-1/3 min-[740px]:block min-[740px]:px-2 px-1">
-            <div className="flex justify-center">
+          <section className="min-[1113px]:w-1/4 min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-[50%] min-[740px]:block min-[740px]:px-2 px-1">
+            <div className="Footer_column flex justify-center">
               <div>
                 <h2 className="mt-[10px] text-[18px] leading-[29px] text-white-color">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="mt-[10px] text-[18px] leading-[29px] text-white-color"
                   >
                     CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8
-                  </a>
+                  </Link>
                 </h2>
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
@@ -243,20 +245,20 @@ const Footer = () => {
 
         <section className="flex flex-wrap -mx-1 min-[1113px]:-mx-3  min-[740px]:-mx-2">
           <section className="min-[1113px]:w-full min-[1113px]:block min-[1113px]:px-3 min-[740px]:block min-[740px]:px-2 w-full px-1 block">
-            <div className="items-baseline mt-12 flex">
+            <div className="Footer_column items-baseline mt-12 flex">
               <p className="text-[14px] leading-4">
                 © 2018 - 2024 F8. Nền tảng học lập trình hàng đầu Việt Nam
               </p>
               <div className="ml-auto">
-                <a href="#">
+                <Link to="#">
                   <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color"></i>
-                </a>
-                <a href="#" className="ml-4">
+                </Link>
+                <Link to="#" className="ml-4">
                   <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-facebook text-black-color bg-[#4867aa]"></i>
-                </a>
-                <a href="#" className="ml-4">
+                </Link>
+                <Link to="#" className="ml-4">
                   <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </section>

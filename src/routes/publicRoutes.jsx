@@ -13,7 +13,9 @@ import NoNavigate from "../layouts/DefaultLayout/NoNavigate";
 import Landing from "../pages/Landing/Landing";
 import NotFound from "../pages/NotFound/NotFound";
 import Front_end_Development from "../pages/Learning_paths/Front_end_Development/Front_end_Development";
+import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
+import Fresher from "../pages/Careers/Fresher";
 export const publicRoutes = (
   <>
     <Route element={<DefaultLayout />}>
@@ -34,11 +36,14 @@ export const publicRoutes = (
       <Route path="/terms" element={<Terms />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path="/fresher" element={<Fresher />} />
+
 
       <Route path="/blog" element={<Blog />} />
       {/* Courses */}
       <Route path="/courses/lessons-for-newbie" element={<LessonsForNewbie />} />
     </Route>
+    <Route path="/profile" element={<Profile />} /> 
 
     <Route element={<NoNavigate />}>
       <Route path="/postdetail" element={<PostDetail />} />
@@ -47,4 +52,5 @@ export const publicRoutes = (
     <Route path="/landing" element={<Landing />} />
     <Route path="/*" element={<NotFound />} />
   </>
+    
 );

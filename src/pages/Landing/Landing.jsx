@@ -1,22 +1,30 @@
 import React from 'react'
 import "./Landing.css";
 import { Link } from "react-router-dom";
+import { FaChevronRight } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa6";
+import { FaWandMagicSparkles } from "react-icons/fa6";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaHandSparkles } from "react-icons/fa";
+import { FaUserTie } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 function Landing() {
     return ( 
         <section className='text-[#C9D1D9] bg-[#0d1018] text-[16px] '>
         {/* // HEADER */}
-        <header className='flex items-center h-[120px]'>
-            <div className='w-[1248px] my-0 mx-auto max-w-[calc(100%-48px)]'>
+        <header className='header flex items-center h-[120px]'>
+            <div className='header-inner w-[1248px] my-0 mx-auto max-w-[calc(100%-48px)]'>
                 <div className='relative flex items-center'>
                     <Link className='flex self-center no-underline text-[#C9D1D9]' to="/">
-                        <img className='w-[50px] rounded-[8px] p-0 m-0 border-[0px]' src="./icon/f8-icon.18cd71cfcfa33566a22b.png" alt="logo" />
-                    <span className='pl-3 text-[16px] leading-[24px] font-medium text-[#fff]'>
+                        <img className='logo w-[50px] rounded-[8px] p-0 m-0 border-[0px]' src="./icon/f8-icon.18cd71cfcfa33566a22b.png" alt="logo" />
+                    <span className='slogan pl-3 text-[16px] leading-[24px] font-medium text-[#fff]'>
                     HỌC LẬP TRÌNH <br />
                     ĐỂ ĐI LÀM
                     </span>
                     </Link>
-                    <nav className='ml-[46px] block'>
-                        <ul className='flex list-none'>
+                    <nav className=' ml-[46px] block'>
+                        <ul className='nav flex list-none'>
                             <li>
                                 <Link className='py-1 px-3 font-medium text-[#fff]' to="/"> Nội dung </Link>
                             </li>
@@ -36,7 +44,7 @@ function Landing() {
                     </nav>
                     <div></div>
                     <button className='hidden'>
-                        <i className='font-black fa-solid fa-bars'></i>
+                    <FaBars className='font-black fa-solid fa-bars'/>
                     </button>
                 </div>
             </div>
@@ -77,7 +85,7 @@ function Landing() {
                 </div>
             </div>
         </header> */}
-        <main className='overflow-hidden'>
+        <main className='hero overflow-hidden'>
             {/* HERO */}
             <div className='pt-[64px] px-0 text-center'>
                 <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
@@ -86,7 +94,7 @@ function Landing() {
                     <strong className='strong font-bold'> HTML CSS </strong>
                     cho người mới bắt đầu!
                     </h1>
-                    <p className='max-w-[780px] mt-8 mx-auto mb-0 text-[#fff] text-[20px] leading-[32px]'>   
+                    <p className='desc max-w-[780px] mt-8 mx-auto mb-0 text-[#fff] text-[20px] leading-[32px]'>   
                     Thực hành
                     <strong className='text-highlight'> 8 dự án </strong>
                     trên Figma,
@@ -95,14 +103,14 @@ function Landing() {
                     thiết kế và hướng dẫn bởi
                     <Link to=""><strong className='text-highlight'> Sơn Đặng</strong></Link>.   
                     </p>
-                    <div className='flex items-center justify-center mt-12 '>
-                    <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                    <div className='cta-wrap flex items-center justify-center mt-12 '>
+                    <Link className='btn-white text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                          Học thử miễn phí
-                         <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                         <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/>
                     </Link>
-                    <Link className='ml-5 group  hover:opacity-85 opacity-100 h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                    <Link className='btn-black ml-5 group  hover:opacity-85 opacity-100 h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                     Mua khóa học
-                         <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                    <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/>
                     </Link>
                     </div>
                 </div>
@@ -135,37 +143,37 @@ function Landing() {
                 <img className='w-[90%] left-[6%] top-[2%] absolute z-[0] translate-x-[-2/4] translate-y-[-1/2]' src="/image/landing/glow-new.png" alt="" />
             </div>
             {/* SECTION PROJECTS */}
-            <div className='py-16 px-0'>
-                <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                    <div className='flex items-center gap-[150px]'>
+            <div className='section-projects py-16 px-0'>
+                <div className='container max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
+                    <div className='row flex items-center gap-[150px]'>
                         <div className='relative flex-1'>
-                            <h2 className='leading-[59px] text-[42px] font-bold text-[#fff]'>
-                                <strong className='leading-[59px] text-[42px] font-bold text-[#fff]'>Thực hành 8 dự án</strong> với thiết kế trên Figma
+                            <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
+                                <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>Thực hành 8 dự án</strong> với thiết kế trên Figma
                             </h2>
-                            <p className='mt-4 leading-[32px] text-[20px] text-[#8b949e]'>
+                            <p className='desc mt-4 leading-[32px] text-[20px] text-[#8b949e]'>
                             Figma là công cụ thiết kế UI/UX hàng đầu thế giới hiện nay. Với 8 dự án thực hành trên
                             Figma, bạn có thể tự làm lại hầu hết mọi giao diện trang web mà bạn thấy.
                             </p>
-                            <p className='mt-4 leading-[32px] text-[20px] text-[#8b949e]'>
+                            <p className='desc mt-4 leading-[32px] text-[20px] text-[#8b949e]'>
                              Đặc biệt, dự án số 8 bạn sẽ được áp dụng đầy đủ: multiple pages, dark/light mode, sử
                              dụng Sass 7-1 pattern, responsive 6 breakpoints, sử dụng Grid system, v.v.
                             </p>
-                            <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                            <Link className='d-sm-none text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Học thử ngay
-                            <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                             <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/>
                             </Link>
                         </div>
-                        <div className='relative flex flex-1 h-[407px] top-[20px] flex-col'>
+                        <div className='project-img relative flex flex-1 h-[407px] top-[20px] flex-col'>
                             <div className='flex flex-1 flex-col absolute z-[1]'>
-                            <img className='img  ' src="/image/landing/project-2.png" alt="Thực hành dự án với thiết kế trên Figma tại khóa học HTML CSS Pro tại F8" />
+                            <img className='img ' src="/image/landing/project-2.png" alt="Thực hành dự án với thiết kế trên Figma tại khóa học HTML CSS Pro tại F8" />
                             <img className='img self-end mt-[-64px]  ' src="/image/landing/project-4.png" alt="Thực hành dự án với thiết kế trên Figma tại khóa học HTML CSS Pro tại F8" />
 
                             </div>
                             <img className='absolute z-[0] top-[-9%] left-[4%] w-[150%] translate-x-[-2/4] translate-y-[-1/2]' src="/image/landing/glow-new.png" alt="" />
                         </div>
-                        <Link className='text-[#0d1117] hidden group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]   items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                        <Link className='d-sm-inline-flex text-[#0d1117] hidden group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px] items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Học thử ngay
-                            <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                             <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/>
                             </Link>
                     </div>
                 </div>
@@ -174,27 +182,27 @@ function Landing() {
             <div className='mt-[120px] pt-16 px-0'>
                 <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                     <div className='flex items-center gap-[150px]'>
-                        <div className='flex-1'>
-                            <h2 className='leading-[59px] text-[42px] font-bold text-[#fff]'>
+                        <div className=' flex-1'>
+                            <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                             Khóa học được 
-                            <strong className='leading-[59px] text-[42px] font-bold text-[#fff]'> thiết kế bởi Sơn Đặng</strong>
+                            <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'> thiết kế bởi Sơn Đặng</strong>
                             </h2>
                             <blockquote>
-                                <p className='text-[18px] mt-4 text-[#8b949e] italic'>
+                                <p className='desc text-[18px] mt-4 text-[#8b949e] italic'>
                                 "Trang web đầu tiên mình làm vào năm 2013, tuy nó chưa được xuất sắc nhưng đã
                                 giúp công ty cũ của mình bán được hàng trăm triệu mỗi tháng nhờ chức năng đặt hàng
                                 online."
                                 </p>
                             </blockquote>
                             <blockquote>
-                                <p className='text-[18px] mt-4 text-[#8b949e] italic'>
+                                <p className='desc text-[18px] mt-4 text-[#8b949e] italic'>
                                 "Mình có thêm 2 giải quán quân cuộc thi sáng tạo của FPT vào 2016 với sản phẩm
                                  là game Siêu Đạo Chích, game gắp thú bằng máy vật lý qua Internet đầu tiên tại
                                  VN."
                                 </p>
                             </blockquote>
                             <blockquote>
-                                <p className='text-[18px] mt-4 text-[#8b949e] italic'>
+                                <p className='desc text-[18px] mt-4 text-[#8b949e] italic'>
                                 "Sau 8 năm chinh chiến trong ngành, mình đặt câu hỏi làm thế nào để có thể chia
                                 sẻ được những kiến thức mình đã tích lũy sau bằng đó năm thực chiến. Mình đã tạo ra
                                 F8!"
@@ -202,7 +210,7 @@ function Landing() {
                             </blockquote>
                             <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Tìm hiểu thêm
-                            <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                            <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                             </Link>
                         </div>
                         <div className=' relative flex justify-center flex-col items-center text-center'>
@@ -211,29 +219,29 @@ function Landing() {
                             Sơn Đặng là CEO - Founder của Cộng Đồng Học Lập Trình F8. Hiện tại, anh vẫn là một
                              Fullstack developer với hơn 8 năm kinh nghiệm làm việc thực tế.
                             </p>
-                            <Link className='text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                            <Link className=' text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Tìm hiểu thêm
-                            <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                            <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                             </Link>
                             <img className='absolute z-[0] top-[10%] left-[-7%] w-[150%]  translate-x-[-2/4] translate-y-[-1/2]' src="/image/landing/flashcard-light.png" alt="" />
                         </div>
                     </div>
                 </div>
                 {/* TRACK */}
-                <div className='mt-[100px] py-16 px-0'>
+                <div className='track mt-[100px] py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                         <div className='inner'>
-                            <h2 className='leading-[59px] text-[42px] font-bold text-[#fff]'>
+                            <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                             Kiến thức 
-                            <strong className='leading-[59px] text-[42px] font-bold text-[#fff]'> đầy đủ và chi tiết nhất</strong> ✨
+                            <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'> đầy đủ và chi tiết nhất</strong> ✨
                             </h2>
-                            <p className='max-w-[620px] mt-4 text-[20px] text-[#8b949e]'> 
+                            <p className='desc max-w-[620px] mt-4 text-[20px] text-[#8b949e]'> 
                             Với
                             <strong className='text-highlight'> 400+ bài học</strong>
                             , bài tập và thử thách, đây sẽ là khóa
                             học đầy đủ và chi tiết nhất bạn có thể tìm kiếm được ở trên Internet.
                             </p>
-                            <div className='flex justify-between mt-12'>
+                            <div className='list-tracks flex justify-between mt-12'>
                                 <ul className='list-disc list-inside'>
                                     <li className='my-4 mx-0'>Cấu trúc file HTML</li>
                                     <li className='my-4 mx-0'>Tìm hiểu các thẻ meta</li>
@@ -284,15 +292,15 @@ function Landing() {
                     </div>
                 </div>
                 {/* SECTION SASS */}
-                <div className='mt-[90px] py-16 px-0'>
+                <div className='section-sass mt-[90px] py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                        <div className='flex flex-col items-center text-center'>
-                            <h2 className='leading-[59px] text-[42px] font-bold text-[#fff]'>                           
+                        <div className='column flex flex-col items-center text-center'>
+                            <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>                           
                             Được học ngôn ngữ Sass với 
-                            <strong className='leading-[59px] text-[42px] font-bold text-[#fff]'> "auto compile" </strong>
+                            <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'> "auto compile" </strong>
                             xịn xò
                             </h2>
-                            <p className='max-w-[900px] mt-4 text-[20px] text-[#8b949e]'>
+                            <p className='desc max-w-[900px] mt-4 text-[20px] text-[#8b949e]'>
                             Ngôn ngữ Sass giúp bạn viết CSS với nhiều "sức mạnh" hơn. Trình viết Sass
                             <strong className='text-highlight'> tự động biên dịch </strong>
                             của F8 giúp bạn có trải nghiệm học
@@ -303,7 +311,7 @@ function Landing() {
   
                             <Link className='absolute z-[2] text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-[500px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Học thử ngay
-                            <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                            <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                             </Link>
                             <img className='absolute z-[1] top-[-91%] left-[-12%] w-[150%] translate-x-[-2/4] translate-y-[-1/2]' src="/image/landing/flashcard-light.png" alt="" />
                         </div>
@@ -314,27 +322,27 @@ function Landing() {
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                         <div className='flex-row-reverse flex items-center gap-[150px]'>
                             <div className='flex-1 '>
-                                <h2 className=' leading-[59px] text-[42px] font-bold text-[#fff]'>
-                                    <strong className='leading-[59px] text-[42px] font-bold text-[#fff]'>Ghi nhớ kiến thức dài hạn </strong>
+                                <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
+                                    <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>Ghi nhớ kiến thức dài hạn </strong>
                                     với Flashcards
                                 </h2>
-                                <p className='mt-4 text-[20px] text-[#8b949e] '>
+                                <p className='desc mt-4 text-[20px] text-[#8b949e] '>
                                 Việc ghi nhớ không còn là vấn đề nữa. Flashcards là phương pháp ghi nhớ thông qua việc
                                 lặp lại, kiến thức trong khóa học sẽ được bạn ghi nhớ trong dài hạn.
                                 </p>
-                                <p className='mt-4 text-[20px] text-[#8b949e] '>           
+                                <p className='desc mt-4 text-[20px] text-[#8b949e] '>           
                                 Chỉ với chiếc điện thoại thông minh, giờ đây bạn có thể ôn lại kiến thức ở mọi lúc, mọi
                                 nơi.
                                 </p>
                                 <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-8 rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
-                                <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                                <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
                             </div>
                             <div className='relative h-[614px] flex justify-center flex-1'>
                                 {/* <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] hidden h-[52px] mt-8 rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
-                                <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                                <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link> */}
                                 <img className='absolute z-[0] top-[-10%] left-[-5%] w-[150%] translate-x-[-2/4] translate-y-[-1/2] ' src="/image/landing/flashcard-light.png" alt="" />
                             </div>
@@ -344,71 +352,71 @@ function Landing() {
                 {/* SECTION FEATURES */}
                 <div className='mt-[60px] py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                        <div className='flex-row-reverse flex items-center gap-[150px]'>
+                        <div className='row-reverse flex-row-reverse flex items-center gap-[150px]'>
                         <div className='flex-1 '>
-                                <h2 className=' leading-[59px] text-[42px] font-bold text-[#fff]'>
+                                <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                                 Khóa học Pro
-                                    <strong className='leading-[59px] text-[42px] font-bold text-[#fff]'> vượt trội hơn khóa học Free </strong>
+                                    <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'> vượt trội hơn khóa học Free </strong>
                                     ?
                                 </h2>
-                                <p className='mt-4 text-[20px] text-[#8b949e] '>
+                                <p className='desc mt-4 text-[20px] text-[#8b949e] '>
                                 Nội dung cực kỳ đầy đủ và chuyên sâu, đây là khóa học chi tiết nhất trên Internet mà bạn tìm thấy được.
                                  Bạn sẽ được học các kiến thức mà không thể tìm thấy ở các khóa học khác.
                                 </p>
-                                <p className='mt-4 text-[20px] text-[#8b949e] '>           
+                                <p className='desc mt-4 text-[20px] text-[#8b949e] '>           
                                 Học trên nền tảng Pro với nhiều tính năng chuyên nghiệp như:
                                  gợi ý cách làm, xem đáp án, so sánh code, chữa bài tập, ghi chú cá nhân, và nhiều tính năng Pro khác.
                                 </p>
-                                <p className='mt-4 text-[20px] text-[#8b949e] '>           
+                                <p className='desc mt-4 text-[20px] text-[#8b949e] '>           
                                 Mà bạn đâu cần mua ngay lúc này? Nhấn vào nút dưới đây để trải nghiệm khóa học miễn phí.
                                 </p>
                                 <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-8 rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
-                                <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                                <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
                             </div>
-                            <div className='flex-1'>
+                            <div className='features-column flex-1'>
                                 <div className='content'>
                                     <ul className='relative z-[1] list-none pl-0'>
                                         <li className='flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px]  pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>Khóa học đầy đủ và chi tiết nhất</span>
                                         </li>
                                         <li className='mt-4 flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px] pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>Thực hành 8 dự án trên Figma</span>
                                         </li>
                                         <li className=' mt-4 flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px] pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>400+ bài học, 300+ bài tập</span>
                                         </li>
                                         <li className='mt-4 flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px] pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>200+ flashcards, 3+ games</span>
                                         </li>
                                         <li className='mt-4 flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px] pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>Đáp án cho mọi bài tập</span>
                                         </li>
                                         <li className='mt-4 flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px] pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>Kênh hỏi đáp riêng tư</span>
                                         </li>
                                         <li className='mt-4 flex items-center py-4 px-6 rounded-[8px] text-[#fff] bg-[#24292f]'>
                                             <div className='flex items-center shrink-0 w-[40px] pl-3 pt-[3px] h-[40px] rounded-[50%] bg-[#8957e5] text-[18px]'>
-                                                <i className='fa-solid fa-check font-black'></i>
+                                                <FaCheck className='fa-solid fa-check font-black'/>
                                             </div>
                                             <span className='ml-4 text-[20px] font-semibold'>Tặng 20+ Figma bản Pro</span>
                                         </li>
@@ -418,24 +426,24 @@ function Landing() {
                             </div>
                         </div>
                     </div>
-                    {/* BUY */}
+                    {/*WHY SHOULD BUY */}
                     <div className='why-should-buy'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <header className='text-center'>
-                                <h2 className='text-[42px] text-[#fff] leading-[59px] font-bold'>Tại sao bạn nên sở hữu khóa học này?</h2>
-                                <p className='mt-5 text-[20px] font-semibold'>
+                                <h2 className='second-heading text-[42px] text-[#fff] leading-[59px] font-bold'>Tại sao bạn nên sở hữu khóa học này?</h2>
+                                <p className='desc mt-5 text-[20px] font-semibold'>
                                     <Link to="">
                                         <span> Cách khóa học này giúp bạn thành thạo HTML CSS? </span>
                                     </Link>
                                 </p>
                             </header>
-                            <div className='columns-2  flex-wrap mt-[90px]  gap-[80px] '>
+                            <div className='list columns-2  flex-wrap mt-[90px]  gap-[80px] '>
                                 <div className='w-[cacl(100% / 2 - 80px)] '>
                                     <div className='icon'>
-                                        <i className='fa-solid fa-wand-magic-sparkles font-black text-[24px]'></i>
+                                    <FaWandMagicSparkles className='fa-solid fa-wand-magic-sparkles font-black text-[24px]'/>
                                     </div>
-                                    <h3 className='my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Theo lộ trình bài bản</h3>
-                                    <p className='text-[#8b949e] text-[20px]'>
+                                    <h3 className='third-heading my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Theo lộ trình bài bản</h3>
+                                    <p className='desc text-[#8b949e] text-[20px]'>
                                     Kiến thức được sắp xếp từ cơ bản tới nâng cao, phù hợp cho dù bạn là người mới bắt đầu.
                                     Sơn Đặng có trên 8 năm kinh nghiệm thực tế, những kiến thức anh chia sẻ đều sẽ giúp ích
                                     khi bạn đi làm tại doanh nghiệp.
@@ -443,28 +451,28 @@ function Landing() {
                                 </div>
                                 <div className='w-[cacl(100% / 2 - 80px)] mt-[78px]'>
                                     <div className='icon'>
-                                        <i className='fa-solid fa-arrow-trend-up font-black text-[24px]'></i>
+                                    <FaArrowTrendUp className='fa-solid fa-arrow-trend-up font-black text-[24px]'/>
                                     </div>
-                                    <h3 className='my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Học trên nền tảng hàng đầu</h3>
-                                    <p className='text-[#8b949e] text-[20px]'>
+                                    <h3 className='third-heading my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Học trên nền tảng hàng đầu</h3>
+                                    <p className='desc text-[#8b949e] text-[20px]'>
                                     Khóa học Pro được thiết kế riêng biệt, không học chung với nền tảng Free. Các tính năng, các tiện ích luôn được phát triển để đáp ứng tối đa nhu cầu tự học lập trình. Hướng tới mục tiêu cá nhân hóa trải nghiệm học tập cho từng học viên.
                                     </p>
                                 </div>
                                 <div className='w-[cacl(100% / 2 - 80px)] '>
                                     <div className='icon'>
-                                        <i className='fa-solid fa-hand-sparkles font-black text-[24px]'></i>
+                                    <FaHandSparkles className='fa-solid fa-hand-sparkles font-black text-[24px]'/>
                                     </div>
-                                    <h3 className='my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Thực hành 8 dự án</h3>
-                                    <p className='text-[#8b949e] text-[20px]'>
+                                    <h3 className='third-heading my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Thực hành 8 dự án</h3>
+                                    <p className='desc text-[#8b949e] text-[20px]'>
                                     Phần lớn người học chỉ cần xem hướng dẫn tới dự án I. Từ dự án II trở đi họ đã bắt đầu tự làm mà không phụ thuộc vào hướng dẫn. Trải qua 8 dự án, chắc chắn bạn sẽ tự làm được hầu hết các giao diện trang web mà bạn thấy.
                                     </p>
                                 </div>
                                 <div className='w-[cacl(100% / 2 - 80px)]  mt-[78px]'>
                                     <div className='icon'>
-                                        <i className='fa-solid fa-user-tie font-black text-[24px]'></i>
+                                    <FaUserTie className='fa-solid fa-user-tie font-black text-[24px]'/>
                                     </div>
-                                    <h3 className='my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Người "thầy" tâm huyết</h3>
-                                    <p className='text-[#8b949e] text-[20px]'>
+                                    <h3 className='third-heading my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Người "thầy" tâm huyết</h3>
+                                    <p className='desc text-[#8b949e] text-[20px]'>
                                     Một trong những yếu tố quan trọng để chọn lựa khóa học online đó là chọn "thầy". Từ kiến thức, giọng nói, cách truyền đạt, ... của họ đều phải phù hợp thì người học mới có thêm động lực. Bạn có thể 
                                     <a className='text-highlight' href=""> trải nghiệm miễn phí </a>
                                     các bài học từ Sơn Đặng.
@@ -477,7 +485,7 @@ function Landing() {
                     <div className='mt-[90px] py-[100px] px-0'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <header className='text-center'>
-                            <h2 className='text-[42px] text-[#fff] leading-[59px] font-bold'>Mọi người nói gì về khóa học này?</h2>
+                            <h2 className='second-heading text-[42px] text-[#fff] leading-[59px] font-bold'>Mọi người nói gì về khóa học này?</h2>
                             </header>
                             <ul className='feedback-list'>
                                 <li className='feedback-item'>
@@ -541,19 +549,19 @@ function Landing() {
                     <div className='mt-8 py-16 text-center'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div>
-                                <h2 className='text-[42px] leading-[59px] font-bold text-[#fff]'>Trải nghiệm miễn phí ngay hôm nay</h2>
-                                <p className='my-0 mx-auto max-w-[700px] mt-5 text-[20px] text-[#8b949e]'>
+                                <h2 className='second-heading text-[42px] leading-[59px] font-bold text-[#fff]'>Trải nghiệm miễn phí ngay hôm nay</h2>
+                                <p className='desc my-0 mx-auto max-w-[700px] mt-5 text-[20px] text-[#8b949e]'>
                                  Bắt đầu hoàn toàn miễn phí mà vẫn đầy đủ các tính năng của tài khoản Pro. Bạn chỉ thực sự
                                 trả tiền khi mọi thứ là xứng đáng.
                                 </p>
-                                <div className='flex items-center justify-center mt-12 '>
-                                <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                                <div className='cta-wrap flex items-center justify-center mt-12 '>
+                                <Link className='btn-white text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                     Học thử miễn phí
-                                    <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                                    <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
-                                <Link className='ml-5 group  hover:opacity-85 opacity-100 h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                                <Link className='btn-black ml-5 group  hover:opacity-85 opacity-100 h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Mua khóa học
-                                    <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                                    <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
                                 </div>
                             </div>
@@ -563,8 +571,8 @@ function Landing() {
                     <div className='specifications relative mt-[70px] py-16 px-0'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div className='inner'>
-                            <h2 className='text-[42px] leading-[59px] font-bold text-[#fff]'>Trải nghiệm miễn phí ngay hôm nay</h2>
-                                <p className=' mt-[10px] text-[20px] text-[#8b949e]'>
+                            <h2 className='second-heading text-[42px] leading-[59px] font-bold text-[#fff]'>Thông số kỹ thuật</h2>
+                                <p className='desc mt-[10px] text-[20px] text-[#8b949e]'>
                                 Đáp ứng các chỉ tiêu về mặt kỹ thuật, giúp người học có trải nghiệm tốt nhất.
                                 </p>
                                 <table className='w-[100%] mt-10 border-collapse border-spacing-0'>
@@ -573,7 +581,7 @@ function Landing() {
                                             <td className='py-4 px-0 text-[20px] w-[340px]'>
                                             <b className='font-semibold text-[#fff]'>Âm thanh / giọng nói</b>
                                             </td>
-                                            <td className='py-4 px-0 text-[20px]'>c</td>
+                                            <td className='py-4 px-0 text-[20px]'>Giọng Hà Nội, rõ ràng, tốc độ vừa phải</td>
                                         </tr>
                                         <tr className='border-t border-b border-solid border-[#30363d]'>
                                             <td className='py-4 px-0 text-[20px] w-[340px]'>
@@ -637,7 +645,7 @@ function Landing() {
                     <div className='flex flex-col items-center mt-[70px] text-center py-16 px-0'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div>
-                                <h2 className='max-w-[700px] my-0 mx-auto text-[42px] leading-[59px] font-bold text-[#fff]'>Bạn có thể học mọi lúc, mọi nơi, trên mọi thiết bị</h2>
+                                <h2 className='second-heading max-w-[700px] my-0 mx-auto text-[42px] leading-[59px] font-bold text-[#fff]'>Bạn có thể học mọi lúc, mọi nơi, trên mọi thiết bị</h2>
                                 <div className='max-w-[817px] relative my-[60px] mx-auto'>
                                     <picture>
                                     <img className=' w-[100%] h-[auto]' src="/image/landing/sponsors-map.webp" alt="" />
@@ -647,7 +655,7 @@ function Landing() {
                                     </div> */}
                                 </div>
                                 <p className='max-w-[700px] my-0 mx-auto text-[20px] text-[#8b949e]'>
-                                    <strong>Mạng lưới phân phối nội dung 280+ PoPs tại 33 quốc gia</strong>
+                                    <strong className='desc'>Mạng lưới phân phối nội dung 280+ PoPs tại 33 quốc gia</strong>
                                     , bạn có thể xem các
                                      bài học video tốc độ cao ngay cả khi đang ở nước ngoài.     
                                 </p>
@@ -656,25 +664,25 @@ function Landing() {
                     </div>
                     {/* FAQ */}
                     <section className='my-0 mx-6'>
-                        <div className='w-[890px] mx-[290.6px]'>
+                        <div className=' mx-[290.6px]'>
                             <header className='text-center mb-[60px]'>
                             <h2 className='text-[42px] leading-[59px] font-bold text-[#fff]'>Câu hỏi thường gặp</h2>
                             </header>
                             <div>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Đối tượng phù hợp</h4>
                                 <ul className='pl-0 '>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px] '>
                                         <label className='flex items-center cursor-pointer ' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Khóa học này có phù hợp với người hoàn toàn mới?</h3>
                                         </label>
                                     </li>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:visited: hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d]  hover:border-b-[2px] hover:shadow-[0] hover:outline-0'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Nếu tôi đã biết HTML CSS thì khóa học này còn phù hợp?</h3>
                                         </label>
@@ -682,18 +690,18 @@ function Landing() {
                                 </ul>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Khóa học Pro & Free</h4>
                                 <ul className='pl-0'>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Khóa học Pro có gì khác khóa học Free</h3>
                                         </label>
                                     </li>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Khóa Free có bị khóa không?</h3>
                                         </label>
@@ -701,29 +709,29 @@ function Landing() {
                                 </ul>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Quyền lợi</h4>
                                 <ul className='pl-0'>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Tôi có thể xem video bao nhiêu lần?</h3>
                                         </label>
                                     </li>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
-                                            <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Tôi có thể hộc vào thời gian nào?</h3>
+                                            <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Tôi có thể học vào thời gian nào?</h3>
                                         </label>
                                     </li>
                                 </ul>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Ứng dụng thực tế</h4>
                                 <ul className='pl-0'>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Tôi có thể ứng dụng được ngay sau khi học không?</h3>
                                         </label>
@@ -732,18 +740,18 @@ function Landing() {
                                 </ul>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Thanh toán</h4>
                                 <ul className='pl-0'>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Khi nào thì đơn hàng được duyệt?</h3>
                                         </label>
                                     </li>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Sau khi thanh toán, khi nào tôi có thể học?</h3>
                                         </label>
@@ -751,18 +759,18 @@ function Landing() {
                                 </ul>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Hỗ trợ học viên</h4>
                                 <ul className='pl-0'>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Tôi có được hỗ trợ trong quá trình học không?</h3>
                                         </label>
                                     </li>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>Tôi muốn hỏi thì đăng câu hỏi ở đâu?</h3>
                                         </label>
@@ -770,10 +778,10 @@ function Landing() {
                                 </ul>
                                 <h4 className='mt-[50px] text-[#8b949e] text-[18px] font-semibold'>Khóa học Offline tại F8</h4>
                                 <ul className='pl-0'>
-                                    <li className='relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
+                                    <li className=' relative block py-4 px-0 border-b border-solid border-[#30363d] hover:border-b-[2px]'>
                                         <label className='flex items-center cursor-pointer' htmlFor="">
                                             <div className='faq-icon'>
-                                            <i className="fa-solid fa-plus text-[20px]"></i>
+                                            <FaPlus className="fa-solid fa-plus text-[18px]"/>
                                             </div>
                                             <h3 className='pl-[30px] text-[20px] font-semibold text-[#fff]'>F8 có lớp học offline không?</h3>
                                         </label>
@@ -787,18 +795,18 @@ function Landing() {
                     <div className='mt-[75px] py-16 px-0 text-center'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div className='end-inner'>
-                                <h2 className='w-[980px] my-0 mx-auto text-[64px] font-bold leading-[77px] text-[#fff]'>
+                                <h2 className='second-heading w-[980px] my-0 mx-auto text-[64px] font-bold leading-[77px] text-[#fff]'>
                                 Đăng ký 
-                                <strong className='end-strong text-[64px] font-bold leading-[77px]'> tư vấn lộ trình học </strong>
+                                <strong className='second-heading end-strong text-[64px] font-bold leading-[77px]'> tư vấn lộ trình học </strong>
                                 hoàn toàn miễn phí!
                                 </h2>
-                                <p className='w-[680px] mt-8 mx-auto mb-0 text-[20px] text-[#8b949e]'>  
+                                <p className='desc w-[680px] mt-8 mx-auto mb-0 text-[20px] text-[#8b949e]'>  
                                 Tư vấn viên sẽ liên hệ và giải đáp mọi thắc mắc của bạn về lộ trình học để trở thành nhà
                                 phát triển chuyên nghiệp.
                                 </p>
                                 <Link className='mt-12 text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Nhận tư vấn miễn phí
-                                <i className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"></i> 
+                                <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/>
                                 </Link>
                             </div>
                         </div>

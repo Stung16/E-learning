@@ -28,42 +28,42 @@ const Slide = () => {
           <div className="outline-none rounded-2xl w-full flex justify-center items-center">
             <img
               className="w-full object-cover rounded-[16px] h-[270px]"
-              src="https://fastly.picsum.photos/id/1013/1328/270.jpg?hmac=EoZOwoRWgV4o4BcxQkswLdBcMDemYFCTR90unlks0YM"
+              src="image/banner/6454dee96205c.png"
               alt=""
             />
           </div>
           <div className="outline-none rounded-2xl w-full flex justify-center items-center">
             <img
               className="w-full object-cover rounded-[16px] h-[270px]"
-              src="https://fastly.picsum.photos/id/1013/1328/270.jpg?hmac=EoZOwoRWgV4o4BcxQkswLdBcMDemYFCTR90unlks0YM"
+              src="image/banner/6454dee96205c.png"
               alt=""
             />
           </div>
           <div className="outline-none rounded-2xl w-full flex justify-center items-center">
             <img
               className="w-full object-cover rounded-[16px] h-[270px]"
-              src="https://fastly.picsum.photos/id/1013/1328/270.jpg?hmac=EoZOwoRWgV4o4BcxQkswLdBcMDemYFCTR90unlks0YM"
+              src="image/banner/6454dee96205c.png"
               alt=""
             />
           </div>
           <div className="outline-none rounded-2xl w-full flex justify-center items-center">
             <img
               className="w-full object-cover rounded-[16px] h-[270px]"
-              src="https://fastly.picsum.photos/id/1013/1328/270.jpg?hmac=EoZOwoRWgV4o4BcxQkswLdBcMDemYFCTR90unlks0YM"
+              src="image/banner/6454dee96205c.png"
               alt=""
             />
           </div>
           <div className="outline-none rounded-2xl w-full flex justify-center items-center">
             <img
               className="w-full object-cover rounded-[16px] h-[270px]"
-              src="https://fastly.picsum.photos/id/1013/1328/270.jpg?hmac=EoZOwoRWgV4o4BcxQkswLdBcMDemYFCTR90unlks0YM"
+              src="image/banner/6454dee96205c.png"
               alt=""
             />
           </div>
           <div className="outline-none rounded-2xl w-full flex justify-center items-center">
             <img
               className="w-full object-cover rounded-[16px] h-[270px]"
-              src="https://fastly.picsum.photos/id/1013/1328/270.jpg?hmac=EoZOwoRWgV4o4BcxQkswLdBcMDemYFCTR90unlks0YM"
+              src="image/banner/6454dee96205c.png"
               alt=""
             />
           </div>

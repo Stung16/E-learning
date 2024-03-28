@@ -1,0 +1,5 @@
+@media (min-width: 0) and (max-width: 739px){
+    .Video_item{
+        display: none !important;
+    }
+}

@@ -26,3 +26,71 @@
     z-index: 1;
     visibility: hidden;
 }
+@media (min-width: 0px) and (max-width: 739px){
+.infor{
+    margin-left: 0 !important;
+    margin-top: 6px;
+}
+.Button_btn{
+    width: 100%;
+    margin-top: 5px;
+}
+.btn-seeMore-hv{
+    display: none;
+}
+.RelatedCourses_inner{
+    display: inline !important;
+}
+.RelatedCourses_title{
+    margin-top: 10px !important;
+}
+.RelatedCourses_desc{ 
+    margin-bottom: -1.5em !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+} 
+.RelatedCourses_inner__HqcPw{
+    margin-left: -20px !important;
+}
+.img-htmlcsspro{
+    margin-left: -10px !important;
+    margin-top: 2px;
+}
+.CourseItem_thumb_img{
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+.CourseItem_inner{
+    flex-direction: column;
+}
+
+}
+@media (min-width: 599px) and (max-width: 801px){
+    .infor{
+        margin-top: 30px;
+    }
+}
+@media (min-width: 739px) and (max-width: 1023px){
+    .infor{
+        margin-top: 0;
+    }
+    .Banners_content{
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap:16px;
+    }
+}
+@media (min-width: 0px) and (max-width: 1023px){   
+    .btn-seeMore{
+        display: none;
+    }
+    .btn-seeMore-hv{
+        display: none;
+    }    
+}
+@media (min-width: 767px) and (max-width: 1025px){
+    .index-module.FE{
+        padding: 0 8px !important;
+    }
+}

@@ -1,0 +1,31 @@
+@media (min-width: 0px) and (max-width: 739px){
+    .Footer_wrapper{
+        padding: 48px 16px 40px ;
+    }
+    .index-module-Footer{
+        width: 100% !important;
+    }
+    .Footer_column{
+        display: block !important;
+    }
+    .Footer_content{
+        display: block !important;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .Footer_wrapper{
+        padding: 48px 40px 40px ;
+    }
+    .Footer_column{
+        justify-content: flex-start !important;
+    }
+}
+@media (min-width: 1023px) {
+    .Footer_column{
+        justify-content: flex-start !important;
+    }
+    .Footer_wrapper{
+        padding: 48px 50px 40px ;
+    }
+}
+

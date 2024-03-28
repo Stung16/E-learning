@@ -5,14 +5,14 @@ import "./learning_paths.css";
 const Learning_paths = () => {
   return (
     <section className="w-full max-w-[1902px]">
-      <div className="mb-[60px] px-11 pt-2">
+      <div className="DefaultLayout_container mb-[60px] px-11 pt-2">
         {/* title */}
         <div className="mb-20 ">
           <h1 className="text-[28px] font-black text-[#242424]">
             Lộ trình học
           </h1>
           <div className="DefaultLayout_desc">
-            <p className="mx-[6px] my-0">
+            <p className="my-0">
               Để bắt đầu một cách thuận lợi, bạn nên tập trung vào một lộ trình
               học. Ví dụ: Để đi làm với vị trí "Lập trình viên Front-end" bạn
               nên tập trung vào lộ trình "Front-end".
@@ -22,7 +22,7 @@ const Learning_paths = () => {
 
         {/* body */}
         <div>
-          <div className="flex mt-6">
+          <div className="container-body flex mt-6">
             <div className="learning_pathsItem">
               <div className="flex mb-5">
                 <div className="flex-1">
@@ -37,8 +37,8 @@ const Learning_paths = () => {
                 </div>
                 <div className="flex items-center pl-6">
                   <Link to="#" className="LearningPathItem_thumb-round">
-                    <img
-                      src="https://files.fullstack.edu.vn/f8-prod/learning-paths/2/63b4642136f3e.png"
+                    <img className=""
+                      src="/image/img_lotrinh/63b4642136f3e.png"
                       alt=""
                     />
                   </Link>
@@ -46,12 +46,12 @@ const Learning_paths = () => {
               </div>
               {/* see intern */}
               <div>
-                <Link to="/learning-paths/front_end_development" className="see-detail">
+                <Link to="/learning-paths/front_end_development" className="see-detail FE">
                   Xem chi tiết
                 </Link>
               </div>
             </div>
-            <div className="learning_pathsItem ml-6">
+            <div className="learning_pathsItem right ml-6">
               <div className="flex mb-5">
                 <div className="flex-1">
                   <h2 className="font-semibold m-0">
@@ -66,7 +66,7 @@ const Learning_paths = () => {
                 <div className="flex items-center pl-6">
                   <Link to="#" className="LearningPathItem_thumb-round">
                     <img
-                      src="https://files.fullstack.edu.vn/f8-prod/learning-paths/3/63b4641535b16.png"
+                      src="/image/img_lotrinh/63b4641535b16.png"
                       alt=""
                     />
                   </Link>
@@ -80,7 +80,7 @@ const Learning_paths = () => {
             </div>
           </div>
           <div className="flex items-center justify-between mt-[50px] overflow-hidden">
-            <div className="w-[400px]">
+            <div className="SuggestionBox_wrapper w-[400px]">
               <h2 className="leading-[1.6] text-[24px] font-black">
                 Tham gia cộng đồng học viên F8 trên Facebook
               </h2>
@@ -90,8 +90,8 @@ const Learning_paths = () => {
               </p>
               <Link to="#" className="join-group-btn">Tham gia nhóm</Link>
             </div>
-            <div>
-              <img className="relative right-[-44px] w-[420px]" src="https://fullstack.edu.vn/static/media/fb-group-cards.4bd525b1b8baf7b1e5a2.png" alt="" />
+            <div className="SuggestionBox_image">
+              <img className="relative right-[-44px] w-[420px]" src="/image/img_lotrinh/fb-group-cards.4bd525b1b8baf7b1e5a2.png" alt="" />
             </div>
           </div>
         </div>

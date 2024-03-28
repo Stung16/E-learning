@@ -6,6 +6,7 @@ import LoginWithEmail from "../../../components/Form/LoginWithEmail";
 import ResgiterWithPhone from "../../../components/Form/ResgiterWithPhone";
 import ResgiterWithEmail from "../../../components/Form/ResgiterWithEmail";
 import LoginSocial from "../../../components/Form/LoginSocial/LoginSocial";
+import { FaChevronLeft } from "react-icons/fa6";
 
 const Header = () => {
   const location = useLocation();
@@ -34,19 +35,19 @@ const Header = () => {
   };
   return (
     <header className="bg-[#fff] flex h-header-hight text-[14px] border-b-[1px] border-solid border-[#e8ebed] px-7 py-0 sticky inset-x-0 top-0 z-20 ">
-      <div className="flex items-center flex-1 group">
-        <a href="/">
+      <div className="NavBar_logo flex items-center flex-1 group">
+        <Link to="/">
           <img
             className="rounded-lg h-[38px] w-[38px] shrink-0 object-contain"
-            src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
+            src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
             alt=""
           />
-        </a>
+        </Link>
 
         <h4 className="text-black text-[14px] font-bold m-4 leading-4">
           {pathname !== "/" ? (
             <span  className="flex justify-center items-center gap-1">
-              <i className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"></i>
+              <FaChevronLeft className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"/>
               <span className="text-[#808990] cursor-pointer text-[12px] font-semibold" onClick={handleGoBack}>
                 QUAY LẠI
               </span>
@@ -57,9 +58,9 @@ const Header = () => {
         </h4>
       </div>
 
-      <div className="flex-1 items-center flex justify-center">
+      {/* <div className=" flex-1 items-center flex justify-center">
         <div className="">
-          <div className="focus-within:border-[#333] flex-1 justify-center flex items-center text-[14px] leading-4  rounded-[20px] border-solid border-2 border-[#e8e8e8]  py-0 pr-4  pl-2 w-[420px] h-[40px] transition-[border]">
+          <div className=" focus-within:border-[#333] flex-1 justify-center flex items-center text-[14px] leading-4  rounded-[20px] border-solid border-2 border-[#e8e8e8]  py-0 pr-4  pl-2 w-[420px] h-[40px] transition-[border]">
             <div className="search_icon"></div>
             <input
               className="bg-toastify-color-light  border-none caret-[#444] flex-1 py-0 px-1 outline-none text-[14px] leading-4"
@@ -67,7 +68,7 @@ const Header = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* khóa học */}
       <div className="items-center flex justify-end flex-1">
@@ -107,13 +108,13 @@ const Header = () => {
                     </button>
                     <div className="text-center w-[380px]">
                       <div className="relative flex items-center justify-center text-center flex-col">
-                        <a href="#">
+                        <Link to="#">
                           <img
                             className="object-cover w-10 h-[40px] rounded-lg"
-                            src="https://accounts.fullstack.edu.vn/assets/icon/f8_icon.png"
+                            src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
                             alt=""
                           />
-                        </a>
+                        </Link>
                         <h1 className="Login_title">Đăng nhập vào F8</h1>
                         <p className="Login_desc">
                           Mỗi người nên sử dụng riêng một tài khoản, tài khoản
@@ -128,7 +129,7 @@ const Header = () => {
                               <div className="Button_login-wapper">
                                 <img
                                   className="SigninButton_icon"
-                                  src="https://accounts.fullstack.edu.vn/assets/images/signin/personal-18px.svg"
+                                  src="/icon/personal-18px.svg"
                                   alt=""
                                 />
                                 <span
@@ -165,18 +166,18 @@ const Header = () => {
                       </div>
                       <div className="Login_dontHaveAcc">
                         Bạn chưa có tài khoản?
-                        <a
+                        <Link
                           className="text-[#f05123] font-semibold"
-                          href="#"
+                          to="#"
                           onClick={handleChangeResgiter}
                         >
                           {" "}
                           Đăng ký
-                        </a>
+                        </Link>
                       </div>
                       <div className="Login_acceptTerm">
                         Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn
-                        đồng ý với <a href="#">điều khoản sử dụng</a>
+                        đồng ý với <Link to="#">điều khoản sử dụng </Link>
                         của chúng tôi.
                       </div>
                     </div>
@@ -188,7 +189,7 @@ const Header = () => {
                   <>
                     <div className="AuthModal_back" onClick={handleBack}>
                       <span className="-mt-1">
-                        <i className="text-[#404040b4] hover:text-[#292929] fa-solid fa-chevron-left"></i>
+                      <FaChevronLeft className="text-[#404040b4] hover:text-[#292929] fa-solid fa-chevron-left"/>
                       </span>
                     </div>
                     <button className="AuthModal_close" onClick={handleHidden}>
@@ -196,13 +197,13 @@ const Header = () => {
                     </button>
                     <div className="text-center">
                       <div className="relative flex items-center justify-center text-center flex-col">
-                        <a href="#">
+                        <Link to="#">
                           <img
                             className="object-cover w-10 h-[40px] rounded-lg"
-                            src="https://accounts.fullstack.edu.vn/assets/icon/f8_icon.png"
+                            src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
                             alt=""
                           />
-                        </a>
+                        </Link>
                         <h1 className="Login_title">Đăng ký tài khoản F8</h1>
                         <p className="Login_desc">
                           Mỗi người nên sử dụng riêng một tài khoản, tài khoản
@@ -261,21 +262,21 @@ const Header = () => {
 
                           <div className="Login_dontHaveAcc">
                             Bạn chưa có tài khoản?
-                            <a
+                            <Link
                               className="text-[#f05123] font-semibold"
-                              href="#"
+                              to="#"
                               onClick={handleChangeLogin}
                             >
                               {" "}
                               Đăng nhập
-                            </a>
+                            </Link>
                           </div>
                           <div className="Login_acceptTerm">
                             Việc bạn tiếp tục sử dụng trang web này đồng nghĩa
                             bạn đồng ý với{" "}
-                            <a className="underline" href="#">
+                            <Link className="underline" to="#">
                               điều khoản sử dụng
-                            </a>{" "}
+                            </Link>{" "}
                             của chúng tôi.
                           </div>
                         </form>

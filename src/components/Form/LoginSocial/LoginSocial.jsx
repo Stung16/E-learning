@@ -11,7 +11,7 @@ const LoginSocial = () => {
     <div className="Button_login-wapper mt-[14px]" onClick={LoginGoogle}>
       <img
         className="SigninButton_icon"
-        src="https://accounts.fullstack.edu.vn/assets/images/signin/google-18px.svg"
+        src="icon/google-18px.svg"
         alt=""
       />
       <span className="SigninButton_title">
@@ -21,7 +21,7 @@ const LoginSocial = () => {
     <div className="Button_login-wapper mt-[14px]">
       <img
         className="SigninButton_icon"
-        src="https://accounts.fullstack.edu.vn/assets/images/signin/facebook-18px.svg"
+        src="icon/facebook-18px.svg"
         alt=""
       />
       <span className="SigninButton_title">
@@ -31,7 +31,7 @@ const LoginSocial = () => {
     <div className="Button_login-wapper mt-[14px]">
       <img
         className="SigninButton_icon"
-        src="https://accounts.fullstack.edu.vn/assets/images/signin/github-18px.svg"
+        src="icon/github-18px.svg"
         alt=""
       />
       <span className="SigninButton_title">

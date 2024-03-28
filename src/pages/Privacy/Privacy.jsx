@@ -1,8 +1,10 @@
 import React from 'react'
-
+import { FaLink } from "react-icons/fa6";
+import { Link } from 'react-router-dom'
+import "./Privacy.css"
 const Privacy = () => {
   return (
-    <div className='pt-0 pl-5 pr-10 flex-1 '>
+    <div className='App_withSidebarContent pt-0 pl-5 pr-10 flex-1 '>
       <section className='w-[100%] p-0 my-0 mx-auto max-w-[1920px] min-[1113px]:pl-[12px] min-[1113px]:pr-[12px] '>
         <div className='mb-[60px] p-2 pl-[10px] pr-0 '>
           <div className='mb-[80px] '>
@@ -15,7 +17,7 @@ const Privacy = () => {
             <section className='min-[1113px]:w-4/6 min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3'>
               <div className='text-[18px] text-[#292929] break-words'>
                 <h2 className='group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink  className='text-[22px]' /></Link>
                   1. Thu thập thông tin cá nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>
@@ -26,7 +28,7 @@ const Privacy = () => {
                 <p className='my-[6px] mx-0 leading-[36px]'>Trong phạm vi điều khoản, F8 cam kết sẽ không bán, cho thuê hay trao đổi dữ liệu thông tin Khách hàng đã thu thập cho các đối tượng nào khác ngoài đối tượng được liệt kê trong Quy chế này.</p> 
                 <hr/>
                 <h2 className='font-semibold group group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   2. Sử dụng thông tin cá nhân
                 </h2>
                 
@@ -40,20 +42,20 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   3. Thời gian lưu trữ thông tin
                 </h2>
                 <ol className='my-7 mx-0 pl-6 leading-[36px] list-decimal'>
                   <li>F8 sẽ lưu trữ thông tin thu thập từ Khách hàng từ thời điểm Khách hàng khai báo thông tin đến khi tài khoản của Khách hàng ngừng hoạt động.</li>
                   <li>F8 sẽ lưu giữ và sử dụng thông tin của khách hàng khi cần tuân theo nghĩa vụ pháp lý, giải quyết tranh chấp và thực thi các thoả thuận của F8.</li>
                   <li>Khách hàng cũng có thể rút lại sự đồng ý cho phép thu thập, sử dụng và/hoặc tiết lộ dữ liệu cá nhân của khách hàng mà F8 đang lưu giữ hoặc kiểm soát bằng cách gửi email cho Bộ phận Chăm sóc khách hàng của ban quản trị F8 tại địa chỉ email
-                  <a className='text-[#F05123] underline' href=""> contact@fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> contact@fullstack.edu.vn </Link>
                   hoặc qua số điện thoại, và chúng tôi sẽ xử lý các yêu cầu này theo Chính Sách Bảo Mật cũng như quy định pháp luật có liên quan. Tuy nhiên, việc khách rút lại sự đồng ý có thể có nghĩa là F8 sẽ không thể tiếp tục cung cấp Các Dịch Vụ cho khách hàng, và ban quản trị F8 có thể cần phải chấm dứt quan hệ hiện tại của bạn và/hoặc hợp đồng của bạn với F8
                   </li>
                 </ol>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   4. Thay đổi hoặc loại bỏ thông tin cá nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Khách hàng có thể tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình bằng các cách sau đây:</p>
@@ -65,7 +67,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   5. Chính sách bảo vệ thông tin cá nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Ban quản trị F8 cam kết bảo mật thông tin cá nhân của Khách hàng theo những nội dung sau:</p>
@@ -81,7 +83,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   6. Chính sách bảo vệ thông tin thanh toán
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>F8 cam kết đảm bảo thực hiện nghiêm túc các biện pháp bảo mật cần thiết cho mọi hoạt động thanh toán thực hiện trên website/ứng dụng của F8</p>
@@ -109,7 +111,7 @@ const Privacy = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   7. Đối tượng chia sẻ thông tin cá nhân
                 </h2>
                 <ol className='my-7 mx-0 pl-6 leading-[36px] list-decimal'>
@@ -123,14 +125,14 @@ const Privacy = () => {
                 </ol>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   8. Yêu Cầu Xóa Dữ Liệu Cá Nhân
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Chúng tôi tôn trọng và chấp hành quyền riêng tư của người dùng, bao gồm quyền yêu cầu xóa dữ liệu cá nhân. Dưới đây là hướng dẫn chi tiết về cách người dùng có thể yêu cầu xóa dữ liệu của họ:</p>
                 <strong>8.1. Liên hệ với Chúng Tôi</strong>
                 <p className='my-[6px] mx-0 leading-[36px]'>Nếu bạn muốn yêu cầu xóa dữ liệu cá nhân mà chúng tôi đã thu thập về bạn, vui lòng liên hệ với chúng tôi qua một trong các cách sau:</p>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px] text-[18px]'>
-                <li>Gửi email đến địa chỉ email:<a className='text-[#F05123] underline' href=""> contact@fullstack.edu.vn </a>             
+                <li>Gửi email đến địa chỉ email:<Link className='text-[#F05123] underline' to=""> contact@fullstack.edu.vn </Link>             
                 </li>
                 <li>Gọi số điện thoại: 0246.329.1102             
                 </li>
@@ -147,13 +149,13 @@ const Privacy = () => {
                 <p className='my-[6px] mx-0 leading-[36px]'>Các dịch vụ hỗ trợ cụ thể như sau:</p>
                 <hr />
                 <h2 className='font-semibold group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink className='text-[22px]' /></Link>
                   9. Địa chỉ lưu trữ thông tin
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Mọi thông tin của Khách hàng được lưu trữ tại địa chỉ:</p>
                 <strong>CÔNG TY TNHH CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</strong>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px] text-[18px]'>
-                <li><strong>Email:</strong><a className='text-[#F05123] underline' href=""> contact@fullstack.edu.vn </a>             
+                <li><strong>Email:</strong><Link className='text-[#F05123] underline' to=""> contact@fullstack.edu.vn </Link>             
                 </li>
                 <li><strong>Điện thoại: </strong>0246.329.1102    
                 </li>
@@ -165,15 +167,15 @@ const Privacy = () => {
                 <hr />
               </div>
             </section>
-            <section className=' min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 pl-[100px]'>
+            <section className='index-module min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 pl-[100px]'>
               <div className='sticky top-[80px]  flex justify-end '>
-              <div className='flex flex-col max-w-[300px] pl-[2px]'>
-                <a className='mt-[32px]' href="">
-                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="https://files.fullstack.edu.vn/f8-prod/banners/29/63dc625b29cdc.png" alt="" />
-                </a>
-                <a className='mt-[32px]' href="">
-                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="https://files.fullstack.edu.vn/f8-prod/banners/35/642114a8ab417.png" alt="" />
-                </a>
+              <div className='Banners_content flex flex-col max-w-[300px] pl-[2px]'>
+                <Link className='mt-[32px]' to="">
+                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="image/img_baiviet/63dc61f2a061e.png" alt="" />
+                </Link>
+                <Link className='mt-[32px]' to="">
+                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="image/img_baiviet/6421144f7b504.png" alt="" />
+                </Link>
               </div>
               </div>
             </section>

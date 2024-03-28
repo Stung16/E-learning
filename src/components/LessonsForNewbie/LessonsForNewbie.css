@@ -17,3 +17,130 @@
     top: 0;
     transition: all .3s linear;
 }
+.CourseDetail_purchaseBadge__CZ9PK{
+    align-items: center;
+    background: #fff;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-left: 24px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 90px
+}
+.CourseDetail_purchaseBadge__CZ9PK ul{
+    margin: 0;
+    padding: 24px 0 10px 4px;
+    text-align: left;
+}
+.Button_btn__RW1e2{
+    appearance: none;
+    background-color: #f05123;
+    border: 1px solid #f05123;
+    border-radius: 999px !important;
+    font-size: 16px;
+    margin-top: 16px;
+    min-width: 180px;
+    padding: 10px 16px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    transition: .3s ease;
+    user-select: none;
+    white-space: nowrap;
+}
+.CourseDetail_mobileRegBtn{
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    padding: 8px 16px;
+    position: fixed;
+    right: 0;
+    z-index: 9;
+    display: none;
+}
+.CourseDetail_mobileRegButton{
+    background-color: #f05123;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+@media (min-width: 0px) and (max-width: 739px){ 
+    .course-wrapper {
+    margin-top: 0 !important;
+    padding: 0 0 80px !important;
+}
+    .CourseDetail-list{
+        flex-direction: column;
+        margin: 0;
+    }
+    .CurriculumOfCourse_subHeadWrapper{
+        flex-direction: column;
+    }
+    .course-sticky {
+        position: static !important;
+}
+    .CurriculumOfCourse_hiddenMobile{
+        display: none !important;
+ }
+    .CurriculumOfCourse{
+        margin-left: unset !important;
+        padding-bottom: 8px!important;
+        padding-top: 24px!important;
+ }
+    .ads{
+        display: none;
+    
+}
+    .bt{
+        display: none ;
+    }
+    .CourseDetail{
+        display: none;
+ }
+    .CourseDetail_purchaseBadge{
+        margin-left: 0 !important;
+    }
+    .CourseDetail_purchaseBadge__CZ9PK{
+        display: flex;
+        border: 1px solid #ebebeb;
+        box-shadow: none;
+        margin: 16px 0 0;
+        padding-bottom: 8px 
+    }
+    .CourseDetail_purchaseBadge__CZ9PK ul{
+        padding-bottom: 0;
+    }
+    .index-module_c-12__u7UXF{
+        display: none;
+    }
+    
+
+}
+@media (min-width: 0px) and (max-width: 1023px){
+    .CourseDetail_mobileRegBtn{
+        display: inline;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .CourseDetail_purchaseBadge__CZ9PK {
+        border: 1px solid #ebebeb;
+        margin: 20px 0 0;
+        padding: 0;
+        display: flex !important;
+    }
+    .index-module_c-12__u7UXF{
+        display: none;
+    }
+   
+}
+
+
+

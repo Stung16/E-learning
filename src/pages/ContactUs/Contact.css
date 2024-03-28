@@ -1,7 +1,32 @@
-::placeholder{
+
+input,textarea:focus{
+    border-color: #1dbfaf;
+    box-shadow: none;
+    outline: 0;
+}
+input::placeholder{
     font-size: 12px;
 }
-
-.name:focus{
-        border-color:#1dbfaf; 
+textarea::placeholder{
+    font-size: 12px;
+}
+@media (min-width: 0px) and (max-width: 739px){
+.App_withSidebarContent{
+    padding: 0  !important
+}
+.Content{
+    padding: 0 !important;
+}
+.Contact_submitBtn{
+    width: 100%;
+}
+.Contact_text__VLD2I{
+    text-align: left !important;
+}
+}
+@media (min-width: 0) and (max-width: 1023px){
+.App_withSidebarContent{
+    max-width: 100%;
+    padding: 0 32px
+}
 }

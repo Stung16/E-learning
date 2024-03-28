@@ -1,21 +1,23 @@
 import React from 'react'
+import "./Terms.css";
+import { FaLink } from "react-icons/fa6";
 const Terms = () => {
   return (
-    <div className='pt-0 pl-5 pr-10 flex-1 '>
+    
       <section className='w-[100%] p-0 my-0 mx-auto max-w-[1920px] min-[1113px]:pl-[12px] min-[1113px]:pr-[12px] '>
-        <div className='mb-[60px] p-2 pl-[10px] pr-0 '>
+        <div className='DefaultLayout_container mb-[60px] p-2 pl-[10px] pr-0 '>
           <div className='mb-[80px] '>
             <h1 className='text-[#242424] text-[28px] font-black my-[19px] '>Điều khoản sử dụng</h1>
             <div className='text-[15px] leading-4 max-w-[840px] text-[#292929] break-words'>
               <p className='my-[6px] mx-0'>Điều khoản sử dụng</p>
             </div>
           </div>
-          <div className=' min-[1113px]:mx-[-12px]  flex flex-wrap'>
+          <div className='container-body min-[1113px]:mx-[-12px]  flex flex-wrap'>
             <section className='min-[1113px]:w-4/6 min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3'>
               <div className='text-[18px] text-[#292929] break-words'>
                 <h2 className='font-semibold  mt-[30px] mb-[20px] group'>
                   <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' href="">
-                  <i className="fa-solid fa-link"></i>
+                  <FaLink />
                   </a>
                   I. Nguyên tắc chung
                 </h2>
@@ -28,7 +30,7 @@ const Terms = () => {
                 </p>
                 <hr/>
                 <h2 className='font-semibold  my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' href=""><FaLink /></a>
                   II. Qui định chung
                 </h2>
                 <h3 className='font-semibold my-[21px]'>1. Định nghĩa</h3>
@@ -88,7 +90,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   III. Qui trình giao dịch
                 </h2>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px]'>
@@ -107,7 +109,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   III. Qui trình thanh toán
                 </h2>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px]'>
@@ -124,7 +126,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   VI. Phương thức giao hàng - vận chuyển
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>F8 sẽ gửi email kích hoạt khóa học, cùng các hướng dẫn để người dùng đã thanh toán thành công mua khóa học cách thức truy cập vào khóa học để học tập.</p>
@@ -135,13 +137,13 @@ const Terms = () => {
                 </p>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   VII. Đảm bảo an toàn giao dịch
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Khách hàng tuyệt đối không sử dụng bất kỳ chương trình, công cụ hay hình thức nào khác để can thiệp vào hệ thống hay làm thay đổi cấu trúc dữ liệu. Nghiêm cấm việc phát tán, truyền bá hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm nhập của hệ thống website. Mọi vi phạm sẽ bị xử lý theo quy chế và quy định của pháp luật. Mọi thông tin giao dịch được bảo mật, trừ trường hợp buộc phải cung cấp khi Cơ quan pháp luật yêu cầu</p>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   VIII. Quản lý thông tin xấu
                 </h2>
                 <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1. Quản lý của website đối với thông tin giới thiệu, quảng bá sản phẩm</h3>
@@ -179,7 +181,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   IX. Trách nhiệm trong trường hợp phát sinh lỗi kỹ thuật
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Ban quản trị F8 luôn cố gắng và cam kết cung cấp các dịch vụ hạ tầng kỹ thuật tốt nhất tới Khách hàng và Đối tác trong quá trình giao dịch, đảm bảo sự an toàn và ổn định của hệ thống kỹ thuật.</p>
@@ -197,7 +199,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   X. Quyền và trách nhiệm của ban quản lý website
                 </h2>
                 <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1. Quyền</h3>
@@ -232,7 +234,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   XI. Quyền và trách nhiệm của các bên tham gia
                 </h2>
                 <h3 className='font-semibold text-[21px] leading-[42px]'>1. Quyền và nghĩa vụ của khách hàng/người dùng/học viên</h3>
@@ -260,7 +262,7 @@ const Terms = () => {
                 </li>
                 </ul> 
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   XIII. Chính sách điều khoản chương trình tiếp thị liên kết F8
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]' >Dưới đây là những điều khoản hoàn chỉnh được áp dụng cho chương trình Affiliate của công ty Cổ phần Công nghệ Giáo dục F8 (từ dưới đây gọi tắt là F8). Đây được xem là bản thỏa thuận giữa F8 và Đối tác của mình. Xin hãy đọc toàn bộ thỏa thuận trước khi tham gia. Một khi bạn đã đăng ký tham gia vào chương trình Affiliate của F8, chúng tôi sẽ hiểu rằng bạn đã đọc và đồng ý toàn bộ với tất cả điều khoản dưới đây. Mọi thông tin về điều khoản này nếu đến từ những nguồn khác đều không chính xác và không mang tính pháp lý.</p>
@@ -359,7 +361,7 @@ const Terms = () => {
                   <p className='my-[6px] mx-0 leading-[36px]'>Thỏa thuận này được áp dụng tại Việt Nam. Nếu có bất kỳ điều gì đi ngược lại với luật pháp Việt Nam, Đối tác cũng sẽ bị liên đới chịu trách nhiệm.</p>
                   <hr />
                   <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><i className="fa-solid fa-link"></i></a>
+                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
                   XII. Điều khoản cam kết
                   </h2>
                   <p className='my-[6px] mx-0 leading-[36px]'>Địa chỉ liên lạc chính thức của Website/ứng dụng cung cấp khóa học trực tuyến
@@ -382,10 +384,10 @@ const Terms = () => {
               <div className='sticky top-[80px] flex justify-end'>
               <div className='flex flex-col max-w-[300px] '>
                 <a className='mt-[32px]' href="">
-                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="https://files.fullstack.edu.vn/f8-prod/banners/29/63dc625b29cdc.png" alt="" />
+                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="/image/img_baiviet/63dc625b29cdc.png" alt="" />
                 </a>
                 <a className='mt-[32px]' href="">
-                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="https://files.fullstack.edu.vn/f8-prod/banners/35/642114a8ab417.png" alt="" />
+                  <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="/image/img_baiviet/6421144f7b504.png" alt="" />
                 </a>
               </div>
               </div>
@@ -393,7 +395,6 @@ const Terms = () => {
           </div>
         </div>
       </section>
-    </div>
   )
 }
 

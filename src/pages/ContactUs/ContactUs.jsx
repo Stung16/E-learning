@@ -1,5 +1,9 @@
 import React from 'react'
 import "./Contact.css";
+import { FaHouse } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const ContactUs = () => {
 //   function Validator(options){
 //       var formElement = document.querySelector(options.form);
@@ -41,9 +45,9 @@ const ContactUs = () => {
 //   })
 
   return (
-    <div className='pl-5 pr-10 w-[100%] flex-1'>
+    <div className='App_withSidebarContent pl-5 pr-10 w-[100%] flex-1'>
       <section className='max-w-[1920px] w-[100%] p-0 my-0 mx-auto'>
-        <div className='mb-[60px] px-11 pt-2'>
+        <div className='Content mb-[60px] px-11 pt-2'>
           <div className='mb-[80px] '>
             <h1 className='text-[#242424] text-[28px] leading-8 font-black my-[0.67em]'>Liên hệ</h1>
             <div className='text-[15px] leading-6 max-w-[840px] text-[#292929 break-words] '>
@@ -61,28 +65,28 @@ const ContactUs = () => {
                     <div className='max-w-[600px] pb-12'>
                       <div className='items-center flex h-[32px] my-0 mx-[2px]'>
                         <div className='min-w-[24px] text-center'>
-                        <i className="fa-solid fa-house overflow-visible box-content text-[#444444] text-[13px] align-[0.125em] inline-block h-[1em]"></i>
+                        <FaHouse className="fa-solid fa-house overflow-visible box-content text-[#444444] text-[13px] align-[0.125em] inline-block h-[1em]"/>
                         </div>
-                        <p className='text-[#444444] text-[13px] leading-[14px] tracking-[1px] my-4 ml-2 text-center min-[1113px]:text-left'>Số 11D, lô A10, khu đô thị Nam Trung Yên, Phường Yên Hòa, Quận Cầu Giấy, TP. Hà Nội</p>
+                        <p className='Contact_text__VLD2I text-[#444444] text-[13px] leading-[14px] tracking-[1px] my-4 ml-2 text-center'>Số 11D, lô A10, khu đô thị Nam Trung Yên, Phường Yên Hòa, Quận Cầu Giấy, TP. Hà Nội</p>
                       </div>
                       <div className='items-center flex h-[32px] my-0 mx-[2px]'>
                         <div className='min-w-[24px] text-center'>
-                        <i className="fa-solid fa-phone overflow-visible box-content text-[#444444] text-[13px] align-[0.125em] inline-block h-[1em]"></i>
+                        <FaPhoneAlt className="fa-solid fa-phone overflow-visible box-content text-[#444444] text-[13px] align-[0.125em] inline-block h-[1em]"/>
                         </div>
-                        <a className='my-4 ml-2 text-[#444444] text-[13px] left-9 tracking-[1px] no-underline] hover:text-[#DCDCDC]' href="">0246.329.1102</a>
+                        <Link className='my-4 ml-2 text-[#444444] text-[13px] left-9 tracking-[1px] no-underline hover:text-[#DCDCDC]' to="">0246.329.1102</Link>
                       </div>
                       <div className='items-center flex h-[32px] my-0 mx-[2px]'>
                         <div className='min-w-[24px] text-center'>
-                        <i className="fa-solid fa-envelope overflow-visible box-content text-[#444444] text-[13px] align-[0.125em] inline-block h-[1em]"></i>
+                        <FaEnvelope className="fa-solid fa-envelope overflow-visible box-content text-[#444444] text-[13px] align-[0.125em] inline-block h-[1em]"/>
                         </div>
-                        <a className='my-4 ml-2 text-[#444444] text-[13px] left-9 tracking-[1px] no-underline] hover:text-[#DCDCDC]' href="">contact@fullstack.edu.vn</a>
+                        <Link className='my-4 ml-2 text-[#444444] text-[13px] left-9 tracking-[1px] no-underline hover:text-[#DCDCDC]' to="">contact@fullstack.edu.vn</Link>
                       </div>
                     </div>
                     <form className='max-w-[600px] ' action="" id='form-1'>
                       <div className='mb-4 relative'>
                         <label className='text-[#333333] block text-[14px] font-bold leading-[18px] pb-[6px]' htmlFor="fullname">Họ và tên</label>
                         <div className=' text-[14px] relative '>
-                          <input className='name border-2 border-solid  border-[#e8e8e8] rounded-md h-[36px] py-1 px-3 w-[100%] appearance-none hover:border-[#1dbfaf]' type="text" id='fullname' placeholder='Nhập tên đầy đủ...' />
+                          <input className='border-2 border-solid  border-[#e8e8e8] rounded-md h-[36px] py-1 px-3 w-[100%] appearance-none hover:border-[#1dbfaf] ' type="text" id='fullname' placeholder='Nhập tên đầy đủ...' />
                           <span className='form-message'></span>
                         </div>
                       </div>
@@ -100,9 +104,9 @@ const ContactUs = () => {
                       </div>
                       <div className=' relative mb-6'>
                         <label className='text-[#333333] block text-[14px] font-bold leading-[18px] pb-[6px]' htmlFor="content">Nội dung</label>
-                        <textarea className='border-2 border-solid border-[#e8e8e8] rounded-md appearance-none bg-[#fff] text-[#333] block text-[14px] p-3 resize-none min-h-[96px] w-[100%] hover:border-[#1dbfaf]' name="" id="" cols="30" rows="4" placeholder='Nhập nội dung liên hệ...'></textarea>
+                        <textarea className='input border-2 border-solid border-[#e8e8e8] rounded-md appearance-none bg-[#fff] text-[#333] block text-[14px] p-3 resize-none min-h-[96px] w-[100%] hover:border-[#1dbfaf]' name="" id="" cols="30" rows="4" placeholder='Nhập nội dung liên hệ...'></textarea>
                       </div>
-                      <button className='bg-[#F05123] text-white-color min-w-[100px] border border-solid border-[#F05123] rounded-full inline-block text-[14px] font-semibold outline-0 py-[9px] px-4 select-none whitespace-nowrap opacity-100 hover:opacity-95'>Gửi đi</button>
+                      <button className='Contact_submitBtn bg-[#F05123] text-white-color min-w-[100px] border border-solid border-[#F05123] rounded-full inline-block text-[14px] font-semibold outline-0 py-[9px] px-4 select-none whitespace-nowrap opacity-100 hover:opacity-95'>Gửi đi</button>
                     </form>
                   </div>
                 </section>

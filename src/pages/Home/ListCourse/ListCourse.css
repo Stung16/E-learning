@@ -16,6 +16,18 @@
     border-radius: 24px;
     z-index: 2;
 }
+.ScrollList_view_icon{
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 20px
+}
 .overlay-course{
     background-color: rgba(0, 0, 0, .5);
     border-radius: 16px;
@@ -26,3 +38,163 @@
     z-index: 1;
     visibility: hidden;
 }
+@media (min-width: 0) and (max-width: 739px){
+    .Home_wrapper{
+        margin-top: 60px !important;
+        padding: 0 0 36px !important
+    }
+    .ScrollList_view_all{
+        display: none;
+    }
+    .items-baseline h2{
+        font-size: 18px;
+    }
+    .CommonItem_wrapper_Pro{
+        margin-bottom: 0;
+        width: 60vw !important;
+        padding-left: 11px !important;
+        padding-right: 0 !important;
+    }
+    .CourseItem_students{
+        display: none;
+    }
+    .ScrollList_body{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 60vw !important;
+    }
+    .ScrollList_body_Free{
+        padding-left: 0px !important;
+        padding-right: 0 !important;
+        width: 60vw !important;
+    }
+    .CommonItem_wrapper_Free{
+        margin-bottom: 0;
+        width: 60vw !important;
+        padding-left: 11px !important;
+        padding-right: 0 !important;
+    }
+    .ScrollList_body_Post{
+        flex-wrap: nowrap !important;
+        padding-left: 11px !important;
+        padding-right: 0 !important;
+        width: 60vw !important;
+    }
+
+    .overlay-course{
+        display: none;
+    }
+    .ListCourse{
+        overflow-x: auto;
+    }
+    .Main_PostHot{
+        overflow-x:auto
+    }
+    .Main_VideoHot{
+        overflow-x: auto;
+    }
+    .ListCourse_Pro{
+        overflow-x: auto;
+    }
+    .Main_CourseFree{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .ListPostHot{
+        margin-left: -21px !important;
+        flex-wrap: nowrap !important;
+    }
+    .ListCourse_Free{
+        flex-wrap: nowrap !important;
+        margin-bottom: -30px ;
+    }
+    .ListVideoHot{
+        flex-wrap: nowrap !important;
+        margin-left: -20px !important;
+    }
+    
+    .ScrollList_view_icon{
+        display: inline-block !important;
+    }
+    .ListCourse_Pro_body{
+        width: auto !important;
+    }
+    .Course_Pro{
+        flex-wrap: nowrap !important;
+    }
+}
+
+
+@media (min-width: 740px) and (max-width: 1023px){
+    .Home_wrapper {
+        padding: 0 0 60px !important
+    }
+    .ListCourse_Pro_body{
+        overflow-x: auto;
+    }
+    .CommonItem_wrapper_Free{
+        margin-bottom: 0;
+        width: 35vw !important;
+        padding-right: 0 !important;
+    }
+    .Course_Pro{
+        flex-wrap: nowrap !important;
+        width: 124vw;
+    }
+    .ScrollList_body_Post{
+        flex-wrap: nowrap !important;
+        padding-left: 11px !important;
+        padding-right: 0 !important;
+        width: 60vw !important;
+    }
+    .ScrollList_body_Free{
+        padding-left: 11px !important;
+        padding-right: 0 !important;
+        width: 36vw !important;
+    }
+    .ScrollList_body{
+        margin-bottom: 0;
+        width: 32vw !important;
+        padding-left: 19px !important;
+        padding-right: 0px !important;
+    }
+    .ListCourse{
+        overflow-x: auto;
+    }
+    .Main_PostHot{
+        overflow-x:auto
+    }
+    .Main_VideoHot{
+        overflow-x: auto;
+    }
+    .Main_CourseFree{
+        overflow-x: auto;
+    }
+    
+    .ListCourse_Free{
+        flex-wrap: nowrap !important;
+    }
+    .ListPostHot{
+        flex-wrap: nowrap !important;
+    }
+    .ListVideoHot{
+        flex-wrap: nowrap !important;
+        margin-left: -20px !important;
+    }
+    .Video_item{
+        display: none !important;
+    }
+    .PostItem_author {
+        display: none !important;
+    }
+    .CourseItem_students{
+        display: none;
+    }
+    .ScrollList_view_icon{
+        display: none !important;
+    }
+    .Course_Pro{
+        margin-bottom: -20px ;
+    }
+}
+

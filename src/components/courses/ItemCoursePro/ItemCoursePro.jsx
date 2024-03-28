@@ -1,13 +1,15 @@
 import React from "react";
+import { FaCrown } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const ItemCoursePro = ({ image, link, name, price, price_sell, isComming }) => {
   return (
-    <section className="w-[25%] pr-[12px] pl-[12px] ">
-      <div className="mb-8">
+    <section className="ScrollList_body min-[1113px]:w-[25%] min-[740px]:w-[33.33333%] pr-[12px] pl-[12px] ">
+      <div className="CommonItem_wrapper_Pro mb-8">
         <div className="relative group">
-          <a
+          <Link
             className="block rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-            href={link}
+            to={link}
           >
             <img
               className={`h-[100%] absolute object-cover left-[0] top-[0] w-[100%] ${
@@ -28,18 +30,18 @@ const ItemCoursePro = ({ image, link, name, price, price_sell, isComming }) => {
                 isComming && "hidden"
               }`}
             ></div>
-          </a>
+          </Link>
 
           <h3 className="font-semibold mt-[12px] mb-[12px]">
-            <a
+            <Link
               className="text-[16px] font-semibold leading-[22px] break-words"
-              href={link}
+              to={link}
             >
               {name}
-            </a>
+            </Link>
           </h3>
           <div>
-            <i className="fa-solid fa-crown fa-sm text-[#FFD43B] pt-[11px] pb-[5px] pl-[5px] pr-[5px] bg-[#0000004d] rounded-lg absolute left-3 top-3 w-[26px] h-[24px] pointer-events-none"></i>
+          <FaCrown className=" text-[#FFD43B] pt-[1px] pl-[5px] pr-[5px] bg-[#0000004d] rounded-lg absolute left-3 top-3 w-[26px] h-[24px] pointer-events-none"/>
           </div>
         </div>
         {(price || price_sell) && (

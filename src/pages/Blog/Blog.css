@@ -1,0 +1,53 @@
+@media (min-width: 0) and (max-width: 739px){
+.DefaultLayout_container {
+    margin-bottom: 48px !important;
+    padding: 0!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.PostItem_wrapper{
+    margin-right: -64px !important;
+}
+.index-module{
+    width: 100% !important;
+}
+.PostItem_body{
+    align-items: flex-start !important;
+    flex-direction: column!important;
+}
+.PostItem_info{
+    order: 2;
+    padding: 0 !important;
+}
+.PostItem_info2{
+    padding: 0 !important;
+}
+.PostItem_thumb{
+    margin: 12px 0 8px;
+    order: 1;
+}
+.PostItem_thumb_img{
+    width: 100% !important;
+}
+.Pagination_wrapper{
+    position: relative ;
+    padding-left: 84px ;
+}
+.Pagination_hidden{
+    display: none !important;
+}
+}
+@media (min-width: 0px) and (max-width: 1024px){
+/* .Pagination_wrapper{
+    position: absolute ;
+    left: -10px
+}  */
+.TopicsList_wrapper{
+    margin-bottom: 32px;
+}
+.TopicsList_wrapper.nshow{
+    margin-bottom: 32px;
+    display: inline;
+    margin-top: 20px;
+}
+}

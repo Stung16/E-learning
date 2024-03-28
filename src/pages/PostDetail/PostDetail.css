@@ -9,3 +9,24 @@
 .img-mask{
     mask-image: linear-gradient(#fff, #fff, hsla(0, 0%, 100%, 0));
 }
+.BlogDetail_wrapper{
+    padding: 0px 32px 60px 
+}
+@media (min-width: 0) and (max-width: 739px){
+.user{
+    display: none;
+}
+.BlogDetail_heading{
+    font-size: 32px !important;
+}
+.RelatedPosts_photo{
+    height: 175px !important;
+}
+
+
+}
+@media (min-width: 1024px) and (max-width: 1400px){
+    .BlogDetail_wrapper{
+        padding: 0px 32px 60px !important
+    }
+}

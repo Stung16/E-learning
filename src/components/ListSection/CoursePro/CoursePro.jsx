@@ -19,13 +19,13 @@ const CoursePro = () => {
       </div>
 
       {/* ListCourse */}
-      <div className="pb-0 min-h-[200px]">
-        <section className="-px-4 min-[740px]:px-[-8px] -px-1">
-          <div className="min-[740px]:pt-[3px] max-[1023px]:pb-4 max-[1023px]:w-[1500px] max-[1023px]:pt-[3px]">
-            <section className="ml-[-12px] mr-[-12px] flex">
+      <div className="ListCourse_Pro pb-0 min-h-[200px] ">
+        <section className="-px-4 min-[740px]:mx-[-8px] -px-1">
+          <div className="ListCourse_Pro_body min-[740px]:pt-[3px] max-[1023px]:pb-4 max-[1023px]:pt-[3px]">
+            <section className="Course_Pro min-w-[200px] ml-[-9px] mr-[-12px] flex flex-wrap">
               <ItemCoursePro
                 image={"./image/courses/62f13d2424a47.png"}
-                link={"#"}
+                link={"/landing"}
                 name={"HTML CSS Pro"}
                 price={"2.500.000"}
                 price_sell={"1.299.000"}
@@ -33,7 +33,7 @@ const CoursePro = () => {
               />
               <ItemCoursePro
                 image={"./image/courses/64e184ee5d7a2.png"}
-                link={"#"}
+                link={"/landing"}
                 name={"Ngôn ngữ tiền xử lý Sass"}
                 price={"400.000"}
                 price_sell={"299.000"}

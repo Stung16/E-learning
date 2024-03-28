@@ -1,0 +1,33 @@
+@media (min-width: 0) and (max-width: 1023px){
+.DefaultLayout_container{
+    margin-bottom: 48px !important;  
+    padding-left: 0 !important;
+    padding-right: 0 !important;    
+}
+.DefaultLayout_container-top{
+    margin-bottom: 40px !important;
+}
+.JobItem_created{
+    margin-top: 16px;
+    position: static !important
+}
+.index-module{
+    padding: 0 !important;
+}
+.Banners_content_ads{
+    max-width: 100% !important;
+    width: 100%;
+    flex-wrap: nowrap !important;
+}
+}
+@media (min-width: 0px) and (max-width: 739px){
+    .Banners_content_ads{
+        align-content: center !important;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .Banners_content_ads{
+        flex-direction: row !important;
+        gap: 25px;
+    }
+}

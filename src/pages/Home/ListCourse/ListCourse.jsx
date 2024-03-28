@@ -7,7 +7,7 @@ import VideoHot from "../../../components/ListSection/VideoHot/VideoHot";
 
 const ListCourse = () => {
   return (
-    <div className="mt-[70px] overflow-hidden px-11 pt-0 pb-[74px]">
+    <div className="Home_wrapper mt-[70px] overflow-hidden px-11 pt-0 pb-[74px]">
       {/* Khoá học pro */}
       <CoursePro />
       {/* Khoá học Free */}
