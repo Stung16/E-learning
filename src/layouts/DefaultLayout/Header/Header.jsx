@@ -1,37 +1,68 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import LoginWithPhone from "../../../components/Form/LoginWithPhone";
 import LoginWithEmail from "../../../components/Form/LoginWithEmail";
-import ResgiterWithPhone from "../../../components/Form/ResgiterWithPhone";
-import ResgiterWithEmail from "../../../components/Form/ResgiterWithEmail";
 import LoginSocial from "../../../components/Form/LoginSocial/LoginSocial";
+import FormResgiter from "../../../components/Form/FormResgiter";
+import { loginSlice } from "../../../stores/slices/loginSlice";
+import { detailtSlice } from "../../../stores/slices/detailtSlice";
+const { updateProfile, updateLoading } = detailtSlice.actions;
+const { updateState, updateLogin } = loginSlice.actions;
+import { useDispatch, useSelector } from "react-redux";
+import { handleGetprofile, logOut } from "../../../services/auth.service";
+import Cookies from "js-cookie";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const token = Cookies.get("accessToken");
+  const profile = useSelector((state) => state.detailtData.profile);
+  const state = useSelector((state) => state.loginData.state);
+  const Login = useSelector((state) => state.loginData.login);
   const location = useLocation();
   const pathname = location.pathname;
-  const [state, setState] = useState("");
   const [resgiterWithEmail, setrResgiterWithEmail] = useState(false);
-  const [Login, setLogin] = useState(null);
   const handleBack = () => {
-    setLogin(null);
-    setState("login");
+    dispatch(updateLogin(null));
+    dispatch(updateState("login"));
   };
   const handleHidden = () => {
-    setLogin(null);
-    setState("");
+    dispatch(updateLogin(null));
+    dispatch(updateState(""));
   };
   const handleChangeLogin = () => {
-    setLogin(null);
-    setState("login");
+    dispatch(updateLogin(null));
+    dispatch(updateState("login"));
   };
   const handleChangeResgiter = () => {
-    setLogin(null);
-    setState("resgiter");
+    dispatch(updateLogin(null));
+    dispatch(updateState("resgiter"));
   };
   const handleGoBack = () => {
     window.history.back(); // Điều hướng trở lại trang trước đó
   };
+  useEffect(() => {
+    if (token) {
+      const fetch = async () => {
+        try {
+          // console.log(token.accessToken);
+          dispatch(updateLoading(true));
+          const  data  = await handleGetprofile(token);
+          console.log(data);
+          // if (data.status === 401) {
+          //   logOut();
+          // } else {
+          //   dispatch(updateProfile(data?.user));
+          // }
+        } catch (error) {
+          console.log(error);
+        } finally {
+          dispatch(updateLoading(false));
+        }
+      };
+      fetch();
+    }
+  }, [token]);
   return (
     <header className="bg-[#fff] flex h-header-hight text-[14px] border-b-[1px] border-solid border-[#e8ebed] px-7 py-0 sticky inset-x-0 top-0 z-20 ">
       <div className="flex items-center flex-1 group">
@@ -45,9 +76,12 @@ const Header = () => {
 
         <h4 className="text-black text-[14px] font-bold m-4 leading-4">
           {pathname !== "/" ? (
-            <span  className="flex justify-center items-center gap-1">
+            <span className="flex justify-center items-center gap-1">
               <i className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"></i>
-              <span className="text-[#808990] cursor-pointer text-[12px] font-semibold" onClick={handleGoBack}>
+              <span
+                className="text-[#808990] cursor-pointer text-[12px] font-semibold"
+                onClick={handleGoBack}
+              >
                 QUAY LẠI
               </span>
             </span>
@@ -71,28 +105,33 @@ const Header = () => {
 
       {/* khóa học */}
       <div className="items-center flex justify-end flex-1">
-        <button
-          className="btn-login"
-          onClick={() => {
-            setState("login");
-          }}
-        >
-          Đăng nhập
-        </button>
-        <button
-          className="btn-register"
-          onClick={() => {
-            setState("resgiter");
-          }}
-        >
-          Đăng ký
-        </button>
+        {!token && (
+          <button
+            className="btn-login"
+            onClick={() => {
+              dispatch(updateState("login"));
+            }}
+          >
+            Đăng nhập
+          </button>
+        )}
+        {!token && (
+          <button
+            className="btn-register"
+            onClick={() => {
+              dispatch(updateState("resgiter"));
+            }}
+          >
+            Đăng ký
+          </button>
+        )}
+
         {state !== "" && (
           <div className="authModel">
             <div
               className="authModel-overlay"
               onClick={() => {
-                setState("");
+                dispatch(updateState(""));
               }}
             ></div>
             <div className="authModel-content">
@@ -133,7 +172,7 @@ const Header = () => {
                                 />
                                 <span
                                   className="SigninButton_title"
-                                  onClick={() => setLogin(false)}
+                                  onClick={() => dispatch(updateLogin(false))}
                                 >
                                   Sử dụng email / số điện thoại
                                 </span>
@@ -150,7 +189,7 @@ const Header = () => {
                               </label>
                               <label
                                 className="text-[13px] font-medium opacity-70 py-[10px] pl-0 pr-2"
-                                onClick={() => setLogin(!Login)}
+                                onClick={() => dispatch(updateLogin(!Login))}
                               >
                                 {Login
                                   ? "Đăng nhập với email"
@@ -209,76 +248,30 @@ const Header = () => {
                           nhiều người sử dụng chung có thể sẽ bị khóa.
                         </p>
                       </div>
-                      <div className="flex justify-center items-center">
-                        <form className="w-[380px] relative">
-                          <div className="mt-[10px] w-full overflow-hidden">
-                            <div className="text-left text-[#292929] w-ful">
-                              <div className="flex justify-between">
-                                <label className="text-[14px] font-semibold py-[10px] pl-0 pr-2">
-                                  Tên của bạn?
-                                </label>
-                              </div>
-                              <div className="FormInput_invalid">
-                                <input
-                                  className="w-full text-[50px] outline-none"
-                                  placeholder="Họ và tên của bạn"
-                                  name="display_name"
-                                  maxLength="50"
-                                />
-                                <span className="FormInput_message"></span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="mt-[10px] w-full">
-                            <div className="text-left text-[#292929] w-full">
-                              <div className="flex justify-between">
-                                <label className="text-[14px] font-semibold py-[10px] pl-0 pr-2 cursor-default">
-                                  {!resgiterWithEmail
-                                    ? "Email"
-                                    : "Số điện thoại"}
-                                </label>
-                                <label
-                                  className="text-[13px] font-medium opacity-70 py-[10px] pl-0 pr-2"
-                                  onClick={() =>
-                                    setrResgiterWithEmail(!resgiterWithEmail)
-                                  }
-                                >
-                                  {resgiterWithEmail
-                                    ? "Đăng ký với email"
-                                    : "Đăng ký với SĐT"}
-                                </label>
-                              </div>
-                              {resgiterWithEmail ? (
-                                <ResgiterWithPhone />
-                              ) : (
-                                <ResgiterWithEmail
-                                  resgiterWithEmail={resgiterWithEmail}
-                                />
-                              )}
-                            </div>
-                          </div>
-
-                          <div className="Login_dontHaveAcc">
-                            Bạn chưa có tài khoản?
-                            <a
-                              className="text-[#f05123] font-semibold"
-                              href="#"
-                              onClick={handleChangeLogin}
-                            >
-                              {" "}
-                              Đăng nhập
-                            </a>
-                          </div>
-                          <div className="Login_acceptTerm">
-                            Việc bạn tiếp tục sử dụng trang web này đồng nghĩa
-                            bạn đồng ý với{" "}
-                            <a className="underline" href="#">
-                              điều khoản sử dụng
-                            </a>{" "}
-                            của chúng tôi.
-                          </div>
-                        </form>
+                      <div className="flex justify-center items-center flex-col">
+                        <FormResgiter
+                          resgiterWithEmail={resgiterWithEmail}
+                          setrResgiterWithEmail={setrResgiterWithEmail}
+                        />
+                        <div className="Login_dontHaveAcc">
+                          Bạn chưa có tài khoản?
+                          <a
+                            className="text-[#f05123] font-semibold"
+                            href="#"
+                            onClick={handleChangeLogin}
+                          >
+                            {" "}
+                            Đăng nhập
+                          </a>
+                        </div>
+                        <div className="Login_acceptTerm">
+                          Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn
+                          đồng ý với{" "}
+                          <a className="underline" href="#">
+                            điều khoản sử dụng
+                          </a>{" "}
+                          của chúng tôi.
+                        </div>
                       </div>
                     </div>
                   </>
@@ -288,34 +281,44 @@ const Header = () => {
           </div>
         )}
 
-        {/* <div>
+        {token && (
           <div>
-            <button className="bg-toastify-color-transparent text-black-color cursor-pointer mr-4 p-2 font-semibold leading-4 text-[14px]">
-              Khóa học của tôi
-            </button>
+            <div>
+              <button className="bg-toastify-color-transparent text-black-color cursor-pointer mr-4 p-2 font-semibold leading-4 text-[14px]">
+                Khóa học của tôi
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="p-2 relative select-none">
-          <img
-            src="./icon/bell.png"
-            className="w-[17.5px] h-5 cursor-pointer opacity-60 hover:opacity-100"
-            alt=""
-          />
-        </div>
-        <div className="ml-3">
-          <div className="avatar_border">
+        )}
+        {token && (
+          <div className="p-2 relative select-none">
             <img
-              className="cursor-pointer rounded-[50%] h-[9em] w-[9em] object-cover"
-              src="https://files.fullstack.edu.vn/f8-prod/user_photos/312913/643074ae01c1b.jpg"
-              alt=""
-            />
-            <img
-              className="icon_avatar"
-              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+              src="./icon/bell.png"
+              className="w-[17.5px] h-5 cursor-pointer opacity-60 hover:opacity-100"
               alt=""
             />
           </div>
-        </div> */}
+        )}
+        {token && (
+          <div className="ml-3">
+            <div className="avatar_border">
+              <img
+                className="cursor-pointer rounded-[50%] h-[9em] w-[9em] object-cover"
+                src={`${
+                  profile.avatar
+                    ? profile.avatar
+                    : "/icon/fallback-avatar.155cdb2376c5d99ea151.jpg"
+                }`}
+                alt=""
+              />
+              <img
+                className="icon_avatar"
+                src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
