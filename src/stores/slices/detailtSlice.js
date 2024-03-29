@@ -1,9 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-  status: false,
+  profile: {},
+  isLoading: false,
 };
 export const detailtSlice = createSlice({
   name: "detailtSlice",
   initialState,
-  reducers: {},
+  reducers: {
+    updateLoading: (state, action) => {
+      state.isLoading = action.payload;
+    },
+    updateProfile: (state, action) => {
+      state.profile = action.payload;
+    },
+  },
 });

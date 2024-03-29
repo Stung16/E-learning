@@ -37,7 +37,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -82,7 +82,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -126,7 +126,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -170,7 +170,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -214,7 +214,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -258,7 +258,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -302,7 +302,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video
@@ -346,7 +346,7 @@ const VideoHot = () => {
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="#"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem video

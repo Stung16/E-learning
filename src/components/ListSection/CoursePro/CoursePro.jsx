@@ -20,7 +20,7 @@ const CoursePro = () => {
 
       {/* ListCourse */}
       <div className="ListCourse_Pro pb-0 min-h-[200px] ">
-        <section className="-px-4 min-[740px]:mx-[-8px] -px-1">
+        <section className="-px-4 min-[740px]:mr-[-8px] min-[740px]:ml-0 -px-1">
           <div className="ListCourse_Pro_body min-[740px]:pt-[3px] max-[1023px]:pb-4 max-[1023px]:pt-[3px]">
             <section className="Course_Pro min-w-[200px] ml-[-9px] mr-[-12px] flex flex-wrap">
               <ItemCoursePro

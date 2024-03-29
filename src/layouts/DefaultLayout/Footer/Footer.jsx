@@ -34,7 +34,7 @@ const Footer = () => {
                   Cầu Giấy, TP. Hà Nội
                 </p>
                 <div>
-                  <Link to="#">
+                  <Link to="">
                     <img
                       className="mt-[35px]"
                       src="/icon/dmca.2593d9ecf1c982e3c3a2.png"
@@ -106,7 +106,7 @@ const Footer = () => {
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Nester
@@ -114,7 +114,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game CSS Diner
@@ -122,7 +122,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game CSS Selectors
@@ -130,7 +130,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Froggy
@@ -138,7 +138,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Froggy Pro
@@ -146,7 +146,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Game Scoops
@@ -165,7 +165,7 @@ const Footer = () => {
                 <ul className="pl-0">
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Tạo CV xin việc
@@ -173,7 +173,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Rút gọn liên kết
@@ -181,7 +181,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Clip-path maker
@@ -189,7 +189,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Snippet generator
@@ -197,7 +197,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-2 relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       CSS Grid generator
@@ -205,7 +205,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-[2px] relative leading-[22px] text-[14px] text-[#a9b3bb]">
                     <Link
-                      to="#"
+                      to=""
                       className="cursor-pointer relative duration-100 ease-linear hover:text-[#fff]"
                     >
                       Cảnh báo sờ tay lên mặt
@@ -220,7 +220,7 @@ const Footer = () => {
               <div>
                 <h2 className="mt-[10px] text-[18px] leading-[29px] text-white-color">
                   <Link
-                    to="#"
+                    to=""
                     className="mt-[10px] text-[18px] leading-[29px] text-white-color"
                   >
                     CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8
@@ -250,13 +250,13 @@ const Footer = () => {
                 © 2018 - 2024 F8. Nền tảng học lập trình hàng đầu Việt Nam
               </p>
               <div className="ml-auto">
-                <Link to="#">
+                <Link to="">
                   <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color"></i>
                 </Link>
-                <Link to="#" className="ml-4">
+                <Link to="" className="ml-4">
                   <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-facebook text-black-color bg-[#4867aa]"></i>
                 </Link>
-                <Link to="#" className="ml-4">
+                <Link to="" className="ml-4">
                   <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color"></i>
                 </Link>
               </div>

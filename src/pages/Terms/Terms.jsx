@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Terms.css";
 import { FaLink } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Terms = () => {
   return (
     
@@ -16,30 +17,30 @@ const Terms = () => {
             <section className='min-[1113px]:w-4/6 min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3'>
               <div className='text-[18px] text-[#292929] break-words'>
                 <h2 className='font-semibold  mt-[30px] mb-[20px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' href="">
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' to="">
                   <FaLink />
-                  </a>
+                  </Link>
                   I. Nguyên tắc chung
                 </h2>
                 <p className='my-[35px] mx-0 leading-[36px]'>
                   Website 
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                       (sau đây gọi là F8, hoặc F8 Edu) docông ty cổ phần công nghệ giáo dục F8 (“Công ty”) thực hiện hoạt
                       động và vận hành. Thành viên trên website là các cá nhân, tổ chức, có hoạt động hợp pháp được F8 chính thức công nhận và được phép sử dụng dịch
                       vụ do website cung cấp.
                 </p>
                 <hr/>
                 <h2 className='font-semibold  my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px]  group-hover:inline-block' to=""><FaLink /></Link>
                   II. Qui định chung
                 </h2>
                 <h3 className='font-semibold my-[21px]'>1. Định nghĩa</h3>
                 <p className='my-[6px] mx-0 leading-[36px]'>
                   <strong className='font-bold'>Tên miền website </strong>
                   Học lập trình trực tuyến 
-                  <a className='text-[#F05123] underline ' href=""> fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline ' to=""> fullstack.edu.vn </Link>
                   do Công ty cổ phần công nghệ giáo dục F8 phát triển với tên miền website là:
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   . 
                 </p>
                 <p className='my-[20px] mx-0 text-[#292929] break-words'>
@@ -62,14 +63,14 @@ const Terms = () => {
                 </blockquote>
                 <p className='my-[12px] mx-0 leading-[36px]'>
                   <strong>Giá bán:</strong> là chi phí mà khách hàng phải trả để mua quyền truy cập một khóa học cụ thể do F8 cung cấp. Giá bán đăng trên website
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn</a> đã bao gồm thuế giá trị gia tăng. Khách hàng chỉ cần thanh toán 1 khóa học 1 lần và có thể học mãi mãi
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn</Link> đã bao gồm thuế giá trị gia tăng. Khách hàng chỉ cần thanh toán 1 khóa học 1 lần và có thể học mãi mãi
                 </p>
                 <p className='my-[12px] mx-0 leading-[36px]'>
                   <strong>Giảng viên:</strong> Hiện tại là các cá nhân có kinh nghiệm chuyên sâu về lập trình, và kinh nghiệm giảng dạy phong phú của F8.
                 </p>
                 <p className='my-[12px] mx-0 leading-[36px]'>
                   <strong>Đối tác sản xuất nội dung:</strong> Hiện tại 100% nội dung các khóa học trên website
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn</a> đều do F8 sản xuất và cung cấp.
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn</Link> đều do F8 sản xuất và cung cấp.
                 </p>
                 <p className='my-[12px] mx-0 leading-[36px]'>
                   <strong>Người học/khách hàng:</strong> Là người được cấp quyền truy cập các khóa đào tạo trực tuyến trên nền tảng hoặc website của F8
@@ -80,7 +81,7 @@ const Terms = () => {
                 <h3 className='font-semibold my-[21px]' >2. Nguyên tắc chung</h3>
                 <ul className='my-[37px] mx-0 pl-6 list-disc leading-[36px]'>
                   <li>Website 
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   do Công ty Cổ phần Công Nghệ Giáo Dục F8 sở hữu và vận hành. Đối tượng hoạt động trên website này bao gồm: Đối tác và người học có đăng ký sử dụng tài khoản được ban quản trị F8 phê duyệt.
                   </li>
                   <li>Hoạt động giao dịch mua khóa học trên F8 được thực hiện dựa trên nguyên tắc tự do, tự nguyện, bình đẳng, tôn trọng quyền và lợi ích hợp pháp của các bên tham gia, không vi phạm với qui định của Pháp luật và qui định của F8.</li>
@@ -90,60 +91,60 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   III. Qui trình giao dịch
                 </h2>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px]'>
                 <li>Người dùng đăng kí khóa học PRO của F8, sẽ thực hiện thanh toán khóa học theo giá niêm yết trên website
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>              
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>              
                   </li>
                   <li>Sau khi F8 nhận được thanh toán của người dùng, sẽ tiến hành gửi email xác nhận thanh toán qua email của người dùng cung cấp. Đồng thời gửi thông báo đến tài khoản cá nhân của người dùng trên hệ thống 
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   </li>
                   <li>Sau khi gửi email xác nhận thanh toán thành công, F8 sẽ gửi email kích hoạt khóa học qua email của người dùng đã cung cấp. Đồng thời gửi thông báo đến tài khoản cá nhân của người dùng trên hệ thống 
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   </li>
                   <li>Sau khi khóa học được kích hoạt, người dùng sẽ truy cập vào học. Khóa học đã được mua sẽ được truy cập vĩnh viễn. Và người dùng sẽ không phải mất thêm bất kì khoản phí nào.
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   </li>
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   III. Qui trình thanh toán
                 </h2>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px]'>
                 <li>Người dùng mua khóa học của F8 sẽ thanh toán qua hình thức chuyển khoản theo hướng dẫn chi tiết các bước trên trang thanh toán của mỗi khóa học.
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>              
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>              
                   </li>
                   <li>F8 sẽ kiểm tra và gửi xác nhận thanh toán thành công qua email do người dùng cung cấp, và gửi thông báo đến tài khoản người dùng trên hệ thống 
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   ngay khi nhận được chi phí cần trả cho khóa học, chậm nhất là 30 phút.
                   </li>
                   <li>Ngay sau khi xác nhận thanh toán thành công, F8 sẽ kích hoạt khóa học cho người dùng. Và người dùng ngay lập tức có thể truy cập vào khóa học, và sử dụng các tài nguyên của khóa học đó.
-                  <a className='text-[#F05123] underline' href=""> https://fullstack.edu.vn </a>
+                  <Link className='text-[#F05123] underline' to=""> https://fullstack.edu.vn </Link>
                   </li>
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   VI. Phương thức giao hàng - vận chuyển
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>F8 sẽ gửi email kích hoạt khóa học, cùng các hướng dẫn để người dùng đã thanh toán thành công mua khóa học cách thức truy cập vào khóa học để học tập.</p>
                 <p className='my-[6px] mx-0 leading-[36px]'>Thời gian kích hoạt khóa học: F8 sẽ kích hoạt khóa học và gửi email hướng dẫn ngay sau khi xác nhận người dùng đã thanh toán khóa học thành công, chậm nhất sau 30 phút.</p>
                 <p className='my-[6px] mx-0 leading-[36px]'>Trong trường hợp, F8 chậm trễ trong việc kích hoạt khóa học, người dùng có thể liên hệ tới F8 bằng cách gửi email đến
-                <a className='text-[#F05123] underline' href=""> contact@fullstack.edu.vn </a>
+                <Link className='text-[#F05123] underline' to=""> contact@fullstack.edu.vn </Link>
                 hoặc gọi điện thoại đến F8 qua số điện thoại: 0246.329.1102 để được hỗ trợ. Chúng tôi luôn luôn hỗ trợ các bạn 24/7.
                 </p>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   VII. Đảm bảo an toàn giao dịch
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Khách hàng tuyệt đối không sử dụng bất kỳ chương trình, công cụ hay hình thức nào khác để can thiệp vào hệ thống hay làm thay đổi cấu trúc dữ liệu. Nghiêm cấm việc phát tán, truyền bá hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm nhập của hệ thống website. Mọi vi phạm sẽ bị xử lý theo quy chế và quy định của pháp luật. Mọi thông tin giao dịch được bảo mật, trừ trường hợp buộc phải cung cấp khi Cơ quan pháp luật yêu cầu</p>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   VIII. Quản lý thông tin xấu
                 </h2>
                 <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1. Quản lý của website đối với thông tin giới thiệu, quảng bá sản phẩm</h3>
@@ -181,7 +182,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   IX. Trách nhiệm trong trường hợp phát sinh lỗi kỹ thuật
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]'>Ban quản trị F8 luôn cố gắng và cam kết cung cấp các dịch vụ hạ tầng kỹ thuật tốt nhất tới Khách hàng và Đối tác trong quá trình giao dịch, đảm bảo sự an toàn và ổn định của hệ thống kỹ thuật.</p>
@@ -189,7 +190,7 @@ const Terms = () => {
                 <p className='my-[6px] mx-0 leading-[36px]'>Đối với các lỗi phát sinh kỹ thuật, lỗi phần mềm hoặc lỗi khách quan khác dẫn đến sự cố về mua bán, trao đổi hàng hóa/dịch vụ trên website, Ban quản trị F8 sẽ hỗ trợ thông qua Hotline hoặc Email.</p>
                 <p className='my-[6px] mx-0 leading-[36px]'>Nếu gặp khó khăn về kỹ thuật khách hàng có thể Liên hệ với F8 trong giờ hành chính để được hỗ trợ kịp thời.</p>
                 <p className='my-[6px] mx-0 leading-[36px]'><strong>Hotline:</strong> 0246.329.1102</p>
-                <p className='my-[6px] mx-0 leading-[36px]'><strong>Email:</strong><a className='text-[#F05123] underline' href=""> contact@fullstack.edu.vn </a></p>
+                <p className='my-[6px] mx-0 leading-[36px]'><strong>Email:</strong><Link className='text-[#F05123] underline' to=""> contact@fullstack.edu.vn </Link></p>
                 <p className='my-[6px] mx-0 leading-[36px]'>Các dịch vụ hỗ trợ cụ thể như sau:</p>
                 <ul className='my-7 mx-0 pl-6 list-disc leading-[36px] text-[18px]'>
                 <li>Dịch vụ xử lý các lỗi kỹ thuật.             
@@ -199,7 +200,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   X. Quyền và trách nhiệm của ban quản lý website
                 </h2>
                 <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1. Quyền</h3>
@@ -234,7 +235,7 @@ const Terms = () => {
                 </ul>
                 <hr />
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   XI. Quyền và trách nhiệm của các bên tham gia
                 </h2>
                 <h3 className='font-semibold text-[21px] leading-[42px]'>1. Quyền và nghĩa vụ của khách hàng/người dùng/học viên</h3>
@@ -243,7 +244,7 @@ const Terms = () => {
                 <li>Học viên có quyền tham gia vào các khóa học miễn phí/ trả phí của F8.             
                 </li>
                 <li>Học viên sẽ được hưởng các chính sách ưu đãi do F8 cung cấp. Chính sách ưu đãi sẽ được đăng tải trực tiếp trên trang chủ của website
-                <a className='text-[#F05123] underline' href=""> https://www.fullstack.edu.vn </a>  và các kênh thông tin khác.      
+                <Link className='text-[#F05123] underline' to=""> https://www.fullstack.edu.vn </Link>  và các kênh thông tin khác.      
                 </li>
                 <li>Học viên có quyền đóng góp ý kiến về F8 trong quá trình sử dụng, mọi kiến nghị được gửi trực tiếp qua thư, điện thoại, email, group F8 trên Facebook . Tất cả các ý kiến, thắc mắc sẽ được phòng chăm sóc khách hàng giải đáp trong thời gian ngắn nhất có thể.             
                 </li>
@@ -262,14 +263,14 @@ const Terms = () => {
                 </li>
                 </ul> 
                 <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   XIII. Chính sách điều khoản chương trình tiếp thị liên kết F8
                 </h2>
                 <p className='my-[6px] mx-0 leading-[36px]' >Dưới đây là những điều khoản hoàn chỉnh được áp dụng cho chương trình Affiliate của công ty Cổ phần Công nghệ Giáo dục F8 (từ dưới đây gọi tắt là F8). Đây được xem là bản thỏa thuận giữa F8 và Đối tác của mình. Xin hãy đọc toàn bộ thỏa thuận trước khi tham gia. Một khi bạn đã đăng ký tham gia vào chương trình Affiliate của F8, chúng tôi sẽ hiểu rằng bạn đã đọc và đồng ý toàn bộ với tất cả điều khoản dưới đây. Mọi thông tin về điều khoản này nếu đến từ những nguồn khác đều không chính xác và không mang tính pháp lý.</p>
                 <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1. Các khái niệm</h3>
                 <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1.1. Đối tác</h3>
                   <p className='my-[6px] mx-0 leading-[36px]'>Được hiểu là những cá nhân hoặc tổ chức đồng ý với thỏa thuận trong “Chính sách điều khoản chương trình Affiliate F8”, có tham gia giới thiệu, hỗ trợ tìm hiểu và tư vấn mua hàng tại website</p>
-                  <a className='text-[#F05123] underline' href=""> https://www.fullstack.edu.vn </a> tới khách hàng.
+                  <Link className='text-[#F05123] underline' to=""> https://www.fullstack.edu.vn </Link> tới khách hàng.
                   <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1.2. Thông tin bảo mật</h3>
                   <p className='my-[6px] mx-0 leading-[36px]'>Được hiểu như là tất cả những thông tin về đối tác thứ ba cũng như thông tin người dùng của F8, bao gồm nội dung bản “Chính sách điều khoản chương trình Affiliate F8” này, những thông tin về công nghệ, lịch sử thanh toán, công thức, mã nguồn, danh sách khách hàng, tên tuổi, địa chỉ và tất cả thông tin liên quan khác, bao gồm cả thiết kế, doanh số, chi phí, tài chính, kế hoạch kinh doanh và dữ liệu marketing cũng như các thông tin bảo mật khác; tất cả đều được bảo hộ và bảo mật.</p>
                   <h3 className='font-semibold text-[21px] leading-[42px] my-[21px]'>1.3. Giao dịch thành công</h3>
@@ -361,11 +362,11 @@ const Terms = () => {
                   <p className='my-[6px] mx-0 leading-[36px]'>Thỏa thuận này được áp dụng tại Việt Nam. Nếu có bất kỳ điều gì đi ngược lại với luật pháp Việt Nam, Đối tác cũng sẽ bị liên đới chịu trách nhiệm.</p>
                   <hr />
                   <h2 className='font-semibold my-[47px] group'>
-                  <a className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' href=""><FaLink /></a>
+                  <Link className='text-[#666] hidden text-[18px] ml-[-28px] no-underline w-[28px] group-hover:inline-block' to=""><FaLink /></Link>
                   XII. Điều khoản cam kết
                   </h2>
                   <p className='my-[6px] mx-0 leading-[36px]'>Địa chỉ liên lạc chính thức của Website/ứng dụng cung cấp khóa học trực tuyến
-                  <a className='text-[#F05123] underline' href=""> https://www.fullstack.edu.vn </a></p>
+                  <Link className='text-[#F05123] underline' to=""> https://www.fullstack.edu.vn </Link></p>
                   <p className='my-[6px] mx-0 leading-[36px]'>
                     <strong>Công ty/Tổ chức: </strong>Công ty Cổ phần Công Nghệ Giáo Dục F8
                   </p>
@@ -373,7 +374,7 @@ const Terms = () => {
                     <strong>Địa chỉ: </strong>Nhà D9, lô A10, Khu đô thị Nam Trung Yên, phường Trung Hòa, quận Cầu Giấy, TP. Hà Nội
                   </p>
                   <p className='my-[6px] mx-0 leading-[36px]'>
-                    <strong>Email:</strong><a className='text-[#F05123] underline' href=""> contact@fullstack.edu.vn </a>
+                    <strong>Email:</strong><Link className='text-[#F05123] underline' to=""> contact@fullstack.edu.vn </Link>
                   </p>
                   <p className='my-[6px] mx-0 leading-[36px]'>
                     <strong>Số điện thoại: </strong>0246.329.1102
@@ -383,12 +384,12 @@ const Terms = () => {
             <section className=' min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 '>
               <div className='sticky top-[80px] flex justify-end'>
               <div className='flex flex-col max-w-[300px] '>
-                <a className='mt-[32px]' href="">
+                <Link className='mt-[32px]' to="">
                   <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="/image/img_baiviet/63dc625b29cdc.png" alt="" />
-                </a>
-                <a className='mt-[32px]' href="">
+                </Link>
+                <Link className='mt-[32px]' to="">
                   <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="/image/img_baiviet/6421144f7b504.png" alt="" />
-                </a>
+                </Link>
               </div>
               </div>
             </section>

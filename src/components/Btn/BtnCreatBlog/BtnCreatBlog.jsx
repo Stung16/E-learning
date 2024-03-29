@@ -8,7 +8,7 @@ const items = [
   {
     label: (
       <div className="w-[200px] py-2">
-        <Link className="flex gap-2 items-center" to="#">
+        <Link className="flex gap-2 items-center" to="">
         <FaPen />
           <span>Viết blog</span>
         </Link>

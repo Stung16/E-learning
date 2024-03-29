@@ -24,6 +24,7 @@ const PostHot = () => {
           </Link>
           <FaChevronRight className="group-hover:translate-x-2 transition-all ease-linear duration-400 fa-solid fa-chevron-right text-[12px] text-[#f47425] cursor-pointer mb-[2px]" />
 
+ 
         </div>
       </div>
 
@@ -35,6 +36,7 @@ const PostHot = () => {
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
                   to="/postdetail"
+                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -50,6 +52,7 @@ const PostHot = () => {
                   <Link
                     className="text-[16px] font-semibold leading-[22px] break-words"
                     to=""
+
                   >
                     Tổng hợp các sản phẩm của học viên tạ...
                   </Link>
@@ -86,6 +89,7 @@ const PostHot = () => {
                   <Link
                     className="text-[16px] font-semibold leading-[22px] break-words"
                     to=""
+
                   >
                     [Phần 1] Tạo dự án ReactJS với Webpac...
                   </Link>
@@ -158,6 +162,7 @@ const PostHot = () => {
                   <Link
                     className="text-[16px] font-semibold leading-[22px] break-words"
                     to=""
+
                   >
                     Ký sự ngày thứ 25 học ở F8
                   </Link>
@@ -215,6 +220,7 @@ const PostHot = () => {
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
                   to="/postdetail"
+
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết

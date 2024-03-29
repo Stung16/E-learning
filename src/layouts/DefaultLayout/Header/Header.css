@@ -79,7 +79,6 @@
   top: 16px;
   width: 40px;
   z-index: 10;
-
 }
 .Login_title {
   color: rgb(41, 41, 41);
@@ -133,7 +132,8 @@
   width: 100%;
   color: #666;
   font-size: 11px;
-  
+  margin: 0px auto;
+  width: min(400px, 90%);
   line-height: 1.6;
   margin-top: 3px;
 }
@@ -152,8 +152,8 @@
 }
 .FormInput_invalid input {
   background-color: transparent;
-  border: none;
   display: block;
+  border-radius: 44px;
   flex: 1 1;
   font-size: 14px;
   outline: none;
@@ -176,16 +176,20 @@
   margin: 1px;
   min-width: 140px;
   white-space: nowrap;
+  color: #fff;
+  background: #ff5117;
 }
-.FormInput_invalid .btn-sendCOde {
+.btn-sendCOde.disable {
   background-color: #ccc;
-  color: #757575;
   cursor: not-allowed;
+  pointer-events: none;
+
 }
+/* border-[#f33a58] border-[1px]" */
 .btn-submit-resgiter {
   box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.5;
+  /* cursor: not-allowed;
+  opacity: 0.5; */
   user-select: none;
   font-size: 16px;
   background-position: 0 0;
@@ -202,8 +206,147 @@
   margin-top: 20px;
   width: 100%;
 }
+.btn-submit-resgiter.disable {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+
+}
 input::placeholder {
   font-size: 16px;
+}
+
+/*  */
+.MobileMenu_slideOut.MobileMenu_modal {
+  animation: MobileMenu_fadeOut .5s ease forwards
+}
+.MobileMenu_slideOut .MobileMenu_body {
+  animation: MobileMenu_slideOut .5s ease forwards
+}
+/*  */
+.MobileMenu_modal{
+    animation: MobileMenu_fadeIn .5s ease;
+    background-color: rgba(0, 0, 0, .3);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 21
+}
+@keyframes MobileMenu_fadeIn{
+  0% {
+    opacity: 0;
+}
+  100% {
+    opacity: 1;
+}
+}
+@keyframes MobileMenu_fadeOut {
+  0% {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}
+.MobileMenu_body{
+    animation: MobileMenu_slideIn .5s ease;
+    background-color: #fff;
+    bottom: 0;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    z-index: 22;
+}
+@keyframes MobileMenu_slideIn{
+  0% {
+    transform: translateX(-100%);
+}
+  100% {
+    transform: translateX(0);
+}
+}
+@keyframes MobileMenu_slideOut {
+  0% {
+      transform: translateX(0)
+  }
+
+  to {
+      transform: translateX(-100%)
+  }
+}
+.MobileMenu_modal.active{
+  display: inline-block !important;
+}
+
+.MobileMenu_scrollable{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    max-height: 100%;
+    padding: 16px 0 0 16px;
+}
+.FallbackAvatar_avatar{
+    background: transparent;
+    border-radius: 50%;
+    font-size:8.8px;
+}
+.MobileMenu_list{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .079)
+}
+.index-module_listItem2{
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+.MobileMenu_list li a{
+    padding: 16px 0 16px 16px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+.MobileMenu_list li em{
+    color: #757575;
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+    width: 20px;
+}
+.MobileMenu_list li div{
+  padding: 20px 0 20px 17px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .3s;
+}
+.MobileMenu_list li>span{
+  padding: 20px 0 20px 20px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .3s;
+}
+.index-module_listItem2 a:hover{
+  background-color: #f0f0f0;
 }
 
 @media (min-width: 0px) and (max-width: 739px) {
@@ -217,6 +360,7 @@ input::placeholder {
     padding: 48px 16px 60px;
   }
   
+  
 }
 
 @media (min-width: 0px) and (max-width: 739px) {
@@ -225,13 +369,38 @@ input::placeholder {
     padding-right: 5px;
     width: 160px;
   }
-}
-@media (min-width: 0px) and (max-width: 739px) {
   .Login_acceptTerm {
     margin-left: auto;
     margin-right: auto;
     padding: 10px 34px 0px 34px;
     width: min(400px, 100%);
+  }
+  .header_mobile{
+    padding: 0 16px !important;
+    z-index: 20;
+  }
+  .NavBar_actions_mobile{
+    flex: 5 1;
+  }
+  .search_mobile_wapper{
+    display: none !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1023px) {
+  .header{
+    display: none !important;
+  }
+}
+@media (min-width: 739px) and (max-width: 1023px) {
+  .icon_bell{
+    padding-left: 190px;
+  }
+  .search_mobile_wapper{
+    margin-left: 10px;
+  }
+  .icon_search_mobile{
+    display: none;
   }
 }
 @keyframes authModel {

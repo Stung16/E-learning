@@ -27,7 +27,7 @@ const Learning_paths = () => {
               <div className="flex mb-5">
                 <div className="flex-1">
                   <h2 className="font-semibold m-0">
-                    <Link to="#">Lộ trình học Front-end</Link>
+                    <Link to="">Lộ trình học Front-end</Link>
                   </h2>
                   <p className="text-[14px] m-0 leading-[1.6]">
                     Lập trình viên Front-end là người xây dựng ra giao diện
@@ -36,7 +36,7 @@ const Learning_paths = () => {
                   </p>
                 </div>
                 <div className="flex items-center pl-6">
-                  <Link to="#" className="LearningPathItem_thumb-round">
+                  <Link to="" className="LearningPathItem_thumb-round">
                     <img className=""
                       src="/image/img_lotrinh/63b4642136f3e.png"
                       alt=""
@@ -55,7 +55,7 @@ const Learning_paths = () => {
               <div className="flex mb-5">
                 <div className="flex-1">
                   <h2 className="font-semibold m-0">
-                    <Link to="#">Lộ trình học Backend-end</Link>
+                    <Link to="">Lộ trình học Backend-end</Link>
                   </h2>
                   <p className="text-[14px] m-0 leading-[1.6]">
                     Trái với Front-end thì lập trình viên Back-end là người làm
@@ -64,7 +64,7 @@ const Learning_paths = () => {
                   </p>
                 </div>
                 <div className="flex items-center pl-6">
-                  <Link to="#" className="LearningPathItem_thumb-round">
+                  <Link to="" className="LearningPathItem_thumb-round">
                     <img
                       src="/image/img_lotrinh/63b4641535b16.png"
                       alt=""
@@ -88,7 +88,7 @@ const Learning_paths = () => {
                 Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham
                 gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
               </p>
-              <Link to="#" className="join-group-btn">Tham gia nhóm</Link>
+              <Link to="" className="join-group-btn">Tham gia nhóm</Link>
             </div>
             <div className="SuggestionBox_image">
               <img className="relative right-[-44px] w-[420px]" src="/image/img_lotrinh/fb-group-cards.4bd525b1b8baf7b1e5a2.png" alt="" />

@@ -16,11 +16,11 @@ import Front_end_Development from "../pages/Learning_paths/Front_end_Development
 import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
+import AuthMiddleware from "../middlewares/AuthMiddleware";
 export const publicRoutes = (
   <>
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
-      
       {/* Lộ trình */}
       <Route path="/learning-paths" element={<Learning_paths />}></Route>
       <Route
@@ -31,7 +31,6 @@ export const publicRoutes = (
         path="/learning-paths/back_end_development"
         element={<Front_end_Development />}
       />
-
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/privacy" element={<Privacy />} />
@@ -41,16 +40,30 @@ export const publicRoutes = (
 
       <Route path="/blog" element={<Blog />} />
       {/* Courses */}
-      <Route path="/courses/lessons-for-newbie" element={<LessonsForNewbie />} />
+      <Route
+        path="/courses/lessons-for-newbie"
+        element={<LessonsForNewbie />}
+      />
     </Route>
     <Route path="/profile" element={<Profile />} /> 
 
     <Route element={<NoNavigate />}>
-      <Route path="/postdetail" element={<PostDetail />} />
+      <Route path="/blog/:slug" element={<PostDetail />} />
     </Route>
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/landing" element={<Landing />} />
     <Route path="/*" element={<NotFound />} />
+    <Route element={<AuthMiddleware />}>
+      {/* <Route element={<GuestMiddleware />}>
+        <Route path="/signin" element={<Login />} />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/auth/google/callback" element={<Auth />} />
+        <Route path="/account/forgot" element={<ForgotPass />} />
+        <Route path="/account/logout" element={<Logout />} />
+        <Route path="/account/reset-password/:id" element={<ResetPass />} />
+        <Route path="/*" element={<NotFound />} />
+      </Route> */}
+    </Route>
   </>
     
 );

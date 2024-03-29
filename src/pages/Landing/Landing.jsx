@@ -474,7 +474,7 @@ function Landing() {
                                     <h3 className='third-heading my-5 mx-0 text-[28px] font-bold text-[#fff] leading-[39px]'>Người "thầy" tâm huyết</h3>
                                     <p className='desc text-[#8b949e] text-[20px]'>
                                     Một trong những yếu tố quan trọng để chọn lựa khóa học online đó là chọn "thầy". Từ kiến thức, giọng nói, cách truyền đạt, ... của họ đều phải phù hợp thì người học mới có thêm động lực. Bạn có thể 
-                                    <a className='text-highlight' href=""> trải nghiệm miễn phí </a>
+                                    <Link className='text-highlight' to=""> trải nghiệm miễn phí </Link>
                                     các bài học từ Sơn Đặng.
                                     </p>
                                 </div>

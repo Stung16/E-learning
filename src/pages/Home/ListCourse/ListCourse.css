@@ -134,7 +134,7 @@
     }
     .CommonItem_wrapper_Free{
         margin-bottom: 0;
-        width: 35vw !important;
+        width: 34vw !important;
         padding-right: 0 !important;
     }
     .Course_Pro{
@@ -143,7 +143,7 @@
     }
     .ScrollList_body_Post{
         flex-wrap: nowrap !important;
-        padding-left: 11px !important;
+        padding-left: 19px !important;
         padding-right: 0 !important;
         width: 60vw !important;
     }
@@ -170,7 +170,6 @@
     .Main_CourseFree{
         overflow-x: auto;
     }
-    
     .ListCourse_Free{
         flex-wrap: nowrap !important;
     }
@@ -195,6 +194,9 @@
     }
     .Course_Pro{
         margin-bottom: -20px ;
+    }
+    .CommonItem_wrapper_Pro{
+        margin-left: -7px;
     }
 }
 

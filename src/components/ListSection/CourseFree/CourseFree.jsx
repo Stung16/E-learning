@@ -25,6 +25,7 @@ const CourseFree = () => {
               Xem lộ trình
             </Link>
             <FaChevronRight className="group-hover:translate-x-2 transition-all ease-linear duration-400 fa-solid fa-chevron-right text-[12px] text-[#f47425] cursor-pointer mb-[2px]" />
+
           </div>
         </div>
       </div>
@@ -90,7 +91,7 @@ const CourseFree = () => {
             name={'App "Đừng chạm tay lên mặt"'}
             image={"./image/courses/61a9e9e701506.png"}
             link={"/courses/lessons-for-newbie"}
-            users={"0.306"}
+            users={"10.306"}
           />
         </section>
       </div>
