@@ -30,13 +30,13 @@ const PostHot = () => {
 
       <div className="Main_PostHot pb-0">
         <section className="ListPostHot  ml-[-12px] mr-[-12px] flex flex-wrap">
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
-                  to=""
+                  to="/blog/blog/postdetail"
+                  
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -68,12 +68,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -105,12 +105,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -141,12 +141,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -178,12 +178,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -214,12 +214,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
 
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
@@ -251,12 +251,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -287,12 +287,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/postdetail"
+                  to="/blog/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết

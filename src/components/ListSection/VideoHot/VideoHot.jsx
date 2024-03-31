@@ -32,7 +32,7 @@ const VideoHot = () => {
 
       <div className="Main_VideoHot pb-0">
         <section className="ListVideoHot ml-[-12px] mr-[-12px] flex flex-wrap">
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -77,7 +77,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -121,7 +121,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -165,7 +165,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -209,7 +209,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -253,7 +253,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -297,7 +297,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -341,7 +341,7 @@ const VideoHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link

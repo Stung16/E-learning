@@ -17,6 +17,7 @@ import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
+
 export const publicRoutes = (
   <>
     <Route element={<DefaultLayout />}>

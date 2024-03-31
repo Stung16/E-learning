@@ -12,7 +12,7 @@ textarea::placeholder{
 }
 @media (min-width: 0px) and (max-width: 739px){
 .App_withSidebarContent{
-    padding: 0  !important
+    padding: 0 16px!important
 }
 .Content{
     padding: 0 !important;
@@ -24,9 +24,17 @@ textarea::placeholder{
     text-align: left !important;
 }
 }
+@media (min-width: 739px) and (max-width: 1023px){
+    .App_withSidebarContent{
+        max-width: 100%;
+        padding: 0 32px !important
+    }
+}
 @media (min-width: 0) and (max-width: 1023px){
-.App_withSidebarContent{
-    max-width: 100%;
-    padding: 0 32px
+
+.map{
+    width: 100%;
+}.Content{
+    padding: 0 !important;
 }
 }

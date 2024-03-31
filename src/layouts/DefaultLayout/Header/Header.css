@@ -216,13 +216,7 @@ input::placeholder {
   font-size: 16px;
 }
 
-/*  */
-.MobileMenu_slideOut.MobileMenu_modal {
-  animation: MobileMenu_fadeOut .5s ease forwards
-}
-.MobileMenu_slideOut .MobileMenu_body {
-  animation: MobileMenu_slideOut .5s ease forwards
-}
+
 /*  */
 .MobileMenu_modal{
     animation: MobileMenu_fadeIn .5s ease;
@@ -234,23 +228,7 @@ input::placeholder {
     top: 0;
     z-index: 21
 }
-@keyframes MobileMenu_fadeIn{
-  0% {
-    opacity: 0;
-}
-  100% {
-    opacity: 1;
-}
-}
-@keyframes MobileMenu_fadeOut {
-  0% {
-      opacity: 1
-  }
 
-  to {
-      opacity: 0
-  }
-}
 .MobileMenu_body{
     animation: MobileMenu_slideIn .5s ease;
     background-color: #fff;

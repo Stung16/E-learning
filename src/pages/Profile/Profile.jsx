@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Profile.css";
 import { Link } from 'react-router-dom';
-
+import { FaChevronLeft } from "react-icons/fa6";
 const Profile = () => {
     
   return (
@@ -15,7 +15,7 @@ const Profile = () => {
             <h4 className="text-black text-[14px] font-bold m-4 leading-4">
           
             <span  className="flex justify-center items-center gap-1">
-              <i className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[#808990] text-[10px]"></i>
+            <FaChevronLeft className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[#808990] text-[10px]"/>
               <span className="text-[#808990] cursor-pointer text-[12px] font-semibold">
                 QUAY LẠI
               </span>

@@ -60,7 +60,7 @@ const ContactUs = () => {
           <div>
             <div className='mt-[-50px]'>
               <section className='min-[1113px]:mx-[-12px] min-[740px]:mx-[-12px] flex flex-wrap'>
-                <section className='min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3'>
+                <section className='min-[1113px]:w-[50%] min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3 min-[740px]:w-[100%] min-[740px]:block min-[740px]:px-2'>
                   <div>
                     <div className='max-w-[600px] pb-12'>
                       <div className='items-center flex h-[32px] my-0 mx-[2px]'>
@@ -102,7 +102,7 @@ const ContactUs = () => {
                           <input className='border-2 border-solid border-[#e8e8e8] rounded-md h-[36px] py-1 px-3 w-[100%] appearance-none hover:border-[#1dbfaf]' type="text" placeholder='Nhập số điện thoại...' />
                         </div>
                       </div>
-                      <div className=' relative mb-6'>
+                      <div className='relative mb-6'>
                         <label className='text-[#333333] block text-[14px] font-bold leading-[18px] pb-[6px]' htmlFor="content">Nội dung</label>
                         <textarea className='input border-2 border-solid border-[#e8e8e8] rounded-md appearance-none bg-[#fff] text-[#333] block text-[14px] p-3 resize-none min-h-[96px] w-[100%] hover:border-[#1dbfaf]' name="" id="" cols="30" rows="4" placeholder='Nhập nội dung liên hệ...'></textarea>
                       </div>
@@ -111,7 +111,14 @@ const ContactUs = () => {
                   </div>
                 </section>
                 {/* map */}
-                <section className='min-w-[1113px]:w-[50%] min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3'>
+                <section className='map min-[1113px]:w-[50%] min-[1113px]:block min-[1113px]:pl-3 min-[1113px]:pr-3 min-[740px]:w-[100%] min-[740px]:block min-[740px]:px-2'>
+                  <iframe className='w-[100%] mt-10 border border-solid border-[#ccc]'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14896.99732351134!2d105.76022804306727!3d21.022707395532183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4df3c6c329%3A0xd8e14fe61fd32604!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gQ8OUTkcgTkdI4buGIEdJw4FPIEThu6RDIEY4!5e0!3m2!1sen!2s!4v1711785412328!5m2!1sen!2s"
+                    height={495}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </section>
               </section>
             </div>

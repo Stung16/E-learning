@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ItemCoursePro = ({ image, link, name, price, price_sell, isComming }) => {
   return (
-    <section className="ScrollList_body min-[1113px]:w-[25%] min-[740px]:w-[33.33333%] pr-[12px] pl-[12px] ">
+    <section className="ScrollList_body min-[1113px]:w-[25%] min-[740px]:px-2 min-[740px]:w-[33.33333%] pr-[12px] pl-[12px] ">
       <div className="CommonItem_wrapper_Pro mb-8">
         <div className="relative group">
           <Link

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-
+import { FaYoutube } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="Footer_wrapper bg-[#181821] text-[#a9b3bb] overflow-hidden pt-[68px] pb-10">
@@ -251,13 +253,13 @@ const Footer = () => {
               </p>
               <div className="ml-auto">
                 <Link to="">
-                  <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color"></i>
+                <FaYoutube className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color"/>
                 </Link>
                 <Link to="" className="ml-4">
-                  <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-facebook text-black-color bg-[#4867aa]"></i>
+                <FaFacebookSquare className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-facebook text-black-color bg-[#4867aa]"/>
                 </Link>
                 <Link to="" className="ml-4">
-                  <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color"></i>
+                <FaTiktok className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color"/>
                 </Link>
               </div>
             </div>

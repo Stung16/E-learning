@@ -2,8 +2,9 @@ import React from "react";
 import BtnCreatBlog from "../../../components/Btn/BtnCreatBlog/BtnCreatBlog";
 import "./navigate.css";
 import {  NavLink } from "react-router-dom";
-
-
+import { FaHouse } from "react-icons/fa6";
+import { FaNewspaper } from "react-icons/fa6";
+import { FaRoad } from "react-icons/fa6";
 const Navigate = () => {
   const activeMenu = ({ isActive }) => {
     return isActive ? "nav-link current" : "nav-link";
@@ -17,7 +18,7 @@ const Navigate = () => {
         <ul className="pl-0">
           <li>
             <NavLink to={"/"} className={activeMenu}>
-              <i className="fa-solid fa-house"></i>
+            <FaHouse />
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Trang chủ
               </span>
@@ -25,7 +26,7 @@ const Navigate = () => {
           </li>
           <li>
             <NavLink to={"/learning-paths"} className={activeMenu}>
-              <i className="fa-solid fa-road"></i>
+            <FaRoad />
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Lộ trình
               </span>
@@ -33,7 +34,7 @@ const Navigate = () => {
           </li>
           <li>
             <NavLink to={"/blog"} className={activeMenu}>
-              <i className="fa-solid fa-newspaper"></i>
+              <FaNewspaper />
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Bài viết
               </span>

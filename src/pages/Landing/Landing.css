@@ -222,20 +222,20 @@
     font-size: 16px;
 
 }
-.d-sm-none{
-    display: none;
-}
 .project-img{
     width: 100%;
     margin-top: -120px;
 }
+.d-sm-none{
+    display: none !important;
+}
 .d-sm-inline-flex{
     display: inline-flex !important;
-    margin-top: 100px;
+    margin-top: 140px !important;
     margin-bottom: -200px;
 }
 .track{
-    margin-top: -100px !important;
+    margin-top: 190px !important;
 }
 .track .inner{
     padding: 24px;
@@ -251,7 +251,7 @@
 .section-sass .column{
     text-align: left;
 }
-.row-reverse{
+.row{
     flex-direction: column !important;
 }
 .features-column{
@@ -295,4 +295,47 @@
     font-size: 16px !important;
     width: auto;
 }
+.faq-inner{
+    margin: 0 !important;
+}
+.the-end{
+    margin-top: 0 !important;
+    padding-top: 36px !important;
+}
+.end-inner .second-heading{
+    width: 100% !important;
+    font-size: 32px  !important;
+}
+.end-inner{
+    padding: 50px 24px;
+}
+.end-inner .desc{
+    width: 100% !important;
+}
+.introduce{
+    margin-top: -250px;
+}
+.introduce .d-sm-inline-flex{
+    margin-top: 50px !important;
+}
+}
+@media (min-width: 1023px){
+    
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .content{
+        padding: 0px;
+    }
+    .row{
+        gap: 50px !important;
+    }
+    .faq-inner{
+    margin: 0 auto !important;
+    }
+    .feedback-list{
+        margin-left: -66px !important;
+    }
+    .list-tracks{
+        flex-wrap: wrap;
+    }
 }

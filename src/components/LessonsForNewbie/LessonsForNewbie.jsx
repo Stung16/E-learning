@@ -7,7 +7,9 @@ import { FaClock } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 import { FaFileLines } from "react-icons/fa6";
 import { FaCirclePlay } from "react-icons/fa6";
-
+import { FaMinus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
+import { FaFilm } from "react-icons/fa6";
 const LessonsForNewbie = () => {
   return (
     <section className='max-w-[1920px] w-[100%] p-0 my-0 mx-auto'>
@@ -109,7 +111,7 @@ const LessonsForNewbie = () => {
                                         <div className='course-sticky bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]'>
                                             <h5 className='text-[16px] mb-0 mt-0 font-semibold'>
                                                 <div className='text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative'>
-                                                <i className="fa-solid fa-minus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
+                                                <FaMinus className="fa-solid fa-minus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"/>
                                                     <span className='float-left text-[16px]'>
                                                         <strong className='font-semibold'>1. Khái niệm kỹ thuật cần biết</strong>
                                                     </span>
@@ -152,7 +154,7 @@ const LessonsForNewbie = () => {
                                         <div className='bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]'>
                                             <h5 className='text-[16px] mb-0 mt-0 font-semibold'>
                                                 <div className='text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative'>
-                                                <i className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
+                                                <FaPlus className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"/>
                                                     <span className='float-left text-[16px]'>
                                                         <strong className='font-semibold'>2. Môi trường, con người IT</strong>
                                                     </span>
@@ -166,7 +168,7 @@ const LessonsForNewbie = () => {
                                         <div className='bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]'>
                                             <h5 className='text-[16px] mb-0 mt-0 font-semibold'>
                                                 <div className='text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative'>
-                                                <i className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
+                                                <FaPlus className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"/>
                                                     <span className='float-left text-[16px]'>
                                                         <strong className='font-semibold'>3. Phương pháp, định hướng</strong>
                                                     </span>
@@ -179,7 +181,7 @@ const LessonsForNewbie = () => {
                                         <div className='bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]'>
                                             <h5 className='text-[16px] mb-0 mt-0 font-semibold'>
                                                 <div className='text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative'>
-                                                <i className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
+                                                <FaPlus className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"/>
                                                     <span className='float-left text-[16px]'>
                                                         <strong className='font-semibold'>4. Hoàn thành khóa học</strong>
                                                     </span>
@@ -198,7 +200,7 @@ const LessonsForNewbie = () => {
             <div className='CourseDetail items-center bg-[#fff] flex flex-col mb-[60px] ml-6 pb-5 sticky top-[90px] '>
                 <div className='ads rounded-[16px] overflow-hidden relative select-none mt-[2px] mb-5 w-[calc(100%-2px)]'>
                     <div className='video cursor-pointer'></div>
-                    <i className="text-[60px] cursor-pointer text-[#fff] z-[1] absolute left-[42%] top-[38%] fa-solid fa-circle-play"></i>
+                    <FaCirclePlay className="text-[60px] cursor-pointer text-[#fff] z-[1] absolute left-[42%] top-[38%] fa-solid fa-circle-play"/>
                     <p className='bottom-0 cursor-pointer text-[#fff] text-[16px] font-semibold absolute left-0 right-0 text-center w-[100%] z-[1]'>Xem giới thiệu khóa học</p>
                 </div>
                 <h5 className='text-[#F05123] text-center text-[32px] font-normal my-0 mx-auto opacity-[0.8] '>Miễn phí</h5>
@@ -209,7 +211,7 @@ const LessonsForNewbie = () => {
                     <span className='text-[#494949] text-[14px]'>Trình độ cơ bản</span>
                     </li>
                     <li className='text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative'>
-                    <i className="absolute left-[0px] top-[3px] fa-solid fa-film"></i>
+                    <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film"/>
                     <span className='text-[#494949] text-[14px]'>Tổng số
                     <strong> 12</strong> bài học
                     </span>

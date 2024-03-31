@@ -103,7 +103,7 @@ function PostDetail() {
                         </Link>
                         <div className='text-[#757575] font-medium text-[32px]'></div>
                         <Link to="">
-                            <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="image/blog_posts/6139fe28a9844.png" alt="Tổng hợp các sản phẩm của học viên tại F8 👏👏" />
+                            <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="/image/blog_posts/6139fe28a9844.png" alt="Tổng hợp các sản phẩm của học viên tại F8 👏👏" />
                         </Link>
                         <div className='img-mask text-[18px] max-h-[420px] leading-[36px] overflow-hidden text-[#292929] break-words'>
                             <p className='my-[6px] mx-0'>
@@ -146,7 +146,7 @@ function PostDetail() {
                             </Link>
                             <div className='text-[#757575] text-[2px] font-medium'></div>
                             <Link to="">
-                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="image/blog_posts/6153f692d366e.jpg" alt="[Phần 1] Tạo dự án ReactJS với Webpack và Babel" />
+                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="/image/blog_posts/6153f692d366e.jpg" alt="[Phần 1] Tạo dự án ReactJS với Webpack và Babel" />
                             </Link>
                             <div className='img-mask text-[18px] max-h-[420px] leading-[36px] overflow-hidden text-[#292929] break-words '>
                                 <p className='my-[6px] mx-0'>Chào mọi người 🤗🤗</p>
@@ -177,11 +177,11 @@ function PostDetail() {
                             </Link>
                             <div className='text-[#757575] text-[2px] font-medium'></div>
                             <Link to="">
-                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="image/blog_posts/615436b218d0a.png" alt="" />
+                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="/image/blog_posts/615436b218d0a.png" alt="" />
                             </Link>
                             <div className='img-mask text-[18px] max-h-[420px] leading-[36px] overflow-hidden text-[#292929] break-words'>
                                 <p className='my-[6px] mx-0'>
-                                    <img src="image/blog_posts/615436b218d0a.png" alt="" />
+                                    <img src="/image/blog_posts/615436b218d0a.png" alt="" />
                                 </p>
                                 <p className='my-[6px] mx-0'>Xin các bạn tại F8, khi mình đọc những bài viết trên nhóm F8 thì mình thấy có nhiều bạn vẫn không biết đưa code lên GitHub, hoặc bị lỗi, hoặc có thể là những bạn mới và đặc biệt là các bạn không biết tạo GitHub Pages ( cụ thể là hiển thị ra trang web để cho mọi người xem á! ). Ok, hôm nay mình sẽ hướng dẫn cụ thể để cho những bạn không biết bấy lâu nay có thể đưa code mình lên GitHub được nhe. Mình là Kha, là một thành viên trong nhóm "</p>
                             </div>
@@ -201,7 +201,7 @@ function PostDetail() {
                             </Link>
                             <div className='text-[#757575] text-[2px] font-medium'></div>
                             <Link to="">
-                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="image/blog_posts/6139c6453456e.png" alt="Ký sự ngày thứ 25 học ở F8 " />
+                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="/image/blog_posts/6139c6453456e.png" alt="Ký sự ngày thứ 25 học ở F8 " />
                             </Link>
                         </div>
                         <div className='img-mask text-[18px] max-h-[420px] leading-[36px] overflow-hidden text-[#292929] break-words'>
@@ -223,11 +223,11 @@ function PostDetail() {
                             </Link>
                             <div className='text-[#757575] text-[2px] font-medium'></div>
                             <Link to="">
-                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="image/blog_posts/613a1f3685814.png" alt="" />
+                                <img className='RelatedPosts_photo bg-[#ebebeb] rounded-[16px] text-[#757575] block text-[16px] h-[320px] mb-4 mt-6 object-cover overflow-hidden text-center w-[100%]' src="/image/blog_posts/613a1f3685814.png" alt="" />
                             </Link>
                             <div className='img-mask text-[18px] max-h-[420px] leading-[36px] overflow-hidden text-[#292929] break-words'>
                                 <p className='my-[6px] mx-0'>
-                                    <img className='' src="image/blog_posts/613a1e8d8fc47.jpg" alt="" />
+                                    <img className='' src="/image/blog_posts/613a1e8d8fc47.jpg" alt="" />
                                 </p>
                             </div>
                             <div className='img-mask text-[18px] max-h-[420px] leading-[36px] overflow-hidden text-[#292929] break-words'>

@@ -7,7 +7,7 @@ const AboutUs = () => {
   return <section className="index-module_grid w-[100%] p-0 my-0 mx-auto" >
     <div className="About_wrapper">
       <section className="index-module_wide__3c1pI p-0 my-0 mx-auto w-[100%] max-w-[1110px]">
-        <section className="index-module_row min-[1113px]:-mx-3 min-[740px]:mx-2 flex flex-wrap -mx-1">
+        <section className="index-module_row min-[1113px]:-mx-3 min-[740px]:-mx-2 flex flex-wrap -mx-1">
           <section className="About_wrapper_img min-[1113px]:w-[50%] min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-[100%] min-[740px]:block min-[740px]:px-2 w-[50%] px-1">
             <img className="h-[100%] object-cover border-0 block max-w-[100%] w-[100%]" src="/image/f8-og-image.245ebc1d5d7a5240254c.png" alt="" />
           </section>

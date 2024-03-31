@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FaRegBookmark } from "react-icons/fa6";
+import { FaEllipsis } from "react-icons/fa6";
+import { FaAnglesLeft } from "react-icons/fa6";
+import { FaAnglesRight } from "react-icons/fa6";
 function Blog() {
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
@@ -28,12 +31,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -46,10 +49,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                        <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -80,7 +83,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png"
+                            src="/image/img_baiviet/65299d0ce743e.png"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -94,12 +97,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -112,10 +115,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -147,7 +150,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8334/64f01064b0724.png"
+                            src="/image/img_baiviet/64f01064b0724.png"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -161,12 +164,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -179,10 +182,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -209,11 +212,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      {/* <div className='shrink-0'>
-                                                    <Link to="/blog/postdetail">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
-                                                    </Link>
-                                                </div> */}
+                     
                     </div>
                   </div>
                   <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
@@ -223,12 +222,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -241,10 +240,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -269,11 +268,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>3 phút đọc
                         </div>
                       </div>
-                      {/* <div className='shrink-0'>
-                                                    <Link to="/blog/postdetail">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
-                                                    </Link>
-                                                </div> */}
+                      
                     </div>
                   </div>
                   <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
@@ -283,12 +278,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -301,10 +296,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -336,7 +331,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7940/64a645ea70312.png"
+                            src="/image/img_baiviet/64a645ea70312.png"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -350,12 +345,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -368,10 +363,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -402,7 +397,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7924/64a2487459fe5.jpg"
+                            src="/image/img_baiviet/64a2487459fe5.jpg"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -416,12 +411,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -434,10 +429,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -467,7 +462,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7922/64a23b234c52e.png"
+                            src="/image/img_baiviet/64a23b234c52e.png"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -481,12 +476,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -499,10 +494,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -530,11 +525,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      {/* <div className='shrink-0'>
-                                                    <Link to="/blog/postdetail">
-                                                        <img className='bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]' src="https://files.fullstack.edu.vn/f8-prod/blog_posts/8306/65299d0ce743e.png" alt="Authentication & Authorization trong ReactJS" />
-                                                    </Link>
-                                                </div> */}
+                    
                     </div>
                   </div>
                   <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
@@ -544,12 +535,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -562,10 +553,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -596,7 +587,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7256/64448752c63c4.jpg"
+                            src="/image/img_baiviet/64448752c63c4.jpg"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -610,12 +601,12 @@ function Blog() {
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
                               className="rounded-[50%] h-[9em] object-cover w-[9em] border-none shrink-0"
-                              src="https://files.fullstack.edu.vn/f8-prod/user_avatars/391289/65e2b1c101de2.png"
+                              src="/image/65e2b1c101de2.png"
                               alt=""
                             />
                             <img
                               className="h-[3.2em] absolute right-[-1.7em] top-[-0.2em] "
-                              src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                              src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                               alt=""
                             />
                           </div>
@@ -628,10 +619,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-regular fa-bookmark hover:text-[#333]"></i>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <i className="fa-solid fa-ellipsis hover:text-[#333]"></i>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
                         </div>
                       </div>
                     </div>
@@ -662,7 +653,7 @@ function Blog() {
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7242/64424fe6e225f.jpg"
+                            src="/image/img_baiviet/64424fe6e225f.jpg"
                             alt="Authentication & Authorization trong ReactJS"
                           />
                         </Link>
@@ -672,7 +663,8 @@ function Blog() {
                   <div className="items-center flex justify-center mt-5 relative">
                     <div className="items-center leading-4 flex py-0 px-[10px]">
                       <div className="border border-solid border-[#fff] text-[#d0d7de] cursor-default min-[1024px]:mr-1 min-[1024px]:py-[6px] min-[1024px]:px-3 rounded-[6px] flex font-medium select-none transition-all delay-[2s]">
-                        <i className="h-[1em] text-[12px] mr-3 fa-solid fa-angles-left"></i>
+                        
+                      <FaAnglesLeft className="h-[1em] text-[12px] mr-3 fa-solid fa-angles-left"/>
                       </div>
                       <div className="text-[#FFF]  bg-[#F05123] border-[#F05123] border border-solid rounded-[6px] cursor-pointer flex font-medium select-none transition-all delay-[2s] mr-1 py-[6px] px-3 min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3">
                         1
@@ -711,7 +703,7 @@ function Blog() {
                         12
                       </div>
                       <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
-                        <i className="h-[1em] text-[12px] fa-solid fa-angles-right"></i>
+                        <FaAnglesRight className="h-[1em] text-[12px] fa-solid fa-angles-right"/>
                       </div>
                     </div>
                   </div>
@@ -763,14 +755,14 @@ function Blog() {
                   <Link className="mt-8" to="">
                     <img
                       className="rounded-[8px] max-w-[100%] object-cover w-[100%]"
-                      src="https://files.fullstack.edu.vn/f8-prod/banners/26/63dc61f2a061e.png"
+                      src="/image/img_baiviet/63dc61f2a061e.png"
                       alt=""
                     />
                   </Link>
                   <Link className="mt-8" to="">
                     <img
                       className="rounded-[8px] max-w-[100%] object-cover w-[100%]"
-                      src="https://files.fullstack.edu.vn/f8-prod/banners/32/6421144f7b504.png"
+                      src="/image/img_baiviet/6421144f7b504.png"
                       alt=""
                     />
                   </Link>

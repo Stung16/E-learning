@@ -181,7 +181,7 @@ function Landing() {
             {/* SECTION MENTOR */}
             <div className='mt-[120px] pt-16 px-0'>
                 <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                    <div className='flex items-center gap-[150px]'>
+                    <div className='row flex items-center gap-[150px]'>
                         <div className=' flex-1'>
                             <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                             Khóa học được 
@@ -208,18 +208,18 @@ function Landing() {
                                 F8!"
                                 </p>
                             </blockquote>
-                            <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                            <Link className='d-sm-none text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Tìm hiểu thêm
                             <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                             </Link>
                         </div>
-                        <div className=' relative flex justify-center flex-col items-center text-center'>
+                        <div className='introduce relative flex justify-center flex-col items-center text-center'>
                             <img className=' w-[340px] absolute z-[1] h-[340px] rounded-[50%] object-cover' src="/image/landing/mentor.jpg" alt="Sơn Đặng - CEO, Founder của cộng đồng học lập trình F8" />
                             <p className=' mt-[530px] max-w-[490px] italic text-[18px] text-[#8b949e]'>  
                             Sơn Đặng là CEO - Founder của Cộng Đồng Học Lập Trình F8. Hiện tại, anh vẫn là một
                              Fullstack developer với hơn 8 năm kinh nghiệm làm việc thực tế.
                             </p>
-                            <Link className=' text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                            <Link className='d-sm-inline-flex text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Tìm hiểu thêm
                             <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                             </Link>
@@ -320,7 +320,7 @@ function Landing() {
                 {/* SECTION FLASHCARDS */}
                 <div className=' py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                        <div className='flex-row-reverse flex items-center gap-[150px]'>
+                        <div className='row flex-row-reverse flex items-center gap-[150px]'>
                             <div className='flex-1 '>
                                 <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                                     <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>Ghi nhớ kiến thức dài hạn </strong>
@@ -334,16 +334,16 @@ function Landing() {
                                 Chỉ với chiếc điện thoại thông minh, giờ đây bạn có thể ôn lại kiến thức ở mọi lúc, mọi
                                 nơi.
                                 </p>
-                                <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-8 rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                                <Link className='d-sm-none text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-8 rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
                                 <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
                             </div>
                             <div className='relative h-[614px] flex justify-center flex-1'>
-                                {/* <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] hidden h-[52px] mt-8 rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                                <Link className='d-sm-inline-flex text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
                                 <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
-                                </Link> */}
+                                </Link>
                                 <img className='absolute z-[0] top-[-10%] left-[-5%] w-[150%] translate-x-[-2/4] translate-y-[-1/2] ' src="/image/landing/flashcard-light.png" alt="" />
                             </div>
                         </div>
@@ -352,7 +352,7 @@ function Landing() {
                 {/* SECTION FEATURES */}
                 <div className='mt-[60px] py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                        <div className='row-reverse flex-row-reverse flex items-center gap-[150px]'>
+                        <div className='row flex-row-reverse flex items-center gap-[150px]'>
                         <div className='flex-1 '>
                                 <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                                 Khóa học Pro
@@ -664,7 +664,7 @@ function Landing() {
                     </div>
                     {/* FAQ */}
                     <section className='my-0 mx-6'>
-                        <div className=' mx-[290.6px]'>
+                        <div className='faq-inner mx-[290.6px]'>
                             <header className='text-center mb-[60px]'>
                             <h2 className='text-[42px] leading-[59px] font-bold text-[#fff]'>Câu hỏi thường gặp</h2>
                             </header>
@@ -792,7 +792,7 @@ function Landing() {
                         </div>
                     </section>
                     {/* END */}
-                    <div className='mt-[75px] py-16 px-0 text-center'>
+                    <div className='the-end mt-[75px] py-16 px-0 text-center'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div className='end-inner'>
                                 <h2 className='second-heading w-[980px] my-0 mx-auto text-[64px] font-bold leading-[77px] text-[#fff]'>

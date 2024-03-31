@@ -26,7 +26,7 @@ import { FaUsers } from "react-icons/fa6";
 import { FaLaptopCode } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
-
+import { FaChevronLeft } from "react-icons/fa6";
 const Header = () => {
   const [hide, setHide] = useState(false)
   const dispatch = useDispatch();
@@ -87,7 +87,7 @@ const Header = () => {
         <Link to="/">
           <img
             className="rounded-lg h-[38px] w-[38px] shrink-0 object-contain"
-            src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
+            src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
             alt=""
           />
         </Link>
@@ -95,7 +95,7 @@ const Header = () => {
         <h4 className="text-black text-[14px] font-bold m-4 leading-4">
           {pathname !== "/" ? (
 <span className="flex justify-center items-center gap-1">
-              <i className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"></i>
+              <FaChevronLeft className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"/>
               <span
                 className="text-[#808990] cursor-pointer text-[12px] font-semibold"
                 onClick={handleGoBack}
@@ -245,7 +245,7 @@ const Header = () => {
                   <>
                     <div className="AuthModal_back" onClick={handleBack}>
                       <span className="-mt-1">
-                        <i className="text-[#404040b4] hover:text-[#292929] fa-solid fa-chevron-left"></i>
+                      <FaChevronLeft className="text-[#404040b4] hover:text-[#292929] fa-solid fa-chevron-left"/>
                       </span>
                     </div>
                     <button className="AuthModal_close" onClick={handleHidden}>
@@ -256,7 +256,7 @@ const Header = () => {
                         <Link to="#">
                           <img
                             className="object-cover w-10 h-[40px] rounded-lg"
-                            src="https://accounts.fullstack.edu.vn/assets/icon/f8_icon.png"
+                            src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
                             alt=""
                           />
                         </Link>
@@ -331,7 +331,7 @@ const Header = () => {
               />
               <img
                 className="icon_avatar"
-                src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                src="/icon/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
                 alt=""
               />
             </div>

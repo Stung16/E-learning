@@ -210,7 +210,7 @@ h1.About_heading{
         margin-right: -12px !important
     }
     .About_wrapper_img{
-        width: 50%;
+        width: 50% !important;
     }
     
     .About_introText{

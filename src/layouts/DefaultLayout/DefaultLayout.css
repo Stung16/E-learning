@@ -10,6 +10,13 @@
     }
     
 }
+@media (min-width: 1023px) {
+    .app-content{
+        width: 100% !important;
+        padding: 0 16px !important;
+    }
+    
+}
 @media (min-width: 1023px) and (max-width: 1500px){
     .App_withSidebar__8lwIi{
         min-height:auto !important;
