@@ -1,7 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-
+import { FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="Footer_wrapper bg-[#181821] text-[#a9b3bb] overflow-hidden pt-[68px] pb-10">
@@ -23,10 +25,16 @@ const Footer = () => {
                   </h2>
                 </div>
                 <p className="relative text-[#a9b3bb] text-[14px] leading-[22px] ">
-                  Điện thoại: <Link className="hover:text-[#C0C0C0]" to="tel:0246.329.1102">0246.329.1102</Link>
+                  Điện thoại:{" "}
+                  <Link className="hover:text-[#C0C0C0]" to="tel:0246.329.1102">
+                    0246.329.1102
+                  </Link>
                   <br />
                   Email:{" "}
-                  <Link className="hover:text-[#C0C0C0]" to="mailto:contact@fullstack.edu.vn">
+                  <Link
+                    className="hover:text-[#C0C0C0]"
+                    to="mailto:contact@fullstack.edu.vn"
+                  >
                     contact@fullstack.edu.vn
                   </Link>
                   <br />
@@ -249,15 +257,15 @@ const Footer = () => {
               <p className="text-[14px] leading-4">
                 © 2018 - 2024 F8. Nền tảng học lập trình hàng đầu Việt Nam
               </p>
-              <div className="ml-auto">
-                <Link to="">
-                  <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color"></i>
+              <div className="ml-auto flex gap-2">
+                <Link to="https://www.youtube.com/c/F8VNOfficial">
+                  <FaYoutube className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color" />
                 </Link>
                 <Link to="" className="ml-4">
-                  <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-facebook text-black-color bg-[#4867aa]"></i>
+                  <FaFacebookSquare className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-facebook text-black-color bg-[#4867aa]" />
                 </Link>
                 <Link to="" className="ml-4">
-                  <i className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color"></i>
+                  <FaTiktok className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color" />
                 </Link>
               </div>
             </div>

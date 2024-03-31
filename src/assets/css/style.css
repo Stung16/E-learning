@@ -301,7 +301,7 @@ input[type="button"] {
 .ie7 img {
   -ms-interpolation-mode: bicubic;
 }
-ul {
+.set_ul {
   display: block;
   margin-block-start: 10px;
   margin-block-end: 10px;
@@ -367,4 +367,13 @@ b, h1, h2, h3, h4, h5, h6, strong {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #d9d9d9;
+}
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }

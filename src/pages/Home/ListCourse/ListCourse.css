@@ -38,6 +38,15 @@
     z-index: 1;
     visibility: hidden;
 }
+.ScrollList_view_all{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+.CourseItem_students{
+    display: flex;
+    align-items: center;
+}
 @media (min-width: 0) and (max-width: 739px){
     .Home_wrapper{
         margin-top: 60px !important;

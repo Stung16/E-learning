@@ -36,7 +36,6 @@ const PostHot = () => {
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
                   to="/postdetail"
-                  to=""
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -57,7 +56,7 @@ const PostHot = () => {
                     Tổng hợp các sản phẩm của học viên tạ...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/6153f692d366e.jpg "
@@ -94,7 +93,7 @@ const PostHot = () => {
                     [Phần 1] Tạo dự án ReactJS với Webpac...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615436b218d0a.png "
@@ -130,7 +129,7 @@ const PostHot = () => {
                     Cách đưa code lên GitHub và tạo GitHu...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/61b6368983c16.jpg"
@@ -167,7 +166,7 @@ const PostHot = () => {
                     Ký sự ngày thứ 25 học ở F8
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg "
@@ -203,7 +202,7 @@ const PostHot = () => {
                     Các nguồn tài nguyên hữu ích cho 1...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg "
@@ -240,7 +239,7 @@ const PostHot = () => {
                     Thời gian và Động lực
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg"
@@ -276,7 +275,7 @@ const PostHot = () => {
                     Tổng hợp tài liệu tự học tiếng anh cơ...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg"
@@ -312,7 +311,7 @@ const PostHot = () => {
                     Học như thế nào là phù hợp ?
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg"

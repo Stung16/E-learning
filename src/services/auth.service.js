@@ -1,6 +1,5 @@
 import Client from "../config/Client";
 import Cookies from "js-cookie";
-import { Navigate } from "react-router-dom";
 
 export const handleGetCode = async (email) => {
   try {
@@ -30,7 +29,7 @@ export const handleRefreshToken = async (refeshtoken) => {
 export const logOut = () => {
   Cookies.remove("accessToken");
   Cookies.remove("refreshToken");
-  Navigate("/");
+  window.location.href = "/";
 };
 
 // lấy user
@@ -51,10 +50,9 @@ export const handleGetAllUser = async () => {
     console.log(error);
   }
 };
-export const handleGetprofile = async (token) => {
+export const handleGetprofile = async () => {
   try {
-    Client.setToken(token);
-    const res = await Client.get(`/user/profile`, token);
+    const res = await Client.get(`/user/profile`);
     return res;
   } catch (error) {
     console.log(error);

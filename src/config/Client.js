@@ -1,3 +1,4 @@
+import { handleRefreshToken, logOut } from "../services/auth.service";
 import Config from "./Config";
 import Cookies from "js-cookie";
 
@@ -30,31 +31,24 @@ const Client = {
     }
 
     const response = await fetch(url, options);
-    // if (this.token && response.status === 401) {
-    //   const payload = {
-    //     refreshToken: Cookies.get("refreshToken"),
-    //   };
-    //   const res = await handlerRefreshToken(payload);
-    //   if (res.status === 200) {
-    //     this.token = res.metadata.tokens.accessToken;
-    //     Cookies.set("accessToken", res.metadata.tokens.accessToken, {
-    //       expires: 60 * 60 * 24 * 7,
-    //     });
-    //     Cookies.set("idUser", res.metadata.userId, {
-    //       expires: 60 * 60 * 24 * 7,
-    //     });
-    //     Cookies.set("refreshToken", res.metadata.tokens.refreshToken, {
-    //       expires: 60 * 60 * 24 * 30,
-    //     });
-    //     return this.send("/auth/getUserFromToken", method, body);
-    //   } else {
-    //     Cookies.remove("accessToken");
-    //     Cookies.remove("refreshToken");
-    //     Cookies.remove("idUser");
-    //     window.location.href = "/";
-    //     return false;
-    //   }
-    // }
+    if (this.token && response.status === 401) {
+      const payload = {
+        refreshToken: Cookies.get("refreshToken"),
+      };
+      const res = await handleRefreshToken(payload);
+      if (res?.data?.status === 200) {
+        this.token = res?.data?.tokenModel?.accessToken;
+        Cookies.set("accessToken", res?.data?.tokenModel?.accessToken, {
+          expires: 60 * 60 * 24 * 7,
+        });
+        Cookies.set("refreshToken", res?.data?.tokenModel?.refreshToken, {
+          expires: 60 * 60 * 24 * 30,
+        });
+        return this.send("/user/profile", method, body);
+      } else {
+        return logOut();
+      }
+    }
     const data = await response.json();
 
     return { response, data };

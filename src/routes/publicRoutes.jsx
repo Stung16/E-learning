@@ -17,6 +17,7 @@ import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
+import Test from "../components/Test/Test";
 export const publicRoutes = (
   <>
     <Route element={<DefaultLayout />}>
@@ -52,6 +53,7 @@ export const publicRoutes = (
     </Route>
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/landing" element={<Landing />} />
+    <Route path="/test" element={<Test />} />
     <Route path="/*" element={<NotFound />} />
     <Route element={<AuthMiddleware />}>
       {/* <Route element={<GuestMiddleware />}>

@@ -8,11 +8,10 @@ const { updateState } = loginSlice.actions;
 const { updateLoading } = detailtSlice.actions;
 import { useDispatch } from "react-redux";
 import Client from "../../config/Client";
-import {  useNavigate } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom";
 
 const LoginWithEmail = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [form, setForm] = useState({
     email: "",
@@ -23,7 +22,6 @@ const LoginWithEmail = () => {
     try {
       dispatch(updateLoading(true));
       const { data } = await handeleLoginWithEmail(form);
-      console.log(data);
       if (data?.status === 200) {
         Cookies.set("accessToken", data.token.accessToken, {
           expires: 60 * 60 * 24 * 7,
