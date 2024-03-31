@@ -5,17 +5,17 @@ import {  NavLink } from "react-router-dom";
 import { FaHouse } from "react-icons/fa6";
 import { FaNewspaper } from "react-icons/fa6";
 import { FaRoad } from "react-icons/fa6";
+
 const Navigate = () => {
   const activeMenu = ({ isActive }) => {
     return isActive ? "nav-link current" : "nav-link";
   };
 
-
   return (
     <div className="flex-shrink-0">
-      <div className="navigate-sticky">
+      <div className="navigate-sticky pt-2">
         <BtnCreatBlog />
-        <ul className="pl-0">
+        <ul className="pl-0 mt-3">
           <li>
             <NavLink to={"/"} className={activeMenu}>
             <FaHouse />

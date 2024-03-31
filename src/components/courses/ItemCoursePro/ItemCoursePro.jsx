@@ -1,8 +1,9 @@
 import React from "react";
 import { FaCrown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Progress from "../../Header/Progress";
 
-const ItemCoursePro = ({ image, link, name, price, price_sell, isComming }) => {
+const ItemCoursePro = ({ image, link, name, price, price_sell, isComming, time, percent }) => {
   return (
     <section className="ScrollList_body min-[1113px]:w-[25%] min-[740px]:px-2 min-[740px]:w-[33.33333%] pr-[12px] pl-[12px] ">
       <div className="CommonItem_wrapper_Pro mb-8">
@@ -44,6 +45,8 @@ const ItemCoursePro = ({ image, link, name, price, price_sell, isComming }) => {
           <FaCrown className=" text-[#FFD43B] pt-[1px] pl-[5px] pr-[5px] bg-[#0000004d] rounded-lg absolute left-3 top-3 w-[26px] h-[24px] pointer-events-none"/>
           </div>
         </div>
+        {time && <span className="text-[13px] leading-[15px] text-[#666]">{time}</span>}
+        {percent && <Progress data={percent}/>}
         {(price || price_sell) && (
           <div>
             <span className="mr-2 text-[14px] line-through">{price}đ</span>

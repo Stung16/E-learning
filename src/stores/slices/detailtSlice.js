@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { requestGetUserFromToken } from "../middlewares/auth.middleware";
 const initialState = {
-  profile: {},
+  profile: null,
   isLoading: false,
 };
 export const detailtSlice = createSlice({
@@ -13,5 +14,17 @@ export const detailtSlice = createSlice({
     updateProfile: (state, action) => {
       state.profile = action.payload;
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(requestGetUserFromToken.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(requestGetUserFromToken.rejected, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(requestGetUserFromToken.fulfilled, (state, action) => {
+      state.profile = action.payload?.data?.data;
+      state.isLoading = false;
+    });
   },
 });

@@ -6,3 +6,18 @@
   z-index: 100000;
 }
 
+
+.loader {
+  border: 6px solid rgba(246, 219, 225, 0.88);
+  border-top-color: #da2884;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

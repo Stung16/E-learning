@@ -14,10 +14,12 @@ import Landing from "../pages/Landing/Landing";
 import NotFound from "../pages/NotFound/NotFound";
 import Front_end_Development from "../pages/Learning_paths/Front_end_Development/Front_end_Development";
 import Profile from "../pages/Profile/Profile";
-import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
+import LessonsForNewbie from "../pages/Courses/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
 
+import Test from "../components/Test/Test";
+import MyCourses from "../pages/MyCourses/MyCourses";
 export const publicRoutes = (
   <>
     <Route element={<DefaultLayout />}>
@@ -37,6 +39,7 @@ export const publicRoutes = (
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/fresher" element={<Fresher />} />
+      <Route path="/my-courses" element={<MyCourses />} />
 
 
       <Route path="/blog" element={<Blog />} />
@@ -53,6 +56,7 @@ export const publicRoutes = (
     </Route>
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/landing" element={<Landing />} />
+    <Route path="/test" element={<Test />} />
     <Route path="/*" element={<NotFound />} />
     <Route element={<AuthMiddleware />}>
       {/* <Route element={<GuestMiddleware />}>

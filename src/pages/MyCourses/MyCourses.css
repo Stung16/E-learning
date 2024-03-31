@@ -1,0 +1,89 @@
+.add-new-course{
+    border: 3px dashed #e8e8e8;
+    border-radius: 16px;
+    display: block;
+    padding-top: 56.25%;
+    position: relative;
+    transition: .3s ease
+}
+
+.add-icon{
+    color: #666;
+    font-size: 28px;
+    top: 40px;
+    transition: .3s ease;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%)
+}
+.add-icon:hover{
+    color: #f05123;
+
+}
+.add-stars{
+    background-color: #f05123;
+    height: 93px;
+    left: 50%;
+    mask-image: url(/public/icon/star.svg);
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    transform: translate(-50%, 50px) scale(.6);
+    transition: .5s ease;
+    width: 126px;
+}
+.add-btn{
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    border-width: 2px;
+    bottom: 20px;
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #f05123;
+    border-radius: 999px !important;
+    color: #f05123;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    padding: 9px 16px;
+    text-align: center;
+    transition: .3s ease;
+    user-select: none;
+    white-space: nowrap;
+}
+@media (max-width: 1023px){
+    .add-new-box{
+        margin-left: 16px;
+    }
+    .add-new-course{
+        width: 35vw ;
+    }
+    .add-btn{
+        display: none;
+    }
+    
+}
+@media (max-width: 739px){
+    .add-new-course{
+        width: 60vw;
+        padding-top: 56.25%;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .CommonItem_wrapper_Pro{
+        width: 31vw;
+    }
+    .add-new-course{
+        width: 31vw ;
+        margin-left: 0;
+    }
+    .add-new-box{
+        margin-left: 0px;
+    }
+    .overlay-course{
+        display: none;
+    }
+
+}

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaUsers } from "react-icons/fa6";
@@ -6,6 +5,7 @@ const ItemCourseFree = ({ image, link, name, users }) => {
   return (
 
     <section className="ScrollList_body_Free min-[740px]:w-[33.33333%] min-[1113px]:w-[25%] min-[740px]:px-2 pr-[12px] pl-[12px]">
+
       <div className="CommonItem_wrapper_Free mb-8">
         <div className="relative ">
           <Link
@@ -32,7 +32,7 @@ const ItemCourseFree = ({ image, link, name, users }) => {
             </Link>
           </h3>
           <div className="CourseItem_students">
-          <FaUsers className="fa-solid fa-users text-[#666666] text-[14px]"/>
+            <FaUsers className="fa-solid fa-users text-[#666666] text-[14px]" />
             <span className="ml-2">{users}</span>
           </div>
         </div>

@@ -30,13 +30,12 @@ const PostHot = () => {
 
       <div className="Main_PostHot pb-0">
         <section className="ListPostHot  ml-[-12px] mr-[-12px] flex flex-wrap">
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/blog/postdetail"
-                  
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -57,7 +56,7 @@ const PostHot = () => {
                     Tổng hợp các sản phẩm của học viên tạ...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/6153f692d366e.jpg "
@@ -68,12 +67,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -94,7 +93,7 @@ const PostHot = () => {
                     [Phần 1] Tạo dự án ReactJS với Webpac...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615436b218d0a.png "
@@ -105,12 +104,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -130,7 +129,7 @@ const PostHot = () => {
                     Cách đưa code lên GitHub và tạo GitHu...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/61b6368983c16.jpg"
@@ -141,12 +140,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -167,7 +166,7 @@ const PostHot = () => {
                     Ký sự ngày thứ 25 học ở F8
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg "
@@ -178,12 +177,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -203,7 +202,7 @@ const PostHot = () => {
                     Các nguồn tài nguyên hữu ích cho 1...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg "
@@ -214,12 +213,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
 
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
@@ -240,7 +239,7 @@ const PostHot = () => {
                     Thời gian và Động lực
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg"
@@ -251,12 +250,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -276,7 +275,7 @@ const PostHot = () => {
                     Tổng hợp tài liệu tự học tiếng anh cơ...
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg"
@@ -287,12 +286,12 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%] min-[740px]:px-2">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
                   className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                  to="/blog/postdetail"
+                  to="/postdetail"
                 >
                   <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                     Xem bài viết
@@ -312,7 +311,7 @@ const PostHot = () => {
                     Học như thế nào là phù hợp ?
                   </Link>
                 </h3>
-                <div className="PostItem_author flex">
+                <div className="PostItem_author flex items-center">
                   <img
                     className="rounded-full w-[21px] h-[21px]"
                     src="/image/blog_posts/615de64de7e8f.jpg"
