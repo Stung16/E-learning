@@ -19,7 +19,7 @@ const MyCourses = () => {
                     <div className='relative top-[-16px] mb-2'>
                         <div className='min-h-[200px] pb-0'>
                             <section className='index-module_row min-[1113px]:-mx-3 min-[740px]:-mx-2 flex flex-wrap mx-1'>
-                               <section className='Course_Pro min-w-[200px] ml-[-9px] mr-[-12px] flex flex-wrap overflow-x-auto'>
+                               <section className='Course_Pro min-w-[100%] ml-[-9px] mr-[-12px] flex flex-wrap overflow-x-auto'>
                                 <ItemCoursePro
                                 image={"./image/courses/62f13d2424a47.png"}
                                 link={"/landing"}

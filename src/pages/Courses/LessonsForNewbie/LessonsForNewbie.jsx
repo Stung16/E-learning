@@ -5,11 +5,12 @@ import { FiFilm } from "react-icons/fi";
 import { FaBatteryFull } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-import { FaFileLines } from "react-icons/fa6";
-import { FaCirclePlay } from "react-icons/fa6";
+
+import Chappter from "../../../components/MenuLession/Chappter";
 import Lession from "../../../components/MenuLession/Lession";
 
 const LessonsForNewbie = () => {
+  const [hideAll, setHideAll] = useState(false);
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
       <section className="course-wrapper mt-6 pt-0 px-11 pb-[68px] min-[1113px]:mx-[-12px] min-[740px]:mx-[-8px] flex flex-wrap mx-[-4px]">
@@ -125,15 +126,29 @@ const LessonsForNewbie = () => {
                     </span>
                   </li>
                 </ul>
-                <div className="CurriculumOfCourse text-[#f05123] cursor-pointer font-semibold ml-auto select-none">
+                <div
+                  className="CurriculumOfCourse text-[#f05123] cursor-pointer font-semibold ml-auto select-none"
+                  onClick={() => setHideAll(!hideAll)}
+                >
                   Mở rộng tất cả
                 </div>
               </div>
             </div>
             <div className="mt-3 mb-12">
               <div>
-              <Lession />
-               
+
+                <Chappter>
+                  <Lession />
+                </Chappter>
+                <Chappter>
+                  <Lession />
+                </Chappter>
+                <Chappter>
+                  <Lession />
+                </Chappter>
+                <Chappter>
+                  <Lession />
+                </Chappter>
               </div>
             </div>
           </div>
