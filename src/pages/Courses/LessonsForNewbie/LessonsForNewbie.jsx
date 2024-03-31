@@ -5,10 +5,11 @@ import { FiFilm } from "react-icons/fi";
 import { FaBatteryFull } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-import { FaFileLines } from "react-icons/fa6";
-import { FaCirclePlay } from "react-icons/fa6";
+import Chappter from "../../../components/MenuLession/Chappter";
+import Lession from "../../../components/MenuLession/Lession";
 
 const LessonsForNewbie = () => {
+  const [hideAll, setHideAll] = useState(false);
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
       <section className="course-wrapper mt-6 pt-0 px-11 pb-[68px] min-[1113px]:mx-[-12px] min-[740px]:mx-[-8px] flex flex-wrap mx-[-4px]">
@@ -124,126 +125,28 @@ const LessonsForNewbie = () => {
                     </span>
                   </li>
                 </ul>
-                <div className="CurriculumOfCourse text-[#f05123] cursor-pointer font-semibold ml-auto select-none">
+                <div
+                  className="CurriculumOfCourse text-[#f05123] cursor-pointer font-semibold ml-auto select-none"
+                  onClick={() => setHideAll(!hideAll)}
+                >
                   Mở rộng tất cả
                 </div>
               </div>
             </div>
             <div className="mt-3 mb-12">
               <div>
-                <div>
-                  {/* lub */}
-                  <div className="border-none rounded-[0] shadow-[0] mb-2">
-                    <div className="course-sticky bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]">
-                      <h5 className="text-[16px] mb-0 mt-0 font-semibold">
-                        <div className="text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative">
-                          <i className="fa-solid fa-minus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
-                          <span className="float-left text-[16px]">
-                            <strong className="font-semibold">
-                              1. Khái niệm kỹ thuật cần biết
-                            </strong>
-                          </span>
-                          <span className="float-right text-[14px] min-w-[72px] text-right">
-                            3 bài học
-                          </span>
-                        </div>
-                      </h5>
-                    </div>
-                    <div className="block ">
-                      <div className="p-0">
-                        <div>
-                          <div>
-                            <div className="border-b border-solid border-[#00000008] text-[#333] leading-[48px] overflow-hidden pt-0 pr-[30px] pb-0 pl-12 relative">
-                              <span className="float-left text-[14px] text-[#333] leading-[48px] transition-all delay-[0.3s]">
-                                <FaCirclePlay className="text-[#f0512366] mr-1 ml-[-18px] absolute top-[17px] fa-solid fa-circle-play" />
-                                <div className="pl-[6px] ">
-                                  1. Mô hình Client - Server là gì?
-                                </div>
-                              </span>
-                              <span className="ml-[58px] min-w-[69px] text-right float-right text-[14px] leading-[48px]">
-                                11:35
-                              </span>
-                            </div>
-                            <div className="border-b border-solid border-[#00000008] text-[#333] leading-[48px] overflow-hidden pt-0 pr-[30px] pb-0 pl-12 relative">
-                              <span className="float-left text-[14px] text-[#333] leading-[48px] transition-all delay-[0.3s]">
-                                <FaCirclePlay className="text-[#f0512366] mr-1 ml-[-18px] absolute top-[17px] fa-solid fa-circle-play" />
-                                <div className="pl-[6px] ">
-                                  2. Domain là gì? Tên miền là gì?
-                                </div>
-                              </span>
-                              <span className="ml-[58px] min-w-[69px] text-right float-right text-[14px] leading-[48px]">
-                                10:34
-                              </span>
-                            </div>
-                            <div className="border-b border-solid border-[#00000008] text-[#333] leading-[48px] overflow-hidden pt-0 pr-[30px] pb-0 pl-12 relative">
-                              <span className="float-left text-[14px] text-[#333] leading-[48px] transition-all delay-[0.3s]">
-                                <FaFileLines className="text-[#666] opacity-[0.6] mr-1 ml-[-18px] absolute top-[17px]  fa-solid fa-file-lines" />
-                                <div className="pl-[6px] ">
-                                  3. Mua áo F8 | Đăng ký học Offline
-                                </div>
-                              </span>
-                              <span className="ml-[58px] min-w-[69px] text-right float-right text-[14px] leading-[48px]">
-                                01:00
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="border-none rounded-[0] shadow-[0] mb-2">
-                    <div className="bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]">
-                      <h5 className="text-[16px] mb-0 mt-0 font-semibold">
-                        <div className="text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative">
-                          <i className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
-                          <span className="float-left text-[16px]">
-                            <strong className="font-semibold">
-                              2. Môi trường, con người IT
-                            </strong>
-                          </span>
-                          <span className="float-right text-[14px] min-w-[72px] text-right">
-                            4 bài học
-                          </span>
-                        </div>
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="border-none rounded-[0] shadow-[0] mb-2">
-                    <div className="bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]">
-                      <h5 className="text-[16px] mb-0 mt-0 font-semibold">
-                        <div className="text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative">
-                          <i className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
-                          <span className="float-left text-[16px]">
-                            <strong className="font-semibold">
-                              3. Phương pháp, định hướng
-                            </strong>
-                          </span>
-                          <span className="float-right text-[14px] min-w-[72px] text-right">
-                            3 bài học
-                          </span>
-                        </div>
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="border-none rounded-[0] shadow-[0] mb-2">
-                    <div className="bg-[#f5f5f5] border border-solid border-[#ebebeb] rounded-[6px] p-0 sticky top-[147px] z-[1]">
-                      <h5 className="text-[16px] mb-0 mt-0 font-semibold">
-                        <div className="text-[#333] text-[16px] font-normal overflow-hidden pt-[14px] pr-[30px] pb-[14px] pl-12 relative">
-                          <i className="fa-solid fa-plus text-[#f05123] font-thin absolute left-[20px] translate-y-[23%]"></i>
-                          <span className="float-left text-[16px]">
-                            <strong className="font-semibold">
-                              4. Hoàn thành khóa học
-                            </strong>
-                          </span>
-                          <span className="float-right text-[14px] min-w-[72px] text-right">
-                            2 bài học
-                          </span>
-                        </div>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
+                <Chappter>
+                  <Lession />
+                </Chappter>
+                <Chappter>
+                  <Lession />
+                </Chappter>
+                <Chappter>
+                  <Lession />
+                </Chappter>
+                <Chappter>
+                  <Lession />
+                </Chappter>
               </div>
             </div>
           </div>
