@@ -18,8 +18,13 @@ import LessonsForNewbie from "../pages/Courses/LessonsForNewbie/LessonsForNewbie
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
 import Test from "../components/Test/Test";
+import LessionLayout from "../layouts/LessionLayout/LessionLayout";
+import Learning from "../pages/Home/Learning/Learning";
 export const publicRoutes = (
   <>
+    <Route element={<LessionLayout />}>
+      <Route path="/learning" element={<Learning />} />
+    </Route>
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       {/* Lộ trình */}
@@ -37,8 +42,6 @@ export const publicRoutes = (
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/fresher" element={<Fresher />} />
-
-
       <Route path="/blog" element={<Blog />} />
       {/* Courses */}
       <Route
@@ -46,7 +49,7 @@ export const publicRoutes = (
         element={<LessonsForNewbie />}
       />
     </Route>
-    <Route path="/profile" element={<Profile />} /> 
+    <Route path="/profile" element={<Profile />} />
 
     <Route element={<NoNavigate />}>
       <Route path="/blog/:slug" element={<PostDetail />} />
@@ -67,5 +70,4 @@ export const publicRoutes = (
       </Route> */}
     </Route>
   </>
-    
 );

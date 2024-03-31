@@ -3,7 +3,9 @@ import React from 'react'
 const LessionLayout = () => {
   return (
     <div>
-        <div>
+        <div className='flex'>
+            {/* header */}
+            <div></div>
             {/* main content */}
             <div>
                 {/* content left */}
@@ -17,5 +19,4 @@ const LessionLayout = () => {
     </div>
   )
 }
-
 export default LessionLayout
