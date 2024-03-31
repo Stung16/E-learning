@@ -5,9 +5,9 @@ import UploadImage from "./UploadImage";
 const Test = () => {
   const [open, setOpen] = useState(false);
   // const token = Cookies.get("accessToken");
-  // const [data, setData] = useState();
+  const [data, setData] = useState();
 
-  // const [files, setFiles] = useState([]);
+  const [files, setFiles] = useState([]);
   // useEffect(() => {
   //   try {
   //     const fetch = async () => {
@@ -46,31 +46,13 @@ const Test = () => {
   //   }
   // };
   return (
-    // <form
-    //   action=""
-    //   // onSubmit={handleSubmitProfile}
-    //   className="flex items-start gap-10"
-    // >
-    //   <UploadImage userInfo={data} onFiles={setFiles} files={files} />
-    // </form>
-    <>
-      {/* <Button type="primary" onClick={() => setOpen(true)}>
-        Open Modal of 1000px width
-      </Button>
-      <Modal
-        title="Modal 1000px width"
-        centered
-        open={open}
-        onOk={() => setOpen(false)}
-        onCancel={() => setOpen(false)}
-        width={1000}
-      >
-        <p>some contents...</p>
-        <p>some contents...</p>
-        <p>some contents...</p>
-      </Modal> */}
-      <h1>hi</h1>
-    </>
+    <form
+      action=""
+      // onSubmit={handleSubmitProfile}
+      className="flex items-start gap-10"
+    >
+      <UploadImage userInfo={data} onFiles={setFiles} files={files} />
+    </form>
   );
 };
 

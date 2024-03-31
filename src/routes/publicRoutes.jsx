@@ -14,7 +14,7 @@ import Landing from "../pages/Landing/Landing";
 import NotFound from "../pages/NotFound/NotFound";
 import Front_end_Development from "../pages/Learning_paths/Front_end_Development/Front_end_Development";
 import Profile from "../pages/Profile/Profile";
-import LessonsForNewbie from "../components/LessonsForNewbie/LessonsForNewbie";
+import LessonsForNewbie from "../pages/Courses/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
 import Test from "../components/Test/Test";
