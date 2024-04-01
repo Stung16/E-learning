@@ -21,7 +21,7 @@ import AuthMiddleware from "../middlewares/AuthMiddleware";
 import Test from "../components/Test/Test";
 import MyCourses from "../pages/MyCourses/MyCourses";
 import LessionLayout from "../layouts/LessionLayout/LessionLayout";
-import Learning from "../pages/Home/Learning/Learning";
+import Learning from "../pages/Learning/Learning";
 export const publicRoutes = (
   <>
     <Route element={<LessionLayout />}>

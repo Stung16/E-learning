@@ -76,3 +76,8 @@
     user-select: none;
     display: flex;
 }
+.Main_lession{
+    height: calc(100vh - 100px);
+}
+
+
