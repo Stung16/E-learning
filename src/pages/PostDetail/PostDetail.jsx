@@ -17,13 +17,13 @@ function PostDetail() {
                     <p className='text-[#757575] text-[14px] mt-1 pl-[178px]'></p>
                     <hr />
                     <div className='flex text-[#757575] text-[16px] mt-6'>
-                        <div className='py-1 px-2 select-none'>
+                        <div className='flex py-1 px-2 select-none'>
                         <FaRegHeart className="text-[20px] mt-[-1px] cursor-pointer hover:text-[#333] fa-regular fa-heart "/>
                         
                         <span className='ml-2'>15</span>
                         </div>
 
-                        <div className='py-1 px-2 select-none ml-6'>
+                        <div className='flex py-1 px-2 select-none ml-6'>
                         <FaRegComment className="text-[20px] cursor-pointer hover:text-[#333] fa-regular fa-comment"/>
                         <span className='ml-2'>18</span>
                         </div>
@@ -71,12 +71,12 @@ function PostDetail() {
                     </div>
                     <div className='mt-[60px]'>
                         <div className='text-[#757575] flex text-[16px] mt-6'>
-                        <div className='py-1 px-2 select-none'>
+                        <div className='flex py-1 px-2 select-none'>
                         <FaRegHeart className="text-[20px] mt-[-1px] cursor-pointer hover:text-[#333] fa-regular fa-heart "/>
                         <span className='ml-2'>15</span>
                         </div>
 
-                        <div className='py-1 px-2 select-none ml-6'>
+                        <div className='flex py-1 px-2 select-none ml-6'>
                         <FaRegComment className="text-[20px] cursor-pointer hover:text-[#333] fa-regular fa-comment"/>
                         <span className='ml-2'>18</span>
                         </div>

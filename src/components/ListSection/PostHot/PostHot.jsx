@@ -30,7 +30,7 @@ const PostHot = () => {
 
       <div className="Main_PostHot pb-0">
         <section className="ListPostHot  ml-[-12px] mr-[-12px] flex flex-wrap">
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -67,7 +67,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -104,7 +104,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -140,7 +140,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -177,7 +177,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -213,7 +213,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -250,7 +250,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link
@@ -286,7 +286,7 @@ const PostHot = () => {
               </div>
             </div>
           </section>
-          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pr-[12px] pl-[12px] min-[740px]:w-[33.33333%]">
+          <section className="ScrollList_body_Post min-[1113px]:w-[25%] pl-[12px] min-[740px]:w-[33.33333%]">
             <div className="CommonItem_wrapper_Free mb-8">
               <div className="relative ">
                 <Link

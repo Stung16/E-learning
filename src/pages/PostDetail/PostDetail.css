@@ -14,7 +14,7 @@
 }
 @media (min-width: 0) and (max-width: 739px){
 .user{
-    display: none;
+    display: none ;
 }
 .BlogDetail_heading{
     font-size: 32px !important;
@@ -22,7 +22,6 @@
 .RelatedPosts_photo{
     height: 175px !important;
 }
-
 
 }
 @media (min-width: 1024px) and (max-width: 1400px){

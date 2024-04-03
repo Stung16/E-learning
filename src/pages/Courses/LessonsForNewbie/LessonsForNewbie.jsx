@@ -136,7 +136,6 @@ const LessonsForNewbie = () => {
             </div>
             <div className="mt-3 mb-12">
               <div>
-
                 <Chappter>
                   <Lession />
                 </Chappter>

@@ -2,6 +2,7 @@ import React from "react";
 import "./LessionLayout.css";
 import { Link, Outlet } from "react-router-dom";
 import Header from "./Header/Header";
+import Control from "./Control/Control";
 const LessionLayout = () => {
   return (
     <div className="lessionLayout">
@@ -13,7 +14,7 @@ const LessionLayout = () => {
           <Outlet />
         </div>
         {/* controll */}
-        <div className="controll h-[50px] bg-[#333]"></div>
+        <Control />
       </div>
     </div>
   );
