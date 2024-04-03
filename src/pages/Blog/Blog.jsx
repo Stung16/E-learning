@@ -4,10 +4,11 @@ import { FaRegBookmark } from "react-icons/fa6";
 import { FaEllipsis } from "react-icons/fa6";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { FaAnglesRight } from "react-icons/fa6";
+import "./Blog.css"
 function Blog() {
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
-      <div className="mb-[60px] mt-2 mx-11 ">
+      <div className="DefaultLayout_container mb-[60px] mt-2 mx-11 ">
         <div className="mb-20">
           <h1 className="text-[#242424] text-[28px] font-black my-[0.67em] mx-0">
             Bài viết nổi bật
@@ -21,12 +22,12 @@ function Blog() {
         </div>
         <div>
           <section className="min-[1113px]:ml-[-12px] w-[100%] min-[1113px]:mr-[-12px] min-[740px]:pl-[-8px] min-[740px]:pr-[-8px] flex flex-wrap">
-            <section className="min-[1113px]:w-[66.66667%] min-[1113px]:block min-[1113px]:px-3">
+            <section className="index-module min-[1113px]:w-[66.66667%] min-[1113px]:block min-[1113px]:px-3">
               <div className="pr-[64px] pb-11">
                 <div>
-                  <div className="border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -56,8 +57,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Authentication & Authorization trong ReactJS
@@ -70,7 +71,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             ReactJS
@@ -79,10 +80,10 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
-                            className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
+                            className="PostItem_thumb_img bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
                             src="/image/img_baiviet/65299d0ce743e.png"
                             alt="Authentication & Authorization trong ReactJS"
                           />
@@ -90,9 +91,9 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -122,8 +123,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Hướng dẫn chi tiết cách sử dụng Dev Mode trong khóa
@@ -137,7 +138,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             Front-end
@@ -146,7 +147,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
@@ -157,9 +158,9 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -189,8 +190,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Cách chỉnh theme Oh-my-posh cho Powershell
@@ -203,7 +204,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             Terminal
@@ -215,9 +216,9 @@ function Blog() {
                      
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -247,8 +248,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Sự khác biệt giữa var, let và const trong JavaScript
@@ -259,7 +260,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             Javascript
@@ -271,9 +272,9 @@ function Blog() {
                       
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -303,8 +304,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             `Tất tần tật` về cải thiện Performance của 1 trang
@@ -318,7 +319,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             Javascript
@@ -327,7 +328,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>8 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
@@ -338,9 +339,9 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -370,8 +371,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Một số "cẩm nang" hay khi làm việc với HTML/CSS
@@ -384,7 +385,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             ReactJS
@@ -393,7 +394,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
@@ -404,9 +405,9 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -436,8 +437,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             "Kết nối trước" với preconnect, prefetch để làm gì?
@@ -449,7 +450,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             Front-end
@@ -458,7 +459,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
@@ -469,9 +470,9 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -501,8 +502,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Cảm thấy khó khăn khi chuyển sang học một ngôn ngữ
@@ -516,7 +517,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             ReactJS
@@ -528,9 +529,9 @@ function Blog() {
                     
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -560,8 +561,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Học viên Funix lạc đường tới F8
@@ -574,7 +575,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             ReactJS
@@ -583,7 +584,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
@@ -594,9 +595,9 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
+                  <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
                     <div className="items-center flex justify-between">
-                      <div className="items-center flex">
+                      <div className=" items-center flex">
                         <Link to="">
                           <div className="avatar flex text-[2.9px] items-center justify-center relative p-[0.7em] rounded-[50%]">
                             <img
@@ -626,8 +627,8 @@ function Blog() {
                         </div>
                       </div>
                     </div>
-                    <div className="items-center flex">
-                      <div className="text-[14px] flex-1 pr-[1rem]">
+                    <div className="PostItem_body items-center flex">
+                      <div className="PostItem_info text-[14px] flex-1 pr-[1rem]">
                         <Link to="/blog/postdetail">
                           <h2 className="text-[#292929]  font-bold mb-0 mt-2">
                             Đánh giá ÉP TÁM với một số trường
@@ -640,7 +641,7 @@ function Blog() {
                         </p>
                         <div className="text-[14px] pr-8">
                           <Link
-                            className="bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
+                            className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 px-[10px]"
                             to=""
                           >
                             ReactJS
@@ -649,7 +650,7 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                      <div className="shrink-0">
+                      <div className="PostItem_thumb shrink-0">
                         <Link to="/blog/postdetail">
                           <img
                             className="bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
@@ -660,7 +661,7 @@ function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="items-center flex justify-center mt-5 relative">
+                  <div className="Pagination_wrapper items-center flex justify-center mt-5 relative">
                     <div className="items-center leading-4 flex py-0 px-[10px]">
                       <div className="border border-solid border-[#fff] text-[#d0d7de] cursor-default min-[1024px]:mr-1 min-[1024px]:py-[6px] min-[1024px]:px-3 rounded-[6px] flex font-medium select-none transition-all delay-[2s]">
                         
@@ -681,25 +682,25 @@ function Blog() {
                       <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         5
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         6
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         7
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         8
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         9
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         10
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         11
                       </div>
-                      <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
+                      <div className="Pagination_hidden text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
                         12
                       </div>
                       <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
@@ -751,7 +752,7 @@ function Blog() {
                 </ul>
               </div>
               <div className="sticky top-[80px] items-start flex">
-                <div className="flex max-w-[300px] flex-col">
+                <div className="Banners_content flex max-w-[300px] flex-col">
                   <Link className="mt-8" to="">
                     <img
                       className="rounded-[8px] max-w-[100%] object-cover w-[100%]"

@@ -5,7 +5,6 @@
     left: 0;
     bottom: 0px;
     overflow-x: hidden;
-    background-color: aqua;
 }
 .Video_wrapper{
     background-color: #000;
@@ -23,4 +22,69 @@
     align-items: center;
     justify-content: center;
     background-image: url(/image/lession/maxresdefault.jpg);
+}
+.Video_addNote{
+    background-color: #ebebeb;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 12px 16px;
+    position: relative;
+    top: -12px;
+    transition: .3s ease;
+    user-select: none;
+}
+.MarkdownParser_wrapper{
+    word-wrap: break-word;
+    color: #292929;
+    font-size: 16px;
+    line-height: 2;
+}
+.MarkdownParser_wrapper li{
+    list-style: disc;
+}
+.ActionButton_wrapper{
+    background-color: #fff;
+    border-radius: 999px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: #f05123;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: relative;
+    user-select: none;
+    display: flex;
+}
+@media (max-width: 1023px){
+    .content_left{
+        width: 100%;
+    }
+}
+@media (min-width: 0px) and (max-width: 739px){
+    .Video_contentTop{
+        align-items: flex-start !important  ;
+        flex-direction: column;
+    }
+    .Video_content{
+        padding: 0 16px !important;
+    }
+    .Video_wrapper{
+        padding: 0 !important;
+    }
+    .wrapper h1{
+        font-size: 26px !important;
+        margin-top: 24px !important;
+    }
+    .ActionButton_wrapper{
+        padding: 12px;
+    }
+    .ActionButton_wrapper span{
+        display: none ;
+    }
+    .main_comment{
+        bottom: 90px !important;
+        right: 0px !important;
+    }
+    
 }

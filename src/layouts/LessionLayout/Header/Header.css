@@ -1,0 +1,28 @@
+@media (max-width: 1023px){
+    .Header_icon{
+        display: none;
+    }
+    .Header_course-title{
+        margin-left: 0px;
+    }
+    .Header_action-btn span{
+        display: none;
+    }
+    .Header_completed{
+        display: none;
+    }
+    .Header_action-btn.help{
+        display: none;
+    }
+    .CircularProgressBar_body{
+        right: 78px !important;
+    }
+}
+@media (min-width: 739px) and (max-width: 1023px){
+    .Header_icon{
+        display: inline;
+    }
+    .Header_course-title{
+        margin-left: 16px;
+    }
+}

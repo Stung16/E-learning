@@ -383,7 +383,7 @@ const Terms = () => {
             </section>
             <section className=' min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 '>
               <div className='sticky top-[80px] flex justify-end'>
-              <div className='flex flex-col max-w-[300px] '>
+              <div className='Banners_content flex flex-col max-w-[300px] '>
                 <Link className='mt-[32px]' to="">
                   <img className='max-w-[100%] w-[100%] rounded-lg object-cover opacity-100 hover:opacity-80' src="/image/img_baiviet/63dc625b29cdc.png" alt="" />
                 </Link>

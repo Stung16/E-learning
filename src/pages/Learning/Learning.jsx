@@ -3,7 +3,7 @@ import ContentLeft from "../../layouts/LessionLayout/ContentLeft/ContentLeft";
 import ContentRight from "../../layouts/LessionLayout/ContentRight/ContentRight";
 
 const Learning = () => {
-  return <div className="relative h-[100%]">
+  return <div className="relative h-[100%] overflow-x-hidden">
     <ContentLeft />
     <ContentRight />
   </div>

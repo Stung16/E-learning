@@ -258,7 +258,7 @@ const Footer = () => {
               <p className="text-[14px] leading-4">
                 © 2018 - 2024 F8. Nền tảng học lập trình hàng đầu Việt Nam
               </p>
-              <div className="ml-auto">
+              <div className="flex ml-auto">
                 <Link to="">
                 <FaYoutube className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-youtube  bg-toastify-icon-color-error text-black-color"/>
                 </Link>
@@ -267,7 +267,6 @@ const Footer = () => {
                 </Link>
                 <Link to="" className="ml-4">
                 <FaTiktok className="text-[24px] px-[2px] py-1 rounded-md fa-brands  fa-tiktok bg-[#181821] text-white-color"/>
-
                 </Link>
               </div>
             </div>
