@@ -12,7 +12,7 @@ const DefaultLayout = () => {
       <Header />
       <div className=" min-h-screen flex">
         <Navigate />
-        <div className="app-content max-w-[calc(100%-96px)] py-0 pr-10 pl-5 overflow-hidden">
+        <div className="app-content max-w-[calc(100%-96px)] py-0 pr-10 pl-5 overflow-x-hidden overflow-y-auto scroll-smooth">
           <Outlet />
           <NewFeed />
         </div>

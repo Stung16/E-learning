@@ -1,83 +1,96 @@
-.Header_wrapper{
-    align-items: center;
-    background-color: #29303b;
-    display: flex;
-    height: 50px;
-    position: relative;
-    z-index: 1;
+.lessionLayout ::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 10px;
+  background: transparent;
 }
-.Header_back-btn{
-    cursor: pointer;
-    display: flex;
-    height: 50px;
-    transition: background-color .2s linear;
-    width: 60px;
+.lessionLayout ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
 }
-.Header_course-title{
-    word-wrap: break-word;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    margin-left: 16px;
-    overflow: hidden;
+.Header_wrapper {
+  align-items: center;
+  background-color: #29303b;
+  display: flex;
+  height: 50px;
+  position: relative;
+  z-index: 1;
 }
-.CircularProgressBar_wrapper{
-    --size: 34px;
-    --progress: 0;
-    --bar-width: 2px;
-    --shadow-border-color: #4d4f50;
-    height: 34px;
-    width: 34px;
+.Header_back-btn {
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  transition: background-color 0.2s linear;
+  width: 60px;
 }
-.CircularProgressBar-wrapper:nth-child(3n+1) {
-    clear: both;
+.Header_course-title {
+  word-wrap: break-word;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 16px;
+  overflow: hidden;
 }
-.CircularProgressBar{
-    clip: rect(0, var(--size, 40px), var(--size, 40px), calc(var(--size, 40px) / 2));
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+.CircularProgressBar_wrapper {
+  --size: 34px;
+  --progress: 0;
+  --bar-width: 2px;
+  --shadow-border-color: #4d4f50;
+  height: 34px;
+  width: 34px;
 }
-.CircularProgressBar_left{
-    transform: rotate(calc(var(--progress)* 3.6deg));
-    transition: .3s ease;
-    clip: rect(0, calc(var(--size, 40px) / 2), var(--size, 40px), 0);
-    border: var(--bar-width) solid var(--bar-color, var(--primary-color));
-    border-radius: 50%;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+.CircularProgressBar-wrapper:nth-child(3n + 1) {
+  clear: both;
 }
-.CircularProgressBar_shadow{
-    border: var(--bar-width) solid var(--shadow-border-color, #d4d4d4);
-    border-radius: 50%;
-    height: 100%;
-    transition: background-color .3s ease;
-    width: 100%;
+.CircularProgressBar {
+  clip: rect(
+    0,
+    var(--size, 40px),
+    var(--size, 40px),
+    calc(var(--size, 40px) / 2)
+  );
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.CircularProgressBar_body{
-    position: absolute;
-    right: 321px;
-    top: 7px;
+.CircularProgressBar_left {
+  transform: rotate(calc(var(--progress) * 3.6deg));
+  transition: 0.3s ease;
+  clip: rect(0, calc(var(--size, 40px) / 2), var(--size, 40px), 0);
+  border: var(--bar-width) solid var(--bar-color, var(--primary-color));
+  border-radius: 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.Header_num{
-    font-size: 12px;
+.CircularProgressBar_shadow {
+  border: var(--bar-width) solid var(--shadow-border-color, #d4d4d4);
+  border-radius: 50%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
-.Header_action-btn{
-    background-color: transparent;
-    color: #fff;
-    font-size: 14px;
-    margin-right: 24px;
-    opacity: .8;
-    user-select: none;
-    display: flex;
+.CircularProgressBar_body {
+  position: absolute;
+  right: 321px;
+  top: 7px;
 }
-.Main_lession{
-    height: calc(100vh - 100px);
+.Header_num {
+  font-size: 12px;
 }
-
-
+.Header_action-btn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 24px;
+  opacity: 0.8;
+  user-select: none;
+  display: flex;
+}
+.Main_lession {
+  height: calc(100vh - 100px);
+}
