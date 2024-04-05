@@ -20,16 +20,10 @@ const Control = () => {
         <span className="p-2 font-semibold">BÀI TIẾP THEO</span>
         <FaChevronRight className="mt-[9px]" />
       </button>
-      <div className="toggle-wrap">
-        {/* <button className="toggle-btn bar">
-          <FaBars
-          
-          />
-        </button> */}
-
-        <h3 className="text-[14px]">1. Khái niệm kỹ thuật cần biết</h3>
+      <div className="toggle-wrap flex">
+        <h3 className="ActionBar_title text-[14px] ">1. Khái niệm kỹ thuật cần biết</h3>
         <button
-          className="toggle-btn arrow"
+          className="toggle-btn "
           onClick={() => {
             dispatch(updateShow(!isShow));
           }}

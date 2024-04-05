@@ -85,6 +85,33 @@
     margin-right: 12px;
     width: 36px;
 }
-@media (max-width: 1023px){
-      
+@media (min-width: 0px) and (max-width: 739px){
+    .content_right{
+        bottom: 0;
+        margin-top: 0 !important;
+        width: 100%;
+        z-index: 99;
+    }
+}
+@media (min-width: 0px) and (max-width: 1023px){
+    .content_right{
+        left: 0;
+        right: unset;
+        position: fixed;
+    }
+    .xmark{
+        display: inline !important;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .content_right{
+        bottom: 0;
+        margin-top: 0;
+        width: 50%;
+        z-index: 99;
+        position: fixed;
+    }
+    .ActionBar_title{
+        order: 2;
+    }
 }

@@ -28,7 +28,6 @@ const PostHot = ({ data }) => {
           <FaChevronRight className="group-hover:translate-x-2 transition-all ease-linear duration-400 fa-solid fa-chevron-right text-[12px] text-[#f47425] cursor-pointer mb-[2px]" />
         </div>
       </div>
-
       <div className="Main_PostHot pb-0">
         <section className="ListPostHot  ml-[-12px] mr-[-12px] flex flex-wrap">
           {data?.map((item) => {

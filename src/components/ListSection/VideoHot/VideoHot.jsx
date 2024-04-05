@@ -67,17 +67,17 @@ const VideoHot = ({ data }) => {
                       </Link>
                     </h3>
                     <div className="Video_item text-[#757575] flex">
-                      <div>
+                      <div className="flex">
                         <FaEye className="fa-solid fa-eye fa-sm" />
-                        <span className="ml-2">244.842</span>
+                        <span className="ml-2 -mt-1">244.842</span>
                       </div>
-                      <div>
+                      <div className="flex">
                         <FaThumbsUp className="fa-solid fa-thumbs-up fa-sm ml-[24px]" />
-                        <span className="ml-2">6.150</span>
+                        <span className="ml-2 -mt-1">6.150</span>
                       </div>
-                      <div>
+                      <div className="flex">
                         <FaComment className="fa-solid fa-comment fa-sm  ml-[24px]" />
-                        <span className="ml-2">230</span>
+                        <span className="ml-2 -mt-1">230</span>
                       </div>
                     </div>
                   </div>

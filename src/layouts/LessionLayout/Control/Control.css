@@ -75,7 +75,4 @@
         right: unset;
         width: 26%;
     }
-    .toggle-wrap .toggle-btn.arrow{
-        display: none !important;
-    }
 }

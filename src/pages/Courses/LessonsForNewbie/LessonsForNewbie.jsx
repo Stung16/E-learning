@@ -5,7 +5,7 @@ import { FiFilm } from "react-icons/fi";
 import { FaBatteryFull } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
-
+import { FaFilm } from "react-icons/fa6";
 import Chappter from "../../../components/MenuLession/Chappter";
 import Lession from "../../../components/MenuLession/Lession";
 
@@ -38,7 +38,7 @@ const LessonsForNewbie = () => {
                     </span>
                   </li>
                   <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">
-                    <FiFilm className="absolute left-[0px] top-[3px] fa-solid fa-film" />
+                  <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film"/>
                     <span className="text-[#494949] text-[14px]">
                       Tổng số
                       <strong> 12</strong> bài học
@@ -175,7 +175,7 @@ const LessonsForNewbie = () => {
                 </span>
               </li>
               <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">
-                <i className="absolute left-[0px] top-[3px] fa-solid fa-film"></i>
+              <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film"/>
                 <span className="text-[#494949] text-[14px]">
                   Tổng số
                   <strong> 12</strong> bài học
