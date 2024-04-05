@@ -14,6 +14,7 @@ import { IoInformationCircle } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa6";
 import { FaLaptopCode } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
+import { FaChevronLeft } from "react-icons/fa6";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import AvatarUser from "../../../components/Header/AvatarUser";
 import Auth from "../../../components/Header/Auth/Auth";
@@ -51,14 +52,14 @@ const Header = () => {
           <Link to="/">
             <img
               className="rounded-lg h-[38px] w-[38px] shrink-0 object-contain"
-              src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
+              src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
               alt=""
             />
           </Link>
           <h4 className="text-black text-[14px] font-bold m-4 leading-4">
             {pathname !== "/" ? (
               <span className="flex justify-center items-center gap-1">
-                <i className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"></i>
+                <FaChevronLeft className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"/>
                 <span
                   className="text-[#808990] cursor-pointer text-[12px] font-semibold"
                   onClick={handleGoBack}

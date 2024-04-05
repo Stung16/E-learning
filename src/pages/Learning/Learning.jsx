@@ -12,7 +12,8 @@ const Learning = () => {
     <div className="relative h-[100%] overflow-x-hidden">
       <ContentLeft />
       <ContentRight />
-      <div className="ovelay_course fixed inset-0 bg-[rgba(0,0,0,.2)] z-50" onClick={()=> dispatch(updateShow(!isShow))}></div>
+      {isShow && <div className="overlay_course fixed inset-0 bg-[rgba(0,0,0,.2)] z-50" onClick={()=> dispatch(updateShow(!isShow))}>
+      </div>}
     </div>
   );
 };

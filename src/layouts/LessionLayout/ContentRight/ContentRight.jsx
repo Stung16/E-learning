@@ -5,16 +5,27 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { FaFileLines } from "react-icons/fa6";
 import { FaLock } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
-import { useSelector } from "react-redux";
+import { FaXmark } from "react-icons/fa6";
+import { useDispatch, useSelector } from "react-redux";
+import { courseSlice } from "../../../stores/slices/courseSlice";
+const { updateShow } = courseSlice.actions;
 const ContentRight = () => {
   const isShow = useSelector((state) => state.courseData.isShow);
-
+  const dispatch = useDispatch();
   return (
     <div className={`content_right ${!isShow && "hidden"} `}>
       <div className="content_right_container">
         {/* 1 */}
         <header className="content_right_header">
           <h1 className="text-[16px] leading-[22px] m-0">Nội dung khóa học</h1>
+          <span
+            className="xmark hidden"
+            onClick={() => {
+              dispatch(updateShow(!isShow));
+            }}
+          >
+            <FaXmark />
+          </span>
         </header>
         <div className="h-[100%] w-[100%] overflow-y-scroll">
           <div>

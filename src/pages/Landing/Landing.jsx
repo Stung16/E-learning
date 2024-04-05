@@ -13,7 +13,7 @@ function Landing() {
     return ( 
         <section className='text-[#C9D1D9] bg-[#0d1018] text-[16px] '>
         {/* // HEADER */}
-        <header className='header flex items-center h-[120px]'>
+        <header className='header-landing flex items-center h-[120px]'>
             <div className='header-inner w-[1248px] my-0 mx-auto max-w-[calc(100%-48px)]'>
                 <div className='relative flex items-center'>
                     <Link className='flex self-center no-underline text-[#C9D1D9]' to="/">
@@ -116,30 +116,29 @@ function Landing() {
                 </div>
             </div>
                 {/* DEV ENV*/}
-            <div className='relative pt-16 px-0 pb-[130px]'>
+            <div className='dev-env relative pt-16 px-0 pb-[130px]'>
                 <div className='max-w-[calc(100%-48px)]  w-[1248px] my-0 mx-auto'>
                     <h2 className='devh2'>
                         <span className='text-[20px] leading-[32px]'>Cùng xem thành quả sau khóa học nhé!</span>
                     </h2>
                     <div className='devvideo relative h-[702px]' id='video-box'>
-                        
+                        <img className='w-[100%] block my-0 mx-auto rounded-[16px] absolute z-[1]' src="/image/courses/61a9e9e701506.png" alt="" />
 
-                        {/* <div className='play-icon flex'>
-                           
+                        {/* <div className='play-icon flex'>                      
                             <svg className='relative right-[-3px] w-[40px] h-[40px]' xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
                                 <path fill="#fff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
                             </svg>
                         </div> */}
                     </div>
-                    <p className='mt-[30px] text-center'>      
+                    <p className='order-polo mt-[30px] text-center'>      
                     ✅
                     <Link className='underline text-[#c9d1d9]' to="/">     
                     Đăng ký mua áo Polo F8 - Fullstack
                     </Link>
                     </p>
                 </div>
-                <img className='absolute z-[0] left-[-128px] bottom-[20px]' src="/image/landing/hero-bg-square.svg" alt="" />
-                <img className='absolute z-[0] right-[-128px] top-[200px]' src="/image/landing/hero-bg-circle.svg" alt="" />
+                <img className='img-decorator absolute z-[0] left-[-128px] bottom-[20px]' src="/image/landing/hero-bg-square.svg" alt="" />
+                <img className='img-decorator absolute z-[0] right-[-128px] top-[200px]' src="/image/landing/hero-bg-circle.svg" alt="" />
                 <img className='w-[90%] left-[6%] top-[2%] absolute z-[0] translate-x-[-2/4] translate-y-[-1/2]' src="/image/landing/glow-new.png" alt="" />
             </div>
             {/* SECTION PROJECTS */}
@@ -307,9 +306,9 @@ function Landing() {
                             tập trực quan và dễ hiểu nhất có thể.
                             </p>
                         </div>
-                        <div className='relative mt-10 h-[550px] flex flex-col items-center text-center'>
-  
-                            <Link className='absolute z-[2] text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-[500px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                        <div className='section-sass-content relative mt-10 h-[550px] flex flex-col items-center text-center'>
+                            <img className='section-sass-video w-[65%] mb-[10px] rounded-[20px]' src="/image/courses/61a9e9e701506.png" alt="" />
+                            <Link className='section-sass-btn absolute z-[2] text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-[500px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                              Học thử ngay
                             <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                             </Link>
@@ -318,7 +317,7 @@ function Landing() {
                     </div>
                 </div>
                 {/* SECTION FLASHCARDS */}
-                <div className=' py-16 px-0'>
+                <div className='section-flashcards py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                         <div className='row flex-row-reverse flex items-center gap-[150px]'>
                             <div className='flex-1 '>
@@ -339,8 +338,9 @@ function Landing() {
                                 <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
                             </div>
-                            <div className='relative h-[614px] flex justify-center flex-1'>
-                                <Link className='d-sm-inline-flex text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                            <div className='videowrapper relative h-[614px] flex justify-center flex-1'>
+                                <img className='flashcards-video w-[65%] rounded-[20px]' src="/image/courses/61a9e9e701506.png" alt="" />
+                                <Link className='d-sm-inline-flex z-[2] text-[#0d1117] group hidden bg-[#fff] hover:bg-[#c9d1d9] h-[52px] rounded-[12px]  items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
                                 <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
@@ -350,10 +350,10 @@ function Landing() {
                     </div>
                 </div>
                 {/* SECTION FEATURES */}
-                <div className='mt-[60px] py-16 px-0'>
+                <div className='section-features mt-[60px] py-16 px-0'>
                     <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                         <div className='row flex-row-reverse flex items-center gap-[150px]'>
-                        <div className='flex-1 '>
+                        <div className='section-features-content flex-1 '>
                                 <h2 className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'>
                                 Khóa học Pro
                                     <strong className='second-heading leading-[59px] text-[42px] font-bold text-[#fff]'> vượt trội hơn khóa học Free </strong>
@@ -370,7 +370,7 @@ function Landing() {
                                 <p className='desc mt-4 text-[20px] text-[#8b949e] '>           
                                 Mà bạn đâu cần mua ngay lúc này? Nhấn vào nút dưới đây để trải nghiệm khóa học miễn phí.
                                 </p>
-                                <Link className='text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-8 rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
+                                <Link className='btn text-[#0d1117] group bg-[#fff] hover:bg-[#c9d1d9] h-[52px] mt-8 rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
                                 Trải nghiệm miễn phí
                                 <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer"/> 
                                 </Link>
@@ -482,7 +482,7 @@ function Landing() {
                         </div>
                     </div>
                     {/* FEEDBACK */}
-                    <div className='mt-[90px] py-[100px] px-0'>
+                    <div className='feedback-wrapper mt-[90px] py-[100px] px-0'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <header className='text-center'>
                             <h2 className='second-heading text-[42px] text-[#fff] leading-[59px] font-bold'>Mọi người nói gì về khóa học này?</h2>
@@ -546,7 +546,7 @@ function Landing() {
                         </div>
                     </div>
                     {/* START FREE */}
-                    <div className='mt-8 py-16 text-center'>
+                    <div className='startfree-wrapper mt-8 py-16 text-center'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div>
                                 <h2 className='second-heading text-[42px] leading-[59px] font-bold text-[#fff]'>Trải nghiệm miễn phí ngay hôm nay</h2>
@@ -642,7 +642,7 @@ function Landing() {
                         </div>
                     </div>
                     {/* CDN */}
-                    <div className='flex flex-col items-center mt-[70px] text-center py-16 px-0'>
+                    <div className='CDN flex flex-col items-center mt-[70px] text-center py-16 px-0'>
                         <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
                             <div>
                                 <h2 className='second-heading max-w-[700px] my-0 mx-auto text-[42px] leading-[59px] font-bold text-[#fff]'>Bạn có thể học mọi lúc, mọi nơi, trên mọi thiết bị</h2>
