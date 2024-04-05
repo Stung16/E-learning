@@ -1,7 +1,9 @@
 import React from "react";
 import ItemCoursePro from "../../courses/ItemCoursePro/ItemCoursePro";
 
-const CoursePro = () => {
+const CoursePro = ({ data }) => {
+  const listCoursePro = data?.filter(course => course?.price !== 0);
+  // console.log(listCoursePro);
   return (
     <div className="mb-2">
       {/* Title khoá học */}

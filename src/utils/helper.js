@@ -20,3 +20,13 @@ export const fetcher = async (url) => {
   const res = await Client.get(url);
   return res;
 };
+export function customText(text, nb) {
+  if (text) {
+    if (text?.length <= nb) {
+      return text;
+    } else {
+      return text.substring(0, nb - 1) + "...";
+    }
+  }
+  return;
+}

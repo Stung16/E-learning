@@ -5,17 +5,17 @@ import CourseFree from "../../../components/ListSection/CourseFree/CourseFree";
 import PostHot from "../../../components/ListSection/PostHot/PostHot";
 import VideoHot from "../../../components/ListSection/VideoHot/VideoHot";
 
-const ListCourse = () => {
+const ListCourse = ({ data }) => {
   return (
     <div className="Home_wrapper mt-[70px] overflow-hidden px-11 pt-0 pb-[74px]">
       {/* Khoá học pro */}
-      <CoursePro />
+      <CoursePro data={data?.courses} />
       {/* Khoá học Free */}
-      <CourseFree />
+      <CourseFree data={data?.courses} />
       {/* Bài viết nổi */}
-      <PostHot />
+      <PostHot data={data?.posts} />
       {/* Videos */}
-      <VideoHot />
+      <VideoHot data={data?.videos} />
     </div>
   );
 };

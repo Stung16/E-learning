@@ -2,7 +2,7 @@ import React from "react";
 import ContentLeft from "../../layouts/LessionLayout/ContentLeft/ContentLeft";
 import ContentRight from "../../layouts/LessionLayout/ContentRight/ContentRight";
 import { useDispatch, useSelector } from "react-redux";
-import "./learning.css"
+import "./learning.css";
 import { courseSlice } from "../../stores/slices/courseSlice";
 const { updateShow } = courseSlice.actions;
 const Learning = () => {
@@ -12,7 +12,12 @@ const Learning = () => {
     <div className="relative h-[100%] overflow-x-hidden">
       <ContentLeft />
       <ContentRight />
-      <div className="ovelay_course fixed inset-0 bg-[rgba(0,0,0,.2)] z-50" onClick={()=> dispatch(updateShow(!isShow))}></div>
+      {isShow && (
+        <div
+          className="ovelay_course fixed inset-0 bg-[rgba(0,0,0,.2)] z-50"
+          onClick={() => dispatch(updateShow(!isShow))}
+        ></div>
+      )}
     </div>
   );
 };
