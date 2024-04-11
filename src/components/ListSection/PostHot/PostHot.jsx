@@ -8,7 +8,6 @@ import "./PostHot.css";
 import { customText } from "../../../utils/helper";
 
 const PostHot = ({ data }) => {
-  console.log(data);
   return (
     <div className="mb-2">
       <div className=" flex items-baseline ">

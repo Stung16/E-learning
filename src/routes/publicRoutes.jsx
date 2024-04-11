@@ -45,8 +45,6 @@ export const publicRoutes = (
       <Route path="/careers" element={<Careers />} />
       <Route path="/fresher" element={<Fresher />} />
       <Route path="/my-courses" element={<MyCourses />} />
-
-
       <Route path="/blog" element={<Blog />} />
       {/* Courses */}
       <Route
@@ -57,11 +55,11 @@ export const publicRoutes = (
     <Route path="/profile" element={<Profile />} />
 
     <Route element={<NoNavigate />}>
+      <Route path="/test" element={<Test />} />
       <Route path="/blog/:slug" element={<PostDetail />} />
     </Route>
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/landing" element={<Landing />} />
-    <Route path="/test" element={<Test />} />
     <Route path="/*" element={<NotFound />} />
     <Route element={<AuthMiddleware />}>
       {/* <Route element={<GuestMiddleware />}>
