@@ -23,8 +23,7 @@ export const detailtSlice = createSlice({
       state.isLoading = true;
     });
     builder.addCase(requestGetUserFromToken.fulfilled, (state, action) => {
-      console.log(action.payload);
-      state.profile = action.payload?.data?.data;
+      state.profile = action?.payload?.data;
       state.isLoading = false;
     });
   },

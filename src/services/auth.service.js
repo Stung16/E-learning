@@ -2,11 +2,11 @@ import Client from "../config/Client";
 import Cookies from "js-cookie";
 
 export const handleGetCode = async (email) => {
+  const payload = { email: email };
   try {
-    const res = await Client.get(`/send-code-register/${email}`);
+    const res = await Client.post(`/send-mail/register`, payload);
     return res;
   } catch (error) {
-    console.log(error);
   }
 };
 export const handeleLoginWithEmail = async (body) => {
@@ -19,6 +19,7 @@ export const handeleLoginWithEmail = async (body) => {
 };
 
 export const handleRefreshToken = async (refeshtoken) => {
+  console.log(refeshtoken);
   try {
     const res = await Client.post(`/refresh-token`, refeshtoken);
     return res;
@@ -53,7 +54,7 @@ export const handleGetAllUser = async () => {
 export const handleGetprofile = async () => {
   try {
     const res = await Client.get(`/user/profile`);
-    return res;
+    return res.data;
   } catch (error) {
     console.log(error);
   }

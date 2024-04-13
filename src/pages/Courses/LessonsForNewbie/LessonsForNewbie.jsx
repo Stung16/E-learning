@@ -1,26 +1,37 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import "./LessonsForNewbie.css";
 import { FaGaugeHigh } from "react-icons/fa6";
 import { FiFilm } from "react-icons/fi";
 import { FaBatteryFull } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 import { FaFilm } from "react-icons/fa6";
 import Chappter from "../../../components/MenuLession/Chappter";
 import Lession from "../../../components/MenuLession/Lession";
-
+import useSWR from "swr";
+import { fetcher } from "../../../utils/helper";
+import Loading from "../../../components/Loading/Loading";
 const LessonsForNewbie = () => {
+  const location = useLocation();
+  const { pathname } = location;
   const [hideAll, setHideAll] = useState(false);
+  const slug = pathname.split("/")[pathname.split("/").length - 1];
+  const { data, isLoading } = useSWR(`/course/${slug}`, fetcher);
+  const courseDetail = data?.data?.data;
+  if (isLoading) {
+    return <Loading />;
+  }
+  let totalLession = 0;
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
       <section className="course-wrapper mt-6 pt-0 px-11 pb-[68px] min-[1113px]:mx-[-12px] min-[740px]:mx-[-8px] flex flex-wrap mx-[-4px]">
         <section className="min-[1113px]:w-[66.66667%] min-[1113px]:block min-[1113px]:px-3 min-[740px]:w-[100%] min-[740px]:block min-[740px]:px-[-8px]">
           <h1 className="text-[32px] leading-[37px] font-bold mt-4 min-h-[33px] mx-0 my-[0.67em]">
-            Kiến Thức Nhập Môn IT
+            {courseDetail?.title}
           </h1>
           <div className="CourseDetail_textContent text-[#000000cc] text-[14px] leading-[22px]">
-            Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem
-            các videos tại khóa này trước nhé.
+            {courseDetail?.descriptions}
           </div>
           <section className="flex flex-wrap -mx-1 ">
             <section className="w-[100%] px-1">
@@ -38,7 +49,7 @@ const LessonsForNewbie = () => {
                     </span>
                   </li>
                   <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">
-                  <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film"/>
+                    <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film" />
                     <span className="text-[#494949] text-[14px]">
                       Tổng số
                       <strong> 12</strong> bài học
@@ -136,18 +147,28 @@ const LessonsForNewbie = () => {
             </div>
             <div className="mt-3 mb-12">
               <div>
-                <Chappter>
-                  <Lession />
-                </Chappter>
-                <Chappter>
-                  <Lession />
-                </Chappter>
-                <Chappter>
-                  <Lession />
-                </Chappter>
-                <Chappter>
-                  <Lession />
-                </Chappter>
+                {courseDetail?.chapters?.map((courseDt, index) => {
+                  return (
+                    <Fragment key={index}>
+                      <Chappter
+                        title={courseDt?.title}
+                        lessions={courseDt?.lessons?.length}
+                        index={index}
+                      >
+                        {courseDt?.lessons?.map((item, indexx) => {
+                          ++totalLession
+                          return (
+                            <Lession
+                              key={item?.sort}
+                              item={item}
+                              indexx={indexx}
+                            />
+                          );
+                        })}
+                      </Chappter>
+                    </Fragment>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -175,10 +196,10 @@ const LessonsForNewbie = () => {
                 </span>
               </li>
               <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">
-              <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film"/>
+                <FaFilm className="absolute left-[0px] top-[3px] fa-solid fa-film" />
                 <span className="text-[#494949] text-[14px]">
                   Tổng số
-                  <strong> 12</strong> bài học
+                  <strong> {totalLession}</strong> bài học
                 </span>
               </li>
               <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">

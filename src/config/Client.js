@@ -35,18 +35,22 @@ const Client = {
       const payload = {
         refreshToken: Cookies.get("refreshToken"),
       };
-      const res = await handleRefreshToken(payload);
-      if (res?.data?.status === 200) {
-        this.token = res?.data?.tokenModel?.accessToken;
-        Cookies.set("accessToken", res?.data?.tokenModel?.accessToken, {
-          expires: 60 * 60 * 24 * 7,
-        });
-        Cookies.set("refreshToken", res?.data?.tokenModel?.refreshToken, {
-          expires: 60 * 60 * 24 * 30,
-        });
-        return this.send("/user/profile", method, body);
-      } else {
-        return logOut();
+      try {
+        const res = await handleRefreshToken(payload);
+        if (res?.data?.status === 200) {
+          this.token = res?.data?.token?.accessToken;
+          Cookies.set("accessToken", res?.data?.token?.accessToken, {
+            expires: 60 * 60 * 24 * 7,
+          });
+          Cookies.set("refreshToken", res?.data?.token?.refreshToken, {
+            expires: 60 * 60 * 24 * 30,
+          });
+          return this.send("/user/profile", method, body);
+        } else {
+          return logOut();
+        }
+      } catch (error) {
+        console.log(error);
       }
     }
     const data = await response.json();

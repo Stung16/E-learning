@@ -1,9 +1,9 @@
-import React from "react";
+"use client";
+import React, { Fragment } from "react";
 import ItemCoursePro from "../../courses/ItemCoursePro/ItemCoursePro";
 
 const CoursePro = ({ data }) => {
-  const listCoursePro = data?.filter(course => course?.price !== 0);
-  // console.log(listCoursePro);
+  const listCoursePro = data?.filter((course) => course?.typeCourse === "pro");
   return (
     <div className="mb-2">
       {/* Title khoá học */}
@@ -19,38 +19,28 @@ const CoursePro = ({ data }) => {
           </h2>
         </div>
       </div>
-
       {/* ListCourse */}
       <div className="ListCourse_Pro pb-0 min-h-[200px] ">
         <section className="-px-4 min-[740px]:mr-[-8px] min-[740px]:ml-0 -px-1">
           <div className="ListCourse_Pro_body min-[740px]:pt-[3px] max-[1023px]:pb-4 max-[1023px]:pt-[3px]">
             <section className="Course_Pro min-w-[200px] ml-[-9px] mr-[-12px] flex flex-wrap">
-              <ItemCoursePro
-                image={"./image/courses/62f13d2424a47.png"}
-                link={"/landing"}
-                name={"HTML CSS Pro"}
-                price={"2.500.000"}
-                price_sell={"1.299.000"}
-                isComming={false}
-              />
-              <ItemCoursePro
-                image={"./image/courses/64e184ee5d7a2.png"}
-                link={"/landing"}
-                name={"Ngôn ngữ tiền xử lý Sass"}
-                price={"400.000"}
-                price_sell={"299.000"}
-                isComming={false}
-              />
-              <ItemCoursePro
-                image={"./image/courses/62f13cb607b4b.png"}
-                name={"JavaScript Pro"}
-                isComming={true}
-              />
-              <ItemCoursePro
-                image={"./image/courses/648020fc16597.png"}
-                name={"NextJS Pro"}
-                isComming={true}
-              />
+              {listCoursePro
+                ?.map((course) => {
+                  return (
+                    <Fragment key={course?.id}>
+                      <ItemCoursePro
+                        id={course?.id}
+                        image={course?.avatar}
+                        link={"/landing"}
+                        name={course?.title}
+                        price={course?.price}
+                        price_sell={course?.discount}
+                        isComming={course?.isComing}
+                      />
+                    </Fragment>
+                  );
+                })
+                ?.reverse()}
             </section>
           </div>
         </section>

@@ -38,15 +38,9 @@ const Auth = () => {
     dispatch(updateLogin(null));
     dispatch(updateState("resgiter"));
   };
-  useEffect(()=>{
-    if(!acc){
-      Cookies.remove("accessToken");
-      Cookies.remove("refreshToken");
-    }
-  },[])
   return (
     <div className="items-center flex justify-end flex-1">
-      {!acc && (
+      {!profile && (
         <button
           className="btn-login"
           onClick={() => {
@@ -56,7 +50,7 @@ const Auth = () => {
           Đăng nhập
         </button>
       )}
-      {!acc && (
+      {!profile && (
         <button
           className="btn-register"
           onClick={() => {
@@ -220,7 +214,7 @@ const Auth = () => {
           </div>
         </div>
       )}
-      {acc && (
+      {profile && (
         <>
           <div>
             <MyCourse />
