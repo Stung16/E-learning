@@ -25,8 +25,14 @@ import React, { useState, useContext, useEffect } from "react";
 import MDEditor, { commands, EditorContext } from "@uiw/react-md-editor";
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
+import Edit from "./edit";
 
 const Test = () => {
+  //Xuất bản
+  const [hide, setHide] = useState(false);
+  
+  
+  //
   const [value, setValue] = React.useState("");
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -429,7 +435,11 @@ const Test = () => {
                   <Button className="h-[30px]" color="default">
                     Lưu bản nháp
                   </Button>
-                  <Button className="h-[30px]" color="primary">
+                  <Button className="h-[30px]" color="primary"
+                  onClick={() => {
+                    setHide(true);
+                  }}
+                  >
                     Xuất bản
                   </Button>
                 </div>
@@ -479,6 +489,7 @@ const Test = () => {
           </section>
         </section>
       </section>
+      <Edit />
     </div>
   );
 };
