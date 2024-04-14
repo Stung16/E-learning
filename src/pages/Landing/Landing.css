@@ -15,7 +15,6 @@
     transition: all ease 0.3s;
 }
 
-
 .strong{
     color: var(--color-done-fg);
     background: -o-linear-gradient(190deg, #3d67ff 0%, #9773ff 50%, #efceff 80%), #fff;
@@ -512,4 +511,9 @@
         padding: 50px 0 0 50px;
     } */
     
+}
+@media (max-width: 1023px){
+    .menu-toggle{
+        display: inline-block !important;
+    }
 }

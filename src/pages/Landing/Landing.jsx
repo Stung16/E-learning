@@ -9,6 +9,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaHandSparkles } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
+import Edit from "../../components/Test/edit";
 function Landing() {
   const [hide, setHide] = useState(false);
 
@@ -120,7 +121,7 @@ function Landing() {
               </ul>
             </nav>
             <div></div>
-            <button className="menu-toggle">
+            <button className="menu-toggle hidden">
               <FaBars
                 onClick={() => {
                   setHide(true);
