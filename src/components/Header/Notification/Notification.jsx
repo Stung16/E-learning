@@ -26,7 +26,7 @@ const Notification = () => {
           className="w-[380px] max-h-[600px] overflow-x-auto"
           disabledKeys={["link", "delete"]}
         >
-          <DropdownItem key="link">
+          <DropdownItem key="link" textValue="bell">
             <div className="flex items-center">
               <h6 className="text-[18px] font-semibold m-0 ">Thông báo</h6>
               <Link
@@ -37,7 +37,7 @@ const Notification = () => {
               </Link>
             </div>
           </DropdownItem>
-          <DropdownItem key="write">
+          <DropdownItem key="write" textValue="bell ring">
             <div className="flex items-center">
               <img
                 src={"/image/courses/1.png"}

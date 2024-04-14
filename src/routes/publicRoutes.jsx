@@ -25,7 +25,7 @@ import Learning from "../pages/Learning/Learning";
 export const publicRoutes = (
   <>
     <Route element={<LessionLayout />}>
-      <Route path="/learning" element={<Learning />} />
+      <Route path="/learning/:slug" element={<Learning />} />
     </Route>
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />

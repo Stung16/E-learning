@@ -10,6 +10,7 @@ const ItemCoursePro = ({
   name,
   price,
   price_sell,
+  slug,
   isComming,
   time,
   percent,
@@ -24,7 +25,15 @@ const ItemCoursePro = ({
         <div className="relative group">
           <Link
             className={`block rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]`}
-            to={isComming ? "" : link}
+            to={
+              isComming ? (
+                ""
+              ) : idCourseLearned?.includes(id) ? (
+                <Link to={`/learning/${slug}`}>Tiếp tục học</Link>
+              ) : (
+                link
+              )
+            }
           >
             <img
               className={`h-[100%] absolute object-cover left-[0] top-[0] w-[100%] ${
@@ -38,7 +47,23 @@ const ItemCoursePro = ({
                 isComming && "hidden"
               }`}
             >
-              {idCourseLearned?.includes(id) ? "Tiếp tục học" : "Xem khoá học"}
+              {idCourseLearned?.includes(id) ? (
+                <Link
+                  to={
+                    isComming ? (
+                      ""
+                    ) : idCourseLearned?.includes(id) ? (
+                      <Link to={`/learning/${slug}`}>Tiếp tục học</Link>
+                    ) : (
+                      link
+                    )
+                  }
+                >
+                  Tiếp tục học
+                </Link>
+              ) : (
+                "Xem khoá học"
+              )}
             </button>
             <div
               className={`overlay-course group-hover:visible group-hover:opacity-100 ${
@@ -50,7 +75,15 @@ const ItemCoursePro = ({
           <h3 className="font-semibold mt-[12px] mb-[12px]">
             <Link
               className="text-[16px] font-semibold leading-[22px] break-words"
-              to={isComming ? "" : link}
+              to={
+                isComming ? (
+                  ""
+                ) : idCourseLearned?.includes(id) ? (
+                  <Link to={`/learning/${slug}`}>Tiếp tục học</Link>
+                ) : (
+                  link
+                )
+              }
             >
               {name}
             </Link>

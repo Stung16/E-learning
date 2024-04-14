@@ -1,8 +1,10 @@
 import React, { Fragment, useState } from "react";
 import "./LessonsForNewbie.css";
 import { FaGaugeHigh } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { FiFilm } from "react-icons/fi";
 import { FaBatteryFull } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 import { FaClock } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
@@ -11,8 +13,13 @@ import Chappter from "../../../components/MenuLession/Chappter";
 import Lession from "../../../components/MenuLession/Lession";
 import useSWR from "swr";
 import { fetcher } from "../../../utils/helper";
+import { useDispatch, useSelector } from "react-redux";
 import Loading from "../../../components/Loading/Loading";
+import { handleRegiterCourse } from "../../../services/auth.service";
+import { requestGetUserFromToken } from "../../../stores/middlewares/auth.middleware";
 const LessonsForNewbie = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const location = useLocation();
   const { pathname } = location;
   const [hideAll, setHideAll] = useState(false);
@@ -23,6 +30,18 @@ const LessonsForNewbie = () => {
     return <Loading />;
   }
   let totalLession = 0;
+  const RegisterCourse = async () => {
+    try {
+      const res = await handleRegiterCourse(courseDetail?.id);
+      if (res?.data.status === 200) {
+        navigate(`/learning/${slug}`);
+        const res = await dispatch(requestGetUserFromToken());
+        unwrapResult(res);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
       <section className="course-wrapper mt-6 pt-0 px-11 pb-[68px] min-[1113px]:mx-[-12px] min-[740px]:mx-[-8px] flex flex-wrap mx-[-4px]">
@@ -40,7 +59,12 @@ const LessonsForNewbie = () => {
                 <h5 className="text-[#f05123] text-[32px] font-normal my-0 mx-auto opacity-80">
                   Miễn phí
                 </h5>
-                <button className="Button_btn__RW1e2">ĐĂNG KÝ HỌC</button>
+                <div
+                  onClick={RegisterCourse}
+                  className="Button_btn__RW1e2 cursor-pointer"
+                >
+                  ĐĂNG KÝ HỌC
+                </div>
                 <ul>
                   <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">
                     <FaGaugeHigh className="absolute left-[0px] top-[3px] fa-solid fa-gauge-high" />
@@ -156,7 +180,7 @@ const LessonsForNewbie = () => {
                         index={index}
                       >
                         {courseDt?.lessons?.map((item, indexx) => {
-                          ++totalLession
+                          ++totalLession;
                           return (
                             <Lession
                               key={item?.sort}
@@ -185,9 +209,12 @@ const LessonsForNewbie = () => {
             <h5 className="text-[#F05123] text-center text-[32px] font-normal my-0 mx-auto opacity-[0.8] ">
               Miễn phí
             </h5>
-            <button className="text-center text-[16px] mt-4 min-w-[180px] py-[10px] px-4 mx-auto bg-[#f05123] text-[#fff] appearance-none font-semibold border border-solid border-[#f05123] rounded-[999px] inline-block ">
+            <div
+              onClick={RegisterCourse}
+              className="text-center cursor-pointer text-[16px] mt-4 min-w-[180px] py-[10px] px-4 mx-auto bg-[#f05123] text-[#fff] appearance-none font-semibold border border-solid border-[#f05123] rounded-[999px] inline-block "
+            >
               ĐĂNG KÝ HỌC
-            </button>
+            </div>
             <ul className="CourseDetail_purchaseBadge inline-block ml-[-69px] pt-6 pr-0 pb-[10px] pl-1 text-left">
               <li className="text-[#494949] text-[14px] leading-[22px] mb-[10px] pl-[35px] relative">
                 <FaGaugeHigh className="absolute left-[0px] top-[3px] fa-solid fa-gauge-high" />
@@ -220,9 +247,9 @@ const LessonsForNewbie = () => {
         </section>
       </section>
       <div className="CourseDetail_mobileRegBtn">
-        <button className="CourseDetail_mobileRegButton">
+        <div onClick={RegisterCourse} className="CourseDetail_mobileRegButton">
           ĐĂNG KÝ MIỄN PHÍ
-        </button>
+        </div>
       </div>
     </section>
   );

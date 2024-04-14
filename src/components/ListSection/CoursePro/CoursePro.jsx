@@ -33,6 +33,7 @@ const CoursePro = ({ data }) => {
                         image={course?.avatar}
                         link={"/landing"}
                         name={course?.title}
+                        slug={course?.slug}
                         price={course?.price}
                         price_sell={course?.discount}
                         isComming={course?.isComing}

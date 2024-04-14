@@ -29,7 +29,7 @@ const MyCourse = () => {
           className="w-[380px] max-h-[600px] overflow-x-auto"
           disabledKeys={["link", "delete"]}
         >
-          <DropdownItem key="link">
+          <DropdownItem key="link" textValue="1">
             <div className="flex items-center">
               <h6 className="text-[18px] font-semibold m-0 ">
                 Khoá học của tôi
@@ -44,7 +44,7 @@ const MyCourse = () => {
           </DropdownItem>
           {profile?.courses?.map((item) => {
             return (
-              <DropdownItem key={item?.id}>
+              <DropdownItem key={item?.id} textValue={item?.title}>
                 <Link
                   to={`/courses/${item?.slug}`}
                   className="flex items-center"

@@ -3,13 +3,12 @@ import "./Profile.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FaChevronLeft } from "react-icons/fa6";
-import { changeMonth } from "../../utils/helper";
+import { changeMonth, customText } from "../../utils/helper";
 const Profile = () => {
   const handleGoBack = () => {
     window.history.back(); // Điều hướng trở lại trang trước đó
   };
   const profiles = useSelector((state) => state.detailtData.profile);
-  console.log(profiles);
   return (
     <div>
       <div className="bg-transparent border-b-0 items-center flex text-[14px] h-[66px] sticky left-0 right-0 top-0 py-0 px-7 z-20">
@@ -153,7 +152,7 @@ const Profile = () => {
                                 </Link>
                               </h3>
                               <p className="break-words text-[14px] leading-[22px] mt-1 overflow-hidden">
-                                {item?.descriptions}
+                                {customText(item?.descriptions,180)}
                               </p>
                             </div>
                           </div>

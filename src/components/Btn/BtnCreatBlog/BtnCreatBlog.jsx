@@ -23,7 +23,7 @@ const BtnCreatBlog = () => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu bottomContent aria-label="Static Actions">
-          <DropdownItem key="my_posts">
+          <DropdownItem key="my_posts" textValue="create">
             <span className=" flex justify-center items-center gap-2" >
               <FaPen /> Viết blog
             </span>
