@@ -12,7 +12,7 @@ export const Edit = () => {
 
   return (
     <div 
-    className={`editPost_main ${!hide && "hidden"} `}>
+    className={`editPost_main ${hide && "hidden"} `}>
     <div className="editPost_wrapper bg-[#fff]">
       <div className="editPost_close text-[#0000008a] hover:text-[#333] cursor-pointer text-[36px] pt-3 px-6 pb-6 fixed right-[8px] top-0 z-[999] "
       
