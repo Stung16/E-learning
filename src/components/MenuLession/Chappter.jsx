@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Children } from "react";
 
-const Chappter = ({ children, selectedKey }) => {
-  console.log(Children);
+const Chappter = ({ children, lessions, title, index }) => {
   const [hide, setHide] = useState(false);
   return (
     <>
@@ -13,18 +11,16 @@ const Chappter = ({ children, selectedKey }) => {
         <div className="flex w-full justify-between items-center">
           <div className="flex ml-[25px] items-center">
             <span className="text-[26px] font-light text-[#f05123] -translate-y-[2px] w-1">
-              {hide ? "-" : "+"}
+              {!hide ? "-" : "+"}
             </span>
             <div className="ml-[15px]">
-              <strong>1.Giới thiệu</strong>
+              <strong>{`${index + 1}.${title}`}</strong>
             </div>
           </div>
-          <div className="mr-[30px] text-[14px]">3 bài học</div>
+          <div className="mr-[30px] text-[14px]">{`${lessions} bài học`}</div>
         </div>
       </div>
-      {Children.map(children, (child) => (
-        <div className={`${hide && "hidden"}`}>{child}</div>
-      ))}
+      <div className={`${hide && "hidden"}`}>{children}</div>
     </>
   );
 };

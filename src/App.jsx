@@ -9,10 +9,7 @@ import Loading from "./components/Loading/Loading";
 import Cookies from "js-cookie";
 import Client from "./config/Client";
 
-
 const App = () => {
-  const cl = Client.token
-  console.log(cl);
   const dispatch = useDispatch();
   const token = Cookies.get("accessToken");
   const isLoading = useSelector((state) => state.detailtData.isLoading);

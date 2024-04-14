@@ -4,12 +4,14 @@ import { loginSlice } from "../../stores/slices/loginSlice";
 import { useDispatch } from "react-redux";
 const { updateLoading } = detailtSlice.actions;
 const { updateState, updateLogin } = loginSlice.actions;
+import Cookies from "js-cookie";
 
 import Client from "../../config/Client";
 import {
   HandleregaxName,
   HandleregaxEmail,
   HandleregaxPassWord,
+  Schema,
 } from "../../utils/helper";
 import { handleGetCode } from "../../services/auth.service";
 
@@ -24,17 +26,16 @@ const ResgiterWithEmail = ({ resgiterWithEmail, setrResgiterWithEmail }) => {
     password: "",
     code: "",
   });
-  const [err, setErr] = useState(null);
+  const [errs, setErr] = useState({});
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     if (
       form.email !== "" &&
       form.userName !== "" &&
-      form.password &&
+      form.password !== "" &&
       HandleregaxEmail(form.email) &&
-      HandleregaxName(form.userName) &&
-      HandleregaxPassWord(form.password)
+      HandleregaxName(form.userName)
     ) {
       setShow(true);
     } else {
@@ -42,27 +43,40 @@ const ResgiterWithEmail = ({ resgiterWithEmail, setrResgiterWithEmail }) => {
     }
   };
 
-  const checkRequiedName = () => {
-    if (form.userName === "" || !HandleregaxName(form?.userName?.toString())) {
-      setErr("Tên không hợp lệ");
-    } else {
-      setErr("");
-    }
-  };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      dispatch(updateLoading(true));
-      const res = await Client.post(`/register`, form);
-      if (res?.data?.status === 200) {
-        dispatch(updateState(""));
-        dispatch(updateLogin(false));
+    const errs = Schema(form);
+    if (!Object.keys(errs)?.length) {
+      try {
+        dispatch(updateLoading(true));
+        const res = await Client.post(`/register`, form);
+        console.log(res);
+
+        if (res?.data?.status === 200) {
+          dispatch(updateState(""));
+          dispatch(updateLogin(false));
+          setForm({ userName: "", email: "", password: "", code: "" });
+        }
+      } catch (e) {
+        alert("Đã có lỗi xảy ra vui lòng load lại trang!!!");
+      } finally {
+        dispatch(updateLoading(false));
       }
-    } catch (e) {
-      console.log(e);
-    } finally {
-      dispatch(updateLoading(false));
+    } else {
+      setErr(errs);
     }
+    // try {
+    //   dispatch(updateLoading(true));
+    //   const res = await Client.post(`/register`, form);
+    //   if (res?.data?.status === 200) {
+    //     dispatch(updateState(""));
+    //     dispatch(updateLogin(false));
+    //   }
+    // } catch (e) {
+    //   console.log(e);
+    // } finally {
+    //   dispatch(updateLoading(false));
+    // }
   };
   const handleClick = () => {
     if (!canClick) {
@@ -99,16 +113,18 @@ const ResgiterWithEmail = ({ resgiterWithEmail, setrResgiterWithEmail }) => {
           <div className="FormInput_invalid">
             <input
               className={`w-full text-[50px] overflow-hidden 
-              ${err && "border-[#f33a58] border-[1px]"}
+              ${errs?.userName && "border-[#f33a58] border-[1px]"}
               `}
               placeholder="Họ và tên của bạn"
               name="userName"
-              onBlur={checkRequiedName}
+              value={form.userName}
               onChange={handleChange}
               maxLength="50"
             />
           </div>
-          {err !== "" && <span className="FormInput_message">{err}</span>}
+          {errs?.userName && (
+            <span className="FormInput_message">{errs?.userName}</span>
+          )}
         </div>
       </div>
 
@@ -131,24 +147,28 @@ const ResgiterWithEmail = ({ resgiterWithEmail, setrResgiterWithEmail }) => {
                 <input
                   type="email"
                   name="email"
+                  value={form.email}
                   onChange={handleChange}
                   required
                   placeholder="Địa chỉ email"
                 />
               </div>
-              {/* {errs.email && (
+              {errs?.email && (
                 <span className="FormInput_message">{errs?.email}</span>
-              )} */}
+              )}
 
               <div className="FormInput_invalid mt-[10px]">
                 <input
                   type="password"
                   name="password"
+                  value={form.password}
                   onChange={handleChange}
                   placeholder="Mật khẩu"
                 />
+                {errs?.password && (
+                  <span className="FormInput_message">{errs?.password}</span>
+                )}
               </div>
-
               <p className="my-2 mr-0 ml-2 font-medium text-[14px] text-left text-[#404040]">
                 Gợi ý: Mật khẩu cần có ít nhất 8 kí tự!
               </p>

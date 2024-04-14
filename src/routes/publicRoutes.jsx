@@ -49,7 +49,7 @@ export const publicRoutes = (
       <Route path="/blog" element={<Blog />} />
       {/* Courses */}
       <Route
-        path="/courses/lessons-for-newbie"
+        path="/courses/:slug"
         element={<LessonsForNewbie />}
       />
     </Route>

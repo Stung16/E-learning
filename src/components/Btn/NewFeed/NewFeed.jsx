@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NewFeed.css";
 import {
   Modal,
@@ -15,6 +15,9 @@ import { FaCheckCircle } from "react-icons/fa";
 import { FaBullhorn } from "react-icons/fa";
 const NewFeed = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  // useEffect(()=>{
+  //   onOpen()
+  // },[])
   return (
     <div className="NewFeed_btn">
       <div className="fixed left-[22px] bottom-[60px]">

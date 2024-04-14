@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaRegBookmark } from "react-icons/fa6";
 import { FaEllipsis } from "react-icons/fa6";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { FaAnglesRight } from "react-icons/fa6";
-import "./Blog.css"
+import "./Blog.css";
+import useSWR from "swr";
+import { fetcher } from "../../utils/helper";
 function Blog() {
+  const [page, setPage] = useState(1);
+  const { data, isLoading } = useSWR(`/blog?page=${page}`, fetcher);
+
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
       <div className="DefaultLayout_container mb-[60px] mt-2 mx-11 ">
@@ -50,10 +55,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                        <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -116,10 +121,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -183,10 +188,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -213,7 +218,6 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                     
                     </div>
                   </div>
                   <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
@@ -241,10 +245,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -269,7 +273,6 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>3 phút đọc
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                   <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
@@ -297,10 +300,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -364,10 +367,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -430,10 +433,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -495,10 +498,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -526,7 +529,6 @@ function Blog() {
                           <span className="my-0 mx-2">·</span>9 phút đọc
                         </div>
                       </div>
-                    
                     </div>
                   </div>
                   <div className="PostItem_wrapper mt-4 border-[2px] border-solid border-[#e8e8e8] rounded-[16px] p-6">
@@ -554,10 +556,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -620,10 +622,10 @@ function Blog() {
                       </div>
                       <div className="text-[#757575] flex text-[16px] mr-[-8px] select-none">
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]"/>
+                          <FaRegBookmark className="fa-regular fa-bookmark hover:text-[#333]" />
                         </div>
                         <div className="cursor-pointer py-1 pr-2 text-[#757575]">
-                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]"/>
+                          <FaEllipsis className="fa-solid fa-ellipsis hover:text-[#333]" />
                         </div>
                       </div>
                     </div>
@@ -664,8 +666,7 @@ function Blog() {
                   <div className="Pagination_wrapper items-center flex justify-center mt-5 relative">
                     <div className="items-center leading-4 flex py-0 px-[10px]">
                       <div className="border border-solid border-[#fff] text-[#d0d7de] cursor-default min-[1024px]:mr-1 min-[1024px]:py-[6px] min-[1024px]:px-3 rounded-[6px] flex font-medium select-none transition-all delay-[2s]">
-                        
-                      <FaAnglesLeft className="h-[1em] text-[12px] mr-3 fa-solid fa-angles-left"/>
+                        <FaAnglesLeft className="h-[1em] text-[12px] mr-3 fa-solid fa-angles-left" />
                       </div>
                       <div className="text-[#FFF]  bg-[#F05123] border-[#F05123] border border-solid rounded-[6px] cursor-pointer flex font-medium select-none transition-all delay-[2s] mr-1 py-[6px] px-3 min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3">
                         1
@@ -704,7 +705,7 @@ function Blog() {
                         12
                       </div>
                       <div className="text-[14px] min-[1024px]:mr-1 min-[1024px]:my-[6px] min-[1024px]:mx-3 border border-solid border-[#fff] hover:border-[#DCDCDC] cursor-pointer rounded-[6px] flex font-medium select-none transition-all mr-1 py-[6px] px-3">
-                        <FaAnglesRight className="h-[1em] text-[12px] fa-solid fa-angles-right"/>
+                        <FaAnglesRight className="h-[1em] text-[12px] fa-solid fa-angles-right" />
                       </div>
                     </div>
                   </div>

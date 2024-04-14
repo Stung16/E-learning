@@ -8,6 +8,7 @@ import "./PostHot.css";
 import { customText } from "../../../utils/helper";
 
 const PostHot = ({ data }) => {
+  const dataPosts = data?.filter((item) => item?.isPublish === true)
   return (
     <div className="mb-2">
       <div className=" flex items-baseline ">
@@ -29,7 +30,7 @@ const PostHot = ({ data }) => {
       </div>
       <div className="Main_PostHot pb-0">
         <section className="ListPostHot  ml-[-12px] mr-[-12px] flex flex-wrap">
-          {data?.map((item) => {
+          {dataPosts?.map((item) => {
             return (
               <section
                 key={item?.id}
@@ -39,7 +40,7 @@ const PostHot = ({ data }) => {
                   <div className="relative h-[100%]">
                     <Link
                       className="block group rounded-2xl object-cover overflow-hidden transition-all pt-[56.25%] relative w-[100%]"
-                      to="/postdetail"
+                      to={`/blog/${item?.slug}`}
                     >
                       <button className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100">
                         Xem bài viết
@@ -62,9 +63,10 @@ const PostHot = ({ data }) => {
                     <div className="PostItem_author flex items-center">
                       <img
                         className="rounded-full w-[21px] h-[21px]"
-                        src="/image/blog_posts/6153f692d366e.jpg "
+                        src={item?.author?.avatar}
                         alt=""
                       />
+                      <span className="ml-2">{item?.author?.userName}</span>
                       <span className="ml-2 text-[#757575]">
                         {moment(`${item?.createAt}`).format("DD/MM/YYYY")}
                       </span>
