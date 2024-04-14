@@ -54,7 +54,6 @@ export const publicRoutes = (
       />
     </Route>
     <Route path="/profile" element={<Profile />} />
-    <Route path="/test/edit" element={<Edit />} />
     <Route element={<NoNavigate />}>
       <Route path="/test" element={<Test />} />
       <Route path="/blog/:slug" element={<PostDetail />} />
