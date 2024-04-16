@@ -1,0 +1,35 @@
+.GroupField_heading{
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    color: #333;
+    font-size: 22px;
+    margin: 0 0 20px;
+    padding: 10px 0;
+}
+.Setting_notiListItem{
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+.Setting_notiListItem:hover{
+    background-color: #eeeeeeb6;
+}
+.ToggleButton.active{
+    background-color: #eee;
+}
+.ToggleButton.active .ToggleButton_dot{
+    left: 2px;
+}
+.ToggleButton_dot{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 14px;
+    /* left: 2px; */
+    left: calc(100% - 16px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+    width: 14px;
+}

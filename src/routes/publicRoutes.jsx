@@ -21,6 +21,14 @@ import Test from "../components/Test/Test";
 import MyCourses from "../pages/MyCourses/MyCourses";
 import LessionLayout from "../layouts/LessionLayout/LessionLayout";
 import Learning from "../pages/Learning/Learning";
+
+import Personal from "../pages/Setting/Personal/Personal";
+// import Setting from "../pages/Setting/Setting";
+import SettingLayout from "../layouts/SettingLayout/SettingLayout";
+import Security from "../pages/Setting/Security/Security";
+import Notification from "../pages/Setting/Notification/Notification";
+import MyPost from "../pages/MyPost/MyPost";
+// import Edit from "../components/Test/Edit";
 export const publicRoutes = (
   <>
     <Route element={<LessionLayout />}>
@@ -45,9 +53,12 @@ export const publicRoutes = (
       <Route path="/fresher" element={<Fresher />} />
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
+      {/* Me */}
+      <Route path="/me/posts/drafts" element={<MyPost />} />
       {/* Courses */}
       <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>
+    <Route path="/profile" element={<Profile />} />
 
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/*" element={<NotFound />} />
@@ -57,7 +68,6 @@ export const publicRoutes = (
         <Route path="/blog/:slug" element={<PostDetail />} />
       </Route>
       <Route path="/landing" element={<Landing />} />
-      <Route path="/profile" element={<Profile />} />
 
       {/* <Route element={<GuestMiddleware />}>
         <Route path="/signin" element={<Login />} />
@@ -68,6 +78,11 @@ export const publicRoutes = (
         <Route path="/account/reset-password/:id" element={<ResetPass />} />
         <Route path="/*" element={<NotFound />} />
       </Route> */}
+    </Route>
+    <Route element={<SettingLayout />}>
+      <Route path="/setting/personal" element={<Personal />} />
+      <Route path="/setting/security" element={<Security />} />
+      <Route path="/setting/notification" element={<Notification />} />
     </Route>
   </>
 );

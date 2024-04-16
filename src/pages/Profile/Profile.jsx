@@ -3,12 +3,16 @@ import "./Profile.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FaChevronLeft } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 import { changeMonth, customText } from "../../utils/helper";
 const Profile = () => {
   const handleGoBack = () => {
     window.history.back(); // Điều hướng trở lại trang trước đó
   };
   const profiles = useSelector((state) => state.detailtData.profile);
+  if (!profiles) {
+    return (window.location.href = "/");
+  }
   return (
     <div>
       <div className="bg-transparent border-b-0 items-center flex text-[14px] h-[66px] sticky left-0 right-0 top-0 py-0 px-7 z-20">
@@ -56,7 +60,7 @@ const Profile = () => {
       <div className="flex min-h-[100vh] ">
         <div className="flex-1 max-w-[100%]">
           <section className="max-w-[1100px] w-[100%] my-0 mx-auto p-0">
-            <div className="profile-banner">
+            <div className="profile-banner bg-[url('/public/image/banner/cover-profile.3fb9fed576da4b28386a.png')]">
               <div className="Profile_user">
                 <div className="Profile_user-avatar">
                   <div className="FallbackAvatar">
@@ -152,7 +156,7 @@ const Profile = () => {
                                 </Link>
                               </h3>
                               <p className="break-words text-[14px] leading-[22px] mt-1 overflow-hidden">
-                                {customText(item?.descriptions,180)}
+                                {customText(item?.descriptions, 180)}
                               </p>
                             </div>
                           </div>
