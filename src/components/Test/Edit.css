@@ -41,7 +41,8 @@
     outline: none;
     padding: 10px 16px;
 }
-.z-10::after{
+.transition-opacity::after {
+
     background-color: #f05123 !important;
 }
 @media (min-width: 0px) and (max-width: 739px){

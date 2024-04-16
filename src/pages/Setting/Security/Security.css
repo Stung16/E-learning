@@ -1,0 +1,38 @@
+.GroupField_heading{
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    color: #333;
+    font-size: 22px;
+    margin: 0 0 20px;
+    padding: 10px 0;
+}
+.Setting_connectionLabel{
+    font-size: 16px;
+    font-weight: 600;
+}
+.Setting_connectionContent{
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.Setting_connectButton{
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 30px;
+    color: rgba(0, 0, 0, .54);
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    gap: 8px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 16px;
+    transition: background-color .1s, border-color .1s, color .1s, fill .1s;
+}
+.FieldWrapper{
+    align-items: flex-start;
+    display: flex;
+    padding: 16px 0 20px;
+}

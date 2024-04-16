@@ -6,8 +6,7 @@ export const handleGetCode = async (email) => {
   try {
     const res = await Client.post(`/send-mail/register`, payload);
     return res;
-  } catch (error) {
-  }
+  } catch (error) {}
 };
 export const handeleLoginWithEmail = async (body) => {
   try {
@@ -19,7 +18,6 @@ export const handeleLoginWithEmail = async (body) => {
 };
 
 export const handleRefreshToken = async (refeshtoken) => {
-  console.log(refeshtoken);
   try {
     const res = await Client.post(`/refresh-token`, refeshtoken);
     return res;
@@ -72,6 +70,15 @@ export const handleDeleteUser = async (payload) => {
   try {
     Client.setToken(token);
     const res = await Client.put(`/user/update`, payload);
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
+export const handleRegiterCourse = async (id) => {
+  const payload = { idCourse: id };
+  try {
+    const res = await Client.post(`/user-course`, payload);
     return res;
   } catch (error) {
     console.log(error);

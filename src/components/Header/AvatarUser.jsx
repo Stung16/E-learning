@@ -33,15 +33,15 @@ const AvatarUser = ({ profile }) => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Static Actions">
-          <DropdownItem key="profile">
+          <DropdownItem key="profile" textValue="profile">
             <Link to={"/profile"}>Trang cá nhân</Link>
           </DropdownItem>
-          <DropdownItem key="link">Liên kết giới thiệu</DropdownItem>
-          <DropdownItem key="write">Viết Blog</DropdownItem>
-          <DropdownItem key="my_posts">Bài viết của tôi</DropdownItem>
-          <DropdownItem key="save_post">Bài viết đã lưu</DropdownItem>
-          <DropdownItem key="setting">Cài đặt</DropdownItem>
-          <DropdownItem onClick={handleLogOut} key="logout">
+          <DropdownItem textValue="affiliate " key="link">Liên kết giới thiệu</DropdownItem>
+          <DropdownItem textValue="blog" key="write">Viết Blog</DropdownItem>
+          <DropdownItem textValue="my blog" key="my_posts">Bài viết của tôi</DropdownItem>
+          <DropdownItem textValue="save blog" key="save_post">Bài viết đã lưu</DropdownItem>
+          <DropdownItem textValue="setting" key="setting">Cài đặt</DropdownItem>
+          <DropdownItem textValue="logout" onClick={handleLogOut} key="logout">
             Đăng xuất
           </DropdownItem>
         </DropdownMenu>

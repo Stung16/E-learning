@@ -1,0 +1,10 @@
+.Sidebar-list li span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.Sidebar-list li:hover{
+    background-color: #eee;
+    border-radius: 8px;
+}
