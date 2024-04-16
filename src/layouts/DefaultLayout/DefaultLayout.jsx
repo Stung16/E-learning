@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Navigate from "./Navigate/Navigate";
 import NewFeed from "../../components/Btn/NewFeed/NewFeed";
 import Header from "./Header/Header";
+import { Toaster } from "react-hot-toast"
 import Footer from "./Footer/Footer";
 import "./DefaultLayout.css";
 
@@ -18,6 +19,7 @@ const DefaultLayout = () => {
         </div>
       </div>
       <Footer />
+      <Toaster />
     </div>
   );
 };

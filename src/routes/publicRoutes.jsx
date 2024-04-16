@@ -48,20 +48,19 @@ export const publicRoutes = (
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
       {/* Courses */}
-      <Route
-        path="/courses/:slug"
-        element={<LessonsForNewbie />}
-      />
+      <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>
-    <Route path="/profile" element={<Profile />} />
-    <Route element={<NoNavigate />}>
-      <Route path="/test" element={<Test />} />
-      <Route path="/blog/:slug" element={<PostDetail />} />
-    </Route>
+
     <Route path="/about-us" element={<AboutUs />} />
-    <Route path="/landing" element={<Landing />} />
     <Route path="/*" element={<NotFound />} />
     <Route element={<AuthMiddleware />}>
+      <Route element={<NoNavigate />}>
+        <Route path="/test" element={<Test />} />
+        <Route path="/blog/:slug" element={<PostDetail />} />
+      </Route>
+      <Route path="/landing" element={<Landing />} />
+      <Route path="/profile" element={<Profile />} />
+
       {/* <Route element={<GuestMiddleware />}>
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Register />} />

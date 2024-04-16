@@ -1,7 +1,8 @@
 import { Outlet, Navigate } from "react-router-dom";
-const isLogin = false;
+import { useDispatch, useSelector } from "react-redux";
 const GuestMiddleware = () => {
-  return !isLogin ? <Outlet /> : <Navigate to="/" />;
+  const profile = useSelector((state) => state.detailtData.profile);
+  return !profile ? <Outlet /> : <Navigate to="/" />;
 };
 
 export default GuestMiddleware;
