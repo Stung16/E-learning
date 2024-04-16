@@ -17,12 +17,10 @@ import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../pages/Courses/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
-
 import Test from "../components/Test/Test";
 import MyCourses from "../pages/MyCourses/MyCourses";
 import LessionLayout from "../layouts/LessionLayout/LessionLayout";
 import Learning from "../pages/Learning/Learning";
-import Edit from "../components/Test/Edit";
 export const publicRoutes = (
   <>
     <Route element={<LessionLayout />}>
