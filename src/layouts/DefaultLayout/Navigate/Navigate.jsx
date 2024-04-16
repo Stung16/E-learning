@@ -33,7 +33,7 @@ const Navigate = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/blog"} className={activeMenu}>
+            <NavLink to={"/blog?page=1"} className={activeMenu}>
               <FaNewspaper />
               <span className="cursor-pointer font-semibold mt-[6px] text-[11px] text-[#1a1a1a]">
                 Bài viết

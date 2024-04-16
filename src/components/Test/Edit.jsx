@@ -1,13 +1,56 @@
-import React, { useState, memo } from "react";
+import React, { useState, memo, useEffect } from "react";
 import "./Edit.css";
 import Dropzone from "../Test/Dropzone";
 import { Checkbox } from "@nextui-org/react";
+import { useSWRConfig } from "swr";
+import { useNavigate } from "react-router-dom";
+
 import { useDispatch, useSelector } from "react-redux";
+import { handlePostNew } from "../../services/auth.service";
+import toast from "react-hot-toast";
+import Loading from "../Loading/Loading";
 // const { updateShow } = courseSlice.actions;
 
-export const Edit = ({ hide, setHide, form }) => {
+export const Edit = ({ hide, setHide, form, setForm }) => {
+  const navigate = useNavigate();
+  const { mutate } = useSWRConfig();
   const [files, setFiles] = useState([]);
-console.log(files);
+  const [loading, setLoading] = useState(false);
+  let img = "";
+  const [data, setData] = useState({
+    descriptions: "",
+    isPublish: true,
+    tag: "",
+  });
+
+  const handlePost = async () => {
+    if (files?.length) {
+      const formData = new FormData();
+      files.forEach((file) => formData.append("file", file));
+      setLoading(true);
+      const res = await fetch(`http://apif8.somee.com/upload-image`, {
+        method: "POST",
+        body: formData,
+      }).then((res) => res.json());
+      if (res?.status === 200) {
+        img = res?.data;
+      }
+      try {
+        setLoading(true);
+        const payload = Object.assign(data, form, { avatar: img });
+        const resPost = await handlePostNew(payload);
+        if (resPost?.data?.status === 200) {
+          mutate("/post");
+          navigate("/blog?page=1");
+          toast.success("Tạo bài viểt thành công!!!");
+        }
+      } catch (error) {
+        return toast.error("Đã có lỗi xảy ra!!!");
+      } finally {
+        setLoading(false);
+      }
+    }
+  };
   return (
     <div className={`editPost_main ${!hide && "hidden"} `}>
       <div className="editPost_wrapper bg-[#fff]">
@@ -31,12 +74,21 @@ console.log(files);
                   <input
                     className="PublishPreview_input text-[20px] w-full font-semibold"
                     type="text"
-                    defaultValue={form.descriptions}
+                    name="title"
+                    defaultValue={form.title}
+                    onChange={(e) => {
+                      setForm({ ...form, [e.target.name]: e.target.value });
+                    }}
                   ></input>
                   {/* Mô tả khi xuất bản */}
                   <input
                     className="PublishPreview_input text-[14px] w-full"
                     placeholder="Mô tả trước khi hiển thị"
+                    name="descriptions"
+                    value={form.descriptions}
+                    onChange={(e) => {
+                      setData({ ...data, [e.target.name]: e.target.value });
+                    }}
                   ></input>
                   <p className="text-[#0000008a] text-[14px] mt-6">
                     <strong>Lưu ý: </strong>
@@ -60,8 +112,11 @@ console.log(files);
                       <input
                         className=" bg-transparent bg-[#fafafa] border-none flex-1 h-[37px] mt-2 outline-none pl-2"
                         type="text"
-                        name=""
-                        id=""
+                        name="tag"
+                        value={data.tag}
+                        onChange={(e) => {
+                          setData({ ...data, [e.target.name]: e.target.value });
+                        }}
                         placeholder="Ví dụ: Front-end, ReactJS, UI, UX"
                       />
                     </div>
@@ -72,7 +127,13 @@ console.log(files);
                       </Checkbox>
                     </div>
                     <div className="PublishPreview_action mt-8">
-                      <button className="button bg-[#029e74] text-[#fff] hover:opacity-90">
+                      <button
+                        className="button bg-[#029e74] text-[#fff] hover:opacity-90"
+                        onClick={handlePost}
+
+                        // console.log(Object.assign(data, form));
+                        // }}
+                      >
                         Xuất bản ngay
                       </button>
                     </div>
@@ -81,6 +142,7 @@ console.log(files);
               </section>
             </section>
           </section>
+          {loading && <Loading />}
         </div>
       </div>
     </div>

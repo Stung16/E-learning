@@ -16,31 +16,26 @@ import { IoLink } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { IoMdUndo } from "react-icons/io";
 import { IoMdRedo } from "react-icons/io";
-import { MdKeyboard } from "react-icons/md";
-import { MdOutlineFullscreen } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 import _ from "lodash";
+import { useDispatch, useSelector } from "react-redux";
+import toast from "react-hot-toast";
 import { Button } from "@nextui-org/react";
-// export default Test;
 import React, { useState, useContext, useEffect } from "react";
 import MDEditor, { commands, EditorContext } from "@uiw/react-md-editor";
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
 import Edit from "./Edit";
+import { redirect } from "react-router-dom";
 
 const Test = () => {
-  //Xuất bản
+  const navigate = useNavigate();
+  const profile = useSelector((state) => state.detailtData.profile);
   const [hide, setHide] = useState(false);
   const [form, setForm] = useState({
-    descriptions: "",
+    title: "",
     content: "",
   });
-  //
-  const [value, setValue] = React.useState("");
-  const handleImageUpload = (event) => {
-    const file = event.target.files[0];
-    // Xử lý file ảnh ở đây, ví dụ: hiển thị ảnh, upload lên server, v.v.
-    console.log(file);
-  };
   const config = {
     H1: {
       name: "H1",
@@ -206,8 +201,6 @@ const Test = () => {
       buttonProps: { "aria-label": "Insert title3" },
       icon: <FaQuoteLeft title="quote" />,
       execute: (state, api) => {
-        console.log(state);
-        console.log(api);
         let modifyText = `${state.selectedText}
 > `;
         api.replaceSelection(modifyText);
@@ -366,8 +359,8 @@ const Test = () => {
               <div className="contenEdit">
                 <input
                   placeholder="Tiêu đề"
-                  name="descriptions"
-                  value={form.descriptions}
+                  name="title"
+                  value={form.title}
                   onChange={(e) => {
                     setForm({ ...form, [e.target.name]: e.target.value });
                   }}
@@ -376,7 +369,8 @@ const Test = () => {
                 <div className=" ml-2 flex gap-4 items-center justify-center">
                   <Button
                     className={`h-[30px] ${
-                      (form.content === "" || form.descriptions === "") &&
+                      (form.content.trim() === "" ||
+                        form.title.trim() === "") &&
                       "pointer-events-none opacity-40"
                     }`}
                     color="default"
@@ -385,7 +379,8 @@ const Test = () => {
                   </Button>
                   <Button
                     className={`h-[30px] ${
-                      (form.content === "" || form.descriptions === "") &&
+                      (form.content.trim() === "" ||
+                        form.title.trim() === "") &&
                       "pointer-events-none opacity-40"
                     }`}
                     color="primary"
@@ -403,9 +398,6 @@ const Test = () => {
                     value={form.content}
                     onChange={(e) => {
                       setForm({ ...form, ["content"]: e });
-                    }}
-                    onKeyUpCapture={() => {
-                      // console.log(123);
                     }}
                     commands={[
                       // Custom Toolbars
@@ -452,7 +444,9 @@ const Test = () => {
           </section>
         </section>
       </section>
-      {hide && <Edit hide={hide} setHide={setHide} form={form} />}
+      {hide && (
+        <Edit hide={hide} setHide={setHide} form={form} setForm={setForm} />
+      )}
     </div>
   );
 };

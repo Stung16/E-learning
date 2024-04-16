@@ -1,6 +1,7 @@
 import Client from "../config/Client";
 import Cookies from "js-cookie";
 
+
 export const handleGetCode = async (email) => {
   const payload = { email: email };
   try {
@@ -79,6 +80,15 @@ export const handleRegiterCourse = async (id) => {
   const payload = { idCourse: id };
   try {
     const res = await Client.post(`/user-course`, payload);
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const handlePostNew = async (payload) => {
+  try {
+    const res = await Client.post(`/post/new`, payload);
     return res;
   } catch (error) {
     console.log(error);

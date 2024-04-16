@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { FaPen } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { LuPlus } from "react-icons/lu";
+import { useDispatch, useSelector } from "react-redux";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
 import {
   Dropdown,
   DropdownTrigger,
@@ -9,9 +13,10 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
-// import { PlusOutlined } from "@ant-design/icons";
 
 const BtnCreatBlog = () => {
+  const navigate = useNavigate();
+  const profile = useSelector((state) => state.detailtData.profile);
   return (
     <div className="">
       <Dropdown placement="bottom-start">
@@ -24,7 +29,16 @@ const BtnCreatBlog = () => {
         </DropdownTrigger>
         <DropdownMenu bottomContent aria-label="Static Actions">
           <DropdownItem key="my_posts" textValue="create">
-            <span className=" flex justify-center items-center gap-2" >
+            <span
+              onClick={() => {
+                if (!profile) {
+                  return toast.error("Vui lòng đăng nhập!!!");
+                } else {
+                  return navigate("/test");
+                }
+              }}
+              className=" flex justify-center items-center gap-2"
+            >
               <FaPen /> Viết blog
             </span>
           </DropdownItem>
