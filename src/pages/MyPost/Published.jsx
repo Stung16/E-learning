@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./MyPost.css";
-import { Link } from "react-router-dom";
+
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaEllipsis } from "react-icons/fa6";
 
-const MyPost = () => {
+const Published = () => {
   const [isShow, setIsShow] = useState(false);
   const activeHeading = ({ isActive }) => {
     return isActive ? "HeadingTab active" : "HeadingTab";
@@ -47,12 +47,10 @@ const MyPost = () => {
                   <div className="border-b border-solid border-[#0000001a] "></div>
                 </div>
                 <div>
-                  <div className="MyPostItem_wrapper relative">
+                  {/* <div className="MyPostItem_wrapper"></div> */}
+                  <div className="MyPostItem_wrapper">
                     <div className=" flex justify-end py-[10px] pr-2 ">
-                      <FaEllipsis
-                        className="fa-solid fa-ellipsis text-[#757575] cursor-pointer hover:text-[#333]"
-                        onClick={handleEllipsisClick}
-                      />
+                      <FaEllipsis className="fa-solid fa-ellipsis   text-[#757575] cursor-pointer hover:text-[#333]" onClick={handleEllipsisClick}/>
                     </div>
                     <div className={`Ellipsis_more ${!isShow && "hidden"} `}>
                       <ul className="Ellipsis_more_wrapper min-w-[200px]">
@@ -63,7 +61,7 @@ const MyPost = () => {
                     <div className="MyPostItem_body items-center flex">
                       <div className="MyPostItem_info text-[14px] flex-1 pr-4">
                         <h2 className="text-[#292929] font-bold mb-0 mt-2">
-                          Tôi bị điên
+                          Tôi không điên, bạn mới điên 
                         </h2>
                         <p className="text-[#505050] mt-1  leading-[24px]">
                           qwertyuiopoiuygvbnzxmkkjsnfkifej,nkfjemfnknju
@@ -73,7 +71,7 @@ const MyPost = () => {
                         <div>
                           <Link to={""}>
                             <span className="text-[#029e74]">
-                              Chỉnh sửa 2 ngày trước
+                              Đăng 1 ngày trước
                             </span>
                           </Link>
                           <span className="py-0 px-[6px]">·</span>
@@ -86,7 +84,7 @@ const MyPost = () => {
                         <Link to="">
                           <img
                             className=" bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="/image/blog_posts/6139c6453456e.png"
+                            src="/image/blog_posts/6139fe28a9844.png"
                             alt=""
                           />
                         </Link>
@@ -96,6 +94,7 @@ const MyPost = () => {
                 </div>
               </div>
             </section>
+
             {/* Ads */}
             <section className="min-[1113px]:w-2/6 min-[1113px]:pl-[126px] min-[1113px]:pr-3 pl-[100px]">
               <div className="sticky top-[80px] items-start flex">
@@ -124,4 +123,4 @@ const MyPost = () => {
   );
 };
 
-export default MyPost;
+export default Published;

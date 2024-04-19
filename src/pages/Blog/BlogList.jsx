@@ -62,7 +62,7 @@ const BlogList = ({ listBlog, onPage, page, pages }) => {
                     return (
                       <Link
                         key={tag?.id}
-                        className="Pagination_hiddenbg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 "
+                        className="Pagination_hidden bg-[#f2f2f2] rounded-[100px] text-[#333] font-medium mr-3 py-1 "
                         to=""
                       >
                         {tag?.tagName}

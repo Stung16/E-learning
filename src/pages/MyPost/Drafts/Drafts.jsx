@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./MyPost.css";
-import { Link } from "react-router-dom";
+
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Drafts.css";
 import { FaEllipsis } from "react-icons/fa6";
 
-const MyPost = () => {
+const Drafts = () => {
   const [isShow, setIsShow] = useState(false);
   const activeHeading = ({ isActive }) => {
     return isActive ? "HeadingTab active" : "HeadingTab";
@@ -47,12 +48,10 @@ const MyPost = () => {
                   <div className="border-b border-solid border-[#0000001a] "></div>
                 </div>
                 <div>
-                  <div className="MyPostItem_wrapper relative">
+                  {/* <div className="MyPostItem_wrapper"></div> */}
+                  <div className="MyPostItem_wrapper">
                     <div className=" flex justify-end py-[10px] pr-2 ">
-                      <FaEllipsis
-                        className="fa-solid fa-ellipsis text-[#757575] cursor-pointer hover:text-[#333]"
-                        onClick={handleEllipsisClick}
-                      />
+                      <FaEllipsis className="fa-solid fa-ellipsis   text-[#757575] cursor-pointer hover:text-[#333]" onClick={handleEllipsisClick}/>
                     </div>
                     <div className={`Ellipsis_more ${!isShow && "hidden"} `}>
                       <ul className="Ellipsis_more_wrapper min-w-[200px]">
@@ -124,4 +123,4 @@ const MyPost = () => {
   );
 };
 
-export default MyPost;
+export default Drafts;
