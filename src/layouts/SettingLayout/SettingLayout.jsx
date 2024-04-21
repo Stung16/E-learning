@@ -3,8 +3,13 @@ import { Navigate } from "./Navigate";
 import { Outlet } from "react-router-dom";
 import Header from "../DefaultLayout/Header/Header";
 import Footer from "../DefaultLayout/Footer/Footer";
+import Cookies from "js-cookie";
 
 const SettingLayout = () => {
+  const token = Cookies.get("accessToken");
+  if (!token) {
+    return (window.location.href = "/");
+  }
   return (
     <div>
       <Header />

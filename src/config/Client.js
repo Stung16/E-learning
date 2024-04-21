@@ -37,6 +37,7 @@ const Client = {
       };
       try {
         const res = await handleRefreshToken(payload);
+        console.log(res);
         if (res?.data?.status === 200) {
           this.token = res?.data?.token?.accessToken;
           Cookies.set("accessToken", res?.data?.token?.accessToken, {
@@ -46,9 +47,10 @@ const Client = {
             expires: 60 * 60 * 24 * 30,
           });
           return this.send("/user/profile", method, body);
-        } else {
-          return logOut();
         }
+        // else {
+        //   // return logOut();
+        // }
       } catch (error) {
         console.log(error);
       }

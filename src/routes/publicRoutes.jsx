@@ -28,12 +28,16 @@ import SettingLayout from "../layouts/SettingLayout/SettingLayout";
 import Security from "../pages/Setting/Security/Security";
 import Notification from "../pages/Setting/Notification/Notification";
 import MyPost from "../pages/MyPost/MyPost";
+import ProfileLayout from "../layouts/ProfileLayout/ProfileLayout";
 // import Edit from "../components/Test/Edit";
 export const publicRoutes = (
   <>
     <Route element={<LessionLayout />}>
-      <Route path="/learning/:slug" element={<Learning />} />
+      <Route path="/learning/:id" element={<Learning />} />
     </Route>
+
+    <Route path="/landing" element={<Landing />}></Route>
+
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       {/* Lộ trình */}
@@ -58,26 +62,14 @@ export const publicRoutes = (
       {/* Courses */}
       <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>
-    <Route path="/profile" element={<Profile />} />
-
+    <Route element={<ProfileLayout />}>
+      <Route path="/profile" element={<Profile />} />
+    </Route>
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/*" element={<NotFound />} />
-    <Route element={<AuthMiddleware />}>
-      <Route element={<NoNavigate />}>
-        <Route path="/test" element={<Test />} />
-        <Route path="/blog/:slug" element={<PostDetail />} />
-      </Route>
-      <Route path="/landing" element={<Landing />} />
-
-      {/* <Route element={<GuestMiddleware />}>
-        <Route path="/signin" element={<Login />} />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/auth/google/callback" element={<Auth />} />
-        <Route path="/account/forgot" element={<ForgotPass />} />
-        <Route path="/account/logout" element={<Logout />} />
-        <Route path="/account/reset-password/:id" element={<ResetPass />} />
-        <Route path="/*" element={<NotFound />} />
-      </Route> */}
+    <Route element={<NoNavigate />}>
+      <Route path="/test" element={<Test />} />
+      <Route path="/blog/:slug" element={<PostDetail />} />
     </Route>
     <Route element={<SettingLayout />}>
       <Route path="/setting/personal" element={<Personal />} />

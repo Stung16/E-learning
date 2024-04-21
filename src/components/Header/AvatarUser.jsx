@@ -8,8 +8,10 @@ import {
 } from "@nextui-org/react";
 import { logOut } from "../../services/auth.service";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AvatarUser = ({ profile }) => {
+  const navigate = useNavigate();
   const handleLogOut = () => {
     logOut();
   };
@@ -33,14 +35,42 @@ const AvatarUser = ({ profile }) => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Static Actions">
-          <DropdownItem key="profile" textValue="profile">
-            <Link to={"/profile"}>Trang cá nhân</Link>
+          <DropdownItem
+            key="profile"
+            textValue="profile"
+            onClick={() => {
+              return navigate("/profile");
+            }}
+          >
+            <span>Trang cá nhân</span>
           </DropdownItem>
-          <DropdownItem textValue="affiliate " key="link">Liên kết giới thiệu</DropdownItem>
-          <DropdownItem textValue="blog" key="write">Viết Blog</DropdownItem>
-          <DropdownItem textValue="my blog" key="my_posts">Bài viết của tôi</DropdownItem>
-          <DropdownItem textValue="save blog" key="save_post">Bài viết đã lưu</DropdownItem>
-          <DropdownItem textValue="setting" key="setting">Cài đặt</DropdownItem>
+          <DropdownItem
+            textValue="affiliate "
+            key="link"
+            onClick={() => {
+              return navigate("");
+            }}
+          >
+            Liên kết giới thiệu
+          </DropdownItem>
+          <DropdownItem
+            textValue="blog"
+            key="write"
+            onClick={() => {
+              return navigate("/test");
+            }}
+          >
+            Viết Blog
+          </DropdownItem>
+          <DropdownItem textValue="my blog" key="my_posts">
+            Bài viết của tôi
+          </DropdownItem>
+          <DropdownItem textValue="save blog" key="save_post">
+            Bài viết đã lưu
+          </DropdownItem>
+          <DropdownItem textValue="setting" key="setting">
+            <Link to={"/setting/personal"}>Cài đặt</Link>
+          </DropdownItem>
           <DropdownItem textValue="logout" onClick={handleLogOut} key="logout">
             Đăng xuất
           </DropdownItem>

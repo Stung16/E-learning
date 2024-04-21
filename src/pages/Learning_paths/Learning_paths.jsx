@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./learning_paths.css";
 
+
 const Learning_paths = () => {
+
   return (
     <section className="w-full max-w-[1902px]">
       <div className="DefaultLayout_container mb-[60px] px-11 pt-2">
@@ -47,7 +49,7 @@ const Learning_paths = () => {
               {/* see intern */}
               <div>
                 <Link to="/learning-paths/front_end_development" className="see-detail FE">
-                  Xem chi tiết
+                    Xem chi tiết
                 </Link>
               </div>
             </div>

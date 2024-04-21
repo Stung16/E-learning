@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { detailtSlice } from "../../../stores/slices/detailtSlice";
 import { loginSlice } from "../../../stores/slices/loginSlice";
-const { updateProfile, updateLoading } = detailtSlice.actions;
 const { updateState, updateLogin } = loginSlice.actions;
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -13,15 +11,14 @@ import LoginSocial from "../../Form/LoginSocial/LoginSocial";
 import MyCourse from "../MyCourse/MyCourse";
 import Notification from "../Notification/Notification";
 import Cookies from "js-cookie";
-import { logOut } from "../../../services/auth.service";
 
-const Auth = () => {  
+const Auth = () => {
   const dispatch = useDispatch();
   const [resgiterWithEmail, setrResgiterWithEmail] = useState(false);
   const profile = useSelector((state) => state.detailtData.profile);
   const state = useSelector((state) => state.loginData.state);
   const Login = useSelector((state) => state.loginData.login);
-  const acc = Cookies.get("accessToken")
+  const token = Cookies.get("accessToken");
   const handleBack = () => {
     dispatch(updateLogin(null));
     dispatch(updateState("login"));
@@ -40,7 +37,7 @@ const Auth = () => {
   };
   return (
     <div className="items-center flex justify-end flex-1">
-      {!profile && (
+      {(!profile || !token) && (
         <button
           className="btn-login"
           onClick={() => {
@@ -50,7 +47,7 @@ const Auth = () => {
           Đăng nhập
         </button>
       )}
-      {!profile && (
+      {(!profile || !token) && (
         <button
           className="btn-register"
           onClick={() => {
@@ -214,7 +211,7 @@ const Auth = () => {
           </div>
         </div>
       )}
-      {profile && (
+      {token && profile && (
         <>
           <div>
             <MyCourse />

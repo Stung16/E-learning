@@ -16,7 +16,7 @@ export const Edit = ({ hide, setHide, form, setForm }) => {
   const { mutate } = useSWRConfig();
   const [files, setFiles] = useState([]);
   const [loading, setLoading] = useState(false);
-  let img = "";
+  let img = "https://res.cloudinary.com/daeiiokje/image/upload/v1711273094/ELearningF8/Images/img_default_638468698928988378.png";
   const [data, setData] = useState({
     descriptions: "",
     isPublish: true,

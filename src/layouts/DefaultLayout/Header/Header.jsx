@@ -19,8 +19,10 @@ import { FaArrowRightFromBracket } from "react-icons/fa6";
 import AvatarUser from "../../../components/Header/AvatarUser";
 import Auth from "../../../components/Header/Auth/Auth";
 import Search from "../../../components/Header/Search/Search";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const profiles = useSelector((state) => state.detailtData.profile);
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const [hide, setHide] = useState(false);
   const location = useLocation();
@@ -59,7 +61,7 @@ const Header = () => {
           <h4 className="text-black text-[14px] font-bold m-4 leading-4">
             {pathname !== "/" ? (
               <span className="flex justify-center items-center gap-1">
-                <FaChevronLeft className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]"/>
+                <FaChevronLeft className="group-hover:-translate-x-1 transition-all ease-linear duration-400 fa-solid fa-chevron-left text-[10px]" />
                 <span
                   className="text-[#808990] cursor-pointer text-[12px] font-semibold"
                   onClick={handleGoBack}
