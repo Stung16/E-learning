@@ -4,11 +4,19 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FaChevronLeft } from "react-icons/fa6";
 import { changeMonth, customText } from "../../utils/helper";
+import AvatarUser from "../../components/Header/AvatarUser";
+import Notification from "../../components/Header/Notification/Notification";
+import Cookies from "js-cookie";
+
 const Profile = () => {
+  const token = Cookies.get("accessToken");
   const handleGoBack = () => {
     window.history.back(); // Điều hướng trở lại trang trước đó
   };
   const profiles = useSelector((state) => state.detailtData.profile);
+  if (!token) {
+    return (window.location.href = "/");
+  }
   return (
     <div>
       <div className="bg-transparent border-b-0 items-center flex text-[14px] h-[66px] sticky left-0 right-0 top-0 py-0 px-7 z-20">
@@ -32,23 +40,19 @@ const Profile = () => {
           </div>
         </div>
         <div className="items-center flex justify-end flex-1">
-          <div></div>
-          <div>
-            <div className="p-2 relative select-none">
-              <img
-                className="w-[21px] h-[20px] cursor-pointer opacity-55 hover:opacity-100"
-                src="/icon/bell.png"
-                alt=""
-              />
-            </div>
-          </div>
           <div className="ml-3">
-            <div className="text-[3.2px] bg-transparent rounded-[50%]">
-              <img
-                className="rounded-[50%] object-cover cursor-pointer h-[9em] w-[9em]"
-                src={profiles?.avatar}
-                alt="bgAvatar"
-              />
+            <div className="text-[3.2px] bg-transparent rounded-[50%] flex">
+              <Notification />
+              <div className=" ml-3">
+                <div className="avatar_border">
+                  <AvatarUser profile={profiles} />
+                  <img
+                    className="icon_avatar"
+                    src="https://fullstack.edu.vn/static/media/crown.8edf462029b3c37a7f673303d8d3bedc.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -56,7 +60,9 @@ const Profile = () => {
       <div className="flex min-h-[100vh] ">
         <div className="flex-1 max-w-[100%]">
           <section className="max-w-[1100px] w-[100%] my-0 mx-auto p-0">
-            <div className="profile-banner bg-[url('/public/image/banner/cover-profile.3fb9fed576da4b28386a.png')]">
+            <div
+              className={`profile-banner bg-[url('/public/image/banner/cover-profile.3fb9fed576da4b28386a.png')]`}
+            >
               <div className="Profile_user">
                 <div className="Profile_user-avatar">
                   <div className="FallbackAvatar">
@@ -137,7 +143,7 @@ const Profile = () => {
                           <div className="profile-inner" key={item?.id}>
                             <Link
                               className="Profile_thumb shrink-0 h-[128px] w-[228px] mr-6"
-                              to={`/courses/${item?.slug}`}
+                              to={`/learning/${item?.slug}?id=${item?.id}`}
                             >
                               <img
                                 className="rounded-[16px] h-[100%] object-cover w-[100%]"
@@ -147,12 +153,14 @@ const Profile = () => {
                             </Link>
                             <div>
                               <h3 className="text-[16px] font-semibold mb-0 mt-0">
-                                <Link to={`/courses/${item?.slug}`}>
+                                <Link
+                                  to={`/learning/${item?.slug}?id=${item?.id}`}
+                                >
                                   {item?.title}
                                 </Link>
                               </h3>
                               <p className="break-words text-[14px] leading-[22px] mt-1 overflow-hidden">
-                                {customText(item?.descriptions,180)}
+                                {customText(item?.descriptions, 180)}
                               </p>
                             </div>
                           </div>

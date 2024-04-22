@@ -3,7 +3,13 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import "./NoNavigate.css";
+import Cookies from "js-cookie";
+
 const NoNavigate = () => {
+  const token = Cookies.get("accessToken");
+  if (!token) {
+    return (window.location.href = "/");
+  }
   return (
     <div>
       <Header />

@@ -29,9 +29,9 @@ function Blog() {
   const pages = useMemo(() => {
     return dataPosst?.totalPost ? Math.ceil(dataPosst?.totalPost / 10) : 0;
   }, [data, page]);
-  // if (isLoading) {
-  //   return <Loading />;
-  // }
+  if (isLoading) {
+    return <Loading />;
+  }
   if (page === 0 || page > pages) {
     return <NotFound />;
   }

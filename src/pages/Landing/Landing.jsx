@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa6";
@@ -37,10 +37,13 @@ function Landing() {
             <nav className="nav-pc ml-[46px] block">
               <ul className="nav flex list-none">
                 <li>
-                  <Link className="py-1 px-3 font-medium text-[#fff]" to="/">
+                  <a
+                    className="py-1 px-3 font-medium text-[#fff]"
+                    href="#course-content"
+                  >
                     {" "}
                     Nội dung{" "}
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link className="py-1 px-3 font-medium text-[#fff]" to="/">
@@ -378,7 +381,7 @@ function Landing() {
           {/* TRACK */}
           <div className="track mt-[100px] py-16 px-0">
             <div className="max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto">
-              <div className="inner">
+              <div className="inner" id="course-content">
                 <h2 className="second-heading leading-[59px] text-[42px] font-bold text-[#fff]">
                   Kiến thức
                   <strong className="second-heading leading-[59px] text-[42px] font-bold text-[#fff]">
@@ -734,7 +737,7 @@ function Landing() {
                   </h2>
                 </header>
                 <ul className="feedback-list">
-                  <li className="feedback-item">
+                  <li className="feedback-item" >
                     <img src="/image/landing/svgexport-2.svg" alt="" />
                     <blockquote className="mt-[10px] text-[28px] text-[#fff]">
                       Kiến thức siêu đầy đủ, chi tiết (vì chi tiết quá nên đôi

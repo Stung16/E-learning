@@ -13,8 +13,10 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
+import Cookies from "js-cookie";
 
 const BtnCreatBlog = () => {
+  const token = Cookies.get("accessToken");
   const navigate = useNavigate();
   const profile = useSelector((state) => state.detailtData.profile);
   return (
@@ -31,7 +33,7 @@ const BtnCreatBlog = () => {
           <DropdownItem key="my_posts" textValue="create">
             <span
               onClick={() => {
-                if (!profile) {
+                if (!token || !profile) {
                   return toast.error("Vui lòng đăng nhập!!!");
                 } else {
                   return navigate("/test");

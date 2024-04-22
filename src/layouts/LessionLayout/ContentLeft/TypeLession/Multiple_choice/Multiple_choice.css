@@ -1,0 +1,25 @@
+.ansewerItem {
+  background-color: #f6f7f9;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: 8px 0 8px rgba(137, 172, 192, 0.04);
+  font-size: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: 0.2s ease;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ansewerItem.choose1 {
+  border-color: #0093fc;
+}
+.ansewerItem.choose2 {
+  border-color: #0093fc;
+}
+.ansewerItem.choose3 {
+  border-color: #0093fc;
+}
+input:checked ~.label-checked{
+  background: #0093fc;
+}

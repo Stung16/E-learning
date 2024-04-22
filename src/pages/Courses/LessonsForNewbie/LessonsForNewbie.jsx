@@ -34,7 +34,7 @@ const LessonsForNewbie = () => {
     try {
       const res = await handleRegiterCourse(courseDetail?.id);
       if (res?.data.status === 200) {
-        navigate(`/learning/${slug}`);
+        navigate(`/learning/${slug}?id=1`);
         const res = await dispatch(requestGetUserFromToken());
         unwrapResult(res);
       }

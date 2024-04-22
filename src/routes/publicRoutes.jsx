@@ -17,25 +17,32 @@ import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../pages/Courses/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
 import AuthMiddleware from "../middlewares/AuthMiddleware";
-
 import Test from "../components/Test/Test";
 import MyCourses from "../pages/MyCourses/MyCourses";
 import LessionLayout from "../layouts/LessionLayout/LessionLayout";
 import Learning from "../pages/Learning/Learning";
+
 import Personal from "../pages/Setting/Personal/Personal";
 // import Setting from "../pages/Setting/Setting";
 import SettingLayout from "../layouts/SettingLayout/SettingLayout";
 import Security from "../pages/Setting/Security/Security";
 import Notification from "../pages/Setting/Notification/Notification";
 import MyPost from "../pages/MyPost/MyPost";
+<<<<<<< HEAD
 import Drafts from "../pages/MyPost/Drafts/Drafts";
 import Published from "../pages/MyPost/Published";
+=======
+import ProfileLayout from "../layouts/ProfileLayout/ProfileLayout";
+>>>>>>> 2fdd542c069d0536bdde2dcf7e9db1a9c51095d5
 // import Edit from "../components/Test/Edit";
 export const publicRoutes = (
   <>
     <Route element={<LessionLayout />}>
-      <Route path="/learning/:slug" element={<Learning />} />
+      <Route path="/learning/:id" element={<Learning />} />
     </Route>
+
+    <Route path="/landing" element={<Landing />}></Route>
+
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       {/* Lộ trình */}
@@ -55,44 +62,32 @@ export const publicRoutes = (
       <Route path="/fresher" element={<Fresher />} />
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
-
       {/* Me */}
+<<<<<<< HEAD
       <Route path="/me/posts" element={<MyPost />} />
       <Route path="/me/posts/drafts" element={<Drafts />} />
       <Route path="/me/posts/published" element={<Published />} />
 
 
+=======
+      <Route path="/me/posts/drafts" element={<MyPost />} />
+>>>>>>> 2fdd542c069d0536bdde2dcf7e9db1a9c51095d5
       {/* Courses */}
       <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>
-
+    <Route element={<ProfileLayout />}>
+      <Route path="/profile" element={<Profile />} />
+    </Route>
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/*" element={<NotFound />} />
-    <Route element={<AuthMiddleware />}>
-      <Route element={<NoNavigate />}>
-        <Route path="/test" element={<Test />} />
-        <Route path="/blog/:slug" element={<PostDetail />} />
-      </Route>
-      <Route path="/landing" element={<Landing />} />
-      <Route path="/profile" element={<Profile />} />
-
-      {/* <Route element={<GuestMiddleware />}>
-        <Route path="/signin" element={<Login />} />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/auth/google/callback" element={<Auth />} />
-        <Route path="/account/forgot" element={<ForgotPass />} />
-        <Route path="/account/logout" element={<Logout />} />
-        <Route path="/account/reset-password/:id" element={<ResetPass />} />
-        <Route path="/*" element={<NotFound />} />
-      </Route> */}
-    
-
+    <Route element={<NoNavigate />}>
+      <Route path="/test" element={<Test />} />
+      <Route path="/blog/:slug" element={<PostDetail />} />
     </Route>
     <Route element={<SettingLayout />}>
       <Route path="/setting/personal" element={<Personal />} />
       <Route path="/setting/security" element={<Security />} />
       <Route path="/setting/notification" element={<Notification />} />
-
     </Route>
   </>
 );

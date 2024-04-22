@@ -21,12 +21,12 @@ import _ from "lodash";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { Button } from "@nextui-org/react";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState} from "react";
 import MDEditor, { commands, EditorContext } from "@uiw/react-md-editor";
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
-import Edit from "./Edit";
 import { redirect } from "react-router-dom";
+import Edit from "./edit";
 
 const Test = () => {
   const navigate = useNavigate();
