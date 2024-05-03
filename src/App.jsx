@@ -7,11 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { requestGetUserFromToken } from "./stores/middlewares/auth.middleware";
 import Loading from "./components/Loading/Loading";
 import Cookies from "js-cookie";
-import Client from "./config/Client";
-import useSWR from "swr";
-import { fetcher } from "./utils/helper";
 import { detailtSlice } from "./stores/slices/detailtSlice";
-const { updateProfile } = detailtSlice.actions;
 
 const App = () => {
   const dispatch = useDispatch();

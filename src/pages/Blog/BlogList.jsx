@@ -8,9 +8,10 @@ import { useNavigate } from "react-router-dom";
 
 const BlogList = ({ listBlog, onPage, page, pages }) => {
   const navigate = useNavigate();
+  const postPublic = listBlog?.data?.filter((item) => item?.isPublish === true);
   return (
     <div>
-      {listBlog?.data?.map((post) => {
+      {postPublic.map((post) => {
         return (
           <div
             key={post?.id}

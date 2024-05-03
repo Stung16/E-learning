@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Drafts.css";
 import { FaEllipsis } from "react-icons/fa6";
+import { useSelector } from "react-redux";
+import Cookies from "js-cookie";
+import Loading from "../../../components/Loading/Loading";
+import moment from "moment";
 
 const Drafts = () => {
+  const currentDate = moment();
+  const token = Cookies.get("accessToken");
+  const profiles = useSelector((state) => state.detailtData.profile);
+
   const [isShow, setIsShow] = useState(false);
   const activeHeading = ({ isActive }) => {
     return isActive ? "HeadingTab active" : "HeadingTab";
@@ -14,6 +21,13 @@ const Drafts = () => {
     // Đảo ngược giá trị của isShow để hiển thị/ẩn dropdown
     setIsShow(!isShow);
   };
+  const postPrivate = profiles?.posts?.filter(
+    (item) => item?.isPublish === false
+  );
+
+  if (!token) {
+    return (window.location.href = "/");
+  }
   return (
     <section className="max-w-[1920px] w-[100%] p-0 my-0 mx-auto">
       <div className="DefaultLayout_container mb-15 mt-2 mx-11 mb-0">
@@ -49,49 +63,65 @@ const Drafts = () => {
                 </div>
                 <div>
                   {/* <div className="MyPostItem_wrapper"></div> */}
-                  <div className="MyPostItem_wrapper">
-                    <div className=" flex justify-end py-[10px] pr-2 ">
-                      <FaEllipsis className="fa-solid fa-ellipsis   text-[#757575] cursor-pointer hover:text-[#333]" onClick={handleEllipsisClick}/>
-                    </div>
-                    <div className={`Ellipsis_more ${!isShow && "hidden"} `}>
-                      <ul className="Ellipsis_more_wrapper min-w-[200px]">
-                        <li>Chỉnh sửa</li>
-                        <li>Xóa</li>
-                      </ul>
-                    </div>
-                    <div className="MyPostItem_body items-center flex">
-                      <div className="MyPostItem_info text-[14px] flex-1 pr-4">
-                        <h2 className="text-[#292929] font-bold mb-0 mt-2">
-                          Tôi bị điên
-                        </h2>
-                        <p className="text-[#505050] mt-1  leading-[24px]">
-                          qwertyuiopoiuygvbnzxmkkjsnfkifej,nkfjemfnknju
-                          qwertyuiopoiuygvbnzxmkkjsnfkifej,nkfjemfnknju
-                          qwertyuiopoiuygvbnzxmkkjsnfkifej,nkfjemfnknju
-                        </p>
-                        <div>
-                          <Link to={""}>
-                            <span className="text-[#029e74]">
-                              Chỉnh sửa 2 ngày trước
-                            </span>
-                          </Link>
-                          <span className="py-0 px-[6px]">·</span>
-                          <span className="text-[#0000008a] text-[14px]">
-                            1 phút đọc
-                          </span>
+                  {postPrivate?.length ? (
+                    postPrivate?.map((post) => {
+                      return (
+                        <div className="MyPostItem_wrapper" key={post?.id}>
+                          <div className=" flex justify-end py-[10px] pr-2 ">
+                            <FaEllipsis
+                              className="fa-solid fa-ellipsis   text-[#757575] cursor-pointer hover:text-[#333]"
+                              onClick={handleEllipsisClick}
+                            />
+                          </div>
+                          {token && profiles && (
+                            <div
+                              className={`Ellipsis_more ${
+                                !isShow && "hidden"
+                              } `}
+                            >
+                              <ul className="Ellipsis_more_wrapper min-w-[200px]">
+                                <li>Chỉnh sửa</li>
+                                <li>Xóa</li>
+                              </ul>
+                            </div>
+                          )}
+                          <div className="MyPostItem_body items-center flex">
+                            <div className="MyPostItem_info text-[14px] flex-1 pr-4">
+                              <h2 className="text-[#292929] font-bold mb-0 mt-2">
+                                {post?.title}
+                              </h2>
+                              <div>
+                                <Link to={""}>
+                                  <span className="text-[#029e74]">
+                                    {`Chỉnh sửa ${currentDate.diff(
+                                      post?.createAt,
+                                      "days"
+                                    )} ngày trước`}
+                                    {/* Chỉnh sửa 2 ngày trước */}
+                                  </span>
+                                </Link>
+                                <span className="py-0 px-[6px]">·</span>
+                                <span className="text-[#0000008a] text-[14px]">
+                                  1 phút đọc
+                                </span>
+                              </div>
+                            </div>
+                            <div className="shrink-0">
+                              <Link to="">
+                                <img
+                                  className=" bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] h-[80px] object-cover overflow-hidden text-center w-[80px]"
+                                  src={post?.avatar}
+                                  alt=""
+                                />
+                              </Link>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="shrink-0">
-                        <Link to="">
-                          <img
-                            className=" bg-[#ebebeb] rounded-[15px] text-[#757575] block text-[14px] max-h-[120px] object-cover overflow-hidden text-center w-[200px]"
-                            src="/image/blog_posts/6139c6453456e.png"
-                            alt=""
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                      );
+                    })
+                  ) : (
+                    <span>Chưa có bản nháp nào!!!</span>
+                  )}
                 </div>
               </div>
             </section>

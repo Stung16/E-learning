@@ -28,7 +28,7 @@ export const Edit = ({ hide, setHide, form, setForm }) => {
       const formData = new FormData();
       files.forEach((file) => formData.append("file", file));
       setLoading(true);
-      const res = await fetch(`http://apif8.somee.com/upload-image`, {
+      const res = await fetch(`http://clonef8.somee.com/upload-image`, {
         method: "POST",
         body: formData,
       }).then((res) => res.json());

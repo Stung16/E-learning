@@ -27,6 +27,11 @@ import Personal from "../pages/Setting/Personal/Personal";
 import SettingLayout from "../layouts/SettingLayout/SettingLayout";
 import Security from "../pages/Setting/Security/Security";
 import Notification from "../pages/Setting/Notification/Notification";
+<<<<<<< HEAD
+import Drafts from "../pages/MyPost/Drafts/Drafts";
+import Published from "../pages/MyPost/Published";
+import ProfileLayout from "../layouts/ProfileLayout/ProfileLayout";
+=======
 import MyPost from "../pages/MyPost/MyPost";
 import Drafts from "../pages/MyPost/Drafts/Drafts";
 import Published from "../pages/MyPost/Published";
@@ -36,8 +41,12 @@ import Search from "../pages/SearchAll/Search";
 import SearchCourse from "../pages/SearchAll/SearchCourse/SearchCourse";
 import SearchVideo from "../pages/SearchAll/SearchVideo/SearchVideo";
 import SearchPost from "../pages/SearchAll/SearchPost/SearchPost";
+<<<<<<< HEAD
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import Admin from "../pages/Admin/Admin";
+=======
+>>>>>>> 10e90ab2fa91bb83f73901b91fe9cd4aca1b50ae
+>>>>>>> 918485fb7ff860440f2de2c38c186fdd754d4af1
 // import Edit from "../components/Test/Edit";
 export const publicRoutes = (
   <>
@@ -67,7 +76,10 @@ export const publicRoutes = (
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
       {/* Me */}
+<<<<<<< HEAD
+=======
       <Route path="/me/posts" element={<MyPost />} />
+>>>>>>> 10e90ab2fa91bb83f73901b91fe9cd4aca1b50ae
       <Route path="/me/posts/drafts" element={<Drafts />} />
       <Route path="/me/posts/published" element={<Published />} />
       <Route path="/me/bookmark/posts" element={<Bookmark />} />
@@ -77,6 +89,10 @@ export const publicRoutes = (
       <Route path="/search/posts" element={<SearchPost/>} />
       <Route path="/search/videos" element={<SearchVideo />} />
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 10e90ab2fa91bb83f73901b91fe9cd4aca1b50ae
       {/* Courses */}
       <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>

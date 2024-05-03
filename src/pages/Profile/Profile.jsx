@@ -143,7 +143,7 @@ const Profile = () => {
                           <div className="profile-inner" key={item?.id}>
                             <Link
                               className="Profile_thumb shrink-0 h-[128px] w-[228px] mr-6"
-                              to={`/learning/${item?.slug}?id=${item?.id}`}
+                              to={`/learning/${item?.slug}?id=1`}
                             >
                               <img
                                 className="rounded-[16px] h-[100%] object-cover w-[100%]"
@@ -154,7 +154,7 @@ const Profile = () => {
                             <div>
                               <h3 className="text-[16px] font-semibold mb-0 mt-0">
                                 <Link
-                                  to={`/learning/${item?.slug}?id=${item?.id}`}
+                                  to={`/learning/${item?.slug}?id=1`}
                                 >
                                   {item?.title}
                                 </Link>

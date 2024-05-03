@@ -62,7 +62,13 @@ const AvatarUser = ({ profile }) => {
           >
             Viết Blog
           </DropdownItem>
-          <DropdownItem textValue="my blog" key="my_posts">
+          <DropdownItem
+            textValue="my blog"
+            key="my_posts"
+            onClick={() => {
+              return navigate("/me/posts/drafts");
+            }}
+          >
             Bài viết của tôi
           </DropdownItem>
           <DropdownItem textValue="save blog" key="save_post">
