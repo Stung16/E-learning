@@ -12,26 +12,46 @@ import { FaNewspaper } from "react-icons/fa6";
 import { FaBookmark } from "react-icons/fa6";
 import { IoInformationCircle } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa6";
+import { useDispatch } from "react-redux";
 import { FaLaptopCode } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
-import AvatarUser from "../../../components/Header/AvatarUser";
 import Auth from "../../../components/Header/Auth/Auth";
 import Search from "../../../components/Header/Search/Search";
-import { useSelector } from "react-redux";
-
+import { handleSearch } from "../../../services/auth.service";
+import { searchSlice } from "../../../stores/slices/searchSlice";
+const { updatestatus } = searchSlice.actions;
 const Header = () => {
-  const profiles = useSelector((state) => state.detailtData.profile);
+  const [search, setSearch] = useState("");
+  const [data, setData] = useState("");
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const [hide, setHide] = useState(false);
   const location = useLocation();
   const pathname = location.pathname;
-
+  const dispatch = useDispatch();
   const handleGoBack = () => {
     window.history.back(); // Điều hướng trở lại trang trước đó
   };
-
+  useEffect(() => {
+    try {
+      const fetch = async () => {
+        dispatch(updatestatus(true));
+        const res = await handleSearch(search);
+        if (res?.data?.status === 200) {
+          setData(res?.data?.data);
+        } else {
+          setData("");
+        }
+        dispatch(updatestatus(false));
+      };
+      if (search.trim().split("").length > 1) {
+        fetch();
+      }
+    } catch (error) {
+      console.log("error");
+    }
+  }, [search]);
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY > 200 ? setIsHeaderActive(true) : setIsHeaderActive(false);
@@ -76,7 +96,7 @@ const Header = () => {
         </div>
 
         <div className=" flex-1 items-center flex justify-center">
-          <Search />
+          <Search onSearch={setSearch} data={data} />
         </div>
 
         {/* khóa học */}

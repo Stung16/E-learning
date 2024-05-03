@@ -16,22 +16,26 @@ import { IoLink } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { IoMdUndo } from "react-icons/io";
 import { IoMdRedo } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 import _ from "lodash";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { Button } from "@nextui-org/react";
-import React, { useState} from "react";
+import React, { useState } from "react";
 import MDEditor, { commands, EditorContext } from "@uiw/react-md-editor";
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
 import { redirect } from "react-router-dom";
-import Edit from "./edit";
-
+import Edit from "./Edit";
+import { handlePostNew } from "../../services/auth.service";
+import { useSWRConfig } from "swr";
+import { useNavigate } from "react-router-dom";
+import Loading from "../Loading/Loading";
+import Cookies from "js-cookie";
 const Test = () => {
   const navigate = useNavigate();
-  const profile = useSelector((state) => state.detailtData.profile);
   const [hide, setHide] = useState(false);
+  const token = Cookies.get("accessToken");
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     title: "",
     content: "",
@@ -350,6 +354,7 @@ const Test = () => {
       },
     },
   };
+  const { mutate } = useSWRConfig();
   return (
     <div>
       <section className="w-full overflow-hidden h-[100vh] ">
@@ -374,6 +379,20 @@ const Test = () => {
                       "pointer-events-none opacity-40"
                     }`}
                     color="default"
+                    onClick={async () => {
+                      try {
+                        setLoading(true);
+                        const resPost = await handlePostNew(form);
+                        if (resPost?.data?.status === 200) {
+                          navigate("/blog?page=1");
+                          toast.success("Tạo bài viểt thành công!!!");
+                        }
+                      } catch (error) {
+                        return toast.error("Đã có lỗi xảy ra!!!");
+                      } finally {
+                        setLoading(false);
+                      }
+                    }}
                   >
                     Lưu bản nháp
                   </Button>
@@ -444,6 +463,7 @@ const Test = () => {
           </section>
         </section>
       </section>
+      {loading && <Loading />}
       {hide && (
         <Edit hide={hide} setHide={setHide} form={form} setForm={setForm} />
       )}

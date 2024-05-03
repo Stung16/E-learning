@@ -6,7 +6,6 @@ import { FaAnglesLeft } from "react-icons/fa6";
 import { FaAnglesRight } from "react-icons/fa6";
 import queryString from "query-string";
 import { useLocation } from "react-router-dom";
-
 import "./Blog.css";
 import useSWR from "swr";
 import { changeMonth, customText, fetcher } from "../../utils/helper";

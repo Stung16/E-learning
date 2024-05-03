@@ -102,3 +102,12 @@ export const handleGetLession = async (payload) => {
     console.log(error);
   }
 };
+
+export const handleSearch = async (key) => {
+  try {
+    const res = await Client.get(`/search?key=${key}`);
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
