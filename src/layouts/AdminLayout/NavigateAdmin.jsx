@@ -11,7 +11,7 @@ const NavigateAdmin = () => {
     setIsShow(!isShow);
   };
   return (
-    <section className="flex-shrink-0 w-[278px] bg-[#333] overflow-y-scroll ">
+    <section className="flex-shrink-0 w-[278px] bg-[#333] overflow-y-scroll pb-[2px]">
       <div className="flex items-center pl-[15px] -mb-[10px]">
         <img
           className="h-[32px] w-[32px] rounded-[8px] p-0 m-0 border-[0px]"
@@ -22,7 +22,7 @@ const NavigateAdmin = () => {
           <p>F8 Admin</p>
         </div>
       </div>
-      <div className="pl-[6px] text-[#fff] flex flex-col h-[100%] w-[100%]">
+      <div className="pl-[6px] text-[#fff] flex flex-col h-[100%] w-[100%] mb-0">
         <p>Fullstack NodeJS</p>
         {/* List */}
         <div className="">
@@ -32,9 +32,10 @@ const NavigateAdmin = () => {
             <span>
               <FaChevronDown className="text-[13px] absolute top-[16px] right-[16px] cursor-pointer" />
             </span>
+            
           </div>
           {/* 2. */}
-          <div className="flex flex-col flex-wrap sticky top-0 pt-[10px] pb-[20px] ">
+          <div className="flex flex-col flex-wrap sticky top-0 pt-[10px] ">
             <div>
               <h3>2. Ngôn ngữ đánh dấu HTML</h3>
               <span>
@@ -55,7 +56,67 @@ const NavigateAdmin = () => {
                 </p>
               </div>
             </div>
-            <div className="">
+            <div>
+              <div className="flex items-center ">
+                <span className="pr-[7px] text-[#f05123]">
+                  <FaFileLines />
+                </span>
+                <p className="leading-[19px]">
+                  2.1. Các thẻ HTML hay dùng trong nhóm inline
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center ">
+                <span className="pr-[7px] text-[#f05123]">
+                  <FaFileLines />
+                </span>
+                <p className="leading-[19px]">
+                  2.1. Các thẻ HTML hay dùng trong nhóm inline
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center ">
+                <span className="pr-[7px] text-[#f05123]">
+                  <FaFileLines />
+                </span>
+                <p className="leading-[19px]">
+                  2.1. Các thẻ HTML hay dùng trong nhóm inline
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center ">
+                <span className="pr-[7px] text-[#f05123]">
+                  <FaFileLines />
+                </span>
+                <p className="leading-[19px]">
+                  2.1. Các thẻ HTML hay dùng trong nhóm inline
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center ">
+                <span className="pr-[7px] text-[#f05123]">
+                  <FaFileLines />
+                </span>
+                <p className="leading-[19px]">
+                  2.1. Các thẻ HTML hay dùng trong nhóm inline
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center ">
+                <span className="pr-[7px] text-[#f05123]">
+                  <FaFileLines />
+                </span>
+                <p className="leading-[19px]">
+                  2.1. Các thẻ HTML hay dùng trong nhóm inline
+                </p>
+              </div>
+            </div>
+            <div>
               <div className="flex items-center ">
                 <span className="pr-[7px] text-[#f05123]">
                   <FaFileLines />
