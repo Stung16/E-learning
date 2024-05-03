@@ -1,0 +1,22 @@
+.Courses_item{
+    border-top: 1px solid rgba(0, 0, 0, .079);
+    display: flex;
+    padding: 20px 0;
+}
+.Courses_item:first-child{
+    border-top: none;
+    padding-top: 16px;
+}
+.Courses_img{
+    background-color: #ebebeb;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    color: #757575;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 280px;
+}
