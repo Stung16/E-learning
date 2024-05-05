@@ -8,7 +8,7 @@
     padding-top: 16px;
 }
 .Courses_img{
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,10 @@
     display: block;
     font-size: 14px;
     overflow: hidden;
-    padding-top: 56.25%;
+    /* padding-top: 56.25%; */
     width: 280px;
+}
+.input_searchh::placeholder{
+    font-size: 40px;
+    font-weight: 500;
 }

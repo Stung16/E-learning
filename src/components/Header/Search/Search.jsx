@@ -25,6 +25,32 @@ const Search = ({ onSearch, data }) => {
       setHide(true);
     }
   };
+  // {data?.map((course) => {
+  //   console.log(course);
+  //   return (
+  //     <div className="mt-4 overflow-hidden" key={course?.id}>
+  //       <div className="Courses_item">
+  //         <Link to="">
+  //           <img
+  //             className={`Courses_img`}
+  //             src={course?.avatar}
+  //             alt={course?.title}
+  //           ></img>
+  //         </Link>
+  //         <div className="pl-5">
+  //           <h2 className="text-[20px] leading-[32px] mb-0 font-semibold">
+  //             <Link to="">
+  //             {course?.title}
+  //             </Link>
+  //           </h2>
+  //           <p className="text-[#757575] text-[16px] leading-[32px] mt-1">
+  //           {course?.descriptions}
+  //           </p>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // })}
   return (
     <div>
       <div className="search_border relative focus-within:border-[#333] flex-1 justify-center flex items-center text-[14px] leading-4  rounded-[20px] border-solid border-2 border-[#e8e8e8]  py-0 pr-4  pl-2 w-[420px] h-[40px] transition-[border]">
@@ -64,7 +90,7 @@ const Search = ({ onSearch, data }) => {
                 <div>
                   <div className="header_course">
                     <h5>KHOÁ HỌC</h5>
-                    <a href="#">Xem tất cả</a>
+                    <a href={`/search/courses?_type=tab&q=${searchValue}`}>Xem tất cả</a>
                   </div>
                   {data?.courses?.map((course) => {
                     return (
@@ -86,7 +112,7 @@ const Search = ({ onSearch, data }) => {
                 <div>
                   <div className="header_course">
                     <h5>BÀI VIẾT</h5>
-                    <a href="#">Xem tất cả</a>
+                    <a href={`/search/posts?_type=tab&q=${searchValue}`}>Xem tất cả</a>
                   </div>
                   {data?.posts?.map((post) => {
                     return (
@@ -107,8 +133,8 @@ const Search = ({ onSearch, data }) => {
               {data?.videos?.length > 0 && (
                 <div>
                   <div className="header_course">
-                    <h5>BÀI VIẾT</h5>
-                    <a href="#">Xem tất cả</a>
+                    <h5>VIDEO</h5>
+                    <a href={`/search/videos?_type=tab&q=${searchValue}`}>Xem tất cả</a>
                   </div>
                   {data?.videos?.map((lesson) => {
                     return (
