@@ -1,5 +1,4 @@
 import React from "react";
-import Cookies from "js-cookie";
 import Slide from "../../components/Slide/Slide";
 import ListCourse from "./ListCourse/ListCourse";
 import useSWR from "swr";
