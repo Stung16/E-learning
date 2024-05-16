@@ -9,7 +9,6 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaHandSparkles } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
-import Edit from "../../components/Test/edit";
 function Landing() {
   const [hide, setHide] = useState(false);
 

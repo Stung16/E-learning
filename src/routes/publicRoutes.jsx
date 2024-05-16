@@ -27,12 +27,12 @@ import Personal from "../pages/Setting/Personal/Personal";
 import SettingLayout from "../layouts/SettingLayout/SettingLayout";
 import Security from "../pages/Setting/Security/Security";
 import Notification from "../pages/Setting/Notification/Notification";
+
+import ProfileLayout from "../layouts/ProfileLayout/ProfileLayout";
 import Drafts from "../pages/MyPost/Drafts/Drafts";
 import Published from "../pages/MyPost/Published";
-import ProfileLayout from "../layouts/ProfileLayout/ProfileLayout";
 // import MyPost from "../pages/MyPost/MyPost";
 import Bookmark from "../pages/Bookmark/Bookmark";
-import Search from "../pages/SearchAll/Search";
 import SearchCourse from "../pages/SearchAll/SearchCourse/SearchCourse";
 import SearchVideo from "../pages/SearchAll/SearchVideo/SearchVideo";
 import SearchPost from "../pages/SearchAll/SearchPost/SearchPost";
@@ -73,12 +73,12 @@ export const publicRoutes = (
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
       {/* Me */}
+
       {/* <Route path="/me/posts" element={<MyPost />} /> */}
       <Route path="/me/posts/drafts" element={<Drafts />} />
       <Route path="/me/posts/published" element={<Published />} />
       <Route path="/me/bookmark/posts" element={<Bookmark />} />
       {/* Search */}
-      <Route path="/search" element={<Search />} />
       <Route path="/search/courses" element={<SearchCourse />} />
       <Route path="/search/posts" element={<SearchPost/>} />
       <Route path="/search/videos" element={<SearchVideo />} />

@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaFileLines } from "react-icons/fa6";
 import { FaEllipsisVertical } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
+<<<<<<< HEAD:src/layouts/AdminLayout/NavigateCourse/NavigateCourse.jsx
 import "./NavigateCourse.css";
 import { Link } from "react-router-dom";
 const NavigateCourse = () => {
+=======
+import "./NavigateAdmin.css";
+import { FaPlus } from "react-icons/fa";
+const NavigateAdmin = () => {
+>>>>>>> 44edd762057680c40fd5b7e429c45f2b813ab600:src/layouts/AdminLayout/NavigateAdmin.jsx
   const [isShow, setIsShow] = useState(false);
   const handleEllipsisClick = () => {
     // Đảo ngược giá trị của isShow để hiển thị/ẩn dropdown
@@ -28,184 +35,194 @@ const NavigateCourse = () => {
         {/* List */}
         <div className="">
           {/* 1. */}
-          <div className="flex flex-col flex-wrap sticky top-0 pt-[10px] pb-[20px]">
-            <h3>1. Nhập môn lập trình web</h3>
-            <span>
-              <FaChevronDown className="text-[13px] absolute top-[16px] right-[16px] cursor-pointer" />
-            </span>
-            
+          <div className="flex flex-col flex-wrap sticky top-0   ">
+            <div className="chapter_item">
+              <h3>1. Nhập môn lập trình web</h3>
+              <span>
+                <FaChevronRight className="text-[14px] absolute top-[16px] right-[16px] cursor-pointer" />
+              </span>
+            </div>
           </div>
           {/* 2. */}
-          <div className="flex flex-col flex-wrap sticky top-0 pt-[10px] ">
-            <div>
+          <div className=" flex flex-col flex-wrap sticky top-0">
+            <div className="chapter_item">
               <h3>2. Ngôn ngữ đánh dấu HTML</h3>
               <span>
-                <FaEllipsisVertical
+                <FaChevronDown
                   className="text-[13px] absolute top-[17px] right-[16px] cursor-pointer"
                   onClick={handleEllipsisClick}
                 />
               </span>
             </div>
-            
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+            <div className="lession_list border-b-1 border-[#fff]">
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex items-center ">
-                <span className="pr-[7px] text-[#f05123]">
-                  <FaFileLines />
-                </span>
-                <p className="leading-[19px]">
-                  2.1. Các thẻ HTML hay dùng trong nhóm inline
-                </p>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaFileLines />
+                  </span>
+                  <p className="leading-[19px]">
+                    2.1. Các thẻ HTML hay dùng trong nhóm inline
+                  </p>
+                </div>
+              </div>
+              <div className="lession_item">
+                <div className="flex items-center ">
+                  <span className="pr-[7px] text-[#f05123]">
+                    <FaPlus />
+                  </span>
+                  <p className="leading-[19px] opacity-60">Thêm bài học!</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className={`menu_more ${!isShow && "hidden"} `}>
-              <ul className="menu_more_wrapper min-w-[215px]">
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm bài học video
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm bài học text
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm trắc nghiệm
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm điền vào chỗ trống
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm thử thách code
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm bài thực hành code
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm thử thách CSS
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Thêm câu hỏi so sánh
-                  </div>
-                </li>
-                <li>
-                  <div className="flex">
-                    <span className="mr-[10px] mt-[3px]">
-                      <FaCirclePlay />
-                    </span>
-                    Sắp xếp bài học
-                  </div>
-                </li>
-              </ul>
+        <ul className="menu_more_wrapper min-w-[215px]">
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm bài học video
             </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm bài học text
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm trắc nghiệm
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm điền vào chỗ trống
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm thử thách code
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm bài thực hành code
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm thử thách CSS
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Thêm câu hỏi so sánh
+            </div>
+          </li>
+          <li>
+            <div className="flex">
+              <span className="mr-[10px] mt-[3px]">
+                <FaCirclePlay />
+              </span>
+              Sắp xếp bài học
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };
