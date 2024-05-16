@@ -1,0 +1,65 @@
+
+.MenuNavigate_list{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 12px;
+    padding: 8px 0;
+}
+.Admin_listItem {
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+.Admin_listItem a:hover {
+    background-color: #222222;
+}
+
+.MenuNavigate_list li a {
+    width: 250px;
+    padding: 16px 0 16px 0;
+    /* border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; */
+    border-top-right-radius:50px ;
+    border-bottom-right-radius:50px ;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.MenuNavigate_list li em {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 16px;
+    text-align: center;
+    width: 20px;
+}
+.MenuNavigate_list li div {
+    padding: 20px 0 20px 17px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.MenuNavigate_list li > span {
+    padding: 20px 0 20px 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.index-module_listItem2 a:hover {
+    background-color: #f0f0f0;
+}
+/* .active{
+    border-color: #222222;
+} */
+  

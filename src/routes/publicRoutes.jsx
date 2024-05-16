@@ -38,6 +38,8 @@ import SearchVideo from "../pages/SearchAll/SearchVideo/SearchVideo";
 import SearchPost from "../pages/SearchAll/SearchPost/SearchPost";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import Admin from "../pages/Admin/Admin";
+import Payment from "../pages/Payment/Payment";
+import Banking from "../pages/Payment/Banking";
 
 // import Edit from "../components/Test/Edit";
 export const publicRoutes = (
@@ -47,7 +49,10 @@ export const publicRoutes = (
     </Route>
 
     <Route path="/landing" element={<Landing />}></Route>
-
+    {/* Mua khóa học Pro */}
+    <Route path="/payment" element={<Payment />}></Route>
+    <Route path="/banking" element={<Banking />}></Route>
+    
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       {/* Lộ trình */}
