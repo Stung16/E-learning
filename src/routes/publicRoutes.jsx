@@ -38,6 +38,7 @@ import SearchVideo from "../pages/SearchAll/SearchVideo/SearchVideo";
 import SearchPost from "../pages/SearchAll/SearchPost/SearchPost";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import Admin from "../pages/Admin/Admin";
+import Authg from "../components/Test/Auth";
 
 // import Edit from "../components/Test/Edit";
 export const publicRoutes = (
@@ -68,17 +69,14 @@ export const publicRoutes = (
       <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
       {/* Me */}
-
       {/* <Route path="/me/posts" element={<MyPost />} /> */}
       <Route path="/me/posts/drafts" element={<Drafts />} />
       <Route path="/me/posts/published" element={<Published />} />
       <Route path="/me/bookmark/posts" element={<Bookmark />} />
       {/* Search */}
       <Route path="/search/courses" element={<SearchCourse />} />
-      <Route path="/search/posts" element={<SearchPost/>} />
+      <Route path="/search/posts" element={<SearchPost />} />
       <Route path="/search/videos" element={<SearchVideo />} />
-
-
       {/* Courses */}
       <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>
