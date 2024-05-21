@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./Payment.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Payment = () => {
+  const { pathname } = useLocation();
+  const slugCourse = useCallback(
+    (id) => {
+      return pathname?.split("/")?.[id];
+    },
+    [pathname]
+  );
   return (
     <div
       className={`Payment_wrapper bg-[url('/image/payment/payment-bg.dd1049bd524ec6121c88.png')]`}
@@ -83,7 +90,10 @@ const Payment = () => {
             </div>
           </div>
           <div className="mt-8 w-[100%]">
-            <Link to="/banking" className="PaymentButton_wrapper block w-[100%]">
+            <Link
+              to={`/banking/${slugCourse(2)}`}
+              className="PaymentButton_wrapper block w-[100%]"
+            >
               Lấy thông tin thanh toán
             </Link>
           </div>
@@ -984,121 +994,181 @@ const Payment = () => {
           </div>
         </div>
         <div className="ComingSoonCourses_right">
-            <img className="" src="/image/payment/payment-footer-bg.7213dff1ad93fec9be7b.png" alt="" />
+          <img
+            className=""
+            src="/image/payment/payment-footer-bg.7213dff1ad93fec9be7b.png"
+            alt=""
+          />
         </div>
       </div>
       {/* Footer */}
       <div className="mt-[142px] max-w-[90vw] w-[1087px] z-[1]">
         <div className="Footer_top items-center flex">
-            <div className="items-center flex pr-12">
-                <Link to="/">
-                    <img className="rounded-[4px] h-[48px] w-[48px]" src="/icon/f8-icon.18cd71cfcfa33566a22b.png" alt="" />
-                </Link>
-                <div className="flex flex-col text-[19px] font-medium leading-[28px] ml-3 uppercase">
-                    <span className="font-medium">Học lập trình</span>
-                    <span className="font-medium">Để đi làm</span>
-                </div>
+          <div className="items-center flex pr-12">
+            <Link to="/">
+              <img
+                className="rounded-[4px] h-[48px] w-[48px]"
+                src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
+                alt=""
+              />
+            </Link>
+            <div className="flex flex-col text-[19px] font-medium leading-[28px] ml-3 uppercase">
+              <span className="font-medium">Học lập trình</span>
+              <span className="font-medium">Để đi làm</span>
             </div>
+          </div>
         </div>
         <div className="mt-[29px]">
-            <section className="min-[1113px]:-mx-3 min-[740px]:-mx-2 flex flex-wrap -mx-1">
-                <section className="min-[1113px]:w-[33.33333%] min-[1113px]:px-3 min-[740px]:w-[33.33333%] min-[740px]:px-2 w-[100%] px-1">
-                    <div className="items-start flex mb-4">
-                        <span className="mr-3 pt-1">
-                            <img src="/image/payment/phone.0c60754adb11aa1f42791f4b80423f6d.svg" alt="" />
-                        </span>
-                        <Link className="text-[#fff] text-[16px] font-normal leading-[24px]" to="">
-                        0246.329.1102
-                        </Link>
-                    </div>
-                    <div className="items-start flex mb-4">
-                        <span className="mr-3 pt-1">
-                            <img src="/image/payment/envelope.e7b59ce57be76a9435865a20e7021f56.svg" alt="" />
-                        </span>
-                        <Link className="text-[#fff] text-[16px] font-normal leading-[24px]" to="">
-                        contact@fullstack.edu.vn
-                        </Link>
-                    </div>
-                    <div className="items-start flex mb-4">
-                        <span className="mr-3 pt-1">
-                            <img src="/image/payment/map-location.d448ea4630d95df7331a9b1162a39a8f.svg" alt="" />
-                        </span>
-                        <span className="text-[#fff] text-[16px] font-normal leading-[24px]" to="">
-                        Số 11D, khu đô thị Nam Trung Yên, Quận Cầu Giấy
-                        </span>
-                    </div>
-                </section>
-                <section className="min-[1113px]:w-[25%] min-[1113px]:px-3 min-[740px]:w-[25%] min-[740px]:px-2 w-[100%] px-1">
-                    <div className="pl-[42px]">
-                        <div>
-                            <div className="Footer_item-title">Về F8</div>
-                            <div className="flex flex-col">
-                                <Link className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3" to="">
-                                Giới thiệu
-                                </Link>
-                                <Link className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3" to="">
-                                Cơ hội việc làm
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="min-[1113px]:w-[16.66667%] min-[1113px]:px-3 min-[740px]:w-[16.66667%] min-[740px]:px-2 w-[100%] px-1">
-                <div className="">
-                        <div>
-                            <div className="Footer_item-title">Hỗ trợ</div>
-                            <div className="flex flex-col">
-                                <Link className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3" to="">
-                                Liên hệ
-                                </Link>
-                                <Link className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3" to="">
-                                Bảo mật
-                                </Link>
-                                <Link className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3" to="">
-                                Điều khoản
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="min-[1113px]:w-[25%] min-[1113px]:px-3 min-[740px]:w-[25%] min-[740px]:px-2 w-[100%] px-1">
-                <div className="">
-                        <div>
-                            <div className="Footer_item-title">Công ty cổ phần công nghệ F8</div>
-                            <div className="flex flex-col">
-                                <div className="text-[#cfd2d8cc] text-[14px] font-normal leading-[24px]">
-                                Mã số thuế: 0109922901
-                                </div>
-                                <div className="text-[#cfd2d8cc] text-[14px] font-normal leading-[24px]">
-                                Ngày thành lập: 04/03/2022
-                                </div>
-                                <div className="text-[#cfd2d8cc] text-[14px] font-normal leading-[24px]">
-                                Lĩnh vực: Công nghệ, giáo dục, lập trình. F8 xây dựng và phát triển những sản phẩm mang lại giá trị cho cộng đồng.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+          <section className="min-[1113px]:-mx-3 min-[740px]:-mx-2 flex flex-wrap -mx-1">
+            <section className="min-[1113px]:w-[33.33333%] min-[1113px]:px-3 min-[740px]:w-[33.33333%] min-[740px]:px-2 w-[100%] px-1">
+              <div className="items-start flex mb-4">
+                <span className="mr-3 pt-1">
+                  <img
+                    src="/image/payment/phone.0c60754adb11aa1f42791f4b80423f6d.svg"
+                    alt=""
+                  />
+                </span>
+                <Link
+                  className="text-[#fff] text-[16px] font-normal leading-[24px]"
+                  to=""
+                >
+                  0246.329.1102
+                </Link>
+              </div>
+              <div className="items-start flex mb-4">
+                <span className="mr-3 pt-1">
+                  <img
+                    src="/image/payment/envelope.e7b59ce57be76a9435865a20e7021f56.svg"
+                    alt=""
+                  />
+                </span>
+                <Link
+                  className="text-[#fff] text-[16px] font-normal leading-[24px]"
+                  to=""
+                >
+                  contact@fullstack.edu.vn
+                </Link>
+              </div>
+              <div className="items-start flex mb-4">
+                <span className="mr-3 pt-1">
+                  <img
+                    src="/image/payment/map-location.d448ea4630d95df7331a9b1162a39a8f.svg"
+                    alt=""
+                  />
+                </span>
+                <span
+                  className="text-[#fff] text-[16px] font-normal leading-[24px]"
+                  to=""
+                >
+                  Số 11D, khu đô thị Nam Trung Yên, Quận Cầu Giấy
+                </span>
+              </div>
             </section>
+            <section className="min-[1113px]:w-[25%] min-[1113px]:px-3 min-[740px]:w-[25%] min-[740px]:px-2 w-[100%] px-1">
+              <div className="pl-[42px]">
+                <div>
+                  <div className="Footer_item-title">Về F8</div>
+                  <div className="flex flex-col">
+                    <Link
+                      className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3"
+                      to=""
+                    >
+                      Giới thiệu
+                    </Link>
+                    <Link
+                      className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3"
+                      to=""
+                    >
+                      Cơ hội việc làm
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="min-[1113px]:w-[16.66667%] min-[1113px]:px-3 min-[740px]:w-[16.66667%] min-[740px]:px-2 w-[100%] px-1">
+              <div className="">
+                <div>
+                  <div className="Footer_item-title">Hỗ trợ</div>
+                  <div className="flex flex-col">
+                    <Link
+                      className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3"
+                      to=""
+                    >
+                      Liên hệ
+                    </Link>
+                    <Link
+                      className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3"
+                      to=""
+                    >
+                      Bảo mật
+                    </Link>
+                    <Link
+                      className="text-[#fff] text-[16px] font-normal leading-[24px] mb-3"
+                      to=""
+                    >
+                      Điều khoản
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="min-[1113px]:w-[25%] min-[1113px]:px-3 min-[740px]:w-[25%] min-[740px]:px-2 w-[100%] px-1">
+              <div className="">
+                <div>
+                  <div className="Footer_item-title">
+                    Công ty cổ phần công nghệ F8
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="text-[#cfd2d8cc] text-[14px] font-normal leading-[24px]">
+                      Mã số thuế: 0109922901
+                    </div>
+                    <div className="text-[#cfd2d8cc] text-[14px] font-normal leading-[24px]">
+                      Ngày thành lập: 04/03/2022
+                    </div>
+                    <div className="text-[#cfd2d8cc] text-[14px] font-normal leading-[24px]">
+                      Lĩnh vực: Công nghệ, giáo dục, lập trình. F8 xây dựng và
+                      phát triển những sản phẩm mang lại giá trị cho cộng đồng.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
         </div>
         <div className="flex justify-center relative mt-12 mx-0 mb-[84px]">
-            <div className="items-center flex gap-[32px] left-0 absolute top-[50%] translate-y-[-50%]">
-                <Link className="items-center flex h-[32px] w-[32px]" to="">
-                    <img className="w-[100%]" src="/image/payment/facebook.114ffe79a2cfaeb8e3489bd4fbbf2f39.svg" alt="" />
-                </Link>
-                <Link className="items-center flex h-[32px] w-[32px]" to="">
-                    <img className="w-[100%]" src="/image/payment/youtube.d6ca95670a626d4ba3b586614e442eb3.svg" alt="" />
-                </Link>
-                <Link className="items-center flex h-[32px] w-[32px]" to="">
-                    <img className="w-[100%]" src="/image/payment/linkedin.142b2e62975439cef328de236784686e.svg" alt="" />
-                </Link>
-                <Link className="items-center flex h-[32px] w-[32px]" to="">
-                    <img className="w-[100%]" src="/image/payment/tiktok.676d27a4617151b06eb4c27d8f1de065.svg" alt="" />
-                </Link>
-            </div>
-            <span className="text-[16px] font-normal leading-[24px]">
+          <div className="items-center flex gap-[32px] left-0 absolute top-[50%] translate-y-[-50%]">
+            <Link className="items-center flex h-[32px] w-[32px]" to="">
+              <img
+                className="w-[100%]"
+                src="/image/payment/facebook.114ffe79a2cfaeb8e3489bd4fbbf2f39.svg"
+                alt=""
+              />
+            </Link>
+            <Link className="items-center flex h-[32px] w-[32px]" to="">
+              <img
+                className="w-[100%]"
+                src="/image/payment/youtube.d6ca95670a626d4ba3b586614e442eb3.svg"
+                alt=""
+              />
+            </Link>
+            <Link className="items-center flex h-[32px] w-[32px]" to="">
+              <img
+                className="w-[100%]"
+                src="/image/payment/linkedin.142b2e62975439cef328de236784686e.svg"
+                alt=""
+              />
+            </Link>
+            <Link className="items-center flex h-[32px] w-[32px]" to="">
+              <img
+                className="w-[100%]"
+                src="/image/payment/tiktok.676d27a4617151b06eb4c27d8f1de065.svg"
+                alt=""
+              />
+            </Link>
+          </div>
+          <span className="text-[16px] font-normal leading-[24px]">
             © 2018 - 2024 F8. Nền tảng học lập trình hàng đầu Việt Nam
-            </span>
+          </span>
         </div>
       </div>
       {/* Arrow up
@@ -1110,7 +1180,11 @@ const Payment = () => {
         </div>
       </div> */}
       {/*  */}
-      <img className="absolute bottom-0 right-0" src="/image/payment/bottom-bg.97b203da81cf6e72b64a.png" alt="" />
+      <img
+        className="absolute bottom-0 right-0"
+        src="/image/payment/bottom-bg.97b203da81cf6e72b64a.png"
+        alt=""
+      />
     </div>
   );
 };

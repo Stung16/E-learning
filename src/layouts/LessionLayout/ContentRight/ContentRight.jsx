@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import "./ContentRight.css";
 import { FaCompactDisc } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
@@ -14,13 +14,19 @@ const { updateShow } = courseSlice.actions;
 const ContentRight = () => {
   const navigate = useNavigate();
   let totalLession = 0;
+  const dispatch = useDispatch();
   const { pathname, search } = useLocation();
   const [lessionidCourse, setLessionIdCourse] = useState(1);
   const slug = pathname.split("/")[pathname.split("/").length - 1];
   const { data, isLoading } = useSWR(`/course/${slug}`, fetcher);
   const listChapter = data?.data?.data?.chapters;
   const isShow = useSelector((state) => state.courseData.isShow);
-  const dispatch = useDispatch();
+  const slugId = useCallback(() => {
+    return search.split("=")?.[1];
+  }, [pathname]);
+  if (isLoading) {
+    return <Loading />;
+  }
   return (
     <div className={`content_right ${!isShow && "hidden"} `}>
       <div className="content_right_container">
@@ -54,16 +60,16 @@ const ContentRight = () => {
 
                 <div className="Steps-list block">
                   {chapter?.lessons?.map((lession) => {
+                    // console.log(lession);
                     ++totalLession;
                     return (
                       <div
                         className={`StepItem_wrapper ${
-                          lession?.id === lessionidCourse && "active"
+                          lession?.id === +slugId() && "active"
                         }`}
                         key={lession?.id}
                         onClick={() => {
-                          navigate(`learning/${slug}?id=${lession?.id}`);
-                          setLessionIdCourse(lession?.id);
+                          window.location.href = `/learning/${slug}?id=${lession?.id}`
                         }}
                       >
                         <div className="StepItem_info">
@@ -83,7 +89,6 @@ const ContentRight = () => {
             );
           })}
         </div>
-        {isLoading && <Loading />}
       </div>
     </div>
   );

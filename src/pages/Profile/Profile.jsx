@@ -9,14 +9,16 @@ import Notification from "../../components/Header/Notification/Notification";
 import Cookies from "js-cookie";
 
 const Profile = () => {
-  const token = Cookies.get("accessToken");
   const handleGoBack = () => {
     window.history.back(); // Điều hướng trở lại trang trước đó
   };
   const profiles = useSelector((state) => state.detailtData.profile);
-  if (!token) {
+  if (!profiles) {
+    Cookies.remove("accessToken");
+    Cookies.remove("refreshToken");
     return (window.location.href = "/");
   }
+  console.log(profiles);
   return (
     <div>
       <div className="bg-transparent border-b-0 items-center flex text-[14px] h-[66px] sticky left-0 right-0 top-0 py-0 px-7 z-20">
@@ -139,11 +141,12 @@ const Profile = () => {
                     </h4>
                     <div>
                       {profiles?.courses?.map((item) => {
+                        const LessionFirst =item?.chapters?.[0]?.lessons?.[0]?.id
                         return (
                           <div className="profile-inner" key={item?.id}>
                             <Link
                               className="Profile_thumb shrink-0 h-[128px] w-[228px] mr-6"
-                              to={`/learning/${item?.slug}?id=1`}
+                              to={`/learning/${item?.slug}?id=${LessionFirst}`}
                             >
                               <img
                                 className="rounded-[16px] h-[100%] object-cover w-[100%]"
@@ -153,9 +156,7 @@ const Profile = () => {
                             </Link>
                             <div>
                               <h3 className="text-[16px] font-semibold mb-0 mt-0">
-                                <Link
-                                  to={`/learning/${item?.slug}?id=1`}
-                                >
+                                <Link to={`/learning/${item?.slug}?id=${LessionFirst}`}>
                                   {item?.title}
                                 </Link>
                               </h3>

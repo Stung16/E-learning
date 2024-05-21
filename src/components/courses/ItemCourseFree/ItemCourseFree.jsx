@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 const ItemCourseFree = ({ image, link, name, users, id, slug }) => {
   const navigate = useNavigate();
   const profile = useSelector((state) => state.detailtData.profile);
+  const listCourses = profile?.courses;
   const idCourseLearned = profile?.courses?.map((item) => item?.id);
   return (
     <section className="ScrollList_body_Free min-[740px]:w-[33.33333%] min-[1113px]:w-[25%] min-[740px]:px-2 pr-[12px] pl-[12px]">
@@ -17,7 +18,12 @@ const ItemCourseFree = ({ image, link, name, users, id, slug }) => {
               className="btn-seeMore group-hover:top-1/2 group-hover:visible group-hover:opacity-100 cursor-pointer"
               onClick={() => {
                 if (idCourseLearned?.includes(id)) {
-                  return navigate(`/learning/${link}?id=1`);
+                  const courseDetail = listCourses?.find(
+                    (item) => item?.id === id
+                  );
+                  const lessionFirst =
+                    courseDetail?.chapters?.[0]?.lessons?.[0]?.id;
+                  return navigate(`/learning/${link}?id=${lessionFirst}`);
                 } else {
                   return navigate(`/courses/${link}`);
                 }

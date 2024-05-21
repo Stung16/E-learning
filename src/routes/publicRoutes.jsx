@@ -13,47 +13,22 @@ import NoNavigate from "../layouts/DefaultLayout/NoNavigate";
 import Landing from "../pages/Landing/Landing";
 import NotFound from "../pages/NotFound/NotFound";
 import Front_end_Development from "../pages/Learning_paths/Front_end_Development/Front_end_Development";
-import Profile from "../pages/Profile/Profile";
 import LessonsForNewbie from "../pages/Courses/LessonsForNewbie/LessonsForNewbie";
 import Fresher from "../pages/Careers/Fresher";
-import AuthMiddleware from "../middlewares/AuthMiddleware";
 import Test from "../components/Test/Test";
-import MyCourses from "../pages/MyCourses/MyCourses";
-import LessionLayout from "../layouts/LessionLayout/LessionLayout";
-import Learning from "../pages/Learning/Learning";
-
-import Personal from "../pages/Setting/Personal/Personal";
-// import Setting from "../pages/Setting/Setting";
-import SettingLayout from "../layouts/SettingLayout/SettingLayout";
-import Security from "../pages/Setting/Security/Security";
-import Notification from "../pages/Setting/Notification/Notification";
-
-import ProfileLayout from "../layouts/ProfileLayout/ProfileLayout";
-import Drafts from "../pages/MyPost/Drafts/Drafts";
-import Published from "../pages/MyPost/Published";
-// import MyPost from "../pages/MyPost/MyPost";
-import Bookmark from "../pages/Bookmark/Bookmark";
 import SearchCourse from "../pages/SearchAll/SearchCourse/SearchCourse";
 import SearchVideo from "../pages/SearchAll/SearchVideo/SearchVideo";
 import SearchPost from "../pages/SearchAll/SearchPost/SearchPost";
-import AdminLayout from "../layouts/AdminLayout/AdminLayout";
-import Admin from "../pages/Admin/Admin";
-// import Authg from "../components/Test/Auth";
 import Payment from "../pages/Payment/Payment";
 import Banking from "../pages/Payment/Banking";
 
-// import Edit from "../components/Test/Edit";
 export const publicRoutes = (
   <>
-    <Route element={<LessionLayout />}>
-      <Route path="/learning/:id" element={<Learning />} />
-    </Route>
-
-    <Route path="/landing" element={<Landing />}></Route>
+    <Route path="/landing/:slug" element={<Landing />}></Route>
     {/* Mua khóa học Pro */}
-    <Route path="/payment" element={<Payment />}></Route>
-    <Route path="/banking" element={<Banking />}></Route>
-    
+    <Route path="/payment/:slug" element={<Payment />}></Route>
+    <Route path="/banking/:slug" element={<Banking />}></Route>
+
     <Route element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       {/* Lộ trình */}
@@ -71,13 +46,9 @@ export const publicRoutes = (
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/fresher" element={<Fresher />} />
-      <Route path="/my-courses" element={<MyCourses />} />
       <Route path="/blog" element={<Blog />} />
       {/* Me */}
       {/* <Route path="/me/posts" element={<MyPost />} /> */}
-      <Route path="/me/posts/drafts" element={<Drafts />} />
-      <Route path="/me/posts/published" element={<Published />} />
-      <Route path="/me/bookmark/posts" element={<Bookmark />} />
       {/* Search */}
       <Route path="/search/courses" element={<SearchCourse />} />
       <Route path="/search/posts" element={<SearchPost />} />
@@ -85,22 +56,12 @@ export const publicRoutes = (
       {/* Courses */}
       <Route path="/courses/:slug" element={<LessonsForNewbie />} />
     </Route>
-    <Route element={<ProfileLayout />}>
-      <Route path="/profile" element={<Profile />} />
-    </Route>
+
     <Route path="/about-us" element={<AboutUs />} />
     <Route path="/*" element={<NotFound />} />
     <Route element={<NoNavigate />}>
       <Route path="/test" element={<Test />} />
       <Route path="/blog/:slug" element={<PostDetail />} />
-    </Route>
-    <Route element={<SettingLayout />}>
-      <Route path="/setting/personal" element={<Personal />} />
-      <Route path="/setting/security" element={<Security />} />
-      <Route path="/setting/notification" element={<Notification />} />
-    </Route>
-    <Route element={<AdminLayout />}>
-      <Route path="/admin" element={<Admin />} />
     </Route>
   </>
 );

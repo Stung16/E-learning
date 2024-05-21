@@ -8,7 +8,7 @@ import "./PostHot.css";
 import { customText } from "../../../utils/helper";
 
 const PostHot = ({ data }) => {
-  const dataPosts = data?.filter((item) => item?.isPublish === true)
+  const dataPosts = data?.filter((item) => item?.isPublish === true)?.slice(0, 8)
   return (
     <div className="mb-2">
       <div className=" flex items-baseline ">

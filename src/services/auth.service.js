@@ -1,5 +1,4 @@
 import Client from "../config/Client";
-import Cookies from "js-cookie";
 
 export const handleGetCode = async (email) => {
   const payload = { email: email };
@@ -25,16 +24,27 @@ export const handleRefreshToken = async (refeshtoken) => {
     console.log(error);
   }
 };
-export const logOut = () => {
-  Cookies.remove("accessToken");
-  Cookies.remove("refreshToken");
-  window.location.href = "/";
+export const logOut = async () => {
+  try {
+    const res = await Client.get(`/logout`);
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 // lấy user
 export const handleGetUserDetail = async (id) => {
   try {
     const res = await Client.get(`/user/${id}`);
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
+};
+export const handleUpdateProfile = async (payload) => {
+  try {
+    const res = await Client.patch(`/user/update/profile`, payload);
     return res;
   } catch (error) {
     console.log(error);
@@ -78,7 +88,7 @@ export const handleDeleteUser = async (payload) => {
 export const handleRegiterCourse = async (id) => {
   const payload = { idCourse: id };
   try {
-    const res = await Client.post(`/user-course`, payload);
+    const res = await Client.post(`/course/register-user`, payload);
     return res;
   } catch (error) {
     console.log(error);

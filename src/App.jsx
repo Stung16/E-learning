@@ -24,15 +24,8 @@ const App = () => {
   useLayoutEffect(() => {
     checkLogin();
   }, [token]);
-  if (isLoading) {
-    return <Loading />;
-  }
 
-  return (
-    <div>
-      <Layout />
-    </div>
-  );
+  return <div>{isLoading ? <Loading /> : <Layout />}</div>;
 };
 
 export default App;

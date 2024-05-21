@@ -31,7 +31,7 @@ const CoursePro = ({ data }) => {
                       <ItemCoursePro
                         id={course?.id}
                         image={course?.avatar}
-                        link={"/landing"}
+                        link={`/landing/${course?.slug}`}
                         name={course?.title}
                         slug={course?.slug}
                         price={course?.price}

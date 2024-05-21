@@ -1,16 +1,15 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Cookies from "js-cookie";
+import { useEffect } from "react";
 
-const AuthMiddleware = async () => {
-  const token = Cookies.get("accessToken");
-
-  const profile = useSelector((state) => state.detailtData.profile);
-  if (!token) {
-    return (window.location.href = "/");
-  } else {
-    return <Outlet />;
-  }
+const AuthMiddleware = () => {
+  // const profile = useSelector((state) => state.detailtData.profile);
+  // useEffect(() => {
+  //   if (!profile) {
+  //     window.location.href = "/";
+  //   }
+  // }, [profile]);
+  return <Outlet />;
 };
 
 export default AuthMiddleware;

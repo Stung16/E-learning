@@ -6,13 +6,31 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
+import Cookies from "js-cookie";
 import { logOut } from "../../services/auth.service";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const AvatarUser = ({ profile }) => {
   const navigate = useNavigate();
-  const handleLogOut = () => {
+  const handleLogOut = async () => {
+    try {
+      const res = await logOut();
+      if (res?.data?.status === 200) {
+        Cookies.remove("accessToken");
+        Cookies.remove("refreshToken");
+        window.location.href = "/";
+      } else {
+        Cookies.remove("accessToken");
+        Cookies.remove("refreshToken");
+        window.location.href = "/";
+      }
+    } catch (error) {
+      console.log(error);
+      Cookies.remove("accessToken");
+      Cookies.remove("refreshToken");
+      window.location.href = "/";
+    }
     logOut();
   };
   return (
@@ -45,15 +63,6 @@ const AvatarUser = ({ profile }) => {
             <span>Trang cá nhân</span>
           </DropdownItem>
           <DropdownItem
-            textValue="affiliate "
-            key="link"
-            onClick={() => {
-              return navigate("");
-            }}
-          >
-            Liên kết giới thiệu
-          </DropdownItem>
-          <DropdownItem
             textValue="blog"
             key="write"
             onClick={() => {
@@ -71,9 +80,9 @@ const AvatarUser = ({ profile }) => {
           >
             Bài viết của tôi
           </DropdownItem>
-          <DropdownItem textValue="save blog" key="save_post">
+          {/* <DropdownItem textValue="save blog" key="save_post">
             Bài viết đã lưu
-          </DropdownItem>
+          </DropdownItem> */}
           <DropdownItem textValue="setting" key="setting">
             <Link to={"/setting/personal"}>Cài đặt</Link>
           </DropdownItem>

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import "./Landing.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa6";
@@ -11,7 +11,13 @@ import { FaUserTie } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
 function Landing() {
   const [hide, setHide] = useState(false);
-
+  const { pathname } = useLocation();
+  const slugCourse = useCallback(
+    (id) => {
+      return pathname?.split("/")?.[id];
+    },
+    [pathname]
+  );
   return (
     <section className=" text-[#C9D1D9] bg-[#0d1018] text-[16px] ">
       {/* // HEADER */}
@@ -24,7 +30,7 @@ function Landing() {
             >
               <img
                 className="logo w-[50px] rounded-[8px] p-0 m-0 border-[0px]"
-                src="./icon/f8-icon.18cd71cfcfa33566a22b.png"
+                src="/icon/f8-icon.18cd71cfcfa33566a22b.png"
                 alt="logo"
               />
               <span className="slogan pl-3 text-[16px] leading-[24px] font-medium text-[#fff]">
@@ -133,42 +139,6 @@ function Landing() {
           </div>
         </div>
       </header>
-
-      {/* FIXED HEADER */}
-      {/* <header className='fixed-header show'>
-            <div className='max-w-[calc(100%-48px)] w-[1248px] my-0 mx-auto'>
-                <div className='flex items-center h-[66px]'>
-                    <Link className='flex items-center text-[#c9d1d9] no-underline' to="/">
-                    <img className='w-[44px] h-[44px] rounded-[8px] ' src="./icon/f8-icon.18cd71cfcfa33566a22b.png" alt="logo" />
-                    <span className='pl-3 text-[16px] leading-[24px] font-medium text-[#fff]'>
-                    HỌC LẬP TRÌNH ĐỂ ĐI LÀM
-                    </span>
-                    </Link>
-                    <nav className='ml-[36px] block'>
-                        <ul className='flex list-none gap-[32px]'>
-                            <li>
-                                <Link className=' font-medium text-[#fff]' to="/"> Nội dung </Link>
-                            </li>
-                            <li>
-                                <Link className=' font-medium text-[#fff]' to="/"> Điểm khác biệt </Link>
-                            </li>
-                            <li>
-                                <Link className=' font-medium text-[#fff]' to="/"> Thông số kỹ thuật </Link>
-                            </li>
-                            <li>
-                                <Link className=' font-medium text-[#fff]' to="/"> Câu hỏi thường gặp </Link>
-                            </li>
-                            <li>
-                                <Link className=' font-medium text-[#fff]' to="/">Liên hệ</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                    <Link className='ml-auto h-[42px] rounded-[12px] text-[#0d1117] bg-[#fff] inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none' to="">
-                         Học thử miễn phí 
-                    </Link>
-                </div>
-            </div>
-        </header> */}
       <main className="hero overflow-hidden">
         {/* HERO */}
         <div className="pt-[64px] px-0 text-center">
@@ -200,7 +170,7 @@ function Landing() {
               </Link>
               <Link
                 className="btn-black ml-5 group  hover:opacity-85 opacity-100 h-[52px] rounded-[12px]  inline-flex items-center justify-center border-[1.5px] border-solid border-[#494b52] pt-0 px-7 pb-[2px] font-bold text-[20px] cursor-pointer whitespace-nowrap select-none"
-                to=""
+                to={`/payment/${slugCourse(2)}`}
               >
                 Mua khóa học
                 <FaChevronRight className="relative top-[2px] ml-[10px] group-hover:translate-x-1 transition-all ease-linear duration-400  fa-solid fa-chevron-right text-[16px] cursor-pointer" />
@@ -736,7 +706,7 @@ function Landing() {
                   </h2>
                 </header>
                 <ul className="feedback-list">
-                  <li className="feedback-item" >
+                  <li className="feedback-item">
                     <img src="/image/landing/svgexport-2.svg" alt="" />
                     <blockquote className="mt-[10px] text-[28px] text-[#fff]">
                       Kiến thức siêu đầy đủ, chi tiết (vì chi tiết quá nên đôi
