@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./learning_paths.css";
 
-
 const Learning_paths = () => {
-
   return (
     <section className="w-full max-w-[1902px]">
       <div className="DefaultLayout_container mb-[60px] px-11 pt-2">
@@ -39,7 +37,8 @@ const Learning_paths = () => {
                 </div>
                 <div className="flex items-center pl-6">
                   <Link to="" className="LearningPathItem_thumb-round">
-                    <img className=""
+                    <img
+                      className=""
                       src="/image/img_lotrinh/63b4642136f3e.png"
                       alt=""
                     />
@@ -48,8 +47,11 @@ const Learning_paths = () => {
               </div>
               {/* see intern */}
               <div>
-                <Link to="/learning-paths/front_end_development" className="see-detail FE">
-                    Xem chi tiết
+                <Link
+                  to="/learning-paths/front_end_development"
+                  className="see-detail FE"
+                >
+                  Xem chi tiết
                 </Link>
               </div>
             </div>
@@ -67,15 +69,15 @@ const Learning_paths = () => {
                 </div>
                 <div className="flex items-center pl-6">
                   <Link to="" className="LearningPathItem_thumb-round">
-                    <img
-                      src="/image/img_lotrinh/63b4641535b16.png"
-                      alt=""
-                    />
+                    <img src="/image/img_lotrinh/63b4641535b16.png" alt="" />
                   </Link>
                 </div>
               </div>
               <div>
-              <Link to="/learning-paths/back_end_development" className="see-detail">
+                <Link
+                  to="/learning-paths/back_end_development"
+                  className="see-detail"
+                >
                   Xem chi tiết
                 </Link>
               </div>
@@ -90,10 +92,16 @@ const Learning_paths = () => {
                 Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham
                 gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
               </p>
-              <Link to="" className="join-group-btn">Tham gia nhóm</Link>
+              <Link to="" className="join-group-btn">
+                Tham gia nhóm
+              </Link>
             </div>
             <div className="SuggestionBox_image">
-              <img className="relative right-[-44px] w-[420px]" src="/image/img_lotrinh/fb-group-cards.4bd525b1b8baf7b1e5a2.png" alt="" />
+              <img
+                className="relative right-[-44px] w-[420px]"
+                src="/image/img_lotrinh/fb-group-cards.4bd525b1b8baf7b1e5a2.png"
+                alt=""
+              />
             </div>
           </div>
         </div>

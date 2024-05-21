@@ -4,9 +4,10 @@ import { FaFileLines } from "react-icons/fa6";
 import { FaEllipsisVertical } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
-import "./NavigateAdmin.css";
+import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
-const NavigateAdmin = () => {
+// import "./NavigateAdmin.css";
+const NavigateCourse = () => {
   const [isShow, setIsShow] = useState(false);
   const handleEllipsisClick = () => {
     // Đảo ngược giá trị của isShow để hiển thị/ẩn dropdown
@@ -221,4 +222,4 @@ const NavigateAdmin = () => {
   );
 };
 
-export default NavigateAdmin;
+export default NavigateCourse;
