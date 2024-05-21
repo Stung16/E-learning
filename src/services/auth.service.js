@@ -78,7 +78,7 @@ export const handleDeleteUser = async (payload) => {
 export const handleRegiterCourse = async (id) => {
   const payload = { idCourse: id };
   try {
-    const res = await Client.post(`/user-course`, payload);
+    const res = await Client.post(`/course/register-user`, payload);
     return res;
   } catch (error) {
     console.log(error);
